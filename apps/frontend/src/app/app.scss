@@ -1,0 +1,7 @@
+.app-main {
+  min-height: 100dvh;
+
+  &.with-nav {
+    padding-bottom: calc(72px + env(safe-area-inset-bottom));
+  }
+}

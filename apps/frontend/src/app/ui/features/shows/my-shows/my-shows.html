@@ -1,0 +1,27 @@
+@if (store.loading() && !store.myShowsLoaded()) {
+  <div class="grid">
+    @for (i of [1, 2, 3, 4, 5, 6]; track i) {
+      <div class="skeleton poster-skeleton"></div>
+    }
+  </div>
+} @else if (sorted().length === 0) {
+  <app-empty-state
+    icon="pi-desktop"
+    message="Aucune série suivie"
+    hint="Importe ton historique TV Time depuis le profil, ou explore le catalogue."
+  />
+} @else {
+  <div class="grid">
+    @for (item of sorted(); track item.show.tmdbShowId) {
+      <a [routerLink]="['/shows', item.show.tmdbShowId]">
+        <app-poster-card
+          [posterUrl]="poster(item)"
+          [name]="item.show.name"
+          [sublabel]="sublabel(item)"
+          [progressValue]="item.watchedCount"
+          [progressTotal]="item.totalEpisodes"
+        />
+      </a>
+    }
+  </div>
+}

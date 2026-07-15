@@ -1,0 +1,8 @@
+<nav>
+  @for (tab of tabs; track tab.path) {
+    <a [routerLink]="tab.path" routerLinkActive="active">
+      <i class="pi {{ tab.icon }}"></i>
+      <span>{{ tab.label }}</span>
+    </a>
+  }
+</nav>

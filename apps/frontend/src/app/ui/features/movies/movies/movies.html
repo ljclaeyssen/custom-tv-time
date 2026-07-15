@@ -1,0 +1,58 @@
+<div class="page">
+  <h1 class="page-title">Films</h1>
+
+  <div class="tabs" role="tablist">
+    <button role="tab" [class.active]="tab() === 'watchlist'" (click)="tab.set('watchlist')">
+      Watchlist ({{ store.watchlist().length }})
+    </button>
+    <button role="tab" [class.active]="tab() === 'watched'" (click)="tab.set('watched')">
+      Vus ({{ store.watched().length }})
+    </button>
+  </div>
+
+  @if (store.loading() && !store.loaded()) {
+    <div class="grid">
+      @for (i of [1, 2, 3, 4, 5, 6]; track i) {
+        <div class="skeleton poster-skeleton"></div>
+      }
+    </div>
+  } @else if (visible().length === 0) {
+    @if (tab() === 'watchlist') {
+      <app-empty-state icon="pi-bookmark" message="Watchlist vide" hint="Ajoute des films depuis l'onglet Explorer." />
+    } @else {
+      <app-empty-state icon="pi-ticket" message="Aucun film vu" hint="Marque tes films vus depuis la watchlist." />
+    }
+  } @else {
+    <div class="grid">
+      @for (movie of visible(); track movie.tmdbMovieId) {
+        <div class="movie">
+          <figure>
+            @if (poster(movie); as url) {
+              <img [src]="url" [alt]="movie.title" loading="lazy" />
+            } @else {
+              <div class="placeholder"><i class="pi pi-image"></i></div>
+            }
+            <div class="overlay">
+              @if (movie.watchedAt === null) {
+                <button class="check-btn" (click)="setWatched(movie, true)" aria-label="Marquer vu">
+                  <i class="pi pi-check"></i>
+                </button>
+              } @else {
+                <button class="check-btn checked" (click)="setWatched(movie, false)" aria-label="Marquer non vu">
+                  <i class="pi pi-check"></i>
+                </button>
+              }
+              <button class="check-btn remove" (click)="remove(movie)" aria-label="Retirer">
+                <i class="pi pi-trash"></i>
+              </button>
+            </div>
+          </figure>
+          <span class="name">{{ movie.title }}</span>
+          @if (year(movie); as y) {
+            <span class="sub muted">{{ y }}</span>
+          }
+        </div>
+      }
+    </div>
+  }
+</div>

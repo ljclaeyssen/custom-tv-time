@@ -1,0 +1,11 @@
+node_modules
+dist
+tmp
+.git
+.angular
+.nx
+.idea
+.env
+.env.*
+tasks
+*.md

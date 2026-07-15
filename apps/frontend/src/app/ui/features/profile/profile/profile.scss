@@ -1,0 +1,111 @@
+.identity {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+
+  &.placeholder {
+    display: grid;
+    place-items: center;
+    background: var(--surface-2);
+    color: var(--text-3);
+    font-size: 1.4rem;
+  }
+}
+
+.username {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.via {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.logout {
+  margin-left: auto;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 24px;
+
+  .stat {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+
+    .value {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      color: var(--accent);
+    }
+
+    .label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+  }
+}
+
+.section-title {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.import-card {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+
+  p {
+    margin: 0;
+    font-size: 0.88rem;
+  }
+}
+
+.report {
+  width: 100%;
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  strong {
+    color: var(--accent);
+  }
+}
+
+.warnings {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  font-size: 0.8rem;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.error {
+  color: var(--danger);
+  font-size: 0.88rem;
+}
+
+.identity-skeleton {
+  height: 88px;
+  margin-bottom: 16px;
+}

@@ -1,0 +1,16 @@
+<figure>
+  @if (posterUrl(); as url) {
+    <img [src]="url" [alt]="name()" loading="lazy" />
+  } @else {
+    <div class="placeholder"><i class="pi pi-image"></i></div>
+  }
+</figure>
+@if (progressValue() !== null && progressTotal() !== null) {
+  <app-progress-bar [value]="progressValue()!" [total]="progressTotal()!" />
+}
+<div class="meta">
+  <span class="name">{{ name() }}</span>
+  @if (sublabel(); as sub) {
+    <span class="sub">{{ sub }}</span>
+  }
+</div>

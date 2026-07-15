@@ -1,0 +1,6 @@
+<main class="app-main" [class.with-nav]="auth.isAuthenticated()">
+  <router-outlet />
+</main>
+@if (auth.isAuthenticated()) {
+  <app-bottom-nav />
+}

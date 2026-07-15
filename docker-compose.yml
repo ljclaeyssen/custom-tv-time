@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:17-alpine
+    container_name: custom-tv-time-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: tvtime
+      POSTGRES_PASSWORD: tvtime
+      POSTGRES_DB: tvtime
+    ports:
+      - '5433:5432'
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:

@@ -1,0 +1,3014 @@
+[
+ {
+  "uuid": "fe9cd0a8-8139-4748-959b-917b99a6bd65",
+  "name": "Aladdin",
+  "imdb_id": "tt0103639",
+  "release_date": "1993-12-03",
+  "followed_at": "2019-09-07T17:24:12Z",
+  "watched_at": "2019-09-07T17:24:12Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "fe58d6ce-6230-4486-8986-811ce0fe4c9e",
+  "name": "My Neighbor Totoro",
+  "imdb_id": "tt0096283",
+  "release_date": "2009-09-18",
+  "followed_at": "2019-09-09T11:37:45Z",
+  "watched_at": "2019-09-09T11:37:45Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "fba77bbb-092b-4d99-a68a-af6a70f284e8",
+  "name": "Harry Potter and the Goblet of Fire",
+  "imdb_id": "tt0330373",
+  "release_date": "2005-11-25",
+  "followed_at": "2019-09-07T17:06:33Z",
+  "watched_at": "2019-09-07T17:07:32Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "f9593cb3-037b-49dd-8164-25e365e82252",
+  "name": "The Expendables",
+  "imdb_id": "tt1320253",
+  "release_date": "2010-08-13",
+  "followed_at": "2019-09-09T11:49:25Z",
+  "watched_at": "2019-09-09T11:49:26Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "f8bdc653-9ab8-4fa5-a02c-5623f5166485",
+  "name": "The Hunger Games: Catching Fire",
+  "imdb_id": "tt1951264",
+  "release_date": "2013-11-15",
+  "followed_at": "2019-09-07T17:15:14Z",
+  "watched_at": "2019-09-07T17:15:14Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "f812aad9-24b9-42cf-8f31-2e5bd2f7a0f9",
+  "name": "Thor: Ragnarok",
+  "imdb_id": "tt3501632",
+  "release_date": "2017-10-26",
+  "followed_at": "2019-09-07T17:29:06Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "f7361386-0283-449e-bb93-f28b7c4e8bd0",
+  "name": "Jurassic Park",
+  "imdb_id": "tt0107290",
+  "release_date": "1993-06-11",
+  "followed_at": "2019-09-07T17:17:46Z",
+  "watched_at": "2019-09-07T17:17:46Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "f6987486-5380-4f63-b80c-cd7a35b616eb",
+  "name": "Toy Story",
+  "imdb_id": "tt0114709",
+  "release_date": "1996-03-29",
+  "followed_at": "2019-09-07T17:18:41Z",
+  "watched_at": "2019-09-07T17:18:41Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "f677b664-1330-4a79-ab36-2f11a3d88d9f",
+  "name": "Jurassic World: Fallen Kingdom",
+  "imdb_id": "tt4881806",
+  "release_date": "2018-06-07",
+  "followed_at": "2019-09-09T11:42:19Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "f45eae51-04e4-4f68-89d7-29a9b8f89910",
+  "name": "Forrest Gump",
+  "imdb_id": "tt0109830",
+  "release_date": "1994-12-15",
+  "followed_at": "2019-09-07T17:29:06Z",
+  "watched_at": "2019-09-07T17:29:11Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "f45c70ab-45ef-4938-8ec1-883a5e8b6fda",
+  "name": "Lucy",
+  "imdb_id": "tt2872732",
+  "release_date": "2014-08-22",
+  "followed_at": "2019-09-09T11:35:37Z",
+  "watched_at": "2019-09-09T11:35:38Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "f1b9e2f2-25d9-4f48-a8e7-2643b14ab9ab",
+  "name": "Red Notice",
+  "imdb_id": "tt7991608",
+  "release_date": "2021-11-05",
+  "followed_at": "2022-05-08T20:35:29Z",
+  "watched_at": "2022-05-08T20:35:29Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "f00f5dda-cebe-496e-b43b-3dbcb2953dee",
+  "name": "Harry Potter and the Deathly Hallows: Part 1",
+  "imdb_id": "tt0926084",
+  "release_date": "2010-02-19",
+  "followed_at": "2019-09-07T17:06:38Z",
+  "watched_at": "2019-09-07T17:07:47Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "f00302bd-96f8-4225-a65c-e31169f53c64",
+  "name": "Stuart Little 2",
+  "imdb_id": "tt0243585",
+  "release_date": "2002-10-16",
+  "followed_at": "2019-09-09T11:47:13Z",
+  "watched_at": "2019-09-09T11:47:13Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "ede7cc54-93e1-4be8-b5a6-9c1a44e48865",
+  "name": "The Fifth Element",
+  "imdb_id": "tt0119116",
+  "release_date": "1997-05-02",
+  "followed_at": "2019-09-07T17:14:41Z",
+  "watched_at": "2019-09-07T17:14:41Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "edab0942-e1be-48c1-9783-51662da9e723",
+  "name": "Pocahontas",
+  "imdb_id": "tt0114148",
+  "release_date": "1995-06-23",
+  "followed_at": "2019-09-07T17:27:33Z",
+  "watched_at": "2019-09-09T11:36:08Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "ed072674-21a5-41be-8b99-ac4b49e9b95c",
+  "name": "The Grand Budapest Hotel",
+  "imdb_id": "tt2278388",
+  "release_date": "2014-04-10",
+  "followed_at": "2019-09-07T17:24:32Z",
+  "watched_at": "2019-09-07T17:24:32Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "eb6617d4-88ef-4b25-8c6e-67aa338fb2b5",
+  "name": "Ready Player One",
+  "imdb_id": "tt1677720",
+  "release_date": "2018-03-29",
+  "followed_at": "2019-09-09T11:11:16Z",
+  "watched_at": "2022-03-17T19:19:03Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "ea2c6fa3-053f-4cc3-b34c-9bcf519b695f",
+  "name": "Spider-Man: Far From Home",
+  "imdb_id": "tt6320628",
+  "release_date": "2019-07-05",
+  "followed_at": "2019-09-09T11:09:54Z",
+  "watched_at": "2022-03-13T23:04:36Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "ea25eff1-d708-4db4-a5d9-3f75985b887c",
+  "name": "Toy Story 3",
+  "imdb_id": "tt0435761",
+  "release_date": "2010-07-23",
+  "followed_at": "2019-09-07T17:19:04Z",
+  "watched_at": "2019-09-07T17:19:04Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "e9fe2bdb-8723-4dda-a007-11fbcb65cc29",
+  "name": "Assassin's Creed",
+  "imdb_id": "tt2094766",
+  "release_date": "2016-12-23",
+  "followed_at": "2020-10-29T13:58:25Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "e9c52bae-c6e7-44ff-8041-0710df97fec3",
+  "name": "Ant-Man",
+  "imdb_id": "tt0478970",
+  "release_date": "2015-07-24",
+  "followed_at": "2019-09-07T17:18:09Z",
+  "watched_at": "2019-09-07T17:18:09Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "e86ad74f-3e3d-45cf-8c55-c5a5f8938748",
+  "name": "Incredibles 2",
+  "imdb_id": "tt3606756",
+  "release_date": "2018-09-19",
+  "followed_at": "2019-09-09T11:40:57Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "e7792e9d-e603-4297-9f7e-150cdfa84bb8",
+  "name": "Cinderella",
+  "imdb_id": "tt0042332",
+  "release_date": "1952-12-19",
+  "followed_at": "2019-09-09T11:37:23Z",
+  "watched_at": "2019-09-09T11:37:24Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "e626b457-66d6-422f-b02a-32b5464eaf2c",
+  "name": "E.T. The Extra-Terrestrial",
+  "imdb_id": "tt0083866",
+  "release_date": "1982-12-01",
+  "followed_at": "2019-09-07T17:18:17Z",
+  "watched_at": "2019-09-07T17:18:17Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "e61d6466-d456-43e8-bc3f-bcdfcc54269e",
+  "name": "Percy Jackson: Sea of Monsters",
+  "imdb_id": "tt1854564",
+  "release_date": "2013-08-07",
+  "followed_at": "2019-09-09T11:45:56Z",
+  "watched_at": "2019-09-09T11:45:56Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "e53ba0b2-b8da-4299-92fc-8a197083b5e2",
+  "name": "The Jungle Book",
+  "imdb_id": "tt3040964",
+  "release_date": "2016-04-14",
+  "followed_at": "2019-09-07T17:27:19Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "e49455cc-26ff-46b5-9708-fe9d47d061ad",
+  "name": "Mickey, Donald, Goofy: The Three Musketeers",
+  "imdb_id": "tt0371823",
+  "release_date": "2004-08-04",
+  "followed_at": "2019-09-09T11:47:50Z",
+  "watched_at": "2019-09-09T11:47:50Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "e4610302-2218-4155-9c6c-5c7f19f221a6",
+  "name": "The Hunchback of Notre Dame",
+  "imdb_id": "tt0116583",
+  "release_date": "1996-06-28",
+  "followed_at": "2019-09-09T11:46:54Z",
+  "watched_at": "2019-09-09T11:46:55Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "e40030e7-e4d9-4e6b-a501-c1b324de03cb",
+  "name": "Corpse Bride",
+  "imdb_id": "tt0121164",
+  "release_date": "2005-09-12",
+  "followed_at": "2019-09-07T17:24:38Z",
+  "watched_at": "2019-09-07T17:24:38Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "e02e9914-9009-4f59-b66e-6834f5fe6afc",
+  "name": "Ant-Man and the Wasp",
+  "imdb_id": "tt5095030",
+  "release_date": "2018-07-04",
+  "followed_at": "2019-09-09T11:21:38Z",
+  "watched_at": "2022-05-16T21:41:49Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "e0067488-637e-44fe-8192-1969e9773dd3",
+  "name": "Shrek",
+  "imdb_id": "tt0126029",
+  "release_date": "2001-07-13",
+  "followed_at": "2019-09-07T17:13:10Z",
+  "watched_at": "2019-09-07T17:13:10Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "dfe92d1c-0125-4f6d-a9d3-35443b5a9aac",
+  "name": "Harry Potter and the Prisoner of Azkaban",
+  "imdb_id": "tt0304141",
+  "release_date": "2004-06-03",
+  "followed_at": "2019-09-07T17:05:34Z",
+  "watched_at": "2019-09-07T17:05:34Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "df9d8522-d060-4277-b7c2-addceadf8fe3",
+  "name": "Iron Man 2",
+  "imdb_id": "tt1228705",
+  "release_date": "2010-04-30",
+  "followed_at": "2019-09-07T17:13:05Z",
+  "watched_at": "2019-09-07T17:13:05Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "de9f4f37-5794-434e-88db-f4ac6508ff01",
+  "name": "The Incredibles",
+  "imdb_id": "tt0317705",
+  "release_date": "2004-12-17",
+  "followed_at": "2019-09-09T11:36:13Z",
+  "watched_at": "2019-09-09T11:36:14Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "ddff5475-56cd-444b-98e3-f4652038b273",
+  "name": "Back to the Future",
+  "imdb_id": "tt0088763",
+  "release_date": "1985-12-02",
+  "followed_at": "2019-09-07T17:11:49Z",
+  "watched_at": "2019-09-07T17:11:49Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "dc9af31d-2200-410a-85af-05396cc7c6bc",
+  "name": "Nanny McPhee",
+  "imdb_id": "tt0396752",
+  "release_date": "2006-04-07",
+  "followed_at": "2019-09-07T17:26:42Z",
+  "watched_at": "2019-09-07T17:26:42Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "dc19553b-7ee7-4e0c-a302-102f11091be6",
+  "name": "Fantastic Beasts: The Crimes of Grindelwald",
+  "imdb_id": "tt4123430",
+  "release_date": "2018-11-15",
+  "followed_at": "2019-09-09T11:23:15Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "da5efbd1-77b8-4bab-bb80-e228d8d1bc71",
+  "name": "The Little Mermaid II: Return to the Sea",
+  "imdb_id": "tt0240684",
+  "release_date": "2000-01-23",
+  "followed_at": "2019-09-09T11:47:17Z",
+  "watched_at": "2019-09-09T11:47:18Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "da24691e-1338-415d-80a1-6009955e8182",
+  "name": "The Princess and the Frog",
+  "imdb_id": "tt0780521",
+  "release_date": "2009-12-11",
+  "followed_at": "2019-09-07T17:20:02Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "d9aff53e-d802-4661-9c5a-ddb1c2a5cb97",
+  "name": "Tangled",
+  "imdb_id": "tt0398286",
+  "release_date": "2011-02-04",
+  "followed_at": "2019-09-09T11:11:37Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "d6423a20-d8dd-4521-8fd4-050713a7e9a3",
+  "name": "Star Wars: The Last Jedi",
+  "imdb_id": "tt2527336",
+  "release_date": "2017-12-13",
+  "followed_at": "2019-09-07T17:12:08Z",
+  "watched_at": "2019-09-07T17:12:08Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "d55e956e-20f4-4d9f-9bb2-186d2e999cd2",
+  "name": "Return of the Jedi",
+  "imdb_id": "tt0086190",
+  "release_date": "2021-10-31",
+  "followed_at": "2019-09-09T11:42:05Z",
+  "watched_at": "2019-09-09T11:42:06Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "d4c2ca58-f7dc-4fc5-82cf-26eff8d308ed",
+  "name": "The Hobbit: An Unexpected Journey",
+  "imdb_id": "tt0903624",
+  "release_date": "2012-12-14",
+  "followed_at": "2019-09-07T17:07:09Z",
+  "watched_at": "2019-09-07T17:07:40Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "d42b395b-4bba-4046-a682-d1c6a69fe663",
+  "name": "Captain America: The First Avenger",
+  "imdb_id": "tt0458339",
+  "release_date": "2011-11-29",
+  "followed_at": "2019-09-07T17:16:08Z",
+  "watched_at": "2019-09-07T17:16:08Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "d3ff6d88-18ba-4c55-9d6e-e00b4d3f956e",
+  "name": "Spider-Man: Homecoming",
+  "imdb_id": "tt2250912",
+  "release_date": "2017-07-06",
+  "followed_at": "2022-03-13T23:04:49Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "d3903d99-42fc-4f59-a1de-f230aa0d7a4b",
+  "name": "Back to the Future Part III",
+  "imdb_id": "tt0099088",
+  "release_date": "1990-11-30",
+  "followed_at": "2019-09-07T17:27:54Z",
+  "watched_at": "2019-09-07T17:27:54Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "d2dc6eb4-3bbf-4f77-8eb8-55d066692b23",
+  "name": "Johnny English",
+  "imdb_id": "tt0274166",
+  "release_date": "2003-07-18",
+  "followed_at": "2019-09-09T11:49:48Z",
+  "watched_at": "2019-09-09T11:49:49Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "d1bcb2ec-7a87-4686-9af1-44f4510fe80f",
+  "name": "The Dark Knight Rises",
+  "imdb_id": "tt1345836",
+  "release_date": "2012-08-29",
+  "followed_at": "2019-09-07T17:26:03Z",
+  "watched_at": "2019-09-07T17:26:03Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "d0460636-c404-45ae-9c73-11df244358de",
+  "name": "Hot Fuzz",
+  "imdb_id": "tt0425112",
+  "release_date": "2007-02-13",
+  "followed_at": "2019-09-09T11:37:41Z",
+  "watched_at": "2019-09-09T11:37:42Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "cf82bdac-f096-45f2-9362-ae51e6e533d2",
+  "name": "The Nightmare Before Christmas",
+  "imdb_id": "tt0107688",
+  "release_date": "1993-12-06",
+  "followed_at": "2019-09-07T17:17:29Z",
+  "watched_at": "2019-09-07T17:17:29Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "ccb08e41-8205-47dc-87fa-899b860dc28c",
+  "name": "Shrek the Third",
+  "imdb_id": "tt0413267",
+  "release_date": "2007-05-18",
+  "followed_at": "2019-09-09T11:46:21Z",
+  "watched_at": "2019-09-09T11:46:21Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "ca4eee00-ea1d-4ded-b8c7-bb382ccaecae",
+  "name": "Dunkirk",
+  "imdb_id": "tt5013056",
+  "release_date": "2017-07-21",
+  "followed_at": "2019-09-09T11:23:10Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "c8d407e2-a9db-4a88-b2ea-5e776dcd5f78",
+  "name": "The Little Mermaid",
+  "imdb_id": "tt0097757",
+  "release_date": "1990-11-09",
+  "followed_at": "2019-09-09T11:37:20Z",
+  "watched_at": "2019-09-09T11:37:21Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "c5eab940-b238-41cf-bb92-a900cefb40f5",
+  "name": "Spy Kids",
+  "imdb_id": "tt0227538",
+  "release_date": "2001-03-18",
+  "followed_at": "2021-05-10T22:52:02Z",
+  "watched_at": "2021-05-10T22:52:02Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "c4967278-9f2c-4fcb-b817-8f09870d881e",
+  "name": "Naruto Shippuden the Movie: The Lost Tower",
+  "imdb_id": "tt1703048",
+  "release_date": "2010-07-31",
+  "followed_at": "2019-09-09T11:42:48Z",
+  "watched_at": "2019-09-09T11:42:48Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "c388061b-6d59-4e12-a512-dc175dc6716e",
+  "name": "Inside Out",
+  "imdb_id": "tt2096673",
+  "release_date": "2015-07-17",
+  "followed_at": "2019-09-07T17:12:05Z",
+  "watched_at": "2019-09-07T17:12:05Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "bf727ac2-822a-4486-8afa-a821ee4e8ea0",
+  "name": "Treasure Planet",
+  "imdb_id": "tt0133240",
+  "release_date": "2002-11-26",
+  "followed_at": "2019-09-09T11:38:17Z",
+  "watched_at": "2019-09-09T11:38:18Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "bf63e3d9-ee2d-4b7d-8a33-bde06f364456",
+  "name": "Avengers: Infinity War",
+  "imdb_id": "tt4154756",
+  "release_date": "2018-04-25",
+  "followed_at": "2019-09-07T17:08:42Z",
+  "watched_at": "2019-09-07T17:08:42Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "be9788f3-e713-4c67-a528-6bb578bd011e",
+  "name": "The Hunger Games: Mockingjay - Part 2",
+  "imdb_id": "tt1951266",
+  "release_date": "2015-11-27",
+  "followed_at": "2019-09-09T11:37:35Z",
+  "watched_at": "2019-09-09T11:37:36Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "bdcfddc4-0166-4379-9dd3-7f76c18c945a",
+  "name": "Scary Movie 5",
+  "imdb_id": "tt0795461",
+  "release_date": "2013-04-12",
+  "followed_at": "2019-09-09T11:47:43Z",
+  "watched_at": "2019-09-09T11:47:44Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "bd2e6693-3d05-44eb-b8a8-68ff96b636cd",
+  "name": "Batman Begins",
+  "imdb_id": "tt0372784",
+  "release_date": "2005-06-17",
+  "followed_at": "2019-09-07T17:21:29Z",
+  "watched_at": "2019-09-07T17:21:29Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "bcf8bb5d-51bb-499f-9499-05e36c7f2d51",
+  "name": "Mrs. Doubtfire",
+  "imdb_id": "tt0107614",
+  "release_date": "1993-11-24",
+  "followed_at": "2019-09-07T17:25:59Z",
+  "watched_at": "2019-09-07T17:25:59Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "bc5eb84f-6e5d-45b0-97c1-96bf401dd59f",
+  "name": "Avatar",
+  "imdb_id": "tt0499549",
+  "release_date": "2009-12-18",
+  "followed_at": "2019-09-07T17:09:49Z",
+  "watched_at": "2019-09-07T17:09:49Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "bc180014-4bd3-40a1-bd0f-01fb8fa79dc0",
+  "name": "Transformers",
+  "imdb_id": "tt0418279",
+  "release_date": "2007-07-06",
+  "followed_at": "2019-09-07T17:28:03Z",
+  "watched_at": "2019-09-07T17:28:03Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "bc1542c4-e72f-4dd4-bb80-2d89bd6c6199",
+  "name": "Interstellar",
+  "imdb_id": "tt0816692",
+  "release_date": "2014-10-26",
+  "followed_at": "2019-09-07T17:05:47Z",
+  "watched_at": "2019-09-07T17:05:47Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "ba3216f8-2112-444f-af81-0c517da6ee4b",
+  "name": "Atlantis: The Lost Empire",
+  "imdb_id": "tt0230011",
+  "release_date": "2001-12-06",
+  "followed_at": "2019-09-07T17:20:37Z",
+  "watched_at": "2019-09-07T17:20:37Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "b8ee32c3-48a2-4562-8686-e2933ef20e90",
+  "name": "The Hobbit: The Battle of the Five Armies",
+  "imdb_id": "tt2310332",
+  "release_date": "2014-12-17",
+  "followed_at": "2019-09-07T17:07:09Z",
+  "watched_at": "2019-09-07T17:07:42Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "b811c770-dd76-4de4-bc12-463115d34a8e",
+  "name": "The Road to El Dorado",
+  "imdb_id": "tt0138749",
+  "release_date": "2000-03-31",
+  "followed_at": "2019-09-09T11:37:05Z",
+  "watched_at": "2019-09-09T11:37:06Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "b76dd8fe-8dfd-4a6a-b296-402dc39f077a",
+  "name": "Captain America: Civil War",
+  "imdb_id": "tt3498820",
+  "release_date": "2016-04-29",
+  "followed_at": "2019-09-07T17:12:39Z",
+  "watched_at": "2019-09-07T17:12:39Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "b708d326-c009-43ca-b630-4743e033717b",
+  "name": "Coco",
+  "imdb_id": "tt2380307",
+  "release_date": "2018-10-26",
+  "followed_at": "2019-09-09T11:09:48Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "b6e6e8d7-15f5-419e-8f5d-8c9d33c8320f",
+  "name": "The Dark Knight",
+  "imdb_id": "tt0468569",
+  "release_date": "2008-07-23",
+  "followed_at": "2019-09-07T17:08:32Z",
+  "watched_at": "2019-09-07T17:08:32Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "b66ff6da-c10b-444a-b7bc-7e8b889d58f5",
+  "name": "Valerian and the City of a Thousand Planets",
+  "imdb_id": "tt2239822",
+  "release_date": "2017-08-18",
+  "followed_at": "2021-09-21T19:59:42Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "b6480723-c7ce-4cd7-b889-5b21d0dfe741",
+  "name": "The Lord of the Rings: The Two Towers",
+  "imdb_id": "tt0167261",
+  "release_date": "2002-12-18",
+  "followed_at": "2019-09-07T17:07:00Z",
+  "watched_at": "2019-09-07T17:07:22Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "b493c854-4b80-45fb-81ab-78dd92486883",
+  "name": "The Lion King",
+  "imdb_id": "tt6105098",
+  "release_date": "2019-07-19",
+  "followed_at": "2019-09-07T17:29:05Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "ae1a5efe-1806-4d57-a0ea-dbeb199e4ec9",
+  "name": "Scary Movie 2",
+  "imdb_id": "tt0257106",
+  "release_date": "2001-07-04",
+  "followed_at": "2019-09-09T11:44:28Z",
+  "watched_at": "2019-09-09T11:44:29Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "ac7934a1-fe74-4890-8bd8-784f884400e7",
+  "name": "Yes Man",
+  "imdb_id": "tt1068680",
+  "release_date": "2009-01-21",
+  "followed_at": "2019-09-09T11:41:45Z",
+  "watched_at": "2019-09-09T11:41:45Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "abf88efb-3cc4-4663-8dd3-1ffb8a7deb56",
+  "name": "Peter Pan",
+  "imdb_id": "tt0046183",
+  "release_date": "1953-02-05",
+  "followed_at": "2019-09-09T11:34:57Z",
+  "watched_at": "2019-09-09T11:34:58Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "aaafe3da-d446-4677-afb2-09c81f31f505",
+  "name": "Back to the Future Part II",
+  "imdb_id": "tt0096874",
+  "release_date": "1989-12-22",
+  "followed_at": "2019-09-07T17:16:14Z",
+  "watched_at": "2019-09-07T17:16:14Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "a4127b4e-08a9-47b9-b981-f5d2f97b1b59",
+  "name": "Saving Private Ryan",
+  "imdb_id": "tt0120815",
+  "release_date": "1998-09-30",
+  "followed_at": "2019-09-07T17:23:46Z",
+  "watched_at": "2019-09-07T17:23:46Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "a3f59c5f-15ff-4990-804a-3a3d98c8d609",
+  "name": "Black Panther",
+  "imdb_id": "tt1825683",
+  "release_date": "2018-02-15",
+  "followed_at": "2019-09-09T11:10:16Z",
+  "watched_at": "2022-05-15T21:04:58Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "a2f4f40e-e26c-4dbd-9bc3-1061df15f7f7",
+  "name": "Sausage Party",
+  "imdb_id": "tt1700841",
+  "release_date": "2016-10-07",
+  "followed_at": "2019-09-09T11:38:38Z",
+  "watched_at": "2019-09-09T11:38:39Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "a2907248-d62a-4284-aea7-97c99eefd278",
+  "name": "Gravity",
+  "imdb_id": "tt1454468",
+  "release_date": "2013-10-04",
+  "followed_at": "2019-09-09T11:38:42Z",
+  "watched_at": "2019-09-09T11:38:42Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "a0fe1630-f2c4-4c75-b7a7-4710ba36da27",
+  "name": "Spy Kids 2: The Island of Lost Dreams",
+  "imdb_id": "tt0287717",
+  "release_date": "2002-08-07",
+  "followed_at": "2021-05-10T22:51:58Z",
+  "watched_at": "2021-05-10T22:51:58Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "a0831e7e-ed0d-459e-89ae-f72b389470b5",
+  "name": "Moana",
+  "imdb_id": "tt3521164",
+  "release_date": "2016-12-22",
+  "followed_at": "2019-09-07T17:19:08Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "a01c088d-3720-4e4b-936a-f58ecb0c4330",
+  "name": "Wolf Children",
+  "imdb_id": "tt2140203",
+  "release_date": "2012-08-29",
+  "followed_at": "2019-09-07T17:21:03Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "9faef59c-80ec-4a57-866e-99ad2038a3ce",
+  "name": "Men in Black",
+  "imdb_id": "tt0119654",
+  "release_date": "1997-10-03",
+  "followed_at": "2019-09-07T17:25:42Z",
+  "watched_at": "2019-09-07T17:25:42Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "9e5e9ef7-8976-4b8c-8cda-8d4aad85b20a",
+  "name": "Mulan",
+  "imdb_id": "tt0120762",
+  "release_date": "1998-11-13",
+  "followed_at": "2019-09-07T17:10:01Z",
+  "watched_at": "2019-09-07T17:10:01Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "9cf44f4a-a36f-4dac-8c32-886302f374f6",
+  "name": "Castle in the Sky",
+  "imdb_id": "tt0092067",
+  "release_date": "2012-04-25",
+  "followed_at": "2019-09-09T11:41:49Z",
+  "watched_at": "2019-09-09T11:41:50Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "9ccb2445-ef51-4a54-91c3-8885df405746",
+  "name": "Men in Black: International",
+  "imdb_id": "tt2283336",
+  "release_date": "2019-06-14",
+  "followed_at": "2019-09-09T11:11:10Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "9aaf123c-d6b8-48ff-b5f7-b70bb3c5a4d7",
+  "name": "Pinocchio",
+  "imdb_id": "tt0032910",
+  "release_date": "1940-02-23",
+  "followed_at": "2019-09-09T11:40:31Z",
+  "watched_at": "2019-09-09T11:40:32Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "9a66b737-c394-400d-90ba-147f5c8ceba0",
+  "name": "Troy",
+  "imdb_id": "tt0332452",
+  "release_date": "2004-05-14",
+  "followed_at": "2019-09-09T11:45:36Z",
+  "watched_at": "2019-09-09T11:45:36Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "990be31e-07de-49a6-bfa2-8a8042fcc5ff",
+  "name": "Black Clover: Sword of the Wizard King",
+  "imdb_id": "tt22868844",
+  "release_date": "2023-06-16",
+  "followed_at": "2023-06-25T15:12:07Z",
+  "watched_at": "2023-06-25T17:29:17Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "98d4f9bb-79e7-4147-b366-d3a62053b38a",
+  "name": "Fantastic Four: Rise of the Silver Surfer",
+  "imdb_id": "tt0486576",
+  "release_date": "2007-06-15",
+  "followed_at": "2019-09-09T11:45:15Z",
+  "watched_at": "2019-09-09T11:45:15Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "98cc1928-fa5e-4c00-a0e7-762d1f73a1fc",
+  "name": "Doctor Strange",
+  "imdb_id": "tt1211837",
+  "release_date": "2016-11-03",
+  "followed_at": "2019-09-07T17:10:10Z",
+  "watched_at": "2019-09-07T17:10:10Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "984e08a8-f328-43b5-8746-fd464a09dc44",
+  "name": "Iron Sky",
+  "imdb_id": "tt1034314",
+  "release_date": "2012-03-10",
+  "followed_at": "2020-01-06T15:23:36Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "98447f52-0f6b-4dd2-832f-6ebbda358d4f",
+  "name": "Spy Kids 3-D: Game Over",
+  "imdb_id": "tt0338459",
+  "release_date": "2003-07-25",
+  "followed_at": "2021-05-10T22:51:52Z",
+  "watched_at": "2021-05-10T22:51:52Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "9799ee60-4e2f-439c-a9b6-832d03c99dd6",
+  "name": "Beauty and the Beast",
+  "imdb_id": "tt2771200",
+  "release_date": "2017-03-16",
+  "followed_at": "2019-09-07T17:23:11Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "978899c4-5194-4568-b922-0bd2874c4c1a",
+  "name": "The Matrix",
+  "imdb_id": "tt0133093",
+  "release_date": "1999-05-07",
+  "followed_at": "2019-09-07T17:08:56Z",
+  "watched_at": "2019-09-07T17:08:56Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "9787e50b-2f06-4b57-bd7a-ac308d701efa",
+  "name": "Snow White and the Seven Dwarfs",
+  "imdb_id": "tt0029583",
+  "release_date": "1937-12-21",
+  "followed_at": "2019-09-07T17:17:16Z",
+  "watched_at": "2019-09-07T17:17:16Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "9722666f-dbc4-41cd-a917-2bd26e3ef21c",
+  "name": "Ice Age",
+  "imdb_id": "tt0268380",
+  "release_date": "2002-03-15",
+  "followed_at": "2019-09-07T17:17:11Z",
+  "watched_at": "2019-09-07T17:17:11Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "96c4e346-6268-47d5-b2dd-1eecf6aa147b",
+  "name": "Mad Max: Fury Road",
+  "imdb_id": "tt1392190",
+  "release_date": "2015-05-15",
+  "followed_at": "2019-09-07T17:12:45Z",
+  "watched_at": "2019-09-07T17:12:45Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "95bc823e-4707-445a-8cdb-fffc7c113977",
+  "name": "The Matrix Reloaded",
+  "imdb_id": "tt0234215",
+  "release_date": "2003-05-23",
+  "followed_at": "2019-09-09T11:48:49Z",
+  "watched_at": "2019-09-09T11:48:51Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "953e93f1-3016-4704-b6fd-fdb3518d993d",
+  "name": "Solo: A Star Wars Story",
+  "imdb_id": "tt3778644",
+  "release_date": "2018-05-25",
+  "followed_at": "2019-09-09T11:46:07Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "935896b6-e802-4781-97f5-bd7bb66b4162",
+  "name": "Deadpool 2",
+  "imdb_id": "tt5463162",
+  "release_date": "2018-05-15",
+  "followed_at": "2019-09-07T17:15:09Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "9329597a-693d-4df9-8855-f524e347fd92",
+  "name": "Star Wars",
+  "imdb_id": "tt0076759",
+  "release_date": "2022-09-23",
+  "followed_at": "2019-09-07T17:27:36Z",
+  "watched_at": "2019-09-07T17:27:36Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "927d1c54-aa30-48fa-964e-01170d2077cd",
+  "name": "Pulp Fiction",
+  "imdb_id": "tt0110912",
+  "release_date": "1995-01-13",
+  "followed_at": "2019-09-07T17:09:25Z",
+  "watched_at": "2019-09-07T17:09:25Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "919bfa79-f34f-470d-9472-d04016613b23",
+  "name": "Frozen",
+  "imdb_id": "tt2294629",
+  "release_date": "2014-01-31",
+  "followed_at": "2019-09-07T17:05:35Z",
+  "watched_at": "2019-09-07T17:05:35Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "9095e0da-6662-4820-a3a1-4e1fe52638f4",
+  "name": "Thor: The Dark World",
+  "imdb_id": "tt1981115",
+  "release_date": "2013-10-31",
+  "followed_at": "2022-03-20T20:05:46Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "90939db3-4946-4d56-ac42-21660616df35",
+  "name": "The Seven Deadly Sins: Cursed by Light",
+  "imdb_id": "tt13884144",
+  "release_date": "2021-10-01",
+  "followed_at": "2021-10-03T07:28:44Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "903a576e-a716-4abc-b69b-3a1003d9d5af",
+  "name": "The Devil Wears Prada",
+  "imdb_id": "tt0458352",
+  "release_date": "2006-11-18",
+  "followed_at": "2019-09-07T17:11:38Z",
+  "watched_at": "2019-09-07T17:11:38Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "8ef12c09-c030-4ccf-ba3e-ed313393a427",
+  "name": "Dune: Part One",
+  "imdb_id": "tt1160419",
+  "release_date": "2021-10-22",
+  "followed_at": "2021-10-23T20:32:57Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "8e76c65a-9440-4e12-9ffa-84a4c2fb958c",
+  "name": "The Mask",
+  "imdb_id": "tt0110475",
+  "release_date": "1994-07-28",
+  "followed_at": "2019-09-07T17:26:29Z",
+  "watched_at": "2019-09-07T17:26:29Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "8d85df5b-0ffb-450a-a32e-7eab9665366a",
+  "name": "Hancock",
+  "imdb_id": "tt0448157",
+  "release_date": "2008-07-18",
+  "followed_at": "2019-09-07T17:23:22Z",
+  "watched_at": "2019-09-07T17:23:22Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "8c4a0e12-e811-4729-b953-6f6074db9e5b",
+  "name": "Gladiator",
+  "imdb_id": "tt0172495",
+  "release_date": "2000-05-05",
+  "followed_at": "2019-09-07T17:11:58Z",
+  "watched_at": "2019-09-07T17:11:58Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "8b9f98b4-5ad6-4aed-b2d5-82f478dcd822",
+  "name": "Pirates of the Caribbean: Dead Man's Chest",
+  "imdb_id": "tt0383574",
+  "release_date": "2006-07-07",
+  "followed_at": "2019-09-07T17:26:51Z",
+  "watched_at": "2019-09-07T17:26:51Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "8b24570f-e6b1-4271-9f74-f6ea0bedb1eb",
+  "name": "Justice League",
+  "imdb_id": "tt0974015",
+  "release_date": "2017-11-17",
+  "followed_at": "2019-09-07T17:14:14Z",
+  "watched_at": "2019-09-07T17:14:14Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "8b180a17-b645-4e14-ab25-e50e7a68a7a1",
+  "name": "Tarzan",
+  "imdb_id": "tt0120855",
+  "release_date": "1999-06-18",
+  "followed_at": "2019-09-09T11:42:02Z",
+  "watched_at": "2019-09-09T11:42:03Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "8acdf7f7-88d1-4e10-92d5-296f7b64c50e",
+  "name": "Harry Potter and the Order of the Phoenix",
+  "imdb_id": "tt0373889",
+  "release_date": "2007-07-11",
+  "followed_at": "2019-09-07T17:06:36Z",
+  "watched_at": "2019-09-07T17:07:37Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "8a52bdb3-2b9d-4c9c-b91b-82de7113d8c8",
+  "name": "Percy Jackson & the Olympians: The Lightning Thief",
+  "imdb_id": "tt0814255",
+  "release_date": "2010-02-11",
+  "followed_at": "2019-09-09T11:40:36Z",
+  "watched_at": "2019-09-09T11:40:37Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "893c636e-f7d2-4646-875f-872940c37cdb",
+  "name": "The Lion King II: Simba's Pride",
+  "imdb_id": "tt0120131",
+  "release_date": "1998-10-24",
+  "followed_at": "2019-09-09T11:41:29Z",
+  "watched_at": "2019-09-09T11:41:30Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "8727b86b-59cd-437b-89a7-40d2003155df",
+  "name": "Star Wars: Episode I – The Phantom Menace",
+  "imdb_id": "tt0120915",
+  "release_date": "1999-09-17",
+  "followed_at": "2019-09-07T17:22:40Z",
+  "watched_at": "2019-09-07T17:22:40Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "862c039f-5676-4d65-be67-1adcd3bcf0f7",
+  "name": "Iron Sky: The Coming Race",
+  "imdb_id": "tt3038708",
+  "release_date": "2019-01-16",
+  "followed_at": "2020-01-06T15:24:43Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "831f05ea-de4a-44a8-8f28-83b208a05da1",
+  "name": "Jumanji",
+  "imdb_id": "tt0113497",
+  "release_date": "1996-02-23",
+  "followed_at": "2019-09-07T17:15:20Z",
+  "watched_at": "2019-09-07T17:15:20Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "7fb75a7c-5a36-4599-a1c4-be418f1b3ada",
+  "name": "Venom",
+  "imdb_id": "tt1270797",
+  "release_date": "2018-10-03",
+  "followed_at": "2019-09-07T17:11:34Z",
+  "watched_at": "2019-09-07T17:11:34Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "7e86e6bd-3243-47e8-b259-eea4f6a0af30",
+  "name": "I, Robot",
+  "imdb_id": "tt0343818",
+  "release_date": "2004-07-30",
+  "followed_at": "2019-09-09T11:38:45Z",
+  "watched_at": "2019-09-09T11:38:46Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "7b224c12-ebc5-431c-8ed8-72d234d9d0ad",
+  "name": "The Adam Project",
+  "imdb_id": "tt2463208",
+  "release_date": "2022-03-11",
+  "followed_at": "2022-03-13T23:07:02Z",
+  "watched_at": "2022-05-08T20:33:12Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "7acb2963-aec2-46d3-a00a-0a32ce895c67",
+  "name": "Scooby-Doo",
+  "imdb_id": "tt0267913",
+  "release_date": "2002-06-28",
+  "followed_at": "2019-09-09T11:39:24Z",
+  "watched_at": "2019-09-09T11:39:24Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "78bdccb1-7291-4d79-a4b3-d4e4e198348a",
+  "name": "Ice Age: The Meltdown",
+  "imdb_id": "tt0438097",
+  "release_date": "2006-03-31",
+  "followed_at": "2019-09-09T11:49:31Z",
+  "watched_at": "2019-09-09T11:49:31Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "774f22bf-0182-41da-a8d6-9ada9697a1dd",
+  "name": "Miss Peregrine's Home for Peculiar Children",
+  "imdb_id": "tt1935859",
+  "release_date": "2016-09-30",
+  "followed_at": "2019-09-09T11:33:38Z",
+  "watched_at": "2019-09-09T11:33:38Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "758d716d-5a34-4c48-8a79-4fa2416e2a91",
+  "name": "Spider-Man: No Way Home",
+  "imdb_id": "tt10872600",
+  "release_date": "2021-12-16",
+  "followed_at": "2022-03-13T23:04:50Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "748f5088-4d20-448e-9d3c-e61d356f1ac8",
+  "name": "2001: A Space Odyssey",
+  "imdb_id": "tt0062622",
+  "release_date": "1968-04-03",
+  "followed_at": "2019-09-09T11:33:25Z",
+  "watched_at": "2019-09-09T11:33:26Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "717a64a7-8040-4c6b-88e2-3552e890fb54",
+  "name": "Guardians of the Galaxy",
+  "imdb_id": "tt2015381",
+  "release_date": "2014-08-14",
+  "followed_at": "2019-09-07T17:12:57Z",
+  "watched_at": "2019-09-07T17:12:57Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "70ffc6be-cfde-4ec9-a0ac-9f48302af7de",
+  "name": "Alice in Wonderland",
+  "imdb_id": "tt1014759",
+  "release_date": "2010-03-05",
+  "followed_at": "2019-09-07T17:15:54Z",
+  "watched_at": "2019-09-07T17:15:54Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "701ea1ba-34df-4fa1-b4b1-29fc283c2d0c",
+  "name": "Guardians of the Galaxy Vol. 2",
+  "imdb_id": "tt3896198",
+  "release_date": "2017-04-28",
+  "followed_at": "2019-09-07T17:11:25Z",
+  "watched_at": "2019-09-07T17:11:25Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "6fccd8ba-c7b8-4976-9a28-12901af4cf36",
+  "name": "Madagascar 3: Europe's Most Wanted",
+  "imdb_id": "tt1277953",
+  "release_date": "2012-06-08",
+  "followed_at": "2019-09-09T11:48:41Z",
+  "watched_at": "2019-09-09T11:48:42Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "6f1e718d-4acc-46d2-870c-82574625dce7",
+  "name": "Mulan II",
+  "imdb_id": "tt0279967",
+  "release_date": "2004-11-03",
+  "followed_at": "2019-09-09T11:47:58Z",
+  "watched_at": "2019-09-09T11:47:59Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "6ec57699-2b16-4a41-90ee-f7b4c0601654",
+  "name": "The Amazing Spider-Man",
+  "imdb_id": "tt0948470",
+  "release_date": "2012-07-04",
+  "followed_at": "2022-03-08T20:46:20Z",
+  "watched_at": "2022-03-08T23:01:17Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "6e76fb73-0ea4-41ff-9350-2ed233a95980",
+  "name": "Rise of the Guardians",
+  "imdb_id": "tt1446192",
+  "release_date": "2012-11-30",
+  "followed_at": "2019-09-07T17:19:18Z",
+  "watched_at": "2019-09-07T17:19:18Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "6cfd4245-4414-4e5f-906a-cc9efe2f136b",
+  "name": "The Intouchables",
+  "imdb_id": "tt1675434",
+  "release_date": "2011-09-23",
+  "followed_at": "2019-09-07T17:19:12Z",
+  "watched_at": "2019-09-07T17:19:12Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "6c53f1f0-a3f2-4c95-9730-27f917596508",
+  "name": "Air Bud",
+  "imdb_id": "tt0118570",
+  "release_date": "1997-08-01",
+  "followed_at": "2019-09-09T11:48:34Z",
+  "watched_at": "2019-09-09T11:48:35Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "6b3b0e9a-d8b3-4fed-b95d-1b3a298d4253",
+  "name": "The Curious Case of Benjamin Button",
+  "imdb_id": "tt0421715",
+  "release_date": "2009-02-06",
+  "followed_at": "2019-09-07T17:21:06Z",
+  "watched_at": "2019-09-07T17:21:06Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "69d81cdc-d04a-4eaa-8cd8-fdaae4954260",
+  "name": "Shazam!",
+  "imdb_id": "tt0448115",
+  "release_date": "2019-04-05",
+  "followed_at": "2019-09-09T11:10:36Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "6891cc77-b1c5-46b7-9caf-20c2e9b22e34",
+  "name": "Godzilla: King of the Monsters",
+  "imdb_id": "tt3741700",
+  "release_date": "2019-06-21",
+  "followed_at": "2019-09-09T11:10:28Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "66099a79-a842-4973-94cc-93690f22fdde",
+  "name": "Amélie",
+  "imdb_id": "tt0211915",
+  "release_date": "2002-01-25",
+  "followed_at": "2019-09-07T17:18:55Z",
+  "watched_at": "2019-09-07T17:18:55Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "63bcc9d5-b150-456e-96e6-6ea9ab042bcc",
+  "name": "Spider-Man 2",
+  "imdb_id": "tt0316654",
+  "release_date": "2004-09-16",
+  "followed_at": "2019-09-07T17:18:44Z",
+  "watched_at": "2019-09-07T17:18:44Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "62b53dfa-3111-4187-80f9-ee161bd845d1",
+  "name": "Saw",
+  "imdb_id": "tt0387564",
+  "release_date": "2004-10-29",
+  "followed_at": "2019-09-09T11:33:34Z",
+  "watched_at": "2019-09-09T11:33:34Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "61ab5c52-268b-441b-93a2-b57ad18b221b",
+  "name": "Monster Hunter",
+  "imdb_id": "tt6475714",
+  "release_date": "2020-12-18",
+  "followed_at": "2022-03-03T21:29:49Z",
+  "watched_at": "2022-03-03T21:29:49Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "61a18174-11ff-453c-ae53-5beefa08be03",
+  "name": "Man of Steel",
+  "imdb_id": "tt0770828",
+  "release_date": "2013-06-21",
+  "followed_at": "2019-09-07T17:14:59Z",
+  "watched_at": "2019-09-07T17:14:59Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "61480026-4039-4fa9-8246-5f5803f5ee81",
+  "name": "Hachi: A Dog's Tale",
+  "imdb_id": "tt1028532",
+  "release_date": "2009-06-13",
+  "followed_at": "2019-09-09T11:10:50Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "6039b24b-786f-4682-a4f9-4cb1f685b466",
+  "name": "The Hunger Games",
+  "imdb_id": "tt1392170",
+  "release_date": "2012-04-20",
+  "followed_at": "2019-09-07T17:15:51Z",
+  "watched_at": "2019-09-07T17:15:51Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "5e836eeb-9254-4a3b-addd-71bc366669e4",
+  "name": "Pirates of the Caribbean: At World's End",
+  "imdb_id": "tt0449088",
+  "release_date": "2007-05-25",
+  "followed_at": "2019-09-07T17:26:07Z",
+  "watched_at": "2019-09-07T17:26:07Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "5e14cbcf-c9b3-4f82-b6df-9f68cdc0beb6",
+  "name": "Black Widow",
+  "imdb_id": "tt3480822",
+  "release_date": "2021-07-08",
+  "followed_at": "2019-09-07T17:20:08Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "5c1c3158-7a71-42fc-8a3a-d89ee8d03547",
+  "name": "Zombieland",
+  "imdb_id": "tt1156398",
+  "release_date": "2009-09-25",
+  "followed_at": "2019-09-09T11:41:37Z",
+  "watched_at": "2019-09-09T11:41:38Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "5b1a6ed1-531d-4ada-978d-d37172984b60",
+  "name": "The Polar Express",
+  "imdb_id": "tt0338348",
+  "release_date": "2004-12-03",
+  "followed_at": "2019-09-07T17:26:38Z",
+  "watched_at": "2019-09-07T17:26:38Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "5a432bdc-e493-410b-bee8-af93095c6fcf",
+  "name": "Harry Potter and the Chamber of Secrets",
+  "imdb_id": "tt0295297",
+  "release_date": "2002-12-06",
+  "followed_at": "2019-09-07T17:05:34Z",
+  "watched_at": "2019-09-07T17:05:34Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "588dd735-c4ce-4121-92dd-31d45b01bb36",
+  "name": "Green Lantern",
+  "imdb_id": "tt1133985",
+  "release_date": "2011-06-17",
+  "followed_at": "2019-09-07T17:20:23Z",
+  "watched_at": "2019-09-07T17:20:23Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "578c78b0-6510-46ec-b741-3f685d4f53d8",
+  "name": "Jumanji: Welcome to the Jungle",
+  "imdb_id": "tt2283362",
+  "release_date": "2017-12-05",
+  "followed_at": "2019-12-25T17:33:10Z",
+  "watched_at": "2019-12-25T17:33:10Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "5780c8c1-88fc-4249-9ff3-458a7d2dc63a",
+  "name": "Robin Hood",
+  "imdb_id": "tt0070608",
+  "release_date": "1973-11-08",
+  "followed_at": "2019-09-09T11:42:53Z",
+  "watched_at": "2019-09-09T11:42:53Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "56efdd38-ff67-4bac-9f6f-bd48a837c7ac",
+  "name": "Sleeping Beauty",
+  "imdb_id": "tt0053285",
+  "release_date": "1959-01-29",
+  "followed_at": "2019-09-09T11:38:00Z",
+  "watched_at": "2019-09-09T11:38:00Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "5655af3a-2fbd-46a2-893f-63c37d74e083",
+  "name": "Hellboy",
+  "imdb_id": "tt2274648",
+  "release_date": "2019-05-17",
+  "followed_at": "2019-09-07T17:19:41Z",
+  "watched_at": "2019-09-07T17:19:41Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "5612c6c1-f020-4493-9b9b-fb498e2501d7",
+  "name": "Kill Bill: Vol. 1",
+  "imdb_id": "tt0266697",
+  "release_date": "2004-03-05",
+  "followed_at": "2019-09-09T11:34:21Z",
+  "watched_at": "2019-09-09T11:34:22Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "554efc3f-2640-45f2-8fd3-41fe03118f32",
+  "name": "Rogue One: A Star Wars Story",
+  "imdb_id": "tt3748528",
+  "release_date": "2016-12-15",
+  "followed_at": "2019-09-07T17:17:42Z",
+  "watched_at": "2019-09-07T17:17:42Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "5491e4d2-3975-4dd6-a468-82186c243a47",
+  "name": "A Bug's Life",
+  "imdb_id": "tt0120623",
+  "release_date": "1999-02-12",
+  "followed_at": "2019-09-09T11:40:05Z",
+  "watched_at": "2019-09-09T11:40:06Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "5473ee4e-f9e9-4fd0-bfb4-05f463451ef9",
+  "name": "Pirates of the Caribbean: On Stranger Tides",
+  "imdb_id": "tt1298650",
+  "release_date": "2011-05-20",
+  "followed_at": "2019-09-09T11:46:24Z",
+  "watched_at": "2019-09-09T11:46:24Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "5457542f-6a5c-440a-b6df-15635f022269",
+  "name": "Mowgli: Legend of the Jungle",
+  "imdb_id": "tt2388771",
+  "release_date": "2018-12-07",
+  "followed_at": "2019-09-09T11:46:46Z",
+  "watched_at": "2019-09-09T11:46:47Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "542b708e-be1e-47f1-b485-5db3b8244b1a",
+  "name": "American Pie",
+  "imdb_id": "tt0163651",
+  "release_date": "2000-01-06",
+  "followed_at": "2019-09-09T11:41:23Z",
+  "watched_at": "2019-09-09T11:41:24Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "52ca7c81-5aad-481b-92b8-3320c368299d",
+  "name": "Bee Movie",
+  "imdb_id": "tt0389790",
+  "release_date": "2007-12-21",
+  "followed_at": "2019-09-07T17:18:05Z",
+  "watched_at": "2019-09-07T17:18:05Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "5236a530-8da3-461f-aec4-2883f7c85031",
+  "name": "The Hobbit: The Desolation of Smaug",
+  "imdb_id": "tt1170358",
+  "release_date": "2013-12-13",
+  "followed_at": "2019-09-07T17:07:08Z",
+  "watched_at": "2019-09-07T17:07:45Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "5170f78f-b0df-487e-9402-e2ce9dce04ca",
+  "name": "The Empire Strikes Back",
+  "imdb_id": "tt0080684",
+  "release_date": "2021-04-08",
+  "followed_at": "2019-09-07T17:20:29Z",
+  "watched_at": "2019-09-07T17:20:29Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "5112cff4-e912-4e68-97d1-3ba37820a8a3",
+  "name": "Alice in Wonderland",
+  "imdb_id": "tt0043274",
+  "release_date": "1951-12-06",
+  "followed_at": "2019-09-09T11:41:00Z",
+  "watched_at": "2019-09-09T11:41:00Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "50321201-f5ab-4896-96c3-a36cc5ba1b47",
+  "name": "Monsters, Inc.",
+  "imdb_id": "tt0198781",
+  "release_date": "2002-03-22",
+  "followed_at": "2019-09-07T17:24:43Z",
+  "watched_at": "2019-09-07T17:24:43Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "4f9c1296-9b80-4401-b053-c0a026cad394",
+  "name": "Bumblebee",
+  "imdb_id": "tt4701182",
+  "release_date": "2018-12-19",
+  "followed_at": "2019-12-25T13:36:51Z",
+  "watched_at": "2019-12-25T13:36:51Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "4c1a81fe-0aa6-4f55-9744-07221938275b",
+  "name": "Aquaman",
+  "imdb_id": "tt1477834",
+  "release_date": "2018-12-20",
+  "followed_at": "2019-09-09T11:09:40Z",
+  "watched_at": "2019-12-25T15:34:54Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "4c0d0b1e-0eb5-4671-a16f-900925b90454",
+  "name": "Project X",
+  "imdb_id": "tt1636826",
+  "release_date": "2012-03-14",
+  "followed_at": "2019-09-09T11:43:35Z",
+  "watched_at": "2019-09-09T11:43:36Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "4ae4c259-b063-4330-a688-0eb3fc619855",
+  "name": "The Lion King",
+  "imdb_id": "tt0110357",
+  "release_date": "1994-11-08",
+  "followed_at": "2019-09-07T17:10:32Z",
+  "watched_at": "2019-09-07T17:10:32Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "4aa15a93-36b7-4782-bd09-4e5fd71716d1",
+  "name": "Lilo & Stitch",
+  "imdb_id": "tt0275847",
+  "release_date": "2002-07-05",
+  "followed_at": "2019-09-09T11:11:42Z",
+  "watched_at": "2019-09-09T11:11:42Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "495e43f9-3c6c-4761-bd88-566adf2630d3",
+  "name": "Fantastic Four",
+  "imdb_id": "tt0120667",
+  "release_date": "2005-07-08",
+  "followed_at": "2019-09-09T11:40:27Z",
+  "watched_at": "2019-09-09T11:40:29Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "480032ef-e2f2-4d4a-804b-edb08e08ff79",
+  "name": "Avengers: Age of Ultron",
+  "imdb_id": "tt2395427",
+  "release_date": "2015-04-30",
+  "followed_at": "2019-09-07T17:10:56Z",
+  "watched_at": "2019-09-07T17:10:56Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "45c1dc4a-5e67-4883-a251-05f911f0131e",
+  "name": "A Goofy Movie",
+  "imdb_id": "tt0113198",
+  "release_date": "1995-04-07",
+  "followed_at": "2019-09-09T11:42:59Z",
+  "watched_at": "2019-09-09T11:42:59Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "43defcf4-6842-490c-a9f6-817ed309b7a5",
+  "name": "Kill Bill: Vol. 2",
+  "imdb_id": "tt0378194",
+  "release_date": "2004-07-23",
+  "followed_at": "2019-09-09T11:45:43Z",
+  "watched_at": "2019-09-09T11:45:43Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "4273cc26-528e-463e-814e-534e3e50eceb",
+  "name": "Bohemian Rhapsody",
+  "imdb_id": "tt1727824",
+  "release_date": "2018-11-01",
+  "followed_at": "2019-09-09T11:09:43Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "3fee5cf6-477d-4fe7-9574-31777758dca7",
+  "name": "Noblesse: Awakening",
+  "imdb_id": "tt5439612",
+  "release_date": "2016-02-04",
+  "followed_at": "2020-12-16T19:19:02Z",
+  "watched_at": "2020-12-16T19:19:02Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "3f0cd3f5-a89a-45a6-9e59-e1806b04068a",
+  "name": "Alvin and the Chipmunks",
+  "imdb_id": "tt0952640",
+  "release_date": "2008-01-18",
+  "followed_at": "2019-09-09T11:44:46Z",
+  "watched_at": "2019-09-09T11:44:46Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "3ecbc558-fcc3-478e-87d0-c1ce052c1adb",
+  "name": "The Emperor's New Groove",
+  "imdb_id": "tt0120917",
+  "release_date": "2000-12-09",
+  "followed_at": "2019-09-09T11:41:10Z",
+  "watched_at": "2019-09-09T11:41:11Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "3e9efaa3-41f7-4380-9ed5-9541537b63aa",
+  "name": "Thor",
+  "imdb_id": "tt0800369",
+  "release_date": "2011-04-29",
+  "followed_at": "2019-09-07T17:14:46Z",
+  "watched_at": "2019-09-07T17:14:46Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "3de247a0-c782-4768-932b-a3d176f77658",
+  "name": "Monster Hunter: Legends of the Guild",
+  "imdb_id": "tt9174358",
+  "release_date": "2021-08-12",
+  "followed_at": "2021-08-15T09:12:48Z",
+  "watched_at": "2021-08-15T10:10:04Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "3d914e7d-1718-45c3-ad42-689573bc0d38",
+  "name": "Batman v Superman: Dawn of Justice",
+  "imdb_id": "tt2975590",
+  "release_date": "2016-03-23",
+  "followed_at": "2019-09-07T17:08:50Z",
+  "watched_at": "2019-09-07T17:08:50Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "3cbb1c4e-5cb1-41ef-8a22-e9b5ee344b8d",
+  "name": "Shaun of the Dead",
+  "imdb_id": "tt0365748",
+  "release_date": "2004-03-29",
+  "followed_at": "2019-09-07T17:19:46Z",
+  "watched_at": "2019-09-07T17:19:46Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "3bc5166e-0b1a-4322-94f8-ee71639654ce",
+  "name": "Big Hero 6",
+  "imdb_id": "tt2245084",
+  "release_date": "2014-11-07",
+  "followed_at": "2019-09-07T17:19:22Z",
+  "watched_at": "2019-09-07T17:19:22Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "3b0539c3-f544-4d57-a066-f63614f94570",
+  "name": "Beauty and the Beast",
+  "imdb_id": "tt0101414",
+  "release_date": "1992-12-04",
+  "followed_at": "2019-09-07T17:14:52Z",
+  "watched_at": "2019-09-07T17:14:52Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "3a8f936a-13f2-4186-8776-20046c8f6129",
+  "name": "Hulk",
+  "imdb_id": "tt0286716",
+  "release_date": "2003-06-20",
+  "followed_at": "2019-09-09T11:47:05Z",
+  "watched_at": "2019-09-09T11:47:06Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "398a37af-09b6-4abb-8901-6279ece8e66e",
+  "name": "The Lord of the Rings: The Fellowship of the Ring",
+  "imdb_id": "tt0120737",
+  "release_date": "2001-12-19",
+  "followed_at": "2019-09-07T17:07:00Z",
+  "watched_at": "2019-09-07T17:07:20Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "39015588-a5e4-4258-a1d7-4ec55664ff42",
+  "name": "Cars",
+  "imdb_id": "tt0317219",
+  "release_date": "2006-06-09",
+  "followed_at": "2019-09-09T11:46:28Z",
+  "watched_at": "2019-09-09T11:46:29Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "3894d7ea-04b7-446f-ac04-cd593e1b3951",
+  "name": "Fifty Shades of Grey",
+  "imdb_id": "tt2322441",
+  "release_date": "2015-02-12",
+  "followed_at": "2019-09-07T17:23:18Z",
+  "watched_at": "2019-09-07T17:23:18Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "385e8413-a9b8-4438-930c-a9a0c7794f67",
+  "name": "The Wolverine",
+  "imdb_id": "tt1430132",
+  "release_date": "2013-07-24",
+  "followed_at": "2019-09-09T11:45:04Z",
+  "watched_at": "2019-09-09T11:45:04Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "37fe11dc-0800-469e-a50c-3e5cfe885364",
+  "name": "Dumbo",
+  "imdb_id": "tt0033563",
+  "release_date": "1941-10-23",
+  "followed_at": "2019-09-09T11:47:00Z",
+  "watched_at": "2019-09-09T11:47:00Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "37a25045-d72e-4c7f-9400-19dcf8eb8b6c",
+  "name": "Spider-Man 3",
+  "imdb_id": "tt0413300",
+  "release_date": "2007-05-01",
+  "followed_at": "2019-09-07T17:23:39Z",
+  "watched_at": "2019-09-07T17:23:39Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "377b5958-f7f1-4436-bfb6-c5ac0d3900c4",
+  "name": "Wonder Woman",
+  "imdb_id": "tt0451279",
+  "release_date": "2017-06-23",
+  "followed_at": "2019-09-09T11:09:58Z",
+  "watched_at": "2019-09-09T11:09:58Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "370cba4d-72f3-4e8d-bdaf-17c963df1fda",
+  "name": "Eragon",
+  "imdb_id": "tt0449010",
+  "release_date": "2006-12-22",
+  "followed_at": "2019-09-09T11:36:00Z",
+  "watched_at": "2019-09-09T11:36:01Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "35d392d8-8616-4be4-a2cd-4122781a4090",
+  "name": "Finding Nemo",
+  "imdb_id": "tt0266543",
+  "release_date": "2003-11-28",
+  "followed_at": "2019-09-09T11:23:45Z",
+  "watched_at": "2019-09-09T11:23:46Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "3597cc7e-ebad-429f-8152-26849d2a0feb",
+  "name": "Princess Mononoke",
+  "imdb_id": "tt0119698",
+  "release_date": "1998-05-01",
+  "followed_at": "2019-09-07T17:21:46Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "3577ca1c-ee06-4e71-b380-5b98697c50cb",
+  "name": "Captain America: The Winter Soldier",
+  "imdb_id": "tt1843866",
+  "release_date": "2014-03-28",
+  "followed_at": "2019-09-07T17:10:50Z",
+  "watched_at": "2019-09-07T17:10:50Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "3399b307-eb8c-4f55-a47b-2c87c429542e",
+  "name": "Fantastic Beasts and Where to Find Them",
+  "imdb_id": "tt3183660",
+  "release_date": "2016-11-17",
+  "followed_at": "2019-09-07T17:22:17Z",
+  "watched_at": "2019-09-07T17:22:17Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "3067f4f8-c34d-4a10-a869-6c08557e869c",
+  "name": "Deadpool",
+  "imdb_id": "tt1431045",
+  "release_date": "2016-02-10",
+  "followed_at": "2019-09-07T17:05:35Z",
+  "watched_at": "2019-09-07T17:05:35Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "2f68b166-032a-4520-8413-2cddd87812f5",
+  "name": "300",
+  "imdb_id": "tt0416449",
+  "release_date": "2007-03-23",
+  "followed_at": "2019-09-07T17:13:56Z",
+  "watched_at": "2019-09-07T17:13:56Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "2c41a188-b550-44be-bb6b-c0d1c9604744",
+  "name": "Harry Potter and the Deathly Hallows: Part 2",
+  "imdb_id": "tt1201607",
+  "release_date": "2011-07-15",
+  "followed_at": "2019-09-07T17:06:37Z",
+  "watched_at": "2019-09-07T17:07:49Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "2a1469e6-bd3f-4a15-bfb7-504369bd3c49",
+  "name": "The Land Before Time",
+  "imdb_id": "tt0095489",
+  "release_date": "1989-07-20",
+  "followed_at": "2019-09-09T11:44:34Z",
+  "watched_at": "2019-09-09T11:44:35Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "29f4e554-11c9-457a-8466-b2cd957d7e9a",
+  "name": "Pokémon Detective Pikachu",
+  "imdb_id": "tt5884052",
+  "release_date": "2019-05-17",
+  "followed_at": "2019-09-09T11:10:43Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "2976a99b-7a0f-4a11-b907-fb7dfdd621cc",
+  "name": "Billy Elliot",
+  "imdb_id": "tt0249462",
+  "release_date": "2000-05-18",
+  "followed_at": "2019-09-09T11:46:35Z",
+  "watched_at": "2019-09-09T11:46:37Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "297355ac-8fa1-4801-b9c7-bd1e89acd242",
+  "name": "Bridge to Terabithia",
+  "imdb_id": "tt0398808",
+  "release_date": "2007-03-16",
+  "followed_at": "2019-09-09T11:21:10Z",
+  "watched_at": "2019-09-09T11:21:11Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "2631b60a-cf4c-4128-89cb-06b822e49395",
+  "name": "Dumbo",
+  "imdb_id": "tt3861390",
+  "release_date": "2019-04-05",
+  "followed_at": "2019-09-07T17:24:08Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "232fa81f-7ae3-4000-b1a2-c421307a3dc0",
+  "name": "Terminator 2: Judgment Day",
+  "imdb_id": "tt0103064",
+  "release_date": "1991-12-19",
+  "followed_at": "2019-09-09T11:35:16Z",
+  "watched_at": "2019-09-09T11:35:17Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "22e5ea55-f522-415a-a870-66b3b4d3c4ae",
+  "name": "Pirates of the Caribbean: Dead Men Tell No Tales",
+  "imdb_id": "tt1790809",
+  "release_date": "2017-05-26",
+  "followed_at": "2019-09-09T11:39:42Z",
+  "watched_at": "2019-09-09T11:39:42Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "225db875-0f01-4d6b-ae26-d6fe5b2d41d3",
+  "name": "Monsters University",
+  "imdb_id": "tt1453405",
+  "release_date": "2013-06-21",
+  "followed_at": "2019-09-09T11:37:50Z",
+  "watched_at": "2019-09-09T11:37:51Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "217b7fd0-cae6-48bf-b430-b66443185509",
+  "name": "Howl's Moving Castle",
+  "imdb_id": "tt0347149",
+  "release_date": "2004-09-05",
+  "followed_at": "2019-09-07T17:17:59Z",
+  "watched_at": "2019-09-07T17:18:00Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "1fcd26e2-130f-4cd5-914a-201f2074e9e6",
+  "name": "Kingsman: The Golden Circle",
+  "imdb_id": "tt4649466",
+  "release_date": "2017-09-21",
+  "followed_at": "2019-09-09T11:36:55Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "1d3702a3-2863-408a-bfd8-5c8d15b5e623",
+  "name": "Iron Man 3",
+  "imdb_id": "tt1300854",
+  "release_date": "2013-05-03",
+  "followed_at": "2019-09-07T17:17:22Z",
+  "watched_at": "2019-09-07T17:17:22Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "1be8d227-5d39-4561-8dfa-7520b8c51d0f",
+  "name": "Inception",
+  "imdb_id": "tt1375666",
+  "release_date": "2010-07-08",
+  "followed_at": "2019-09-09T11:10:03Z",
+  "watched_at": "2019-09-09T11:10:03Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "1a8f2280-9776-4923-9c7d-0de204f70223",
+  "name": "Dr. Strange",
+  "imdb_id": "tt0077469",
+  "release_date": "1978-09-06",
+  "followed_at": "2019-09-16T20:41:37Z",
+  "watched_at": "2019-09-16T20:41:41Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "1a1298bf-498a-4d69-b425-97335b9bfc79",
+  "name": "Saw II",
+  "imdb_id": "tt0432348",
+  "release_date": "2005-11-04",
+  "followed_at": "2019-09-09T11:44:59Z",
+  "watched_at": "2019-09-09T11:45:00Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "19715abe-817e-424f-8caa-2d6f13165f2d",
+  "name": "Iron Man",
+  "imdb_id": "tt0371746",
+  "release_date": "2008-04-30",
+  "followed_at": "2019-09-07T17:09:40Z",
+  "watched_at": "2019-09-07T17:09:40Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "1854e2b9-2c28-4999-aedc-4cb212c700f7",
+  "name": "Doctor Strange in the Multiverse of Madness",
+  "imdb_id": "tt9419884",
+  "release_date": "2022-05-05",
+  "followed_at": "2019-09-09T11:39:32Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "161087bb-37d6-49fe-9bf2-069e12375342",
+  "name": "The Incredible Hulk",
+  "imdb_id": "tt0800080",
+  "release_date": "2008-06-20",
+  "followed_at": "2019-09-07T17:17:36Z",
+  "watched_at": "2019-09-07T17:17:36Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "160ed8e8-2949-4eeb-adea-b7e01813e6b4",
+  "name": "Ralph Breaks the Internet",
+  "imdb_id": "tt5848272",
+  "release_date": "2018-11-22",
+  "followed_at": "2019-09-09T11:22:31Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "15d8fe97-f5fa-4984-a79c-8df6f1db9c06",
+  "name": "The Amazing Spider-Man 2",
+  "imdb_id": "tt1872181",
+  "release_date": "2014-04-23",
+  "followed_at": "2022-03-08T20:46:20Z",
+  "watched_at": "2022-03-17T19:19:29Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "1533de7a-b620-4ce2-a72e-5f15ef96478d",
+  "name": "Ratatouille",
+  "imdb_id": "tt0382932",
+  "release_date": "2007-08-03",
+  "followed_at": "2019-09-07T17:14:23Z",
+  "watched_at": "2019-09-07T17:14:23Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "15017f29-d16f-4141-9d04-04117b02c791",
+  "name": "Toy Story 4",
+  "imdb_id": "tt1979376",
+  "release_date": "2019-06-21",
+  "followed_at": "2019-09-07T17:09:45Z",
+  "watched_at": "2019-09-07T17:09:45Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "14f33354-bc8d-498c-88c7-942e6d0bddee",
+  "name": "Harry Potter and the Philosopher's Stone",
+  "imdb_id": "tt0241527",
+  "release_date": "2001-11-30",
+  "followed_at": "2019-09-07T17:06:33Z",
+  "watched_at": "2019-09-07T17:07:16Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "14c59b32-6c90-4617-b940-617358c6b6d6",
+  "name": "2012",
+  "imdb_id": "tt1190080",
+  "release_date": "2009-11-11",
+  "followed_at": "2019-09-09T11:42:38Z",
+  "watched_at": "2019-09-09T11:42:39Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "141eb0dd-4512-4b24-9330-5c37a649679b",
+  "name": "Shrek Forever After",
+  "imdb_id": "tt0892791",
+  "release_date": "2010-05-21",
+  "followed_at": "2019-09-09T11:42:56Z",
+  "watched_at": "2019-09-09T11:42:57Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "13ed02de-8902-47f1-acb1-8e79673d49ed",
+  "name": "Teenage Mutant Ninja Turtles",
+  "imdb_id": "tt1291150",
+  "release_date": "2014-09-18",
+  "followed_at": "2019-09-09T11:42:26Z",
+  "watched_at": "2019-09-09T11:42:27Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "1310f817-82c4-46e1-8ba7-bf6d07164e81",
+  "name": "Dirty Dancing",
+  "imdb_id": "tt0092890",
+  "release_date": "1987-08-21",
+  "followed_at": "2019-09-07T17:11:31Z",
+  "watched_at": "2019-09-07T17:11:32Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "12ede706-0643-4e33-b7f9-472e3c91c9f5",
+  "name": "Fantasia",
+  "imdb_id": "tt0032455",
+  "release_date": "1946-11-06",
+  "followed_at": "2019-09-09T11:44:00Z",
+  "watched_at": "2019-09-09T11:44:02Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "124adee5-7ef6-4cf5-b5ef-108bcba3cc86",
+  "name": "Kingsman: The Secret Service",
+  "imdb_id": "tt2802144",
+  "release_date": "2015-02-27",
+  "followed_at": "2019-09-07T17:14:02Z",
+  "watched_at": "2019-09-07T17:14:02Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "1242f357-989f-47ed-8a3d-bb1c8b6aaf33",
+  "name": "The Avengers",
+  "imdb_id": "tt0848228",
+  "release_date": "2012-04-25",
+  "followed_at": "2019-09-07T17:09:31Z",
+  "watched_at": "2019-09-07T17:09:31Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "11bf414d-8d46-4ac0-81ff-06fb65451823",
+  "name": "Spider-Man: Into the Spider-Verse",
+  "imdb_id": "tt4633694",
+  "release_date": "2018-12-14",
+  "followed_at": "2019-09-09T11:09:11Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "11992369-0507-45bb-8d41-2ad22e2604b7",
+  "name": "Captain Marvel",
+  "imdb_id": "tt4154664",
+  "release_date": "2019-03-08",
+  "followed_at": "2019-09-07T17:29:06Z",
+  "watched_at": "2022-05-16T19:46:16Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "115fb902-092a-4e6a-a673-c9698eeaec0f",
+  "name": "Brother Bear",
+  "imdb_id": "tt0328880",
+  "release_date": "2004-01-28",
+  "followed_at": "2019-09-07T17:26:46Z",
+  "watched_at": "2019-09-07T17:26:46Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "10847448-50f9-41dc-b06b-1015fa167643",
+  "name": "Scooby-Doo 2: Monsters Unleashed",
+  "imdb_id": "tt0331632",
+  "release_date": "2004-04-16",
+  "followed_at": "2019-09-09T11:44:04Z",
+  "watched_at": "2019-09-09T11:44:05Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "0e6c2239-8f76-43a2-9b54-eecbf41e1fcb",
+  "name": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+  "imdb_id": "tt0363771",
+  "release_date": "2005-12-07",
+  "followed_at": "2019-09-07T17:22:26Z",
+  "watched_at": "2019-09-07T17:22:26Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "0d35e5e7-bed0-44f8-9af4-7482997e54ec",
+  "name": "Bolt",
+  "imdb_id": "tt0397892",
+  "release_date": "2009-02-04",
+  "followed_at": "2019-09-09T11:44:20Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "0c7c7acc-d9c2-41b2-a855-42cf8c91a9e9",
+  "name": "Harry Potter and the Half-Blood Prince",
+  "imdb_id": "tt0417741",
+  "release_date": "2009-07-15",
+  "followed_at": "2019-09-07T17:06:37Z",
+  "watched_at": "2019-09-07T17:07:35Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "0be8b8f5-1ded-4a66-ad5f-9a102bb52ecc",
+  "name": "Hercules",
+  "imdb_id": "tt0119282",
+  "release_date": "1997-06-20",
+  "followed_at": "2019-09-07T17:16:20Z",
+  "watched_at": "2019-09-07T17:16:20Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "0af2fefc-53d8-4ce3-abf8-4783a91d0ef5",
+  "name": "Charlie and the Chocolate Factory",
+  "imdb_id": "tt0367594",
+  "release_date": "2005-07-10",
+  "followed_at": "2019-09-07T17:10:22Z",
+  "watched_at": "2019-09-07T17:10:22Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "08c1f0a2-581f-476c-bbd8-643a7426635f",
+  "name": "Avengers: Endgame",
+  "imdb_id": "tt4154796",
+  "release_date": "2019-04-24",
+  "followed_at": "2019-09-07T17:05:35Z",
+  "watched_at": "2019-09-07T17:05:35Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "0796722a-aa1b-4cb1-90e7-cbcf579473a8",
+  "name": "Toy Story 2",
+  "imdb_id": "tt0120363",
+  "release_date": "2000-02-11",
+  "followed_at": "2019-09-07T17:20:45Z",
+  "watched_at": "2019-09-07T17:20:45Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "06403db9-013b-4884-8ea8-93a189d169e7",
+  "name": "Aladdin",
+  "imdb_id": "tt6139732",
+  "release_date": "2019-05-24",
+  "followed_at": "2019-09-07T17:29:05Z",
+  "watched_at": null,
+  "rewatch_count": 0,
+  "filters": [
+   "not_watched"
+  ]
+ },
+ {
+  "uuid": "063748e5-52d5-4673-91d2-0fbe0d2820a0",
+  "name": "Peter Pan",
+  "imdb_id": "tt0316396",
+  "release_date": "2003-12-25",
+  "followed_at": "2019-09-09T11:24:05Z",
+  "watched_at": "2019-09-09T11:24:07Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "050ea6f8-fb27-46d3-b78b-4da4b6b76783",
+  "name": "Titanic",
+  "imdb_id": "tt0120338",
+  "release_date": "1998-01-16",
+  "followed_at": "2019-09-07T17:05:34Z",
+  "watched_at": "2019-09-07T17:05:34Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ },
+ {
+  "uuid": "041dd5fb-baa2-4a7d-a017-d004b605f700",
+  "name": "The Lord of the Rings: The Return of the King",
+  "imdb_id": "tt0167260",
+  "release_date": "2003-12-17",
+  "followed_at": "2019-09-09T11:20:50Z",
+  "watched_at": "2019-09-09T11:20:51Z",
+  "rewatch_count": 0,
+  "filters": [
+   "watched"
+  ]
+ }
+]

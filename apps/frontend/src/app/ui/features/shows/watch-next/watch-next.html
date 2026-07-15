@@ -1,0 +1,40 @@
+@if (store.loading() && !store.watchNextLoaded()) {
+  <div class="skeletons">
+    @for (i of [1, 2, 3, 4, 5]; track i) {
+      <div class="skeleton row-skeleton"></div>
+    }
+  </div>
+} @else if (store.watchNext().length === 0) {
+  <app-empty-state
+    icon="pi-check-circle"
+    message="Tout est vu !"
+    hint="Aucun épisode en attente. Va explorer de nouvelles séries."
+  />
+} @else {
+  <ul class="watch-list">
+    @for (item of store.watchNext(); track item.show.tmdbShowId) {
+      <li class="card">
+        <a class="poster" [routerLink]="['/shows', item.show.tmdbShowId]">
+          @if (poster(item); as url) {
+            <img [src]="url" [alt]="item.show.name" loading="lazy" />
+          } @else {
+            <div class="placeholder"><i class="pi pi-image"></i></div>
+          }
+        </a>
+        <a class="info" [routerLink]="['/shows', item.show.tmdbShowId]">
+          <span class="show-name">{{ item.show.name }}</span>
+          <span class="code">{{ episodeCode(item) }}</span>
+          <span class="ep-title muted">{{ item.nextEpisode.name }}</span>
+          <span class="count muted">{{ item.watchedCount }} / {{ item.totalEpisodes }} vus</span>
+        </a>
+        <button
+          class="check-btn"
+          (click)="markWatched(item)"
+          [attr.aria-label]="'Marquer ' + episodeCode(item) + ' comme vu'"
+        >
+          <i class="pi pi-check"></i>
+        </button>
+      </li>
+    }
+  </ul>
+}

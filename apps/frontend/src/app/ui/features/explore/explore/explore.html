@@ -1,0 +1,60 @@
+<div class="page">
+  <h1 class="page-title">Explorer</h1>
+
+  <form [formGroup]="form">
+    <div class="search-box">
+      <i class="pi pi-search"></i>
+      <input
+        type="search"
+        formControlName="query"
+        placeholder="Une série, un film…"
+        autocomplete="off"
+        autocapitalize="off"
+      />
+    </div>
+  </form>
+
+  @if (store.loading()) {
+    <div class="skeletons">
+      @for (i of [1, 2, 3, 4]; track i) {
+        <div class="skeleton row-skeleton"></div>
+      }
+    </div>
+  } @else if (store.query().trim().length < 2) {
+    <app-empty-state icon="pi-search" message="Cherche quelque chose à regarder" hint="Séries et films, via TMDB." />
+  } @else if (store.results().length === 0) {
+    <app-empty-state icon="pi-question-circle" message="Aucun résultat" />
+  } @else {
+    <ul class="results">
+      @for (result of store.results(); track result.type + '-' + result.tmdbId) {
+        <li class="card">
+          <button class="hit" (click)="open(result)" [disabled]="result.type === 'movie'">
+            <figure>
+              @if (poster(result); as url) {
+                <img [src]="url" [alt]="result.name" loading="lazy" />
+              } @else {
+                <div class="placeholder"><i class="pi pi-image"></i></div>
+              }
+            </figure>
+            <div class="info">
+              <span class="chip" [class.accent]="result.type === 'show'">
+                {{ result.type === 'show' ? 'Série' : 'Film' }}
+              </span>
+              <span class="name">{{ result.name }}</span>
+              @if (result.year) {
+                <span class="muted">{{ result.year }}</span>
+              }
+            </div>
+          </button>
+          @if (result.type === 'movie') {
+            <button class="check-btn" (click)="addToWatchlist(result)" aria-label="Ajouter à la watchlist">
+              <i class="pi pi-bookmark"></i>
+            </button>
+          } @else {
+            <i class="pi pi-chevron-right muted arrow"></i>
+          }
+        </li>
+      }
+    </ul>
+  }
+</div>

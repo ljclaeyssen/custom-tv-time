@@ -1,0 +1,40 @@
+<div class="page">
+  <div class="header-row">
+    <button class="back" (click)="back()" aria-label="Retour"><i class="pi pi-arrow-left"></i></button>
+    <h1>Saison {{ seasonNumber() }}</h1>
+    <button class="btn ghost" (click)="markAll()">Tout cocher</button>
+  </div>
+
+  @if (store.loading() && store.currentSeasonEpisodes().length === 0) {
+    <div class="skeletons">
+      @for (i of [1, 2, 3, 4, 5, 6]; track i) {
+        <div class="skeleton row-skeleton"></div>
+      }
+    </div>
+  } @else if (store.currentSeasonEpisodes().length === 0) {
+    <app-empty-state message="Aucun épisode" hint="Cette saison ne contient encore aucun épisode référencé." />
+  } @else {
+    <ul class="episodes">
+      @for (episode of store.currentSeasonEpisodes(); track episode.episodeNumber) {
+        <li class="list-row" [class.future]="!isAired(episode)">
+          <span class="number">{{ episode.episodeNumber }}</span>
+          <div class="info">
+            <span class="title">{{ episode.name }}</span>
+            @if (episode.airDate) {
+              <span class="muted date">{{ episode.airDate | date: 'd MMM y' }}</span>
+            }
+          </div>
+          <button
+            class="check-btn"
+            [class.checked]="episode.watched"
+            [disabled]="!isAired(episode) && !episode.watched"
+            (click)="toggle(episode)"
+            [attr.aria-label]="episode.watched ? 'Marquer non vu' : 'Marquer vu'"
+          >
+            <i class="pi pi-check"></i>
+          </button>
+        </li>
+      }
+    </ul>
+  }
+</div>

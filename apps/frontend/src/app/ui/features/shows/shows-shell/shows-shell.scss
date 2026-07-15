@@ -1,0 +1,24 @@
+.tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+
+  button {
+    background: none;
+    border: none;
+    color: var(--text-3);
+    font-size: 0.95rem;
+    font-weight: 700;
+    padding: 10px 14px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    transition: color 0.15s ease;
+
+    &.active {
+      color: var(--text);
+      border-bottom-color: var(--accent);
+    }
+  }
+}

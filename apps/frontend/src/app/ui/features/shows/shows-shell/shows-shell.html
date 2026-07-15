@@ -1,0 +1,16 @@
+<div class="page">
+  <h1 class="page-title">Vu<em>.</em></h1>
+  <div class="tabs" role="tablist">
+    <button role="tab" [class.active]="tab() === 'watch-next'" (click)="tab.set('watch-next')">
+      À voir
+    </button>
+    <button role="tab" [class.active]="tab() === 'my-shows'" (click)="tab.set('my-shows')">
+      Mes séries
+    </button>
+  </div>
+  @if (tab() === 'watch-next') {
+    <app-watch-next />
+  } @else {
+    <app-my-shows />
+  }
+</div>

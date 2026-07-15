@@ -1,0 +1,2432 @@
+[
+ {
+  "tvdbId": 323168,
+  "tmdbId": 66788,
+  "name": "13 Reasons Why",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 49,
+  "flags": 0
+ },
+ {
+  "tvdbId": 356032,
+  "tmdbId": 85940,
+  "name": "7SEEDS",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 24,
+  "flags": 0
+ },
+ {
+  "tvdbId": 340890,
+  "tmdbId": 77778,
+  "name": "A.I.C.O. Incarnation",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 12,
+  "flags": 0
+ },
+ {
+  "tvdbId": 300835,
+  "tmdbId": 65292,
+  "name": "Ajin : semi-humain",
+  "status": "up_to_date",
+  "dbCount": 26,
+  "aired": 26,
+  "flags": 26
+ },
+ {
+  "tvdbId": 318950,
+  "tmdbId": 70637,
+  "name": "Akashic Records of Bastard Magic Instructor",
+  "status": "up_to_date",
+  "dbCount": 12,
+  "aired": 12,
+  "flags": 12
+ },
+ {
+  "tvdbId": 332331,
+  "tmdbId": 68421,
+  "name": "Altered Carbon",
+  "status": "stopped",
+  "dbCount": 6,
+  "aired": 18,
+  "flags": 6
+ },
+ {
+  "tvdbId": 73141,
+  "tmdbId": 1433,
+  "name": "American Dad!",
+  "status": "stopped",
+  "dbCount": 0,
+  "aired": 399,
+  "flags": 0
+ },
+ {
+  "tvdbId": 253573,
+  "tmdbId": 46639,
+  "name": "American Gods",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 26,
+  "flags": 0
+ },
+ {
+  "tvdbId": 150471,
+  "tmdbId": 42942,
+  "name": "Angel Beats !",
+  "status": "up_to_date",
+  "dbCount": 13,
+  "aired": 13,
+  "flags": 13
+ },
+ {
+  "tvdbId": 247958,
+  "tmdbId": 39434,
+  "name": "Anohana: the Flower We Saw That Day",
+  "status": "up_to_date",
+  "dbCount": 11,
+  "aired": 11,
+  "flags": 11
+ },
+ {
+  "tvdbId": 371028,
+  "tmdbId": 94605,
+  "name": "Arcane",
+  "status": "watching",
+  "dbCount": 9,
+  "aired": 18,
+  "flags": 9
+ },
+ {
+  "tvdbId": 72173,
+  "tmdbId": 4589,
+  "name": "Arrested Development",
+  "status": "stopped",
+  "dbCount": 28,
+  "aired": 84,
+  "flags": 28
+ },
+ {
+  "tvdbId": 279553,
+  "tmdbId": 60741,
+  "name": "Ascension",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 3,
+  "flags": 0
+ },
+ {
+  "tvdbId": 283947,
+  "tmdbId": 62110,
+  "name": "Assassination Classroom",
+  "status": "up_to_date",
+  "dbCount": 47,
+  "aired": 47,
+  "flags": 47
+ },
+ {
+  "tvdbId": 299857,
+  "tmdbId": 64249,
+  "name": "Au service de la France",
+  "status": "up_to_date",
+  "dbCount": 23,
+  "aired": 24,
+  "flags": 23
+ },
+ {
+  "tvdbId": 251085,
+  "tmdbId": 33880,
+  "name": "Avatar : La Légende de Korra",
+  "status": "up_to_date",
+  "dbCount": 52,
+  "aired": 52,
+  "flags": 52
+ },
+ {
+  "tvdbId": 74852,
+  "tmdbId": 246,
+  "name": "Avatar : Le Dernier Maître de l'air",
+  "status": "up_to_date",
+  "dbCount": 61,
+  "aired": 61,
+  "flags": 61
+ },
+ {
+  "tvdbId": 339353,
+  "tmdbId": 77529,
+  "name": "B: The Beginning",
+  "status": "up_to_date",
+  "dbCount": 18,
+  "aired": 18,
+  "flags": 18
+ },
+ {
+  "tvdbId": 436205,
+  "tmdbId": 282379,
+  "name": "BESTIALE",
+  "status": "up_to_date",
+  "dbCount": 7,
+  "aired": 7,
+  "flags": 7
+ },
+ {
+  "tvdbId": 373679,
+  "tmdbId": 96402,
+  "name": "BOFURI : Je suis pas venue ici pour souffrir alors j'ai tout mis en défense",
+  "status": "up_to_date",
+  "dbCount": 24,
+  "aired": 24,
+  "flags": 24
+ },
+ {
+  "tvdbId": 348742,
+  "tmdbId": 80623,
+  "name": "Baki",
+  "status": "stopped",
+  "dbCount": 5,
+  "aired": 39,
+  "flags": 5
+ },
+ {
+  "tvdbId": 406152,
+  "tmdbId": 129600,
+  "name": "Baki Hanma",
+  "status": "stopped",
+  "dbCount": 12,
+  "aired": 39,
+  "flags": 12
+ },
+ {
+  "tvdbId": 79567,
+  "tmdbId": 4686,
+  "name": "Ben 10",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 52,
+  "flags": 0
+ },
+ {
+  "tvdbId": 331431,
+  "tmdbId": 74204,
+  "name": "Big Mouth",
+  "status": "watching",
+  "dbCount": 61,
+  "aired": 81,
+  "flags": 61
+ },
+ {
+  "tvdbId": 83996,
+  "tmdbId": 50712,
+  "name": "Black Butler",
+  "status": "stopped",
+  "dbCount": 46,
+  "aired": 70,
+  "flags": 46
+ },
+ {
+  "tvdbId": 331753,
+  "tmdbId": 73223,
+  "name": "Black Clover",
+  "status": "up_to_date",
+  "dbCount": 170,
+  "aired": 170,
+  "flags": 170
+ },
+ {
+  "tvdbId": 253463,
+  "tmdbId": 42009,
+  "name": "Black Mirror",
+  "status": "stopped",
+  "dbCount": 18,
+  "aired": 33,
+  "flags": 18
+ },
+ {
+  "tvdbId": 248035,
+  "tmdbId": 38464,
+  "name": "Blue Exorcist",
+  "status": "up_to_date",
+  "dbCount": 73,
+  "aired": 73,
+  "flags": 73
+ },
+ {
+  "tvdbId": 344643,
+  "tmdbId": 88512,
+  "name": "Bonding",
+  "status": "up_to_date",
+  "dbCount": 15,
+  "aired": 15,
+  "flags": 15
+ },
+ {
+  "tvdbId": 321285,
+  "tmdbId": 70881,
+  "name": "Boruto : Naruto Next Generations",
+  "status": "stopped",
+  "dbCount": 39,
+  "aired": 293,
+  "flags": 39
+ },
+ {
+  "tvdbId": 269586,
+  "tmdbId": 48891,
+  "name": "Brooklyn Nine-Nine",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 152,
+  "flags": 0
+ },
+ {
+  "tvdbId": 259646,
+  "tmdbId": 46184,
+  "name": "Campione !",
+  "status": "up_to_date",
+  "dbCount": 13,
+  "aired": 13,
+  "flags": 13
+ },
+ {
+  "tvdbId": 83462,
+  "tmdbId": 1419,
+  "name": "Castle",
+  "status": "stopped",
+  "dbCount": 58,
+  "aired": 173,
+  "flags": 58
+ },
+ {
+  "tvdbId": 329065,
+  "tmdbId": 71024,
+  "name": "Castlevania",
+  "status": "up_to_date",
+  "dbCount": 32,
+  "aired": 32,
+  "flags": 32
+ },
+ {
+  "tvdbId": 289679,
+  "tmdbId": 63145,
+  "name": "Charlotte",
+  "status": "up_to_date",
+  "dbCount": 13,
+  "aired": 13,
+  "flags": 13
+ },
+ {
+  "tvdbId": 70626,
+  "tmdbId": 1981,
+  "name": "Charmed",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 178,
+  "flags": 0
+ },
+ {
+  "tvdbId": 423653,
+  "tmdbId": 208493,
+  "name": "Cheat Skill Level Up",
+  "status": "up_to_date",
+  "dbCount": 13,
+  "aired": 13,
+  "flags": 13
+ },
+ {
+  "tvdbId": 360893,
+  "tmdbId": 87108,
+  "name": "Chernobyl",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 5,
+  "flags": 0
+ },
+ {
+  "tvdbId": 309893,
+  "tmdbId": 64073,
+  "name": "Class",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 8,
+  "flags": 0
+ },
+ {
+  "tvdbId": 79525,
+  "tmdbId": 31724,
+  "name": "Code Geass: Lelouch of the Rebellion",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 50,
+  "flags": 0
+ },
+ {
+  "tvdbId": 74280,
+  "tmdbId": 4622,
+  "name": "Code Lyoko",
+  "status": "up_to_date",
+  "dbCount": 95,
+  "aired": 95,
+  "flags": 95
+ },
+ {
+  "tvdbId": 284210,
+  "tmdbId": 62858,
+  "name": "Colony",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 36,
+  "flags": 0
+ },
+ {
+  "tvdbId": 432832,
+  "tmdbId": 240411,
+  "name": "DAN DA DAN",
+  "status": "up_to_date",
+  "dbCount": 24,
+  "aired": 24,
+  "flags": 24
+ },
+ {
+  "tvdbId": 396983,
+  "tmdbId": 118956,
+  "name": "DOTA : Dragon's Blood",
+  "status": "up_to_date",
+  "dbCount": 24,
+  "aired": 24,
+  "flags": 24
+ },
+ {
+  "tvdbId": 289882,
+  "tmdbId": 62745,
+  "name": "DanMachi - La légende des Familias",
+  "status": "watching",
+  "dbCount": 65,
+  "aired": 74,
+  "flags": 65
+ },
+ {
+  "tvdbId": 321670,
+  "tmdbId": 70590,
+  "name": "DanMachi : Sword Oratoria",
+  "status": "watching",
+  "dbCount": 2,
+  "aired": 12,
+  "flags": 2
+ },
+ {
+  "tvdbId": 334824,
+  "tmdbId": 70523,
+  "name": "Dark",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 26,
+  "flags": 0
+ },
+ {
+  "tvdbId": 85441,
+  "tmdbId": 29692,
+  "name": "Darwin's Dangerous Idea",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 3,
+  "flags": 0
+ },
+ {
+  "tvdbId": 348545,
+  "tmdbId": 85937,
+  "name": "Demon Slayer : Kimetsu no Yaiba",
+  "status": "up_to_date",
+  "dbCount": 63,
+  "aired": 63,
+  "flags": 63
+ },
+ {
+  "tvdbId": 73800,
+  "tmdbId": 693,
+  "name": "Desperate Housewives",
+  "status": "up_to_date",
+  "dbCount": 179,
+  "aired": 179,
+  "flags": 180
+ },
+ {
+  "tvdbId": 368185,
+  "tmdbId": 97175,
+  "name": "Destin : La saga Winx",
+  "status": "up_to_date",
+  "dbCount": 13,
+  "aired": 13,
+  "flags": 13
+ },
+ {
+  "tvdbId": 82855,
+  "tmdbId": 43066,
+  "name": "Detroit Metal City",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 12,
+  "flags": 0
+ },
+ {
+  "tvdbId": 338192,
+  "tmdbId": 75208,
+  "name": "Devilman Crybaby",
+  "status": "up_to_date",
+  "dbCount": 10,
+  "aired": 10,
+  "flags": 10
+ },
+ {
+  "tvdbId": 79349,
+  "tmdbId": 1405,
+  "name": "Dexter",
+  "status": "up_to_date",
+  "dbCount": 96,
+  "aired": 96,
+  "flags": 96
+ },
+ {
+  "tvdbId": 345944,
+  "tmdbId": 83300,
+  "name": "Diablero",
+  "status": "up_to_date",
+  "dbCount": 14,
+  "aired": 14,
+  "flags": 14
+ },
+ {
+  "tvdbId": 376003,
+  "tmdbId": 98034,
+  "name": "Digimon : Adventure",
+  "status": "up_to_date",
+  "dbCount": 67,
+  "aired": 67,
+  "flags": 67
+ },
+ {
+  "tvdbId": 72241,
+  "tmdbId": 31654,
+  "name": "Digimon : Digital Monsters",
+  "status": "stopped",
+  "dbCount": 53,
+  "aired": 104,
+  "flags": 53
+ },
+ {
+  "tvdbId": 78804,
+  "tmdbId": 57243,
+  "name": "Doctor Who",
+  "status": "watching",
+  "dbCount": 159,
+  "aired": 153,
+  "flags": 160
+ },
+ {
+  "tvdbId": 265601,
+  "tmdbId": 65172,
+  "name": "Dofus : Aux trésors de Kerubim",
+  "status": "up_to_date",
+  "dbCount": 52,
+  "aired": 52,
+  "flags": 52
+ },
+ {
+  "tvdbId": 247836,
+  "tmdbId": 44314,
+  "name": "Dog Days",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 38,
+  "flags": 0
+ },
+ {
+  "tvdbId": 370761,
+  "tmdbId": 94404,
+  "name": "Dorohedoro",
+  "status": "watching",
+  "dbCount": 12,
+  "aired": 23,
+  "flags": 12
+ },
+ {
+  "tvdbId": 355774,
+  "tmdbId": 86031,
+  "name": "Dr. STONE",
+  "status": "up_to_date",
+  "dbCount": 95,
+  "aired": 94,
+  "flags": 95
+ },
+ {
+  "tvdbId": 385314,
+  "tmdbId": 99769,
+  "name": "Dragon's Dogma",
+  "status": "up_to_date",
+  "dbCount": 7,
+  "aired": 7,
+  "flags": 7
+ },
+ {
+  "tvdbId": 95771,
+  "tmdbId": 18520,
+  "name": "Drop Dead Diva",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 78,
+  "flags": 0
+ },
+ {
+  "tvdbId": 340234,
+  "tmdbId": 73021,
+  "name": "Désenchantée",
+  "status": "up_to_date",
+  "dbCount": 50,
+  "aired": 50,
+  "flags": 50
+ },
+ {
+  "tvdbId": 255316,
+  "tmdbId": 1415,
+  "name": "Elementary",
+  "status": "stopped",
+  "dbCount": 53,
+  "aired": 154,
+  "flags": 53
+ },
+ {
+  "tvdbId": 445011,
+  "tmdbId": 245285,
+  "name": "Failure Frame: I Became the Strongest and Annihilated Everything with Low-Level Spells",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 12,
+  "flags": 0
+ },
+ {
+  "tvdbId": 114801,
+  "tmdbId": 46261,
+  "name": "Fairy Tail",
+  "status": "stopped",
+  "dbCount": 265,
+  "aired": 328,
+  "flags": 265
+ },
+ {
+  "tvdbId": 326332,
+  "tmdbId": 72304,
+  "name": "Fate/Apocrypha",
+  "status": "up_to_date",
+  "dbCount": 25,
+  "aired": 25,
+  "flags": 25
+ },
+ {
+  "tvdbId": 337018,
+  "tmdbId": 76123,
+  "name": "Fate/EXTRA Last Encore",
+  "status": "up_to_date",
+  "dbCount": 13,
+  "aired": 13,
+  "flags": 13
+ },
+ {
+  "tvdbId": 275798,
+  "tmdbId": 45845,
+  "name": "Fate/Zero",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 25,
+  "flags": 0
+ },
+ {
+  "tvdbId": 79151,
+  "tmdbId": 37858,
+  "name": "Fate/stay night",
+  "status": "up_to_date",
+  "dbCount": 24,
+  "aired": 24,
+  "flags": 24
+ },
+ {
+  "tvdbId": 328783,
+  "tmdbId": 79176,
+  "name": "Fiertés",
+  "status": "up_to_date",
+  "dbCount": 3,
+  "aired": 3,
+  "flags": 3
+ },
+ {
+  "tvdbId": 332353,
+  "tmdbId": 74387,
+  "name": "Final Space",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 36,
+  "flags": 0
+ },
+ {
+  "tvdbId": 355480,
+  "tmdbId": 88046,
+  "name": "Fire Force",
+  "status": "up_to_date",
+  "dbCount": 73,
+  "aired": 73,
+  "flags": 73
+ },
+ {
+  "tvdbId": 289909,
+  "tmdbId": 62273,
+  "name": "Food Wars! Shokugeki no Soma",
+  "status": "up_to_date",
+  "dbCount": 86,
+  "aired": 86,
+  "flags": 86
+ },
+ {
+  "tvdbId": 270065,
+  "tmdbId": 61456,
+  "name": "Free!",
+  "status": "stopped",
+  "dbCount": 6,
+  "aired": 37,
+  "flags": 6
+ },
+ {
+  "tvdbId": 424536,
+  "tmdbId": 209867,
+  "name": "Frieren",
+  "status": "up_to_date",
+  "dbCount": 38,
+  "aired": 38,
+  "flags": 38
+ },
+ {
+  "tvdbId": 75579,
+  "tmdbId": 37863,
+  "name": "Fullmetal Alchemist",
+  "status": "up_to_date",
+  "dbCount": 51,
+  "aired": 51,
+  "flags": 51
+ },
+ {
+  "tvdbId": 85249,
+  "tmdbId": 31911,
+  "name": "Fullmetal Alchemist : Brotherhood",
+  "status": "up_to_date",
+  "dbCount": 64,
+  "aired": 64,
+  "flags": 64
+ },
+ {
+  "tvdbId": 73871,
+  "tmdbId": 615,
+  "name": "Futurama",
+  "status": "stopped",
+  "dbCount": 0,
+  "aired": 154,
+  "flags": 0
+ },
+ {
+  "tvdbId": 327572,
+  "tmdbId": 72305,
+  "name": "Gambling School",
+  "status": "up_to_date",
+  "dbCount": 24,
+  "aired": 24,
+  "flags": 24
+ },
+ {
+  "tvdbId": 121361,
+  "tmdbId": 1399,
+  "name": "Game of Thrones",
+  "status": "up_to_date",
+  "dbCount": 73,
+  "aired": 73,
+  "flags": 74
+ },
+ {
+  "tvdbId": 293491,
+  "tmdbId": 62070,
+  "name": "Ghost In The Shell: Arise - Alternative Architecture",
+  "status": "stopped",
+  "dbCount": 0,
+  "aired": 10,
+  "flags": 0
+ },
+ {
+  "tvdbId": 78817,
+  "tmdbId": 1606,
+  "name": "Ghost Whisperer",
+  "status": "stopped",
+  "dbCount": 22,
+  "aired": 107,
+  "flags": 22
+ },
+ {
+  "tvdbId": 73749,
+  "tmdbId": 1095,
+  "name": "Ghost in the Shell : Stand Alone Complex",
+  "status": "stopped",
+  "dbCount": 0,
+  "aired": 52,
+  "flags": 0
+ },
+ {
+  "tvdbId": 262098,
+  "tmdbId": 43967,
+  "name": "Girls und Panzer",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 12,
+  "flags": 0
+ },
+ {
+  "tvdbId": 272138,
+  "tmdbId": 67389,
+  "name": "Golden Time",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 24,
+  "flags": 0
+ },
+ {
+  "tvdbId": 359569,
+  "tmdbId": 71915,
+  "name": "Good Omens",
+  "status": "watching",
+  "dbCount": 3,
+  "aired": 13,
+  "flags": 3
+ },
+ {
+  "tvdbId": 303868,
+  "tmdbId": 65369,
+  "name": "Grimgar, le Monde des Cendres et de Fantaisie",
+  "status": "up_to_date",
+  "dbCount": 12,
+  "aired": 12,
+  "flags": 12
+ },
+ {
+  "tvdbId": 252471,
+  "tmdbId": 43125,
+  "name": "Guilty Crown",
+  "status": "up_to_date",
+  "dbCount": 22,
+  "aired": 22,
+  "flags": 22
+ },
+ {
+  "tvdbId": 402474,
+  "tmdbId": 117465,
+  "name": "Hell's Paradise",
+  "status": "up_to_date",
+  "dbCount": 25,
+  "aired": 25,
+  "flags": 25
+ },
+ {
+  "tvdbId": 265609,
+  "tmdbId": 53300,
+  "name": "Hello Ladies",
+  "status": "up_to_date",
+  "dbCount": 8,
+  "aired": 8,
+  "flags": 8
+ },
+ {
+  "tvdbId": 426572,
+  "tmdbId": 213402,
+  "name": "Hero Skill - Achats en ligne",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 24,
+  "flags": 0
+ },
+ {
+  "tvdbId": 79501,
+  "tmdbId": 1639,
+  "name": "Heroes",
+  "status": "stopped",
+  "dbCount": 13,
+  "aired": 78,
+  "flags": 13
+ },
+ {
+  "tvdbId": 171591,
+  "tmdbId": 56998,
+  "name": "High School of the Dead",
+  "status": "up_to_date",
+  "dbCount": 12,
+  "aired": 12,
+  "flags": 12
+ },
+ {
+  "tvdbId": 385764,
+  "tmdbId": 106754,
+  "name": "High Score : L'âge d'or du gaming",
+  "status": "up_to_date",
+  "dbCount": 6,
+  "aired": 6,
+  "flags": 6
+ },
+ {
+  "tvdbId": 75760,
+  "tmdbId": 1100,
+  "name": "How I Met Your Mother",
+  "status": "up_to_date",
+  "dbCount": 208,
+  "aired": 208,
+  "flags": 208
+ },
+ {
+  "tvdbId": 370452,
+  "tmdbId": 94252,
+  "name": "Human Resources",
+  "status": "up_to_date",
+  "dbCount": 20,
+  "aired": 20,
+  "flags": 20
+ },
+ {
+  "tvdbId": 252322,
+  "tmdbId": 46298,
+  "name": "Hunter x Hunter",
+  "status": "up_to_date",
+  "dbCount": 148,
+  "aired": 148,
+  "flags": 148
+ },
+ {
+  "tvdbId": 454085,
+  "tmdbId": 270487,
+  "name": "I left my a-rank party to help my former students reach the dungeon depths!",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 24,
+  "flags": 0
+ },
+ {
+  "tvdbId": 359277,
+  "tmdbId": 87846,
+  "name": "Idhun",
+  "status": "up_to_date",
+  "dbCount": 10,
+  "aired": 10,
+  "flags": 10
+ },
+ {
+  "tvdbId": 76711,
+  "tmdbId": 240,
+  "name": "Jackie Chan Adventures",
+  "status": "up_to_date",
+  "dbCount": 94,
+  "aired": 95,
+  "flags": 94
+ },
+ {
+  "tvdbId": 377543,
+  "tmdbId": 95479,
+  "name": "Jujutsu Kaisen",
+  "status": "watching",
+  "dbCount": 47,
+  "aired": 59,
+  "flags": 47
+ },
+ {
+  "tvdbId": 79175,
+  "tmdbId": 11466,
+  "name": "Kaamelott",
+  "status": "stopped",
+  "dbCount": 100,
+  "aired": 458,
+  "flags": 100
+ },
+ {
+  "tvdbId": 278332,
+  "tmdbId": 60828,
+  "name": "Kamigami no Asobi",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 12,
+  "flags": 0
+ },
+ {
+  "tvdbId": 315164,
+  "tmdbId": 68148,
+  "name": "Keijo!!!!!!!!",
+  "status": "up_to_date",
+  "dbCount": 12,
+  "aired": 12,
+  "flags": 12
+ },
+ {
+  "tvdbId": 390382,
+  "tmdbId": 100022,
+  "name": "Kemono Incidents",
+  "status": "up_to_date",
+  "dbCount": 12,
+  "aired": 12,
+  "flags": 12
+ },
+ {
+  "tvdbId": 272074,
+  "tmdbId": 60728,
+  "name": "Kill la Kill",
+  "status": "up_to_date",
+  "dbCount": 25,
+  "aired": 24,
+  "flags": 24
+ },
+ {
+  "tvdbId": 303867,
+  "tmdbId": 65844,
+  "name": "Konosuba : Sois béni monde merveilleux !",
+  "status": "up_to_date",
+  "dbCount": 33,
+  "aired": 31,
+  "flags": 33
+ },
+ {
+  "tvdbId": 307365,
+  "tmdbId": 66080,
+  "name": "Kuromukuro",
+  "status": "up_to_date",
+  "dbCount": 26,
+  "aired": 26,
+  "flags": 26
+ },
+ {
+  "tvdbId": 267440,
+  "tmdbId": 1429,
+  "name": "L'Attaque des Titans",
+  "status": "up_to_date",
+  "dbCount": 94,
+  "aired": 87,
+  "flags": 94
+ },
+ {
+  "tvdbId": 355730,
+  "tmdbId": 71914,
+  "name": "La Roue du temps",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 24,
+  "flags": 0
+ },
+ {
+  "tvdbId": 327417,
+  "tmdbId": 71446,
+  "name": "La casa de papel",
+  "status": "up_to_date",
+  "dbCount": 41,
+  "aired": 41,
+  "flags": 41
+ },
+ {
+  "tvdbId": 319531,
+  "tmdbId": 68888,
+  "name": "Lastman",
+  "status": "watching",
+  "dbCount": 26,
+  "aired": 32,
+  "flags": 26
+ },
+ {
+  "tvdbId": 292262,
+  "tmdbId": 62099,
+  "name": "Le Ministère du Temps",
+  "status": "stopped",
+  "dbCount": 27,
+  "aired": 42,
+  "flags": 27
+ },
+ {
+  "tvdbId": 350123,
+  "tmdbId": 81046,
+  "name": "Le Prince des dragons",
+  "status": "watching",
+  "dbCount": 45,
+  "aired": 63,
+  "flags": 45
+ },
+ {
+  "tvdbId": 376751,
+  "tmdbId": 98123,
+  "name": "Le Quotidien du Roi Immortel",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 63,
+  "flags": 0
+ },
+ {
+  "tvdbId": 80741,
+  "tmdbId": 2903,
+  "name": "Le cœur a ses raisons",
+  "status": "stopped",
+  "dbCount": 26,
+  "aired": 39,
+  "flags": 26
+ },
+ {
+  "tvdbId": 393105,
+  "tmdbId": 114419,
+  "name": "Le guide Headspace de la méditation",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 8,
+  "flags": 0
+ },
+ {
+  "tvdbId": 399841,
+  "tmdbId": 121628,
+  "name": "Le guide Headspace du sommeil",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 7,
+  "flags": 0
+ },
+ {
+  "tvdbId": 347512,
+  "tmdbId": 84154,
+  "name": "Le trio venu d'ailleurs : Les Contes d'Arcadia",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 26,
+  "flags": 0
+ },
+ {
+  "tvdbId": 306304,
+  "tmdbId": 65294,
+  "name": "Les Désastreuses Aventures des orphelins Baudelaire",
+  "status": "stopped",
+  "dbCount": 18,
+  "aired": 25,
+  "flags": 18
+ },
+ {
+  "tvdbId": 338947,
+  "tmdbId": 79242,
+  "name": "Les Nouvelles Aventures de Sabrina",
+  "status": "up_to_date",
+  "dbCount": 36,
+  "aired": 36,
+  "flags": 36
+ },
+ {
+  "tvdbId": 71663,
+  "tmdbId": 456,
+  "name": "Les Simpson",
+  "status": "stopped",
+  "dbCount": 595,
+  "aired": 801,
+  "flags": 595
+ },
+ {
+  "tvdbId": 83602,
+  "tmdbId": 8358,
+  "name": "Lie to Me",
+  "status": "up_to_date",
+  "dbCount": 48,
+  "aired": 48,
+  "flags": 48
+ },
+ {
+  "tvdbId": 71624,
+  "tmdbId": 2355,
+  "name": "Lilo & Stitch: la série",
+  "status": "stopped",
+  "dbCount": 18,
+  "aired": 67,
+  "flags": 18
+ },
+ {
+  "tvdbId": 362472,
+  "tmdbId": 84958,
+  "name": "Loki",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 12,
+  "flags": 0
+ },
+ {
+  "tvdbId": 357888,
+  "tmdbId": 86831,
+  "name": "Love, Death & Robots",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 45,
+  "flags": 0
+ },
+ {
+  "tvdbId": 295685,
+  "tmdbId": 63174,
+  "name": "Lucifer",
+  "status": "stopped",
+  "dbCount": 67,
+  "aired": 93,
+  "flags": 67
+ },
+ {
+  "tvdbId": 328708,
+  "tmdbId": 67744,
+  "name": "MINDHUNTER",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 19,
+  "flags": 0
+ },
+ {
+  "tvdbId": 310718,
+  "tmdbId": 66870,
+  "name": "Magi : Les aventures de Sinbad",
+  "status": "up_to_date",
+  "dbCount": 13,
+  "aired": 13,
+  "flags": 13
+ },
+ {
+  "tvdbId": 262094,
+  "tmdbId": 60654,
+  "name": "Magi: The Labyrinth of Magic",
+  "status": "up_to_date",
+  "dbCount": 50,
+  "aired": 50,
+  "flags": 50
+ },
+ {
+  "tvdbId": 349271,
+  "tmdbId": 79696,
+  "name": "Manifest",
+  "status": "stopped",
+  "dbCount": 2,
+  "aired": 62,
+  "flags": 2
+ },
+ {
+  "tvdbId": 281662,
+  "tmdbId": 61889,
+  "name": "Marvel's Daredevil",
+  "status": "watching",
+  "dbCount": 26,
+  "aired": 39,
+  "flags": 26
+ },
+ {
+  "tvdbId": 317953,
+  "tmdbId": 62127,
+  "name": "Marvel's Iron Fist",
+  "status": "stopped",
+  "dbCount": 13,
+  "aired": 23,
+  "flags": 13
+ },
+ {
+  "tvdbId": 284190,
+  "tmdbId": 38472,
+  "name": "Marvel's Jessica Jones",
+  "status": "stopped",
+  "dbCount": 14,
+  "aired": 39,
+  "flags": 14
+ },
+ {
+  "tvdbId": 304219,
+  "tmdbId": 62126,
+  "name": "Marvel's Luke Cage",
+  "status": "stopped",
+  "dbCount": 13,
+  "aired": 26,
+  "flags": 13
+ },
+ {
+  "tvdbId": 326490,
+  "tmdbId": 62285,
+  "name": "Marvel's The Defenders",
+  "status": "up_to_date",
+  "dbCount": 8,
+  "aired": 8,
+  "flags": 8
+ },
+ {
+  "tvdbId": 331980,
+  "tmdbId": 67178,
+  "name": "Marvel's The Punisher",
+  "status": "stopped",
+  "dbCount": 13,
+  "aired": 26,
+  "flags": 13
+ },
+ {
+  "tvdbId": 318860,
+  "tmdbId": 69295,
+  "name": "Masamune-kun's Revenge",
+  "status": "stopped",
+  "dbCount": 1,
+  "aired": 24,
+  "flags": 1
+ },
+ {
+  "tvdbId": 249827,
+  "tmdbId": 46671,
+  "name": "Mirai Nikki",
+  "status": "watch_later",
+  "dbCount": 26,
+  "aired": 26,
+  "flags": 26
+ },
+ {
+  "tvdbId": 124051,
+  "tmdbId": 31295,
+  "name": "Misfits",
+  "status": "stopped",
+  "dbCount": 14,
+  "aired": 37,
+  "flags": 14
+ },
+ {
+  "tvdbId": 95011,
+  "tmdbId": 1421,
+  "name": "Modern Family",
+  "status": "up_to_date",
+  "dbCount": 251,
+  "aired": 250,
+  "flags": 251
+ },
+ {
+  "tvdbId": 352408,
+  "tmdbId": 82684,
+  "name": "Moi, quand je me réincarne en Slime",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 85,
+  "flags": 0
+ },
+ {
+  "tvdbId": 334960,
+  "tmdbId": 74330,
+  "name": "Monsieur Flap",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 27,
+  "flags": 0
+ },
+ {
+  "tvdbId": 301920,
+  "tmdbId": 69084,
+  "name": "Monster Strike",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 88,
+  "flags": 0
+ },
+ {
+  "tvdbId": 277953,
+  "tmdbId": 61593,
+  "name": "Mr. Pickles",
+  "status": "stopped",
+  "dbCount": 30,
+  "aired": 31,
+  "flags": 30
+ },
+ {
+  "tvdbId": 289590,
+  "tmdbId": 62560,
+  "name": "Mr. Robot",
+  "status": "stopped",
+  "dbCount": 0,
+  "aired": 45,
+  "flags": 0
+ },
+ {
+  "tvdbId": 407226,
+  "tmdbId": 96659,
+  "name": "Musclor et les Maîtres de l'univers",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 26,
+  "flags": 0
+ },
+ {
+  "tvdbId": 371310,
+  "tmdbId": 94664,
+  "name": "Mushoku Tensei: Jobless Reincarnation",
+  "status": "watching",
+  "dbCount": 47,
+  "aired": 49,
+  "flags": 47
+ },
+ {
+  "tvdbId": 305074,
+  "tmdbId": 65930,
+  "name": "My Hero Academia",
+  "status": "up_to_date",
+  "dbCount": 170,
+  "aired": 170,
+  "flags": 170
+ },
+ {
+  "tvdbId": 458058,
+  "tmdbId": 280110,
+  "name": "My Hero Academia : Vigilantes",
+  "status": "watching",
+  "dbCount": 2,
+  "aired": 26,
+  "flags": 2
+ },
+ {
+  "tvdbId": 452142,
+  "tmdbId": 302322,
+  "name": "My Secret Agent Husband",
+  "status": "stopped",
+  "dbCount": 57,
+  "aired": 114,
+  "flags": 57
+ },
+ {
+  "tvdbId": 303073,
+  "tmdbId": 65333,
+  "name": "Myriad Colors Phantom World",
+  "status": "up_to_date",
+  "dbCount": 13,
+  "aired": 13,
+  "flags": 13
+ },
+ {
+  "tvdbId": 282670,
+  "tmdbId": 63351,
+  "name": "Narcos",
+  "status": "stopped",
+  "dbCount": 4,
+  "aired": 30,
+  "flags": 4
+ },
+ {
+  "tvdbId": 78857,
+  "tmdbId": 46260,
+  "name": "Naruto",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 220,
+  "flags": 0
+ },
+ {
+  "tvdbId": 79824,
+  "tmdbId": 31910,
+  "name": "Naruto Shippuden",
+  "status": "up_to_date",
+  "dbCount": 500,
+  "aired": 500,
+  "flags": 500
+ },
+ {
+  "tvdbId": 248682,
+  "tmdbId": 1420,
+  "name": "New Girl",
+  "status": "stopped",
+  "dbCount": 95,
+  "aired": 146,
+  "flags": 95
+ },
+ {
+  "tvdbId": 347648,
+  "tmdbId": 78183,
+  "name": "Nightflyers",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 10,
+  "flags": 0
+ },
+ {
+  "tvdbId": 278155,
+  "tmdbId": 60808,
+  "name": "No Game No Life",
+  "status": "up_to_date",
+  "dbCount": 12,
+  "aired": 12,
+  "flags": 12
+ },
+ {
+  "tvdbId": 386818,
+  "tmdbId": 99779,
+  "name": "Noblesse",
+  "status": "up_to_date",
+  "dbCount": 13,
+  "aired": 13,
+  "flags": 13
+ },
+ {
+  "tvdbId": 248835,
+  "tmdbId": 39272,
+  "name": "Once Upon a Time",
+  "status": "stopped",
+  "dbCount": 34,
+  "aired": 156,
+  "flags": 34
+ },
+ {
+  "tvdbId": 392276,
+  "tmdbId": 111110,
+  "name": "One Piece",
+  "status": "watching",
+  "dbCount": 8,
+  "aired": 16,
+  "flags": 8
+ },
+ {
+  "tvdbId": 81797,
+  "tmdbId": 37854,
+  "name": "One Piece",
+  "status": "watching",
+  "dbCount": 154,
+  "aired": 1168,
+  "flags": 154
+ },
+ {
+  "tvdbId": 293088,
+  "tmdbId": 63926,
+  "name": "One-Punch Man",
+  "status": "stopped",
+  "dbCount": 12,
+  "aired": 36,
+  "flags": 12
+ },
+ {
+  "tvdbId": 377625,
+  "tmdbId": 99777,
+  "name": "Onyx Equinox",
+  "status": "up_to_date",
+  "dbCount": 12,
+  "aired": 12,
+  "flags": 12
+ },
+ {
+  "tvdbId": 264586,
+  "tmdbId": 1424,
+  "name": "Orange Is the New Black",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 91,
+  "flags": 0
+ },
+ {
+  "tvdbId": 294002,
+  "tmdbId": 64196,
+  "name": "Overlord",
+  "status": "up_to_date",
+  "dbCount": 52,
+  "aired": 52,
+  "flags": 52
+ },
+ {
+  "tvdbId": 279831,
+  "tmdbId": 61459,
+  "name": "Parasite : La Maxime",
+  "status": "up_to_date",
+  "dbCount": 24,
+  "aired": 24,
+  "flags": 24
+ },
+ {
+  "tvdbId": 338946,
+  "tmdbId": 72787,
+  "name": "Patrick Melrose",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 5,
+  "flags": 0
+ },
+ {
+  "tvdbId": 343253,
+  "tmdbId": 75758,
+  "name": "Perdus dans l'espace",
+  "status": "stopped",
+  "dbCount": 10,
+  "aired": 28,
+  "flags": 10
+ },
+ {
+  "tvdbId": 76703,
+  "tmdbId": 60572,
+  "name": "Pokémon",
+  "status": "watching",
+  "dbCount": 818,
+  "aired": 1235,
+  "flags": 819
+ },
+ {
+  "tvdbId": 373770,
+  "tmdbId": 96420,
+  "name": "Pokémon : Ailes du crépuscule",
+  "status": "up_to_date",
+  "dbCount": 7,
+  "aired": 7,
+  "flags": 7
+ },
+ {
+  "tvdbId": 409490,
+  "tmdbId": 132636,
+  "name": "Pokémon Évolutions",
+  "status": "up_to_date",
+  "dbCount": 8,
+  "aired": 8,
+  "flags": 8
+ },
+ {
+  "tvdbId": 273616,
+  "tmdbId": 61295,
+  "name": "Pokémon: les Origines",
+  "status": "up_to_date",
+  "dbCount": 4,
+  "aired": 4,
+  "flags": 4
+ },
+ {
+  "tvdbId": 262090,
+  "tmdbId": 43865,
+  "name": "Psycho-Pass",
+  "status": "up_to_date",
+  "dbCount": 41,
+  "aired": 41,
+  "flags": 41
+ },
+ {
+  "tvdbId": 379858,
+  "tmdbId": 128036,
+  "name": "Queer Force",
+  "status": "up_to_date",
+  "dbCount": 10,
+  "aired": 10,
+  "flags": 10
+ },
+ {
+  "tvdbId": 342131,
+  "tmdbId": 82879,
+  "name": "Radiant",
+  "status": "up_to_date",
+  "dbCount": 42,
+  "aired": 42,
+  "flags": 42
+ },
+ {
+  "tvdbId": 164021,
+  "tmdbId": 32815,
+  "name": "Raising Hope",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 88,
+  "flags": 0
+ },
+ {
+  "tvdbId": 305089,
+  "tmdbId": 65942,
+  "name": "Re:ZERO -Starting Life in Another World-",
+  "status": "stopped",
+  "dbCount": 4,
+  "aired": 77,
+  "flags": 4
+ },
+ {
+  "tvdbId": 280329,
+  "tmdbId": 61223,
+  "name": "Red Eyes Sword : Akame ga Kill!",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 24,
+  "flags": 0
+ },
+ {
+  "tvdbId": 413333,
+  "tmdbId": 153337,
+  "name": "Reign of the Seven Spellblades",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 15,
+  "flags": 0
+ },
+ {
+  "tvdbId": 275274,
+  "tmdbId": 60625,
+  "name": "Rick et Morty",
+  "status": "watching",
+  "dbCount": 61,
+  "aired": 88,
+  "flags": 61
+ },
+ {
+  "tvdbId": 311954,
+  "tmdbId": 69050,
+  "name": "Riverdale",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 137,
+  "flags": 0
+ },
+ {
+  "tvdbId": 295243,
+  "tmdbId": 63146,
+  "name": "Rokka –Braves of the Six Flowers–",
+  "status": "up_to_date",
+  "dbCount": 12,
+  "aired": 12,
+  "flags": 12
+ },
+ {
+  "tvdbId": 383837,
+  "tmdbId": 104699,
+  "name": "SHAMAN KING",
+  "status": "watching",
+  "dbCount": 25,
+  "aired": 52,
+  "flags": 25
+ },
+ {
+  "tvdbId": 339072,
+  "tmdbId": 78239,
+  "name": "SWORDGAI The Animation",
+  "status": "up_to_date",
+  "dbCount": 24,
+  "aired": 24,
+  "flags": 24
+ },
+ {
+  "tvdbId": 294417,
+  "tmdbId": 62823,
+  "name": "Scream",
+  "status": "stopped",
+  "dbCount": 23,
+  "aired": 29,
+  "flags": 23
+ },
+ {
+  "tvdbId": 155291,
+  "tmdbId": 55216,
+  "name": "Scènes de ménages",
+  "status": "stopped",
+  "dbCount": 658,
+  "aired": 902,
+  "flags": 844
+ },
+ {
+  "tvdbId": 452832,
+  "tmdbId": 281058,
+  "name": "Secrets of the Silent Witch",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 13,
+  "flags": 0
+ },
+ {
+  "tvdbId": 268156,
+  "tmdbId": 61664,
+  "name": "Sense8",
+  "status": "up_to_date",
+  "dbCount": 24,
+  "aired": 24,
+  "flags": 24
+ },
+ {
+  "tvdbId": 78814,
+  "tmdbId": 1087,
+  "name": "Serial Experiments Lain",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 13,
+  "flags": 0
+ },
+ {
+  "tvdbId": 356317,
+  "tmdbId": 81356,
+  "name": "Sex Education",
+  "status": "watching",
+  "dbCount": 24,
+  "aired": 32,
+  "flags": 24
+ },
+ {
+  "tvdbId": 79857,
+  "tmdbId": 40143,
+  "name": "Shaman King",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 64,
+  "flags": 0
+ },
+ {
+  "tvdbId": 421855,
+  "tmdbId": 205050,
+  "name": "Shangri-La Frontier",
+  "status": "up_to_date",
+  "dbCount": 50,
+  "aired": 50,
+  "flags": 50
+ },
+ {
+  "tvdbId": 176941,
+  "tmdbId": 19885,
+  "name": "Sherlock",
+  "status": "up_to_date",
+  "dbCount": 13,
+  "aired": 12,
+  "flags": 13
+ },
+ {
+  "tvdbId": 319127,
+  "tmdbId": 72313,
+  "name": "Sick Note",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 14,
+  "flags": 0
+ },
+ {
+  "tvdbId": 346947,
+  "tmdbId": 80560,
+  "name": "Sirius the Jaeger",
+  "status": "up_to_date",
+  "dbCount": 12,
+  "aired": 12,
+  "flags": 12
+ },
+ {
+  "tvdbId": 391006,
+  "tmdbId": 112163,
+  "name": "Sky-High Survival",
+  "status": "up_to_date",
+  "dbCount": 12,
+  "aired": 12,
+  "flags": 12
+ },
+ {
+  "tvdbId": 420450,
+  "tmdbId": 214609,
+  "name": "Smiley",
+  "status": "up_to_date",
+  "dbCount": 8,
+  "aired": 8,
+  "flags": 8
+ },
+ {
+  "tvdbId": 389597,
+  "tmdbId": 127532,
+  "name": "Solo Leveling",
+  "status": "up_to_date",
+  "dbCount": 25,
+  "aired": 25,
+  "flags": 25
+ },
+ {
+  "tvdbId": 396606,
+  "tmdbId": 115577,
+  "name": "Sonic Prime",
+  "status": "watching",
+  "dbCount": 16,
+  "aired": 23,
+  "flags": 16
+ },
+ {
+  "tvdbId": 72459,
+  "tmdbId": 10926,
+  "name": "Sonic X",
+  "status": "up_to_date",
+  "dbCount": 78,
+  "aired": 78,
+  "flags": 78
+ },
+ {
+  "tvdbId": 81751,
+  "tmdbId": 37305,
+  "name": "Soul Eater",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 51,
+  "flags": 0
+ },
+ {
+  "tvdbId": 75897,
+  "tmdbId": 2190,
+  "name": "South Park",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 331,
+  "flags": 0
+ },
+ {
+  "tvdbId": 369213,
+  "tmdbId": 100604,
+  "name": "Stalk",
+  "status": "stopped",
+  "dbCount": 2,
+  "aired": 30,
+  "flags": 2
+ },
+ {
+  "tvdbId": 328711,
+  "tmdbId": 67198,
+  "name": "Star Trek: Discovery",
+  "status": "watching",
+  "dbCount": 43,
+  "aired": 65,
+  "flags": 47
+ },
+ {
+  "tvdbId": 367138,
+  "tmdbId": 85948,
+  "name": "Star Trek: Lower Decks",
+  "status": "watching",
+  "dbCount": 30,
+  "aired": 50,
+  "flags": 30
+ },
+ {
+  "tvdbId": 364093,
+  "tmdbId": 85949,
+  "name": "Star Trek: Picard",
+  "status": "watching",
+  "dbCount": 20,
+  "aired": 30,
+  "flags": 20
+ },
+ {
+  "tvdbId": 244061,
+  "tmdbId": 42509,
+  "name": "Steins;Gate",
+  "status": "up_to_date",
+  "dbCount": 25,
+  "aired": 24,
+  "flags": 25
+ },
+ {
+  "tvdbId": 305288,
+  "tmdbId": 66732,
+  "name": "Stranger Things",
+  "status": "watching",
+  "dbCount": 25,
+  "aired": 42,
+  "flags": 25
+ },
+ {
+  "tvdbId": 355837,
+  "tmdbId": 103768,
+  "name": "Sweet Tooth",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 24,
+  "flags": 0
+ },
+ {
+  "tvdbId": 259640,
+  "tmdbId": 45782,
+  "name": "Sword Art Online",
+  "status": "stopped",
+  "dbCount": 49,
+  "aired": 96,
+  "flags": 49
+ },
+ {
+  "tvdbId": 390832,
+  "tmdbId": 111819,
+  "name": "TSUKIMICHI -Moonlit Fantasy-",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 37,
+  "flags": 0
+ },
+ {
+  "tvdbId": 164091,
+  "tmdbId": 32754,
+  "name": "Terra Nova",
+  "status": "up_to_date",
+  "dbCount": 11,
+  "aired": 11,
+  "flags": 11
+ },
+ {
+  "tvdbId": 279986,
+  "tmdbId": 61421,
+  "name": "Terror in Resonance",
+  "status": "up_to_date",
+  "dbCount": 11,
+  "aired": 11,
+  "flags": 11
+ },
+ {
+  "tvdbId": 462022,
+  "tmdbId": 280078,
+  "name": "The All-Devouring Whale",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 12,
+  "flags": 0
+ },
+ {
+  "tvdbId": 461708,
+  "tmdbId": 286984,
+  "name": "The Banished Court Magician Aims to Become the Strongest",
+  "status": "up_to_date",
+  "dbCount": 12,
+  "aired": 12,
+  "flags": 12
+ },
+ {
+  "tvdbId": 80379,
+  "tmdbId": 1418,
+  "name": "The Big Bang Theory",
+  "status": "up_to_date",
+  "dbCount": 279,
+  "aired": 279,
+  "flags": 280
+ },
+ {
+  "tvdbId": 355567,
+  "tmdbId": 76479,
+  "name": "The Boys",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 40,
+  "flags": 0
+ },
+ {
+  "tvdbId": 447246,
+  "tmdbId": 276253,
+  "name": "The Brilliant Healer's New Life in the Shadows",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 12,
+  "flags": 0
+ },
+ {
+  "tvdbId": 388574,
+  "tmdbId": 105476,
+  "name": "The Dungeon of Black Company",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 12,
+  "flags": 0
+ },
+ {
+  "tvdbId": 336522,
+  "tmdbId": 74577,
+  "name": "The End of the F***ing World",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 16,
+  "flags": 0
+ },
+ {
+  "tvdbId": 401915,
+  "tmdbId": 123525,
+  "name": "The Faraway Paladin",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 24,
+  "flags": 0
+ },
+ {
+  "tvdbId": 378556,
+  "tmdbId": 99778,
+  "name": "The God of High School",
+  "status": "up_to_date",
+  "dbCount": 13,
+  "aired": 13,
+  "flags": 13
+ },
+ {
+  "tvdbId": 419502,
+  "tmdbId": 200777,
+  "name": "The Iceblade Sorcerer Shall Rule the World",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 12,
+  "flags": 0
+ },
+ {
+  "tvdbId": 299139,
+  "tmdbId": 64432,
+  "name": "The Magicians",
+  "status": "stopped",
+  "dbCount": 39,
+  "aired": 65,
+  "flags": 39
+ },
+ {
+  "tvdbId": 361753,
+  "tmdbId": 82856,
+  "name": "The Mandalorian",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 24,
+  "flags": 0
+ },
+ {
+  "tvdbId": 290508,
+  "tmdbId": 61859,
+  "name": "The Night Manager",
+  "status": "watching",
+  "dbCount": 1,
+  "aired": 12,
+  "flags": 1
+ },
+ {
+  "tvdbId": 321060,
+  "tmdbId": 69061,
+  "name": "The OA",
+  "status": "watching",
+  "dbCount": 8,
+  "aired": 16,
+  "flags": 8
+ },
+ {
+  "tvdbId": 73244,
+  "tmdbId": 2316,
+  "name": "The Office",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 186,
+  "flags": 0
+ },
+ {
+  "tvdbId": 359675,
+  "tmdbId": 82104,
+  "name": "The Order",
+  "status": "watching",
+  "dbCount": 10,
+  "aired": 20,
+  "flags": 10
+ },
+ {
+  "tvdbId": 354539,
+  "tmdbId": 77459,
+  "name": "The Passage",
+  "status": "watching",
+  "dbCount": 1,
+  "aired": 10,
+  "flags": 1
+ },
+ {
+  "tvdbId": 415378,
+  "tmdbId": 156563,
+  "name": "The Reincarnation of the Strongest Exorcist in Another World",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 13,
+  "flags": 0
+ },
+ {
+  "tvdbId": 353712,
+  "tmdbId": 83095,
+  "name": "The Rising of the Shield Hero",
+  "status": "watching",
+  "dbCount": 50,
+  "aired": 62,
+  "flags": 50
+ },
+ {
+  "tvdbId": 284131,
+  "tmdbId": 62104,
+  "name": "The Seven Deadly Sins",
+  "status": "up_to_date",
+  "dbCount": 98,
+  "aired": 96,
+  "flags": 98
+ },
+ {
+  "tvdbId": 402374,
+  "tmdbId": 117884,
+  "name": "The Strongest Sage With the Weakest Crest",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 12,
+  "flags": 0
+ },
+ {
+  "tvdbId": 153021,
+  "tmdbId": 1402,
+  "name": "The Walking Dead",
+  "status": "stopped",
+  "dbCount": 51,
+  "aired": 177,
+  "flags": 51
+ },
+ {
+  "tvdbId": 456435,
+  "tmdbId": 281615,
+  "name": "The Water Magician",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 12,
+  "flags": 0
+ },
+ {
+  "tvdbId": 362696,
+  "tmdbId": 71912,
+  "name": "The Witcher",
+  "status": "watching",
+  "dbCount": 16,
+  "aired": 32,
+  "flags": 16
+ },
+ {
+  "tvdbId": 398193,
+  "tmdbId": 118821,
+  "name": "The World's Finest Assassin Gets Reincarnated in Another World as an Aristocrat",
+  "status": "up_to_date",
+  "dbCount": 12,
+  "aired": 12,
+  "flags": 12
+ },
+ {
+  "tvdbId": 341663,
+  "tmdbId": 75450,
+  "name": "Titans",
+  "status": "stopped",
+  "dbCount": 18,
+  "aired": 49,
+  "flags": 18
+ },
+ {
+  "tvdbId": 281249,
+  "tmdbId": 61374,
+  "name": "Tokyo Ghoul",
+  "status": "up_to_date",
+  "dbCount": 48,
+  "aired": 48,
+  "flags": 48
+ },
+ {
+  "tvdbId": 79511,
+  "tmdbId": 424,
+  "name": "Torchwood",
+  "status": "up_to_date",
+  "dbCount": 41,
+  "aired": 41,
+  "flags": 41
+ },
+ {
+  "tvdbId": 315098,
+  "tmdbId": 68100,
+  "name": "Touken Ranbu: Hanamaru",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 24,
+  "flags": 0
+ },
+ {
+  "tvdbId": 376729,
+  "tmdbId": 97860,
+  "name": "Tower of God",
+  "status": "watching",
+  "dbCount": 13,
+  "aired": 39,
+  "flags": 13
+ },
+ {
+  "tvdbId": 353331,
+  "tmdbId": 87763,
+  "name": "Toy Boy",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 21,
+  "flags": 0
+ },
+ {
+  "tvdbId": 403226,
+  "tmdbId": 94924,
+  "name": "Trese : Entre deux mondes",
+  "status": "up_to_date",
+  "dbCount": 6,
+  "aired": 6,
+  "flags": 6
+ },
+ {
+  "tvdbId": 307061,
+  "tmdbId": 66078,
+  "name": "Twin Star Exorcists",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 50,
+  "flags": 0
+ },
+ {
+  "tvdbId": 353764,
+  "tmdbId": 75006,
+  "name": "Umbrella Academy",
+  "status": "watching",
+  "dbCount": 20,
+  "aired": 36,
+  "flags": 20
+ },
+ {
+  "tvdbId": 393810,
+  "tmdbId": 114868,
+  "name": "Valkyrie Apocalypse",
+  "status": "watching",
+  "dbCount": 27,
+  "aired": 42,
+  "flags": 27
+ },
+ {
+  "tvdbId": 125161,
+  "tmdbId": 14389,
+  "name": "Valérian et Laureline",
+  "status": "up_to_date",
+  "dbCount": 40,
+  "aired": 40,
+  "flags": 40
+ },
+ {
+  "tvdbId": 345948,
+  "tmdbId": 81138,
+  "name": "Vermin",
+  "status": "stopped",
+  "dbCount": 5,
+  "aired": 10,
+  "flags": 5
+ },
+ {
+  "tvdbId": 330139,
+  "tmdbId": 75214,
+  "name": "Violet Evergarden",
+  "status": "up_to_date",
+  "dbCount": 13,
+  "aired": 13,
+  "flags": 13
+ },
+ {
+  "tvdbId": 94121,
+  "tmdbId": 64414,
+  "name": "Wakfu",
+  "status": "up_to_date",
+  "dbCount": 78,
+  "aired": 78,
+  "flags": 78
+ },
+ {
+  "tvdbId": 362392,
+  "tmdbId": 85271,
+  "name": "WandaVision",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 9,
+  "flags": 0
+ },
+ {
+  "tvdbId": 369144,
+  "tmdbId": 91801,
+  "name": "Welcome to Demon School! Iruma-kun",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 79,
+  "flags": 0
+ },
+ {
+  "tvdbId": 296762,
+  "tmdbId": 63247,
+  "name": "Westworld",
+  "status": "watching",
+  "dbCount": 1,
+  "aired": 36,
+  "flags": 1
+ },
+ {
+  "tvdbId": 354602,
+  "tmdbId": 85844,
+  "name": "Wise Man's Grandchild",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 12,
+  "flags": 0
+ },
+ {
+  "tvdbId": 445829,
+  "tmdbId": 245842,
+  "name": "Wistoria: Wand and Sword",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 24,
+  "flags": 0
+ },
+ {
+  "tvdbId": 257692,
+  "tmdbId": 61351,
+  "name": "WorkinGirls",
+  "status": "up_to_date",
+  "dbCount": 48,
+  "aired": 49,
+  "flags": 49
+ },
+ {
+  "tvdbId": 289744,
+  "tmdbId": 62568,
+  "name": "Yamada-kun and the Seven Witches",
+  "status": "up_to_date",
+  "dbCount": 12,
+  "aired": 12,
+  "flags": 12
+ },
+ {
+  "tvdbId": 181491,
+  "tmdbId": 899,
+  "name": "Yamato Nadeshiko Shichi Henge",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 25,
+  "flags": 0
+ },
+ {
+  "tvdbId": 398144,
+  "tmdbId": 112166,
+  "name": "Yasuke",
+  "status": "up_to_date",
+  "dbCount": 6,
+  "aired": 6,
+  "flags": 6
+ },
+ {
+  "tvdbId": 336924,
+  "tmdbId": 78191,
+  "name": "You",
+  "status": "watching",
+  "dbCount": 1,
+  "aired": 50,
+  "flags": 1
+ },
+ {
+  "tvdbId": 76894,
+  "tmdbId": 902,
+  "name": "Yu-Gi-Oh! Duel Monsters",
+  "status": "up_to_date",
+  "dbCount": 224,
+  "aired": 224,
+  "flags": 224
+ },
+ {
+  "tvdbId": 317004,
+  "tmdbId": 68129,
+  "name": "Yuri!!! On Ice",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 12,
+  "flags": 0
+ },
+ {
+  "tvdbId": 281470,
+  "tmdbId": 60866,
+  "name": "iZombie",
+  "status": "stopped",
+  "dbCount": 47,
+  "aired": 71,
+  "flags": 47
+ },
+ {
+  "tvdbId": 350084,
+  "tmdbId": 83105,
+  "name": "revisions",
+  "status": "not_started",
+  "dbCount": 0,
+  "aired": 12,
+  "flags": 0
+ }
+]

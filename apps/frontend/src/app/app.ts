@@ -1,0 +1,14 @@
+import { Component, inject } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { AuthStore } from './store/auth.store';
+import { BottomNav } from './ui/shared/bottom-nav/bottom-nav';
+
+@Component({
+  selector: 'app-root',
+  imports: [RouterOutlet, BottomNav],
+  templateUrl: './app.html',
+  styleUrl: './app.scss',
+})
+export class App {
+  protected readonly auth = inject(AuthStore);
+}

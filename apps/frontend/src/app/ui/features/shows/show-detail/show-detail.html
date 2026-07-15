@@ -1,0 +1,82 @@
+@if (store.currentShow(); as show) {
+  <header [style.background-image]="backdropUrl() ? 'url(' + backdropUrl() + ')' : ''">
+    <div class="scrim">
+      <button class="back" (click)="back()" aria-label="Retour"><i class="pi pi-arrow-left"></i></button>
+      <div class="head">
+        @if (posterUrl(); as url) {
+          <img class="poster" [src]="url" [alt]="show.detail.name" />
+        }
+        <div class="titles">
+          <h1>{{ show.detail.name }}</h1>
+          <p class="muted meta-line">
+            @if (show.detail.firstAirDate) {
+              {{ show.detail.firstAirDate.slice(0, 4) }} ·
+            }
+            {{ show.detail.numberOfSeasons }} saison{{ show.detail.numberOfSeasons > 1 ? 's' : '' }}
+            · {{ show.watchedCount }} / {{ show.detail.numberOfEpisodes }} vus
+          </p>
+          <div class="genres">
+            @for (genre of show.detail.genres.slice(0, 3); track genre) {
+              <span class="chip">{{ genre }}</span>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="page">
+    <div class="actions">
+      @if (show.followed) {
+        <select
+          class="status-select"
+          [value]="show.status"
+          (change)="setStatus($any($event.target).value)"
+          aria-label="Statut de la série"
+        >
+          @for (option of statusOptions; track option.value) {
+            <option [value]="option.value">{{ option.label }}</option>
+          }
+        </select>
+        <button class="btn ghost danger" (click)="toggleFollow()">
+          <i class="pi pi-minus-circle"></i> Ne plus suivre
+        </button>
+      } @else {
+        <button class="btn primary" (click)="toggleFollow()">
+          <i class="pi pi-plus-circle"></i> Suivre cette série
+        </button>
+      }
+    </div>
+
+    @if (show.detail.overview) {
+      <p class="overview muted">{{ show.detail.overview }}</p>
+    }
+
+    <h2 class="section-title">Saisons</h2>
+    <ul class="seasons">
+      @for (season of show.seasons; track season.seasonNumber) {
+        <li class="card">
+          <a class="season-link" [routerLink]="['/shows', tmdbId(), 'season', season.seasonNumber]">
+            <div class="season-info">
+              <span class="season-name">{{ season.name }}</span>
+              <span class="muted">{{ season.watchedCount }} / {{ season.episodeCount }}</span>
+              <app-progress-bar [value]="season.watchedCount" [total]="season.episodeCount" />
+            </div>
+          </a>
+          <button
+            class="check-btn"
+            [class.checked]="season.episodeCount > 0 && season.watchedCount >= season.episodeCount"
+            (click)="markSeason(season.seasonNumber)"
+            [attr.aria-label]="'Marquer la saison ' + season.seasonNumber + ' comme vue'"
+          >
+            <i class="pi pi-check"></i>
+          </button>
+        </li>
+      }
+    </ul>
+  </div>
+} @else if (store.loading()) {
+  <div class="page">
+    <div class="skeleton hero-skeleton"></div>
+  </div>
+}

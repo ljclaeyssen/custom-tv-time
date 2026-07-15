@@ -1,0 +1,45 @@
+services:
+  db:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${DATABASE_USER}
+      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+      POSTGRES_DB: ${DATABASE_NAME}
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U ${DATABASE_USER} -d ${DATABASE_NAME}']
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  backend:
+    build:
+      context: .
+      dockerfile: apps/backend/Dockerfile
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_HOST: db
+      DATABASE_PORT: '5432'
+      TVTIME_EXPORT_PATH: /data/tvtime-export/tvtime-full-export.json
+    volumes:
+      - ./tvtime-export:/data/tvtime-export:ro
+    depends_on:
+      db:
+        condition: service_healthy
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/frontend/Dockerfile
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      # Exposé uniquement en local : le Caddy du VPS reverse-proxy dessus.
+      - '127.0.0.1:8180:80'
+
+volumes:
+  db-data:
