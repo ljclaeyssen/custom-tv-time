@@ -1,5 +1,6 @@
 import { Component, computed, inject, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { FOLLOW_STATUS_META } from '../../../../domain/models/follow-status.meta';
 import { MyShowItem } from '../../../../domain/models/show.model';
 import { ShowsStore } from '../../../../store/shows.store';
 import { RetrieveMyShows } from '../../../../use-cases/retrieve-my-shows';
@@ -7,19 +8,10 @@ import { tmdbImage } from '../../../../utils/tmdb-image';
 import { EmptyState } from '../../../shared/empty-state/empty-state';
 import { PosterCard } from '../../../shared/poster-card/poster-card';
 
-const STATUS_ORDER: Record<string, number> = {
-  watching: 0,
-  up_to_date: 1,
-  not_started: 2,
-  watch_later: 3,
-  stopped: 4,
-};
-
 @Component({
   selector: 'app-my-shows',
   imports: [RouterLink, EmptyState, PosterCard],
   templateUrl: './my-shows.html',
-  styleUrl: './my-shows.scss',
 })
 export class MyShows implements OnInit {
   protected readonly store = inject(ShowsStore);
@@ -28,7 +20,7 @@ export class MyShows implements OnInit {
   protected readonly sorted = computed(() =>
     [...this.store.myShows()].sort(
       (a, b) =>
-        (STATUS_ORDER[a.show.status] ?? 9) - (STATUS_ORDER[b.show.status] ?? 9) ||
+        FOLLOW_STATUS_META[a.show.status].order - FOLLOW_STATUS_META[b.show.status].order ||
         a.show.name.localeCompare(b.show.name),
     ),
   );

@@ -7,10 +7,11 @@ import { RetrieveRecentlyWatched } from '../../../../use-cases/retrieve-recently
 import { RetrieveWatchNext } from '../../../../use-cases/retrieve-watch-next';
 import { tmdbImage } from '../../../../utils/tmdb-image';
 import { EmptyState } from '../../../shared/empty-state/empty-state';
+import { PosterImg } from '../../../shared/poster-img/poster-img';
 
 @Component({
   selector: 'app-watch-next',
-  imports: [RouterLink, EmptyState],
+  imports: [RouterLink, EmptyState, PosterImg],
   templateUrl: './watch-next.html',
   styleUrl: './watch-next.scss',
 })

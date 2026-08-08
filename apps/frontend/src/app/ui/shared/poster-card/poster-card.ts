@@ -1,9 +1,10 @@
 import { Component, input } from '@angular/core';
+import { PosterImg } from '../poster-img/poster-img';
 import { ProgressBar } from '../progress-bar/progress-bar';
 
 @Component({
   selector: 'app-poster-card',
-  imports: [ProgressBar],
+  imports: [PosterImg, ProgressBar],
   templateUrl: './poster-card.html',
   styleUrl: './poster-card.scss',
 })

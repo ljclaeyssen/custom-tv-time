@@ -1,0 +1,5 @@
+@if (src(); as url) {
+  <img [src]="url" [alt]="alt()" loading="lazy" />
+} @else {
+  <div class="placeholder"><i class="pi pi-image"></i></div>
+}

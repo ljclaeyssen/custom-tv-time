@@ -11,7 +11,7 @@
   </div>
 
   @if (store.loading() && !store.loaded()) {
-    <div class="grid">
+    <div class="poster-grid">
       @for (i of [1, 2, 3, 4, 5, 6]; track i) {
         <div class="skeleton poster-skeleton"></div>
       }
@@ -23,15 +23,11 @@
       <app-empty-state icon="pi-ticket" message="Aucun film vu" hint="Marque tes films vus depuis la watchlist." />
     }
   } @else {
-    <div class="grid">
+    <div class="poster-grid">
       @for (movie of visible(); track movie.tmdbMovieId) {
         <div class="movie">
           <figure>
-            @if (poster(movie); as url) {
-              <img [src]="url" [alt]="movie.title" loading="lazy" />
-            } @else {
-              <div class="placeholder"><i class="pi pi-image"></i></div>
-            }
+            <app-poster-img [src]="poster(movie)" [alt]="movie.title" />
             <div class="overlay">
               @if (movie.watchedAt === null) {
                 <button class="check-btn" (click)="setWatched(movie, true)" aria-label="Marquer vu">

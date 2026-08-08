@@ -1,5 +1,5 @@
 @if (store.loading() && !store.myShowsLoaded()) {
-  <div class="grid">
+  <div class="poster-grid">
     @for (i of [1, 2, 3, 4, 5, 6]; track i) {
       <div class="skeleton poster-skeleton"></div>
     }
@@ -11,7 +11,7 @@
     hint="Importe ton historique TV Time depuis le profil, ou explore le catalogue."
   />
 } @else {
-  <div class="grid">
+  <div class="poster-grid">
     @for (item of sorted(); track item.show.tmdbShowId) {
       <a [routerLink]="['/shows', item.show.tmdbShowId]">
         <app-poster-card

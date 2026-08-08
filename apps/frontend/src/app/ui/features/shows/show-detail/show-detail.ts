@@ -1,6 +1,7 @@
 import { Component, computed, inject, input, numberAttribute, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { FOLLOW_STATUS_OPTIONS } from '../../../../domain/models/follow-status.meta';
 import { FollowStatus } from '../../../../domain/models/show.model';
 import { ShowsStore } from '../../../../store/shows.store';
 import { MarkSeasonWatched } from '../../../../use-cases/mark-season-watched';
@@ -9,14 +10,6 @@ import { ToggleShowFollow } from '../../../../use-cases/toggle-show-follow';
 import { UpdateShowStatus } from '../../../../use-cases/update-show-status';
 import { tmdbImage } from '../../../../utils/tmdb-image';
 import { ProgressBar } from '../../../shared/progress-bar/progress-bar';
-
-const STATUS_LABELS: { value: FollowStatus; label: string }[] = [
-  { value: 'watching', label: 'En cours' },
-  { value: 'up_to_date', label: 'À jour' },
-  { value: 'not_started', label: 'Pas commencée' },
-  { value: 'watch_later', label: 'À voir plus tard' },
-  { value: 'stopped', label: 'Arrêtée' },
-];
 
 @Component({
   selector: 'app-show-detail',
@@ -28,7 +21,7 @@ export class ShowDetail implements OnInit {
   readonly tmdbId = input.required({ transform: numberAttribute });
 
   protected readonly store = inject(ShowsStore);
-  protected readonly statusOptions = STATUS_LABELS;
+  protected readonly statusOptions = FOLLOW_STATUS_OPTIONS;
   readonly #location = inject(Location);
   readonly #retrieveShowProgress = inject(RetrieveShowProgress);
   readonly #toggleFollow = inject(ToggleShowFollow);

@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
-import { catchError, EMPTY, first, tap } from 'rxjs';
 import { ProfileGateway } from '../domain/gateways/profile.gateway';
 import { AuthStore } from '../store/auth.store';
+import { runQuery } from './run-query';
 
 @Injectable()
 export class RetrieveProfile {
@@ -9,13 +9,8 @@ export class RetrieveProfile {
   readonly #store = inject(AuthStore);
 
   execute(): void {
-    this.#gateway
-      .getProfile()
-      .pipe(
-        first(),
-        tap((profile) => this.#store.setProfile(profile)),
-        catchError(() => EMPTY),
-      )
-      .subscribe();
+    runQuery(this.#gateway.getProfile(), {
+      onResult: (profile) => this.#store.setProfile(profile),
+    });
   }
 }

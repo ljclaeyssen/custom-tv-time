@@ -7,11 +7,7 @@
         track r.tmdbShowId + ':' + r.season + ':' + r.episode + ':' + r.watchedAt) {
         <li class="card recent-row">
           <a class="poster" [routerLink]="['/shows', r.tmdbShowId]">
-            @if (recentPoster(r); as url) {
-              <img [src]="url" [alt]="r.showName" loading="lazy" />
-            } @else {
-              <div class="placeholder"><i class="pi pi-image"></i></div>
-            }
+            <app-poster-img [src]="recentPoster(r)" [alt]="r.showName" />
           </a>
           <a class="info" [routerLink]="['/shows', r.tmdbShowId]">
             <span class="show-name">{{ r.showName }}</span>
@@ -44,11 +40,7 @@
     @for (item of store.watchNext(); track item.show.tmdbShowId) {
       <li class="card">
         <a class="poster" [routerLink]="['/shows', item.show.tmdbShowId]">
-          @if (poster(item); as url) {
-            <img [src]="url" [alt]="item.show.name" loading="lazy" />
-          } @else {
-            <div class="placeholder"><i class="pi pi-image"></i></div>
-          }
+          <app-poster-img [src]="poster(item)" [alt]="item.show.name" />
         </a>
         <a class="info" [routerLink]="['/shows', item.show.tmdbShowId]">
           <span class="show-name">{{ item.show.name }}</span>

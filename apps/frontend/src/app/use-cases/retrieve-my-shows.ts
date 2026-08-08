@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
-import { catchError, EMPTY, first, tap } from 'rxjs';
 import { ShowsGateway } from '../domain/gateways/shows.gateway';
 import { ShowsStore } from '../store/shows.store';
+import { runQuery } from './run-query';
 
 @Injectable()
 export class RetrieveMyShows {
@@ -13,16 +13,9 @@ export class RetrieveMyShows {
       return;
     }
     this.#store.setLoading(true);
-    this.#gateway
-      .getMyShows()
-      .pipe(
-        first(),
-        tap((items) => this.#store.setMyShows(items)),
-        catchError(() => {
-          this.#store.setLoading(false);
-          return EMPTY;
-        }),
-      )
-      .subscribe();
+    runQuery(this.#gateway.getMyShows(), {
+      onResult: (items) => this.#store.setMyShows(items),
+      onError: () => this.#store.setLoading(false),
+    });
   }
 }

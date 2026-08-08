@@ -200,6 +200,57 @@ button {
   border-radius: var(--radius);
 }
 
+.skeletons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.poster-skeleton {
+  aspect-ratio: 2 / 3;
+}
+
+// ---- Onglets (Séries, Films) ----
+.tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+
+  button {
+    background: none;
+    border: none;
+    color: var(--text-3);
+    font-size: 0.95rem;
+    font-weight: 700;
+    padding: 10px 14px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    transition: color 0.15s ease;
+
+    &.active {
+      color: var(--text);
+      border-bottom-color: var(--accent);
+    }
+  }
+}
+
+// ---- Grille de posters responsive ----
+.poster-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+
+  @media (min-width: 520px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: 680px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
 @keyframes shimmer {
   to {
     background-position: -200% 0;

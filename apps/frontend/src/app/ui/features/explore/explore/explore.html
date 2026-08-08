@@ -30,11 +30,7 @@
         <li class="card">
           <button class="hit" (click)="open(result)" [disabled]="result.type === 'movie'">
             <figure>
-              @if (poster(result); as url) {
-                <img [src]="url" [alt]="result.name" loading="lazy" />
-              } @else {
-                <div class="placeholder"><i class="pi pi-image"></i></div>
-              }
+              <app-poster-img [src]="poster(result)" [alt]="result.name" />
             </figure>
             <div class="info">
               <span class="chip" [class.accent]="result.type === 'show'">

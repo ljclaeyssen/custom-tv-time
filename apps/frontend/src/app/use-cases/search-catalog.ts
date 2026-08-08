@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
-import { catchError, EMPTY, first, tap } from 'rxjs';
 import { CatalogGateway } from '../domain/gateways/catalog.gateway';
 import { ExploreStore } from '../store/explore.store';
+import { runQuery } from './run-query';
 
 @Injectable()
 export class SearchCatalog {
@@ -15,21 +15,14 @@ export class SearchCatalog {
       return;
     }
     this.#store.setLoading(true);
-    this.#gateway
-      .search(query, type)
-      .pipe(
-        first(),
-        tap((results) => {
-          // Ignore les réponses arrivées après un changement de recherche.
-          if (this.#store.query() === query) {
-            this.#store.setResults(results);
-          }
-        }),
-        catchError(() => {
-          this.#store.setLoading(false);
-          return EMPTY;
-        }),
-      )
-      .subscribe();
+    runQuery(this.#gateway.search(query, type), {
+      onResult: (results) => {
+        // Ignore les réponses arrivées après un changement de recherche.
+        if (this.#store.query() === query) {
+          this.#store.setResults(results);
+        }
+      },
+      onError: () => this.#store.setLoading(false),
+    });
   }
 }

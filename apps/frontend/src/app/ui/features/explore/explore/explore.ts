@@ -9,11 +9,12 @@ import { SearchCatalog } from '../../../../use-cases/search-catalog';
 import { TrackMovie } from '../../../../use-cases/track-movie';
 import { tmdbImage } from '../../../../utils/tmdb-image';
 import { EmptyState } from '../../../shared/empty-state/empty-state';
+import { PosterImg } from '../../../shared/poster-img/poster-img';
 import { ExploreSearchForm } from './explore-search.form';
 
 @Component({
   selector: 'app-explore',
-  imports: [ReactiveFormsModule, EmptyState],
+  imports: [ReactiveFormsModule, EmptyState, PosterImg],
   templateUrl: './explore.html',
   styleUrl: './explore.scss',
 })

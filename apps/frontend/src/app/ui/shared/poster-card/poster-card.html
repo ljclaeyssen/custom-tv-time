@@ -1,9 +1,5 @@
 <figure>
-  @if (posterUrl(); as url) {
-    <img [src]="url" [alt]="name()" loading="lazy" />
-  } @else {
-    <div class="placeholder"><i class="pi pi-image"></i></div>
-  }
+  <app-poster-img [src]="posterUrl()" [alt]="name()" />
 </figure>
 @if (progressValue() !== null && progressTotal() !== null) {
   <app-progress-bar [value]="progressValue()!" [total]="progressTotal()!" />

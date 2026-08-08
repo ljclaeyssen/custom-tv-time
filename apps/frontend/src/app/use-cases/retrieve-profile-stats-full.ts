@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
-import { catchError, EMPTY, first, tap } from 'rxjs';
 import { StatsGateway } from '../domain/gateways/stats.gateway';
 import { StatsStore } from '../store/stats.store';
+import { runQuery } from './run-query';
 
 @Injectable()
 export class RetrieveProfileStatsFull {
@@ -13,16 +13,9 @@ export class RetrieveProfileStatsFull {
       return;
     }
     this.#store.setLoading(true);
-    this.#gateway
-      .getStats()
-      .pipe(
-        first(),
-        tap((stats) => this.#store.setStats(stats)),
-        catchError((error: { message?: string }) => {
-          this.#store.setError(error.message ?? 'Stats indisponibles');
-          return EMPTY;
-        }),
-      )
-      .subscribe();
+    runQuery(this.#gateway.getStats(), {
+      onResult: (stats) => this.#store.setStats(stats),
+      onError: () => this.#store.setError('Stats indisponibles'),
+    });
   }
 }

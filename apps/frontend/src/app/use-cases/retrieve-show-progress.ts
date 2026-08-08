@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
-import { catchError, EMPTY, first, tap } from 'rxjs';
 import { ShowsGateway } from '../domain/gateways/shows.gateway';
 import { ShowsStore } from '../store/shows.store';
+import { runQuery } from './run-query';
 
 @Injectable()
 export class RetrieveShowProgress {
@@ -11,16 +11,9 @@ export class RetrieveShowProgress {
   execute(tmdbShowId: number): void {
     this.#store.setCurrentShow(null);
     this.#store.setLoading(true);
-    this.#gateway
-      .getShowProgress(tmdbShowId)
-      .pipe(
-        first(),
-        tap((progress) => this.#store.setCurrentShow(progress)),
-        catchError(() => {
-          this.#store.setLoading(false);
-          return EMPTY;
-        }),
-      )
-      .subscribe();
+    runQuery(this.#gateway.getShowProgress(tmdbShowId), {
+      onResult: (progress) => this.#store.setCurrentShow(progress),
+      onError: () => this.#store.setLoading(false),
+    });
   }
 }

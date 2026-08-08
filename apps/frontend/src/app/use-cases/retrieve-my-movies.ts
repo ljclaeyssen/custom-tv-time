@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
-import { catchError, EMPTY, first, tap } from 'rxjs';
 import { MoviesGateway } from '../domain/gateways/movies.gateway';
 import { MoviesStore } from '../store/movies.store';
+import { runQuery } from './run-query';
 
 @Injectable()
 export class RetrieveMyMovies {
@@ -13,16 +13,9 @@ export class RetrieveMyMovies {
       return;
     }
     this.#store.setLoading(true);
-    this.#gateway
-      .getMyMovies()
-      .pipe(
-        first(),
-        tap((movies) => this.#store.setMovies(movies)),
-        catchError(() => {
-          this.#store.setLoading(false);
-          return EMPTY;
-        }),
-      )
-      .subscribe();
+    runQuery(this.#gateway.getMyMovies(), {
+      onResult: (movies) => this.#store.setMovies(movies),
+      onError: () => this.#store.setLoading(false),
+    });
   }
 }

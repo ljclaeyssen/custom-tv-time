@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
-import { catchError, EMPTY, first, tap } from 'rxjs';
 import { ShowsGateway } from '../domain/gateways/shows.gateway';
 import { ShowsStore } from '../store/shows.store';
+import { runQuery } from './run-query';
 
 @Injectable()
 export class RetrieveRecentlyWatched {
@@ -12,13 +12,8 @@ export class RetrieveRecentlyWatched {
     if (this.#store.recentlyWatchedLoaded() && !force) {
       return;
     }
-    this.#gateway
-      .getRecentlyWatched()
-      .pipe(
-        first(),
-        tap((items) => this.#store.setRecentlyWatched(items)),
-        catchError(() => EMPTY),
-      )
-      .subscribe();
+    runQuery(this.#gateway.getRecentlyWatched(), {
+      onResult: (items) => this.#store.setRecentlyWatched(items),
+    });
   }
 }

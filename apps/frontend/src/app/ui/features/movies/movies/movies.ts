@@ -6,10 +6,11 @@ import { SetMovieWatched } from '../../../../use-cases/set-movie-watched';
 import { UntrackMovie } from '../../../../use-cases/untrack-movie';
 import { tmdbImage } from '../../../../utils/tmdb-image';
 import { EmptyState } from '../../../shared/empty-state/empty-state';
+import { PosterImg } from '../../../shared/poster-img/poster-img';
 
 @Component({
   selector: 'app-movies',
-  imports: [EmptyState],
+  imports: [EmptyState, PosterImg],
   templateUrl: './movies.html',
   styleUrl: './movies.scss',
 })

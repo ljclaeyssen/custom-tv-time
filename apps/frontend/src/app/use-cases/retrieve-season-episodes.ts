@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
-import { catchError, EMPTY, first, tap } from 'rxjs';
 import { ShowsGateway } from '../domain/gateways/shows.gateway';
 import { ShowsStore } from '../store/shows.store';
+import { runQuery } from './run-query';
 
 @Injectable()
 export class RetrieveSeasonEpisodes {
@@ -11,16 +11,9 @@ export class RetrieveSeasonEpisodes {
   execute(tmdbShowId: number, seasonNumber: number): void {
     this.#store.setCurrentSeasonEpisodes([]);
     this.#store.setLoading(true);
-    this.#gateway
-      .getSeasonEpisodes(tmdbShowId, seasonNumber)
-      .pipe(
-        first(),
-        tap((episodes) => this.#store.setCurrentSeasonEpisodes(episodes)),
-        catchError(() => {
-          this.#store.setLoading(false);
-          return EMPTY;
-        }),
-      )
-      .subscribe();
+    runQuery(this.#gateway.getSeasonEpisodes(tmdbShowId, seasonNumber), {
+      onResult: (episodes) => this.#store.setCurrentSeasonEpisodes(episodes),
+      onError: () => this.#store.setLoading(false),
+    });
   }
 }
