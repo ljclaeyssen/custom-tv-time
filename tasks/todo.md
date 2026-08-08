@@ -26,14 +26,13 @@
 - [x] Builds verts (backend webpack, frontend esbuild) + smoke test API (401 guard, 302 Discord)
 - [x] README : setup Discord app, lancement, points d'attention
 
-## Reste à faire (post-v1, pour Louis-Jean)
+## Reste à faire (post-v1)
 
-- [ ] Créer l'app Discord et remplir `DISCORD_CLIENT_ID` / `DISCORD_CLIENT_SECRET` dans `.env`
-- [ ] Premier login + import TV Time depuis l'écran Profil
 - [ ] Vérifier la progression des animes au long cours (numérotation TVDB vs TMDB)
-- [ ] `git init` + premier commit (le repo n'est pas encore versionné)
 - [ ] Icônes PWA personnalisées (actuellement celles générées par @angular/pwa)
-- [ ] Migrations TypeORM avant hébergement réel
+- [ ] Migrations TypeORM (`synchronize: true` assumé tant que l'app reste mono-utilisateur)
+- [ ] Écrire de vrais tests métier (frontend : gateways in-memory prêts dans
+      `apps/frontend/src/app/testing/` ; backend : aucun test à ce jour)
 
 ## Review
 

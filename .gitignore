@@ -7,18 +7,16 @@
 node_modules/
 dist/
 .angular/
+coverage/
+out-tsc/
+tmp/
 
 # IDE / OS
 .idea/
+.cursor/
 .DS_Store
 
 # Nx
 .nx/
-dist/
-out-tsc/
-.cursor/
-tmp/
-
-.angular
 
 vitest.config.*.timestamp*

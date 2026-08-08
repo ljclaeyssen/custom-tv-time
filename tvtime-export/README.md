@@ -4,10 +4,18 @@ Extrait le 2026-07-05 depuis les API internes de app.tvtime.com (avant fermeture
 
 ## Fichiers
 
-- `tvtime-full-export.json` — export complet (tout-en-un)
-- `series.json` — 277 séries suivies
-- `movies.json` — 251 films (suivis + watchlist)
-- `watched-episodes.json` / `watched-episodes.csv` — 5414 épisodes vus (181 séries), du 2015-10-11 au 2026-06-26
+- `tvtime-full-export.json` — export complet tout-en-un : 277 séries suivies,
+  251 films (suivis + watchlist), 5414 épisodes vus (181 séries), du 2015-10-11
+  au 2026-06-26. **Consommé par l'import** (`TVTIME_EXPORT_PATH`).
+- `tvtime-seen-flags.json` — flags « vu » par épisode extraits séparément :
+  TV Time n'émettait pas de watch event pour les épisodes cochés en masse, ces
+  flags font foi et sont fusionnés à l'import. **Consommé par l'import**
+  (`TVTIME_SEEN_FLAGS_PATH`).
+
+Les sous-ensembles redondants (`series.json`, `movies.json`,
+`watched-episodes.json/.csv`, `audit-shows.json`) ont été retirés du dossier —
+ils restent disponibles dans l'historique git. Le dossier est synchronisé vers
+le VPS à chaque déploiement (source de l'import, montée en lecture seule).
 
 ## Structure
 

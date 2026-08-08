@@ -49,10 +49,20 @@ L'import résout les IDs TheTVDB/IMDb vers TMDB via `/find`, il est idempotent
   entre TheTVDB (source de l'export) et TMDB. Les épisodes importés gardent la numérotation
   TVDB : quelques séries peuvent afficher une progression décalée, à recaler à la main
   ou via un futur matching par date de diffusion.
-- **Schéma DB** : `synchronize: true` (dev). Passer à des migrations TypeORM avant une
-  vraie mise en production.
+- **Schéma DB** : `synchronize: true`, choix assumé pour une prod mono-utilisateur.
+  Attention : toute suppression de champ d'entité droppe la colonne (et ses données)
+  au redémarrage — passer aux migrations TypeORM avant d'ouvrir à d'autres utilisateurs.
 - **PWA** : le service worker n'est actif qu'en build production
   (`npx nx build frontend` puis servir `dist/apps/frontend/browser`).
+
+## Déploiement
+
+**Production : https://vu.ljclaeyssen.fr** (VPS Hetzner ARM partagé). Un push sur `main`
+déclenche `.github/workflows/deploy.yml` : build de l'image backend ARM64 poussée sur GHCR,
+build du front statique, puis déploiement sur le serveur (`docker-compose.prod.yml`,
+front servi par Caddy — voir `deploy/Caddyfile.vu`). Le dossier `tvtime-export/` est
+synchronisé vers le serveur à chaque déploiement (source de l'import, monté en lecture
+seule dans le conteneur backend).
 
 ## Commandes utiles
 
