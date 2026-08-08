@@ -1,5 +1,7 @@
-# Build sur le VPS (ARM64 natif) — multi-stage pour une image de run légère.
-FROM node:22-alpine AS build
+# Cross-compile : l'étape de build tourne sur l'arch NATIVE du runner (rapide,
+# TypeScript/Nx non émulé), l'image finale cible arm64 (le VPS Hetzner CAX21).
+# Les dépendances runtime sont du pur JS (pg, nestjs…) → install arm64 trivial.
+FROM --platform=$BUILDPLATFORM node:22-alpine AS build
 WORKDIR /workspace
 COPY package.json package-lock.json nx.json tsconfig.base.json ./
 RUN npm ci

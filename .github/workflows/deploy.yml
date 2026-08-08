@@ -9,40 +9,107 @@ concurrency:
   group: deploy
   cancel-in-progress: false
 
+env:
+  IMAGE: ghcr.io/ljclaeyssen/custom-tv-time
+
 jobs:
-  deploy:
+  build-backend:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-qemu-action@v3
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: apps/backend/Dockerfile
+          platforms: linux/arm64
+          push: true
+          tags: ${{ env.IMAGE }}:latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+  build-frontend:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx nx build frontend --configuration=production
+      - uses: actions/upload-artifact@v4
+        with:
+          name: frontend
+          path: dist/apps/frontend/browser
+          retention-days: 1
+
+  deploy:
+    needs: [build-backend, build-frontend]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: frontend
+          path: frontend-dist
 
       - name: Configurer SSH
         run: |
           mkdir -p ~/.ssh
           echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
-          ssh-keyscan -H "${{ secrets.VPS_HOST }}" >> ~/.ssh/known_hosts
+          ssh-keyscan -H "${{ secrets.VPS_HOST }}" >> ~/.ssh/known_hosts 2>/dev/null
 
-      - name: Synchroniser les sources
+      - name: Préparer l'arborescence distante
         run: |
-          rsync -az --delete \
-            --exclude node_modules --exclude .git --exclude dist \
-            --exclude .nx --exclude .angular --exclude tmp --exclude .env \
-            ./ "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/opt/vu/"
+          ssh -i ~/.ssh/id_ed25519 "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}" \
+            'mkdir -p /opt/apps/vu/frontend /opt/apps/vu/tvtime-export'
+
+      - name: Synchroniser frontend, compose et export
+        run: |
+          rsync -az --delete -e "ssh -i ~/.ssh/id_ed25519" \
+            frontend-dist/ "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/opt/apps/vu/frontend/"
+          rsync -az -e "ssh -i ~/.ssh/id_ed25519" \
+            docker-compose.prod.yml "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/opt/apps/vu/docker-compose.yml"
+          rsync -az -e "ssh -i ~/.ssh/id_ed25519" \
+            tvtime-export/ "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/opt/apps/vu/tvtime-export/"
+          rsync -az -e "ssh -i ~/.ssh/id_ed25519" \
+            deploy/Caddyfile.vu "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/etc/caddy/sites/vu"
 
       - name: Écrire le .env de production
         run: |
           printf '%s' "${{ secrets.PROD_ENV_FILE }}" | \
-            ssh "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}" \
-            'cat > /opt/vu/.env && chmod 600 /opt/vu/.env'
+            ssh -i ~/.ssh/id_ed25519 "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}" \
+            'cat > /opt/apps/vu/.env && chmod 600 /opt/apps/vu/.env'
 
-      - name: Build & déploiement (images ARM natives sur le VPS)
+      - name: Pull image (auth GHCR isolée) + démarrage + reload Caddy
         run: |
-          ssh "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}" \
-            'cd /opt/vu && docker compose -f docker-compose.prod.yml up -d --build && docker image prune -f'
+          ssh -i ~/.ssh/id_ed25519 "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}" bash -s <<'REMOTE'
+          set -e
+          export DOCKER_CONFIG=/root/.docker-vu
+          mkdir -p "$DOCKER_CONFIG"
+          echo "${{ secrets.GITHUB_TOKEN }}" | docker --config "$DOCKER_CONFIG" login ghcr.io -u ljclaeyssen --password-stdin
+          cd /opt/apps/vu
+          docker --config "$DOCKER_CONFIG" compose pull backend
+          docker compose up -d
+          docker image prune -f
+          caddy validate --config /etc/caddy/Caddyfile && systemctl reload caddy
+          REMOTE
 
       - name: Smoke test
         run: |
-          sleep 10
-          ssh "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}" \
-            'curl -sf -o /dev/null -w "web: %{http_code}\n" http://127.0.0.1:8180/ && \
-             curl -s -o /dev/null -w "api: %{http_code}\n" http://127.0.0.1:8180/api/shows'
+          sleep 8
+          ssh -i ~/.ssh/id_ed25519 "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}" \
+            'curl -s -o /dev/null -w "backend local: %{http_code}\n" http://127.0.0.1:3003/api/shows; \
+             curl -sk -o /dev/null -w "https public: %{http_code}\n" https://vu.ljclaeyssen.fr/ || true'
