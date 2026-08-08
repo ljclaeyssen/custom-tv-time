@@ -1,4 +1,4 @@
-import { Component, effect, ElementRef, inject, OnInit, viewChild } from '@angular/core';
+import { Component, computed, effect, ElementRef, inject, OnInit, viewChild } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { RecentlyWatchedItem, WatchNextItem } from '../../../../domain/models/show.model';
 import { ShowsStore } from '../../../../store/shows.store';
@@ -22,6 +22,10 @@ export class WatchNext implements OnInit {
 
   protected readonly anchorRef = viewChild<ElementRef<HTMLElement>>('anchor');
   #positioned = false;
+
+  // Affiché du plus ancien (en haut) au plus récent (en bas, collé à "À voir") :
+  // en scrollant vers le haut on rencontre d'abord le dernier vu, puis on remonte le temps.
+  protected readonly recentOldestFirst = computed(() => [...this.store.recentlyWatched()].reverse());
 
   constructor() {
     // Au premier chargement, on cale la vue sur "À voir" : l'historique

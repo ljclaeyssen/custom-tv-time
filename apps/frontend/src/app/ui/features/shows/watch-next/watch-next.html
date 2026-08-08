@@ -3,7 +3,7 @@
   <section class="recent">
     <h2 class="sec-head">Vu récemment</h2>
     <ul class="recent-list">
-      @for (r of store.recentlyWatched();
+      @for (r of recentOldestFirst();
         track r.tmdbShowId + ':' + r.season + ':' + r.episode + ':' + r.watchedAt) {
         <li class="card recent-row">
           <a class="poster" [routerLink]="['/shows', r.tmdbShowId]">
