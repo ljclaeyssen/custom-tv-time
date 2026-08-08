@@ -3,15 +3,18 @@ import { catchError, EMPTY, first, switchMap, tap } from 'rxjs';
 import { ShowsGateway } from '../domain/gateways/shows.gateway';
 import { WatchNextItem } from '../domain/models/show.model';
 import { ShowsStore } from '../store/shows.store';
+import { StatsStore } from '../store/stats.store';
 
 @Injectable()
 export class MarkWatchNextEpisodeWatched {
   readonly #gateway = inject(ShowsGateway);
   readonly #store = inject(ShowsStore);
+  readonly #stats = inject(StatsStore);
 
   execute(item: WatchNextItem): void {
     const { tmdbShowId } = item.show;
     const { seasonNumber, episodeNumber } = item.nextEpisode;
+    this.#stats.invalidate();
     this.#gateway
       .markEpisodeWatched(tmdbShowId, seasonNumber, episodeNumber)
       .pipe(

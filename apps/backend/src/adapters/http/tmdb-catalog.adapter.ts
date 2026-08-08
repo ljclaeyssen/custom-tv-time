@@ -53,6 +53,7 @@ export class TmdbCatalogAdapter extends CatalogPort {
       inProduction: Boolean(data.in_production),
       numberOfEpisodes: data.number_of_episodes ?? 0,
       numberOfSeasons: data.number_of_seasons ?? 0,
+      episodeRuntime: data.episode_run_time?.[0] ?? data.last_episode_to_air?.runtime ?? null,
       genres: (data.genres ?? []).map((g) => g.name),
       seasons: (data.seasons ?? []).map((s) => ({
         seasonNumber: s.season_number,
@@ -202,6 +203,8 @@ interface TmdbShowDetail {
   in_production?: boolean;
   number_of_episodes?: number;
   number_of_seasons?: number;
+  episode_run_time?: number[];
+  last_episode_to_air?: { runtime: number | null } | null;
   genres?: { name: string }[];
   seasons?: {
     season_number: number;

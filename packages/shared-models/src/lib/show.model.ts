@@ -37,6 +37,8 @@ export interface CatalogShowDetail {
   inProduction: boolean;
   numberOfEpisodes: number;
   numberOfSeasons: number;
+  /** Durée moyenne d'un épisode en minutes (TMDB episode_run_time), null si inconnue. */
+  episodeRuntime: number | null;
   genres: string[];
   seasons: CatalogSeasonSummary[];
 }

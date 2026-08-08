@@ -6,6 +6,7 @@ import { MarkWatchNextEpisodeWatched } from './mark-watch-next-episode-watched';
 import { RetrieveMyMovies } from './retrieve-my-movies';
 import { RetrieveMyShows } from './retrieve-my-shows';
 import { RetrieveProfile } from './retrieve-profile';
+import { RetrieveProfileStatsFull } from './retrieve-profile-stats-full';
 import { RetrieveSeasonEpisodes } from './retrieve-season-episodes';
 import { RetrieveShowProgress } from './retrieve-show-progress';
 import { RetrieveWatchNext } from './retrieve-watch-next';
@@ -21,6 +22,7 @@ export function provideApplicationUseCases(): Provider[] {
   return [
     CompleteDiscordLogin,
     RetrieveProfile,
+    RetrieveProfileStatsFull,
     Logout,
     RetrieveWatchNext,
     RetrieveMyShows,

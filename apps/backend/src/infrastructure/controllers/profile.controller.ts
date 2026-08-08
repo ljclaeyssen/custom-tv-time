@@ -1,7 +1,9 @@
 import { Controller, Get, Post, UseGuards } from '@nestjs/common';
 import { ProfileStats } from '../../domain/models/progress.model';
+import { ProfileStatsFull } from '../../domain/models/stats.model';
 import { ImportReport } from '../../domain/models/tvtime-export.model';
 import { User } from '../../domain/models/user.model';
+import { ComputeProfileStatsUseCase } from '../../use-cases/compute-profile-stats.use-case';
 import { ImportTvtimeExportUseCase } from '../../use-cases/import-tvtime-export.use-case';
 import { RetrieveCurrentUserUseCase } from '../../use-cases/retrieve-current-user.use-case';
 import { RetrieveProfileStatsUseCase } from '../../use-cases/retrieve-profile-stats.use-case';
@@ -14,8 +16,14 @@ export class ProfileController {
   constructor(
     private readonly retrieveCurrentUser: RetrieveCurrentUserUseCase,
     private readonly retrieveProfileStats: RetrieveProfileStatsUseCase,
+    private readonly computeProfileStats: ComputeProfileStatsUseCase,
     private readonly importTvtimeExport: ImportTvtimeExportUseCase,
   ) {}
+
+  @Get('stats')
+  stats(@CurrentUser() user: { userId: string }): Promise<ProfileStatsFull> {
+    return this.computeProfileStats.execute(user.userId);
+  }
 
   @Get()
   async me(@CurrentUser() user: { userId: string }): Promise<{ user: User; stats: ProfileStats }> {

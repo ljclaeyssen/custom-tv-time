@@ -1,0 +1,35 @@
+<div class="heatmap">
+  <div class="row header">
+    <span class="ylabel"></span>
+    @for (m of monthInitials; track $index) {
+      <span class="minitial">{{ m }}</span>
+    }
+  </div>
+  @for (row of rows(); track row.year) {
+    <div class="row">
+      <span class="ylabel">{{ yy(row.year) }}</span>
+      @for (hc of row.cells; track $index) {
+        @if (hc.level < 0) {
+          <span class="cell absent"></span>
+        } @else if (hc.cell && hc.cell.episodes > 0) {
+          <button
+            class="cell lvl-{{ hc.level }}"
+            (click)="onTap(hc)"
+            [attr.aria-label]="hc.cell.episodes + ' épisodes'"
+          ></button>
+        } @else {
+          <span class="cell lvl-0"></span>
+        }
+      }
+    </div>
+  }
+  <div class="legend">
+    <span>moins</span>
+    <span class="cell lvl-1"></span>
+    <span class="cell lvl-2"></span>
+    <span class="cell lvl-3"></span>
+    <span class="cell lvl-4"></span>
+    <span class="cell lvl-5"></span>
+    <span>plus</span>
+  </div>
+</div>

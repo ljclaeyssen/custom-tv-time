@@ -1,0 +1,94 @@
+@if (store.stats(); as st) {
+  <!-- HERO — temps d'écran -->
+  <section class="hero">
+    <div class="chapter">Temps devant l'écran</div>
+    <div class="bignum" [attr.aria-label]="fmt(displayDays()) + ' jours devant l\'écran'">
+      <span aria-hidden="true">{{ fmt(displayDays()) }}<span class="unit">jours</span></span>
+      @if (st.screenTime.estimated) {
+        <span class="approx" aria-hidden="true" title="Certaines durées sont estimées">~</span>
+      }
+    </div>
+    <div class="chips">
+      @for (eq of st.screenTime.equivalences; track eq.label) {
+        <span class="chip"><strong>{{ eq.value }}</strong> {{ eq.label }}</span>
+      }
+    </div>
+    <div class="split">
+      <div class="bar"><span class="series" [style.width.%]="seriesPct()"></span></div>
+      <div class="splitlabels">
+        <span>Séries {{ seriesPct() }}%</span>
+        <span>Films {{ 100 - seriesPct() }}%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- GENRES -->
+  <section class="card">
+    <div class="chapter">Genres</div>
+    @if (genre1()) {
+      <h3 class="terrain">Ton terrain : <em>{{ genre1() }}</em></h3>
+    }
+    <div class="genres">
+      @for (g of topGenres(); track g.genre) {
+        <div class="grow">
+          <span class="glabel">{{ g.genre }}</span>
+          <div class="gbar"><span [style.width.%]="g.widthPct" [style.opacity]="g.opacity"></span></div>
+          <span class="gval">{{ g.pct }}%</span>
+        </div>
+      }
+    </div>
+  </section>
+
+  <!-- EMPREINTE — heatmap -->
+  <section class="card">
+    <div class="chapter">{{ yearsSpan() }} ans de visionnage</div>
+    <app-watch-heatmap
+      [monthly]="st.monthly"
+      [thresholds]="st.quantileThresholds"
+      (cellTap)="onCell($event)"
+    />
+    <p class="detail" aria-live="polite">
+      @if (selected(); as c) {
+        <strong>{{ monthName(c.month) }} {{ c.year }}</strong> · {{ c.episodes }} épisodes ·
+        {{ hoursOf(c.minutes) }} h @if (c.topShow) { · {{ c.topShow }} }
+      } @else if (st.records.biggestMonth; as bm) {
+        <span class="muted">
+          Ton plus gros mois : {{ monthName(bm.month) }} {{ bm.year }} — {{ bm.episodes }} épisodes
+        </span>
+      }
+    </p>
+  </section>
+
+  <!-- RYTHME -->
+  <section class="card">
+    <div class="chapter">Rythme</div>
+    @if (!spark().empty) {
+      <div class="sparkwrap">
+        <svg class="spark" [attr.viewBox]="'0 0 ' + spark().w + ' ' + spark().h" preserveAspectRatio="none">
+          <path [attr.d]="spark().area" class="area" />
+          <path [attr.d]="spark().line" class="line" />
+          <circle [attr.cx]="spark().dotX" [attr.cy]="spark().dotY" r="3.5" class="dot" />
+        </svg>
+        <span class="peak">{{ spark().peakYear }} · {{ fmt(spark().peakEp) }} ép</span>
+      </div>
+    }
+    <div class="records">
+      @if (st.records.mostActiveYear) {
+        <div class="rec"><span class="rv">{{ st.records.mostActiveYear }}</span><span class="rl">année la plus active</span></div>
+      }
+      @if (st.records.longestStreakDays > 1) {
+        <div class="rec"><span class="rv">{{ st.records.longestStreakDays }} j</span><span class="rl">plus longue série d'affilée</span></div>
+      }
+      @if (st.records.biggestBingeDay; as day) {
+        <div class="rec"><span class="rv">{{ day.episodes }} ép</span><span class="rl">plus gros jour ({{ day.date }})</span></div>
+      }
+    </div>
+  </section>
+} @else if (store.loading()) {
+  <div class="skeleton stats-skeleton"></div>
+} @else if (store.error()) {
+  <div class="stats-error">
+    <p class="muted">Stats indisponibles pour le moment.</p>
+    <button class="btn ghost" (click)="retry()"><i class="pi pi-refresh"></i> Réessayer</button>
+  </div>
+}

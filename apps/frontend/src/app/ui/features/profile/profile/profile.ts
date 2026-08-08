@@ -3,10 +3,11 @@ import { Router } from '@angular/router';
 import { AuthStore } from '../../../../store/auth.store';
 import { Logout } from '../../../../use-cases/logout';
 import { RetrieveProfile } from '../../../../use-cases/retrieve-profile';
+import { ProfileStats } from '../profile-stats/profile-stats';
 
 @Component({
   selector: 'app-profile',
-  imports: [],
+  imports: [ProfileStats],
   templateUrl: './profile.html',
   styleUrl: './profile.scss',
 })

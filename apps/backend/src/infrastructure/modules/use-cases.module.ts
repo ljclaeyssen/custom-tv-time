@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { AuthenticateWithDiscordUseCase } from '../../use-cases/authenticate-with-discord.use-case';
+import { ComputeProfileStatsUseCase } from '../../use-cases/compute-profile-stats.use-case';
 import { FollowShowUseCase } from '../../use-cases/follow-show.use-case';
 import { ImportTvtimeExportUseCase } from '../../use-cases/import-tvtime-export.use-case';
 import { MarkEpisodeWatchedUseCase } from '../../use-cases/mark-episode-watched.use-case';
@@ -39,6 +40,7 @@ const useCases = [
   UntrackMovieUseCase,
   SearchCatalogUseCase,
   RetrieveProfileStatsUseCase,
+  ComputeProfileStatsUseCase,
   ImportTvtimeExportUseCase,
 ];
 
