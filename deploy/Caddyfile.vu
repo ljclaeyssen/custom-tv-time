@@ -4,6 +4,16 @@ vu.ljclaeyssen.fr {
     }
     handle {
         root * /opt/apps/vu/frontend
+
+        # Caddy ne connaît pas .webmanifest : on force le type MIME attendu par
+        # les navigateurs pour l'installation PWA.
+        @manifest path /manifest.webmanifest
+        header @manifest Content-Type "application/manifest+json"
+
+        # Le service worker et le manifest ne doivent jamais être mis en cache.
+        @noCache path /ngsw.json /manifest.webmanifest /ngsw-worker.js
+        header @noCache Cache-Control "no-cache, no-store, must-revalidate"
+
         try_files {path} /index.html
         file_server
     }
