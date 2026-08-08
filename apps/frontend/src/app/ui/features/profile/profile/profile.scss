@@ -62,49 +62,6 @@
   }
 }
 
-.section-title {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
-
-.import-card {
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-items: flex-start;
-
-  p {
-    margin: 0;
-    font-size: 0.88rem;
-  }
-}
-
-.report {
-  width: 100%;
-
-  p {
-    font-size: 0.9rem;
-  }
-
-  strong {
-    color: var(--accent);
-  }
-}
-
-.warnings {
-  margin: 8px 0 0;
-  padding-left: 18px;
-  font-size: 0.8rem;
-  max-height: 200px;
-  overflow-y: auto;
-}
-
-.error {
-  color: var(--danger);
-  font-size: 0.88rem;
-}
-
 .identity-skeleton {
   height: 88px;
   margin-bottom: 16px;

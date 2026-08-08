@@ -38,46 +38,4 @@
   } @else {
     <div class="skeleton identity-skeleton"></div>
   }
-
-  <h2 class="section-title">Import TV Time</h2>
-  <div class="card import-card">
-    <p class="muted">
-      Importe ton export TV Time (séries suivies, épisodes vus, films et watchlist).
-      L'opération est idempotente : la relancer ne crée pas de doublons.
-    </p>
-    <button class="btn primary" (click)="import()" [disabled]="store.importing()">
-      @if (store.importing()) {
-        <i class="pi pi-spinner pi-spin"></i> Import en cours…
-      } @else {
-        <i class="pi pi-download"></i> Importer mon historique
-      }
-    </button>
-
-    @if (store.importReport(); as report) {
-      <div class="report">
-        <p>
-          <strong>{{ report.seriesImported }}</strong> séries,
-          <strong>{{ report.episodesImported }}</strong> épisodes et
-          <strong>{{ report.moviesImported }}</strong> films importés.
-        </p>
-        @if (report.warnings.length > 0) {
-          <button class="btn ghost" (click)="showWarnings.set(!showWarnings())">
-            {{ report.warnings.length }} avertissement{{ report.warnings.length > 1 ? 's' : '' }}
-            <i class="pi" [class.pi-chevron-down]="!showWarnings()" [class.pi-chevron-up]="showWarnings()"></i>
-          </button>
-          @if (showWarnings()) {
-            <ul class="warnings muted">
-              @for (warning of report.warnings; track $index) {
-                <li>{{ warning }}</li>
-              }
-            </ul>
-          }
-        }
-      </div>
-    }
-
-    @if (store.error(); as error) {
-      <p class="error">{{ error }}</p>
-    }
-  </div>
 </div>

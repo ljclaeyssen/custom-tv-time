@@ -1,6 +1,5 @@
 import { Provider } from '@angular/core';
 import { CompleteDiscordLogin } from './complete-discord-login';
-import { ImportTvtimeHistory } from './import-tvtime-history';
 import { Logout } from './logout';
 import { MarkSeasonWatched } from './mark-season-watched';
 import { MarkWatchNextEpisodeWatched } from './mark-watch-next-episode-watched';
@@ -37,6 +36,5 @@ export function provideApplicationUseCases(): Provider[] {
     SetMovieWatched,
     UntrackMovie,
     SearchCatalog,
-    ImportTvtimeHistory,
   ];
 }
