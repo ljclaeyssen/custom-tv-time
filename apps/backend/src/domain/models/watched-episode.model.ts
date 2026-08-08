@@ -1,8 +1,4 @@
-export const WatchSource = {
-  Import: 'import',
-  Manual: 'manual',
-} as const;
-export type WatchSource = (typeof WatchSource)[keyof typeof WatchSource];
+export type WatchSource = 'import' | 'manual';
 
 export interface WatchedEpisode {
   id: string;

@@ -1,6 +1,5 @@
 export type {
   CatalogSearchResult,
-  CatalogSeasonSummary,
   CatalogShowDetail,
   CatalogEpisode,
   CatalogMovieDetail,

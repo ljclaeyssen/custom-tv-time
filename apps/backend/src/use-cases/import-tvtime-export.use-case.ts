@@ -34,13 +34,10 @@ export class ImportTvtimeExportUseCase {
             mergedFromFlags++;
             data.watched_episodes.push({
               show_id: show.tvdb_id,
-              show_name: '',
               season: flag.s,
               episode: flag.e,
               episode_id: flag.id,
-              title: '',
               seen_date: null,
-              times_watched: 1,
             });
           }
         }

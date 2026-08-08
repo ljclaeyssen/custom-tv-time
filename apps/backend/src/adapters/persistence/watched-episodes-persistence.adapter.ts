@@ -66,24 +66,6 @@ export class WatchedEpisodesPersistenceAdapter extends WatchedEpisodesPort {
     await this.repository.delete({ userId, tmdbShowId, season, episode });
   }
 
-  async removeAllForShow(userId: string, tmdbShowId: number): Promise<void> {
-    await this.repository.delete({ userId, tmdbShowId });
-  }
-
-  async removeAllExcept(
-    userId: string,
-    tmdbShowId: number,
-    keep: { season: number; episode: number }[],
-  ): Promise<number> {
-    const keepKeys = new Set(keep.map((k) => `${k.season}:${k.episode}`));
-    const rows = await this.repository.find({ where: { userId, tmdbShowId } });
-    const toDelete = rows.filter((r) => !keepKeys.has(`${r.season}:${r.episode}`));
-    if (toDelete.length > 0) {
-      await this.repository.delete(toDelete.map((r) => r.id));
-    }
-    return toDelete.length;
-  }
-
   async removeImportedForShows(userId: string, tmdbShowIds: number[]): Promise<number> {
     if (tmdbShowIds.length === 0) {
       return 0;

@@ -20,8 +20,10 @@ import { ControllersModule } from './infrastructure/modules/controllers.module';
         password: config.get<string>('DATABASE_PASSWORD', 'tvtime'),
         database: config.get<string>('DATABASE_NAME', 'tvtime'),
         autoLoadEntities: true,
-        // v1 : le schéma est synchronisé automatiquement. Passer à des
-        // migrations TypeORM avant toute mise en production sérieuse.
+        // Choix assumé pour une prod mono-utilisateur : schéma synchronisé
+        // automatiquement. Attention : toute suppression de champ d'entité
+        // droppe la colonne (et ses données) au redémarrage — passer aux
+        // migrations TypeORM avant d'ouvrir à d'autres utilisateurs.
         synchronize: true,
       }),
     }),

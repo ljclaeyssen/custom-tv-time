@@ -19,11 +19,6 @@ export class UsersPersistenceAdapter extends UsersPort {
     return entity ? this.toDomain(entity) : null;
   }
 
-  async findByDiscordId(discordId: string): Promise<User | null> {
-    const entity = await this.repository.findOneBy({ discordId });
-    return entity ? this.toDomain(entity) : null;
-  }
-
   async upsertFromDiscord(profile: DiscordProfile): Promise<User> {
     let entity = await this.repository.findOneBy({ discordId: profile.discordId });
     if (entity) {
