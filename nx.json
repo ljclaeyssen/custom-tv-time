@@ -41,16 +41,6 @@
                                                                   "{workspaceRoot}/tools/eslint-rules/**/*"
                                                               ]
                                                },
-                           "@nx/esbuild:esbuild":  {
-                                                       "cache":  true,
-                                                       "dependsOn":  [
-                                                                         "^build"
-                                                                     ],
-                                                       "inputs":  [
-                                                                      "production",
-                                                                      "^production"
-                                                                  ]
-                                                   },
                            "@nx/js:tsc":  {
                                               "cache":  true,
                                               "dependsOn":  [
@@ -69,22 +59,7 @@
                                                               ]
                                                }
                        },
-    "release":  {
-                    "projects":  [
-                                     "api"
-                                 ],
-                    "projectsRelationship":  "independent",
-                    "docker":  {
-                                   "skipVersionActions":  true
-                               }
-                },
     "plugins":  [
-                    {
-                        "plugin":  "@nx/playwright/plugin",
-                        "options":  {
-                                        "targetName":  "e2e"
-                                    }
-                    },
                     {
                         "plugin":  "@nx/eslint/plugin",
                         "options":  {
@@ -131,7 +106,6 @@
                 ],
     "generators":  {
                        "@nx/angular:application":  {
-                                                       "e2eTestRunner":  "playwright",
                                                        "linter":  "eslint",
                                                        "style":  "css",
                                                        "unitTestRunner":  "vitest-analog"
