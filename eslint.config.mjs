@@ -1,4 +1,5 @@
 import nx from '@nx/eslint-plugin';
+import eslintConfigPrettier from 'eslint-config-prettier';
 
 export default [
   ...nx.configs['flat/base'],
@@ -25,16 +26,12 @@ export default [
               onlyDependOnLibsWithTags: ['scope:shared'],
             },
             {
-              sourceTag: 'scope:shop',
-              onlyDependOnLibsWithTags: ['scope:shop', 'scope:shared'],
+              sourceTag: 'scope:frontend',
+              onlyDependOnLibsWithTags: ['scope:frontend', 'scope:shared'],
             },
             {
-              sourceTag: 'scope:api',
-              onlyDependOnLibsWithTags: ['scope:api', 'scope:shared'],
-            },
-            {
-              sourceTag: 'type:data',
-              onlyDependOnLibsWithTags: ['type:data'],
+              sourceTag: 'scope:backend',
+              onlyDependOnLibsWithTags: ['scope:backend', 'scope:shared'],
             },
           ],
         },
@@ -55,4 +52,5 @@ export default [
     // Override or add rules here
     rules: {},
   },
+  eslintConfigPrettier,
 ];

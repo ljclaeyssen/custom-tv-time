@@ -12,6 +12,7 @@ describe('PosterCard', () => {
     }).compileComponents();
 
     fixture = TestBed.createComponent(PosterCard);
+    fixture.componentRef.setInput('name', 'Série de test');
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

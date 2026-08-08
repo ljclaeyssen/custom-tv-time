@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { provideFrontendTesting } from '../../../../testing/provide-frontend-testing';
 import { AuthCallback } from './auth-callback';
 
 describe('AuthCallback', () => {
@@ -9,6 +10,7 @@ describe('AuthCallback', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [AuthCallback],
+      providers: [provideFrontendTesting()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(AuthCallback);

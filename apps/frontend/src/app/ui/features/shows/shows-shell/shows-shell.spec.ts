@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { provideFrontendTesting } from '../../../../testing/provide-frontend-testing';
 import { ShowsShell } from './shows-shell';
 
 describe('ShowsShell', () => {
@@ -9,6 +10,7 @@ describe('ShowsShell', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [ShowsShell],
+      providers: [provideFrontendTesting()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(ShowsShell);

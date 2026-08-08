@@ -12,6 +12,7 @@ describe('EmptyState', () => {
     }).compileComponents();
 
     fixture = TestBed.createComponent(EmptyState);
+    fixture.componentRef.setInput('message', 'Rien à afficher');
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

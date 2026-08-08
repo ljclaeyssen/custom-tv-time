@@ -12,6 +12,8 @@ describe('ProgressBar', () => {
     }).compileComponents();
 
     fixture = TestBed.createComponent(ProgressBar);
+    fixture.componentRef.setInput('value', 3);
+    fixture.componentRef.setInput('total', 10);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

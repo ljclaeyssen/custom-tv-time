@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { provideFrontendTesting } from '../../../../testing/provide-frontend-testing';
 import { Explore } from './explore';
 
 describe('Explore', () => {
@@ -9,6 +10,7 @@ describe('Explore', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [Explore],
+      providers: [provideFrontendTesting()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(Explore);
