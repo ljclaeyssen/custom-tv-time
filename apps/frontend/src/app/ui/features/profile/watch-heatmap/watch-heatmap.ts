@@ -1,5 +1,5 @@
 import { Component, computed, input, output } from '@angular/core';
-import { MonthCell } from '@ctt/shared-models';
+import { MonthCell } from '../../../../domain/models/stats.model';
 
 interface HeatCell {
   cell: MonthCell | null;

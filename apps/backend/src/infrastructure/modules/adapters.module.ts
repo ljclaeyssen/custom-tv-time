@@ -3,6 +3,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { TvtimeExportFileAdapter } from '../../adapters/fs/tvtime-export-file.adapter';
 import { DiscordAuthAdapter } from '../../adapters/http/discord-auth.adapter';
 import { TmdbCatalogAdapter } from '../../adapters/http/tmdb-catalog.adapter';
+import { JwtAuthTokensAdapter } from '../../adapters/security/jwt-auth-tokens.adapter';
 import { FollowedShowEntity } from '../../adapters/persistence/entities/followed-show.entity';
 import { MovieMetaEntity } from '../../adapters/persistence/entities/movie-meta.entity';
 import { ShowMetaEntity } from '../../adapters/persistence/entities/show-meta.entity';
@@ -14,6 +15,7 @@ import { StatsMetaPersistenceAdapter } from '../../adapters/persistence/stats-me
 import { TrackedMoviesPersistenceAdapter } from '../../adapters/persistence/tracked-movies-persistence.adapter';
 import { UsersPersistenceAdapter } from '../../adapters/persistence/users-persistence.adapter';
 import { WatchedEpisodesPersistenceAdapter } from '../../adapters/persistence/watched-episodes-persistence.adapter';
+import { AuthTokensPort } from '../../domain/ports/auth-tokens.port';
 import { CatalogPort } from '../../domain/ports/catalog.port';
 import { DiscordAuthPort } from '../../domain/ports/discord-auth.port';
 import { FollowsPort } from '../../domain/ports/follows.port';
@@ -32,6 +34,7 @@ const portBindings = [
   { provide: CatalogPort, useClass: TmdbCatalogAdapter },
   { provide: DiscordAuthPort, useClass: DiscordAuthAdapter },
   { provide: TvtimeExportPort, useClass: TvtimeExportFileAdapter },
+  { provide: AuthTokensPort, useClass: JwtAuthTokensAdapter },
 ];
 
 @Module({

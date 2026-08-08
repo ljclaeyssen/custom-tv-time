@@ -4,6 +4,8 @@ import { MoviesGateway } from '../domain/gateways/movies.gateway';
 import { ProfileGateway } from '../domain/gateways/profile.gateway';
 import { ShowsGateway } from '../domain/gateways/shows.gateway';
 import { StatsGateway } from '../domain/gateways/stats.gateway';
+import { TokenStorageGateway } from '../domain/gateways/token-storage.gateway';
+import { LocalStorageTokenGateway } from './local-storage-token.gateway';
 import { RestCatalogGateway } from './rest-catalog.gateway';
 import { RestMoviesGateway } from './rest-movies.gateway';
 import { RestProfileGateway } from './rest-profile.gateway';
@@ -17,5 +19,6 @@ export function provideApplicationGateways(): Provider[] {
     { provide: MoviesGateway, useClass: RestMoviesGateway },
     { provide: CatalogGateway, useClass: RestCatalogGateway },
     { provide: StatsGateway, useClass: RestStatsGateway },
+    { provide: TokenStorageGateway, useClass: LocalStorageTokenGateway },
   ];
 }

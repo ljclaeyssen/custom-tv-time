@@ -1,5 +1,5 @@
 import { Component, computed, effect, inject, OnInit, signal } from '@angular/core';
-import { MonthCell } from '@ctt/shared-models';
+import { MonthCell } from '../../../../domain/models/stats.model';
 import { StatsStore } from '../../../../store/stats.store';
 import { RetrieveProfileStatsFull } from '../../../../use-cases/retrieve-profile-stats-full';
 import { WatchHeatmap } from '../watch-heatmap/watch-heatmap';

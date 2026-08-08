@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
-import { ProfileStatsFull } from '@ctt/shared-models';
 import { Observable, of } from 'rxjs';
 import { CatalogGateway } from '../domain/gateways/catalog.gateway';
 import { MoviesGateway } from '../domain/gateways/movies.gateway';
 import { ProfileGateway } from '../domain/gateways/profile.gateway';
 import { ShowsGateway } from '../domain/gateways/shows.gateway';
 import { StatsGateway } from '../domain/gateways/stats.gateway';
+import { TokenStorageGateway } from '../domain/gateways/token-storage.gateway';
 import { CatalogSearchResult } from '../domain/models/catalog.model';
 import { TrackedMovie } from '../domain/models/movie.model';
+import { ProfileStatsFull } from '../domain/models/stats.model';
 import {
   EpisodeWithState,
   FollowedShow,
@@ -169,5 +170,22 @@ export class InMemoryCatalogGateway extends CatalogGateway {
 export class InMemoryStatsGateway extends StatsGateway {
   override getStats(): Observable<ProfileStatsFull> {
     return of(FAKE_STATS);
+  }
+}
+
+@Injectable()
+export class InMemoryTokenStorageGateway extends TokenStorageGateway {
+  #token: string | null = null;
+
+  override read(): string | null {
+    return this.#token;
+  }
+
+  override save(token: string): void {
+    this.#token = token;
+  }
+
+  override clear(): void {
+    this.#token = null;
   }
 }

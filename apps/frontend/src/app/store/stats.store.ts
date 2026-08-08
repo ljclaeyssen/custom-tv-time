@@ -1,5 +1,5 @@
 import { computed, Injectable, signal } from '@angular/core';
-import { ProfileStatsFull } from '@ctt/shared-models';
+import { ProfileStatsFull } from '../domain/models/stats.model';
 
 interface StatsState {
   stats: ProfileStatsFull | null;

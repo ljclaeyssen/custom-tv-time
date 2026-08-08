@@ -15,6 +15,7 @@ import { RetrieveShowProgressUseCase } from '../../use-cases/retrieve-show-progr
 import { RetrieveWatchNextUseCase } from '../../use-cases/retrieve-watch-next.use-case';
 import { SearchCatalogUseCase } from '../../use-cases/search-catalog.use-case';
 import { SetMovieWatchedUseCase } from '../../use-cases/set-movie-watched.use-case';
+import { StartDiscordLoginUseCase } from '../../use-cases/start-discord-login.use-case';
 import { TrackMovieUseCase } from '../../use-cases/track-movie.use-case';
 import { UnfollowShowUseCase } from '../../use-cases/unfollow-show.use-case';
 import { UnmarkEpisodeWatchedUseCase } from '../../use-cases/unmark-episode-watched.use-case';
@@ -23,6 +24,7 @@ import { UpdateShowStatusUseCase } from '../../use-cases/update-show-status.use-
 import { AdaptersModule } from './adapters.module';
 
 const useCases = [
+  StartDiscordLoginUseCase,
   AuthenticateWithDiscordUseCase,
   RetrieveCurrentUserUseCase,
   RetrieveWatchNextUseCase,

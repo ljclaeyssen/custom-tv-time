@@ -1,5 +1,11 @@
 import { provideHttpClient, withInterceptors } from '@angular/common/http';
-import { ApplicationConfig, isDevMode, provideBrowserGlobalErrorListeners } from '@angular/core';
+import {
+  ApplicationConfig,
+  inject,
+  isDevMode,
+  provideAppInitializer,
+  provideBrowserGlobalErrorListeners,
+} from '@angular/core';
 import { provideRouter, withComponentInputBinding } from '@angular/router';
 import { provideServiceWorker } from '@angular/service-worker';
 import { providePrimeNG } from 'primeng/config';
@@ -8,11 +14,13 @@ import { provideApplicationGateways } from './gateways/gateways.provider';
 import { provideApplicationStore } from './store/store.provider';
 import { appTheme } from './ui/theme/app-theme';
 import { authInterceptor } from './ui/interceptors/auth.interceptor';
+import { RestoreSession } from './use-cases/restore-session';
 import { provideApplicationUseCases } from './use-cases/use-cases.provider';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
+    provideAppInitializer(() => inject(RestoreSession).execute()),
     provideRouter(routes, withComponentInputBinding()),
     provideHttpClient(withInterceptors([authInterceptor])),
     providePrimeNG({

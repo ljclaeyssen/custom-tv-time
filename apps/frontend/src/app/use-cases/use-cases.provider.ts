@@ -11,6 +11,7 @@ import { RetrieveRecentlyWatched } from './retrieve-recently-watched';
 import { RetrieveSeasonEpisodes } from './retrieve-season-episodes';
 import { RetrieveShowProgress } from './retrieve-show-progress';
 import { RetrieveWatchNext } from './retrieve-watch-next';
+import { RestoreSession } from './restore-session';
 import { SearchCatalog } from './search-catalog';
 import { SetMovieWatched } from './set-movie-watched';
 import { ToggleEpisodeWatched } from './toggle-episode-watched';
@@ -21,6 +22,7 @@ import { UpdateShowStatus } from './update-show-status';
 
 export function provideApplicationUseCases(): Provider[] {
   return [
+    RestoreSession,
     CompleteDiscordLogin,
     RetrieveProfile,
     RetrieveProfileStatsFull,

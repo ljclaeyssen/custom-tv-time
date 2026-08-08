@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ProfileStatsFull } from '@ctt/shared-models';
 import { StatsGateway } from '../domain/gateways/stats.gateway';
+import { ProfileStatsFull } from '../domain/models/stats.model';
 
 @Injectable()
 export class RestStatsGateway extends StatsGateway {

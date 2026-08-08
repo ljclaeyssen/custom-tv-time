@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { AuthStore } from './store/auth.store';
-import { AppUpdate } from './ui/app-update.service';
+import { AppUpdate } from './ui/shared/app-update';
 import { BottomNav } from './ui/shared/bottom-nav/bottom-nav';
 
 @Component({
