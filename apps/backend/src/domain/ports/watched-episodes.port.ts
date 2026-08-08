@@ -2,6 +2,7 @@ import { WatchedEpisode, WatchedEpisodeInput } from '../models/watched-episode.m
 
 export abstract class WatchedEpisodesPort {
   abstract findAllByUser(userId: string): Promise<WatchedEpisode[]>;
+  abstract findRecentByUser(userId: string, limit: number): Promise<WatchedEpisode[]>;
   abstract findByUserAndShow(userId: string, tmdbShowId: number): Promise<WatchedEpisode[]>;
   abstract addMany(episodes: WatchedEpisodeInput[]): Promise<number>;
   abstract remove(userId: string, tmdbShowId: number, season: number, episode: number): Promise<void>;

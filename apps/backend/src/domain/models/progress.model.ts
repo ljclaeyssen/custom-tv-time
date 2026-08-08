@@ -4,5 +4,6 @@ export type {
   ShowProgress,
   EpisodeWithState,
   MyShowItem,
+  RecentlyWatchedItem,
   ProfileStats,
 } from '@ctt/shared-models';

@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { In, Repository } from 'typeorm';
+import { In, IsNull, Not, Repository } from 'typeorm';
 import { WatchedEpisode, WatchedEpisodeInput, WatchSource } from '../../domain/models/watched-episode.model';
 import { WatchedEpisodesPort } from '../../domain/ports/watched-episodes.port';
 import { WatchedEpisodeEntity } from './entities/watched-episode.entity';
@@ -16,6 +16,15 @@ export class WatchedEpisodesPersistenceAdapter extends WatchedEpisodesPort {
 
   async findAllByUser(userId: string): Promise<WatchedEpisode[]> {
     const entities = await this.repository.find({ where: { userId } });
+    return entities.map((e) => this.toDomain(e));
+  }
+
+  async findRecentByUser(userId: string, limit: number): Promise<WatchedEpisode[]> {
+    const entities = await this.repository.find({
+      where: { userId, watchedAt: Not(IsNull()) },
+      order: { watchedAt: 'DESC' },
+      take: limit,
+    });
     return entities.map((e) => this.toDomain(e));
   }
 

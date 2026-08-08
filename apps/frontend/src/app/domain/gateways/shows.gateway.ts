@@ -4,12 +4,14 @@ import {
   FollowedShow,
   FollowStatus,
   MyShowItem,
+  RecentlyWatchedItem,
   ShowProgress,
   WatchNextItem,
 } from '../models/show.model';
 
 export abstract class ShowsGateway {
   abstract getWatchNext(): Observable<WatchNextItem[]>;
+  abstract getRecentlyWatched(): Observable<RecentlyWatchedItem[]>;
   abstract getMyShows(): Observable<MyShowItem[]>;
   abstract getShowProgress(tmdbShowId: number): Observable<ShowProgress>;
   abstract getSeasonEpisodes(tmdbShowId: number, seasonNumber: number): Observable<EpisodeWithState[]>;

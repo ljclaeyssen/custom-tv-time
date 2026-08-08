@@ -8,6 +8,61 @@
   height: 96px;
 }
 
+/* ---- En-têtes de section ---- */
+.sec-head {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-2);
+  margin: 0 0 12px;
+}
+
+.sec-head.anchor {
+  color: var(--text);
+  margin-top: 22px;
+  // Décale le scroll pour ne pas passer sous les onglets collés en haut.
+  scroll-margin-top: 60px;
+}
+
+/* ---- Vu récemment ---- */
+.recent {
+  margin-bottom: 18px;
+}
+
+.recent-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.recent-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px;
+  opacity: 0.82;
+
+  .info .code {
+    font-size: 0.92rem;
+  }
+
+  .when {
+    font-size: 0.76rem;
+  }
+
+  .done {
+    flex: none;
+    color: var(--accent);
+    font-size: 0.95rem;
+    padding-right: 6px;
+  }
+}
+
 .watch-list {
   list-style: none;
   margin: 0;

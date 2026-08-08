@@ -2,6 +2,7 @@ import { computed, Injectable, signal } from '@angular/core';
 import {
   EpisodeWithState,
   MyShowItem,
+  RecentlyWatchedItem,
   ShowProgress,
   WatchNextItem,
 } from '../domain/models/show.model';
@@ -9,6 +10,8 @@ import {
 interface ShowsState {
   watchNext: WatchNextItem[];
   watchNextLoaded: boolean;
+  recentlyWatched: RecentlyWatchedItem[];
+  recentlyWatchedLoaded: boolean;
   myShows: MyShowItem[];
   myShowsLoaded: boolean;
   currentShow: ShowProgress | null;
@@ -22,6 +25,8 @@ export class ShowsStore {
   readonly #state = signal<ShowsState>({
     watchNext: [],
     watchNextLoaded: false,
+    recentlyWatched: [],
+    recentlyWatchedLoaded: false,
     myShows: [],
     myShowsLoaded: false,
     currentShow: null,
@@ -32,6 +37,8 @@ export class ShowsStore {
 
   readonly watchNext = computed(() => this.#state().watchNext);
   readonly watchNextLoaded = computed(() => this.#state().watchNextLoaded);
+  readonly recentlyWatched = computed(() => this.#state().recentlyWatched);
+  readonly recentlyWatchedLoaded = computed(() => this.#state().recentlyWatchedLoaded);
   readonly myShows = computed(() => this.#state().myShows);
   readonly myShowsLoaded = computed(() => this.#state().myShowsLoaded);
   readonly currentShow = computed(() => this.#state().currentShow);
@@ -41,6 +48,10 @@ export class ShowsStore {
 
   setWatchNext(watchNext: WatchNextItem[]): void {
     this.#state.update((s) => ({ ...s, watchNext, watchNextLoaded: true, loading: false, error: null }));
+  }
+
+  setRecentlyWatched(recentlyWatched: RecentlyWatchedItem[]): void {
+    this.#state.update((s) => ({ ...s, recentlyWatched, recentlyWatchedLoaded: true }));
   }
 
   removeWatchNextItem(tmdbShowId: number): void {
@@ -83,7 +94,12 @@ export class ShowsStore {
   }
 
   invalidateLists(): void {
-    this.#state.update((s) => ({ ...s, watchNextLoaded: false, myShowsLoaded: false }));
+    this.#state.update((s) => ({
+      ...s,
+      watchNextLoaded: false,
+      myShowsLoaded: false,
+      recentlyWatchedLoaded: false,
+    }));
   }
 
   setLoading(loading: boolean): void {

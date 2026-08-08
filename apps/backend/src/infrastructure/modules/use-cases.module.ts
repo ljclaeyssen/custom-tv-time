@@ -8,6 +8,7 @@ import { MarkSeasonWatchedUseCase } from '../../use-cases/mark-season-watched.us
 import { RetrieveCurrentUserUseCase } from '../../use-cases/retrieve-current-user.use-case';
 import { RetrieveMyMoviesUseCase } from '../../use-cases/retrieve-my-movies.use-case';
 import { RetrieveMyShowsUseCase } from '../../use-cases/retrieve-my-shows.use-case';
+import { RetrieveRecentlyWatchedUseCase } from '../../use-cases/retrieve-recently-watched.use-case';
 import { RetrieveProfileStatsUseCase } from '../../use-cases/retrieve-profile-stats.use-case';
 import { RetrieveSeasonEpisodesUseCase } from '../../use-cases/retrieve-season-episodes.use-case';
 import { RetrieveShowProgressUseCase } from '../../use-cases/retrieve-show-progress.use-case';
@@ -26,6 +27,7 @@ const useCases = [
   RetrieveCurrentUserUseCase,
   RetrieveWatchNextUseCase,
   RetrieveMyShowsUseCase,
+  RetrieveRecentlyWatchedUseCase,
   RetrieveShowProgressUseCase,
   RetrieveSeasonEpisodesUseCase,
   FollowShowUseCase,

@@ -7,6 +7,7 @@ import {
   FollowedShow,
   FollowStatus,
   MyShowItem,
+  RecentlyWatchedItem,
   ShowProgress,
   WatchNextItem,
 } from '../domain/models/show.model';
@@ -18,6 +19,10 @@ export class RestShowsGateway extends ShowsGateway {
 
   getWatchNext(): Observable<WatchNextItem[]> {
     return this.#http.get<WatchNextItem[]>(`${this.#baseUrl}/watch-next`);
+  }
+
+  getRecentlyWatched(): Observable<RecentlyWatchedItem[]> {
+    return this.#http.get<RecentlyWatchedItem[]>(`${this.#baseUrl}/recently-watched`);
   }
 
   getMyShows(): Observable<MyShowItem[]> {

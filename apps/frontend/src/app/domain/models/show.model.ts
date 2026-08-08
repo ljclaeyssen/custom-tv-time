@@ -6,6 +6,7 @@ export type {
   EpisodeWithState,
   WatchNextItem,
   MyShowItem,
+  RecentlyWatchedItem,
   SeasonProgress,
   ShowProgress,
 } from '@ctt/shared-models';

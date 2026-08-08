@@ -1,3 +1,32 @@
+<!-- Vu récemment : historique dans l'ordre de visionnage, révélé en scrollant vers le haut -->
+@if (store.recentlyWatched().length > 0) {
+  <section class="recent">
+    <h2 class="sec-head">Vu récemment</h2>
+    <ul class="recent-list">
+      @for (r of store.recentlyWatched();
+        track r.tmdbShowId + ':' + r.season + ':' + r.episode + ':' + r.watchedAt) {
+        <li class="card recent-row">
+          <a class="poster" [routerLink]="['/shows', r.tmdbShowId]">
+            @if (recentPoster(r); as url) {
+              <img [src]="url" [alt]="r.showName" loading="lazy" />
+            } @else {
+              <div class="placeholder"><i class="pi pi-image"></i></div>
+            }
+          </a>
+          <a class="info" [routerLink]="['/shows', r.tmdbShowId]">
+            <span class="show-name">{{ r.showName }}</span>
+            <span class="code">{{ recentCode(r) }}</span>
+            <span class="when muted">{{ relativeDate(r.watchedAt) }}</span>
+          </a>
+          <i class="pi pi-check done" aria-hidden="true"></i>
+        </li>
+      }
+    </ul>
+  </section>
+}
+
+<h2 class="sec-head anchor" #anchor>À voir</h2>
+
 @if (store.loading() && !store.watchNextLoaded()) {
   <div class="skeletons">
     @for (i of [1, 2, 3, 4, 5]; track i) {

@@ -14,6 +14,7 @@ import { FollowedShow } from '../../domain/models/followed-show.model';
 import {
   EpisodeWithState,
   MyShowItem,
+  RecentlyWatchedItem,
   ShowProgress,
   WatchNextItem,
 } from '../../domain/models/progress.model';
@@ -21,6 +22,7 @@ import { FollowShowUseCase } from '../../use-cases/follow-show.use-case';
 import { MarkEpisodeWatchedUseCase } from '../../use-cases/mark-episode-watched.use-case';
 import { MarkSeasonWatchedUseCase } from '../../use-cases/mark-season-watched.use-case';
 import { RetrieveMyShowsUseCase } from '../../use-cases/retrieve-my-shows.use-case';
+import { RetrieveRecentlyWatchedUseCase } from '../../use-cases/retrieve-recently-watched.use-case';
 import { RetrieveSeasonEpisodesUseCase } from '../../use-cases/retrieve-season-episodes.use-case';
 import { RetrieveShowProgressUseCase } from '../../use-cases/retrieve-show-progress.use-case';
 import { RetrieveWatchNextUseCase } from '../../use-cases/retrieve-watch-next.use-case';
@@ -37,6 +39,7 @@ export class ShowsController {
   constructor(
     private readonly retrieveMyShows: RetrieveMyShowsUseCase,
     private readonly retrieveWatchNext: RetrieveWatchNextUseCase,
+    private readonly retrieveRecentlyWatched: RetrieveRecentlyWatchedUseCase,
     private readonly retrieveShowProgress: RetrieveShowProgressUseCase,
     private readonly retrieveSeasonEpisodes: RetrieveSeasonEpisodesUseCase,
     private readonly followShow: FollowShowUseCase,
@@ -55,6 +58,11 @@ export class ShowsController {
   @Get('watch-next')
   watchNext(@CurrentUser() user: { userId: string }): Promise<WatchNextItem[]> {
     return this.retrieveWatchNext.execute(user.userId);
+  }
+
+  @Get('recently-watched')
+  recentlyWatched(@CurrentUser() user: { userId: string }): Promise<RecentlyWatchedItem[]> {
+    return this.retrieveRecentlyWatched.execute(user.userId);
   }
 
   @Get(':tmdbId')

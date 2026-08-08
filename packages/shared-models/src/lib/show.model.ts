@@ -73,6 +73,15 @@ export interface MyShowItem {
   ended: boolean;
 }
 
+export interface RecentlyWatchedItem {
+  tmdbShowId: number;
+  showName: string;
+  posterPath: string | null;
+  season: number;
+  episode: number;
+  watchedAt: string | null;
+}
+
 export interface SeasonProgress {
   seasonNumber: number;
   name: string;
