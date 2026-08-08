@@ -1,0 +1,23 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="fbg" cx="50%" cy="36%" r="80%">
+      <stop offset="0" stop-color="#20242c"/>
+      <stop offset="1" stop-color="#0a0b0e"/>
+    </radialGradient>
+    <radialGradient id="fglow" cx="50%" cy="46%" r="46%">
+      <stop offset="0" stop-color="#ffd60a" stop-opacity="0.55"/>
+      <stop offset="0.6" stop-color="#ffd60a" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#ffd60a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e6e8ec"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#fbg)"/>
+  <rect width="512" height="512" rx="96" fill="url(#fglow)"/>
+  <g transform="translate(256 256) scale(1.32) translate(-256 -256)">
+    <path d="M182 164 228 164 256 262 284 164 330 164 256 352 Z" fill="url(#fv)"/>
+    <rect x="300" y="306" width="44" height="44" rx="11" fill="#ffd60a"/>
+  </g>
+</svg>
