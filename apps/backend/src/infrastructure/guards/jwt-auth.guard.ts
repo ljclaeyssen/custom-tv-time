@@ -2,8 +2,14 @@ import { CanActivate, ExecutionContext, Injectable, UnauthorizedException } from
 import { JwtService } from '@nestjs/jwt';
 import { Request } from 'express';
 
+/** Payload utilisateur posé sur la requête par le guard JWT. */
+export interface AuthenticatedUser {
+  userId: string;
+  username: string;
+}
+
 export interface AuthenticatedRequest extends Request {
-  user: { userId: string; username: string };
+  user: AuthenticatedUser;
 }
 
 @Injectable()

@@ -31,7 +31,7 @@ import { UnmarkEpisodeWatchedUseCase } from '../../use-cases/unmark-episode-watc
 import { UpdateShowStatusUseCase } from '../../use-cases/update-show-status.use-case';
 import { CurrentUser } from '../decorators/current-user.decorator';
 import { UpdateShowStatusDto } from '../dto/update-show-status.dto';
-import { JwtAuthGuard } from '../guards/jwt-auth.guard';
+import { AuthenticatedUser, JwtAuthGuard } from '../guards/jwt-auth.guard';
 
 @Controller('shows')
 @UseGuards(JwtAuthGuard)
@@ -51,23 +51,23 @@ export class ShowsController {
   ) {}
 
   @Get()
-  mine(@CurrentUser() user: { userId: string }): Promise<MyShowItem[]> {
+  mine(@CurrentUser() user: AuthenticatedUser): Promise<MyShowItem[]> {
     return this.retrieveMyShows.execute(user.userId);
   }
 
   @Get('watch-next')
-  watchNext(@CurrentUser() user: { userId: string }): Promise<WatchNextItem[]> {
+  watchNext(@CurrentUser() user: AuthenticatedUser): Promise<WatchNextItem[]> {
     return this.retrieveWatchNext.execute(user.userId);
   }
 
   @Get('recently-watched')
-  recentlyWatched(@CurrentUser() user: { userId: string }): Promise<RecentlyWatchedItem[]> {
+  recentlyWatched(@CurrentUser() user: AuthenticatedUser): Promise<RecentlyWatchedItem[]> {
     return this.retrieveRecentlyWatched.execute(user.userId);
   }
 
   @Get(':tmdbId')
   detail(
-    @CurrentUser() user: { userId: string },
+    @CurrentUser() user: AuthenticatedUser,
     @Param('tmdbId', ParseIntPipe) tmdbId: number,
   ): Promise<ShowProgress> {
     return this.retrieveShowProgress.execute(user.userId, tmdbId);
@@ -75,7 +75,7 @@ export class ShowsController {
 
   @Get(':tmdbId/season/:seasonNumber')
   seasonEpisodes(
-    @CurrentUser() user: { userId: string },
+    @CurrentUser() user: AuthenticatedUser,
     @Param('tmdbId', ParseIntPipe) tmdbId: number,
     @Param('seasonNumber', ParseIntPipe) seasonNumber: number,
   ): Promise<EpisodeWithState[]> {
@@ -84,7 +84,7 @@ export class ShowsController {
 
   @Post(':tmdbId/follow')
   follow(
-    @CurrentUser() user: { userId: string },
+    @CurrentUser() user: AuthenticatedUser,
     @Param('tmdbId', ParseIntPipe) tmdbId: number,
   ): Promise<FollowedShow> {
     return this.followShow.execute(user.userId, tmdbId);
@@ -93,7 +93,7 @@ export class ShowsController {
   @Delete(':tmdbId/follow')
   @HttpCode(204)
   async unfollow(
-    @CurrentUser() user: { userId: string },
+    @CurrentUser() user: AuthenticatedUser,
     @Param('tmdbId', ParseIntPipe) tmdbId: number,
   ): Promise<void> {
     await this.unfollowShow.execute(user.userId, tmdbId);
@@ -102,7 +102,7 @@ export class ShowsController {
   @Patch(':tmdbId/status')
   @HttpCode(204)
   async setStatus(
-    @CurrentUser() user: { userId: string },
+    @CurrentUser() user: AuthenticatedUser,
     @Param('tmdbId', ParseIntPipe) tmdbId: number,
     @Body() dto: UpdateShowStatusDto,
   ): Promise<void> {
@@ -112,7 +112,7 @@ export class ShowsController {
   @Post(':tmdbId/episodes/:season/:episode/watch')
   @HttpCode(204)
   async watchEpisode(
-    @CurrentUser() user: { userId: string },
+    @CurrentUser() user: AuthenticatedUser,
     @Param('tmdbId', ParseIntPipe) tmdbId: number,
     @Param('season', ParseIntPipe) season: number,
     @Param('episode', ParseIntPipe) episode: number,
@@ -123,7 +123,7 @@ export class ShowsController {
   @Delete(':tmdbId/episodes/:season/:episode/watch')
   @HttpCode(204)
   async unwatchEpisode(
-    @CurrentUser() user: { userId: string },
+    @CurrentUser() user: AuthenticatedUser,
     @Param('tmdbId', ParseIntPipe) tmdbId: number,
     @Param('season', ParseIntPipe) season: number,
     @Param('episode', ParseIntPipe) episode: number,
@@ -133,7 +133,7 @@ export class ShowsController {
 
   @Post(':tmdbId/season/:seasonNumber/watch')
   async watchSeason(
-    @CurrentUser() user: { userId: string },
+    @CurrentUser() user: AuthenticatedUser,
     @Param('tmdbId', ParseIntPipe) tmdbId: number,
     @Param('seasonNumber', ParseIntPipe) seasonNumber: number,
   ): Promise<{ marked: number }> {

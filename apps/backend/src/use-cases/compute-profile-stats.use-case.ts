@@ -153,43 +153,58 @@ export class ComputeProfileStatsUseCase {
   }
 
   async #ensureShowMeta(showIds: number[]): Promise<[Map<number, ShowMeta>, boolean]> {
-    const cached = await this.meta.getShowMeta(showIds);
-    const missing = showIds.filter((id) => !cached.has(id));
-    let estimated = false;
-    if (missing.length > 0) {
-      const results = await mapWithConcurrency(missing, 8, async (id): Promise<{ meta: ShowMeta; ok: boolean }> => {
-        try {
-          const detail = await this.catalog.getShowDetail(id);
-          return { meta: { tmdbShowId: id, genres: detail.genres, episodeRuntime: detail.episodeRuntime }, ok: true };
-        } catch {
-          estimated = true;
-          return { meta: { tmdbShowId: id, genres: [], episodeRuntime: null }, ok: false };
-        }
-      });
-      // On ne persiste QUE les fetches réussis : un échec transitoire ne doit pas
-      // figer la série sur ses valeurs par défaut (pas de negative caching).
-      await this.meta.saveShowMeta(results.filter((r) => r.ok).map((r) => r.meta));
-      for (const r of results) cached.set(r.meta.tmdbShowId, r.meta);
-    }
-    return [cached, estimated];
+    return this.#ensureMeta(showIds, {
+      getCached: (ids) => this.meta.getShowMeta(ids),
+      fetchOne: async (id) => {
+        const detail = await this.catalog.getShowDetail(id);
+        return { tmdbShowId: id, genres: detail.genres, episodeRuntime: detail.episodeRuntime };
+      },
+      fallback: (id) => ({ tmdbShowId: id, genres: [], episodeRuntime: null }),
+      save: (metas) => this.meta.saveShowMeta(metas),
+      keyOf: (meta) => meta.tmdbShowId,
+    });
   }
 
   async #ensureMovieMeta(movieIds: number[]): Promise<[Map<number, MovieMeta>, boolean]> {
-    const cached = await this.meta.getMovieMeta(movieIds);
-    const missing = movieIds.filter((id) => !cached.has(id));
+    return this.#ensureMeta(movieIds, {
+      getCached: (ids) => this.meta.getMovieMeta(ids),
+      fetchOne: async (id) => {
+        const detail = await this.catalog.getMovieDetail(id);
+        return { tmdbMovieId: id, runtime: detail.runtime };
+      },
+      fallback: (id) => ({ tmdbMovieId: id, runtime: null }),
+      save: (metas) => this.meta.saveMovieMeta(metas),
+      keyOf: (meta) => meta.tmdbMovieId,
+    });
+  }
+
+  /** Lit le cache de métadonnées TMDB, complète les manquants, et signale si des valeurs sont estimées. */
+  async #ensureMeta<T>(
+    ids: number[],
+    ops: {
+      getCached: (ids: number[]) => Promise<Map<number, T>>;
+      fetchOne: (id: number) => Promise<T>;
+      fallback: (id: number) => T;
+      save: (metas: T[]) => Promise<unknown>;
+      keyOf: (meta: T) => number;
+    },
+  ): Promise<[Map<number, T>, boolean]> {
+    const cached = await ops.getCached(ids);
+    const missing = ids.filter((id) => !cached.has(id));
     let estimated = false;
     if (missing.length > 0) {
-      const results = await mapWithConcurrency(missing, 8, async (id): Promise<{ meta: MovieMeta; ok: boolean }> => {
+      const results = await mapWithConcurrency(missing, 8, async (id): Promise<{ meta: T; ok: boolean }> => {
         try {
-          const detail = await this.catalog.getMovieDetail(id);
-          return { meta: { tmdbMovieId: id, runtime: detail.runtime }, ok: true };
+          return { meta: await ops.fetchOne(id), ok: true };
         } catch {
           estimated = true;
-          return { meta: { tmdbMovieId: id, runtime: null }, ok: false };
+          return { meta: ops.fallback(id), ok: false };
         }
       });
-      await this.meta.saveMovieMeta(results.filter((r) => r.ok).map((r) => r.meta));
-      for (const r of results) cached.set(r.meta.tmdbMovieId, r.meta);
+      // On ne persiste QUE les fetches réussis : un échec transitoire ne doit pas
+      // figer l'entrée sur ses valeurs par défaut (pas de negative caching).
+      await ops.save(results.filter((r) => r.ok).map((r) => r.meta));
+      for (const r of results) cached.set(ops.keyOf(r.meta), r.meta);
     }
     return [cached, estimated];
   }

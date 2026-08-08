@@ -8,7 +8,7 @@ import { ImportTvtimeExportUseCase } from '../../use-cases/import-tvtime-export.
 import { RetrieveCurrentUserUseCase } from '../../use-cases/retrieve-current-user.use-case';
 import { RetrieveProfileStatsUseCase } from '../../use-cases/retrieve-profile-stats.use-case';
 import { CurrentUser } from '../decorators/current-user.decorator';
-import { JwtAuthGuard } from '../guards/jwt-auth.guard';
+import { AuthenticatedUser, JwtAuthGuard } from '../guards/jwt-auth.guard';
 
 @Controller('me')
 @UseGuards(JwtAuthGuard)
@@ -21,12 +21,12 @@ export class ProfileController {
   ) {}
 
   @Get('stats')
-  stats(@CurrentUser() user: { userId: string }): Promise<ProfileStatsFull> {
+  stats(@CurrentUser() user: AuthenticatedUser): Promise<ProfileStatsFull> {
     return this.computeProfileStats.execute(user.userId);
   }
 
   @Get()
-  async me(@CurrentUser() user: { userId: string }): Promise<{ user: User; stats: ProfileStats }> {
+  async me(@CurrentUser() user: AuthenticatedUser): Promise<{ user: User; stats: ProfileStats }> {
     const [profile, stats] = await Promise.all([
       this.retrieveCurrentUser.execute(user.userId),
       this.retrieveProfileStats.execute(user.userId),
@@ -35,7 +35,7 @@ export class ProfileController {
   }
 
   @Post('import/tvtime')
-  importTvtime(@CurrentUser() user: { userId: string }): Promise<ImportReport> {
+  importTvtime(@CurrentUser() user: AuthenticatedUser): Promise<ImportReport> {
     return this.importTvtimeExport.execute(user.userId);
   }
 }

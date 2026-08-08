@@ -1,4 +1,4 @@
-export { FollowStatus } from '@ctt/shared-models';
+export { FollowStatus, isAired } from '@ctt/shared-models';
 export type {
   FollowedShow,
   EpisodeWithState,

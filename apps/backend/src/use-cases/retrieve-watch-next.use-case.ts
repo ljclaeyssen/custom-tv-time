@@ -1,5 +1,7 @@
 import { Injectable } from '@nestjs/common';
+import { isAired, todayIso } from '@ctt/shared-models';
 import { WatchNextItem } from '../domain/models/progress.model';
+import { episodeKey, seasonKeyPrefix } from '../domain/models/watched-episode.model';
 import { CatalogPort } from '../domain/ports/catalog.port';
 import { FollowsPort } from '../domain/ports/follows.port';
 import { WatchedEpisodesPort } from '../domain/ports/watched-episodes.port';
@@ -27,7 +29,7 @@ export class RetrieveWatchNextUseCase {
         set = new Set();
         watchedByShow.set(episode.tmdbShowId, set);
       }
-      set.add(`${episode.season}:${episode.episode}`);
+      set.add(episodeKey(episode.season, episode.episode));
       if (episode.watchedAt) {
         const current = lastWatchedByShow.get(episode.tmdbShowId);
         if (!current || episode.watchedAt > current) {
@@ -37,7 +39,7 @@ export class RetrieveWatchNextUseCase {
     }
 
     const candidates = followedShows.filter((f) => f.status !== 'stopped');
-    const today = new Date().toISOString().slice(0, 10);
+    const today = todayIso();
 
     const items = await mapWithConcurrency(candidates, 8, async (show) => {
       try {
@@ -55,17 +57,14 @@ export class RetrieveWatchNextUseCase {
 
         for (const season of seasons) {
           const watchedInSeason = [...watched].filter(
-            (key) => key.startsWith(`${season.seasonNumber}:`),
+            (key) => key.startsWith(seasonKeyPrefix(season.seasonNumber)),
           ).length;
           if (season.episodeCount > 0 && watchedInSeason >= season.episodeCount) {
             continue;
           }
           const episodes = await this.catalog.getSeasonEpisodes(show.tmdbShowId, season.seasonNumber);
           const next = episodes.find(
-            (e) =>
-              !watched.has(`${e.seasonNumber}:${e.episodeNumber}`) &&
-              e.airDate !== null &&
-              e.airDate <= today,
+            (e) => !watched.has(episodeKey(e.seasonNumber, e.episodeNumber)) && isAired(e.airDate, today),
           );
           if (next) {
             return {
@@ -78,7 +77,7 @@ export class RetrieveWatchNextUseCase {
           }
           // Toute la partie diffusée de cette saison est vue : le reste n'a pas
           // encore été diffusé, inutile d'aller voir les saisons suivantes.
-          if (episodes.some((e) => e.airDate === null || e.airDate > today)) {
+          if (episodes.some((e) => !isAired(e.airDate, today))) {
             return null;
           }
         }

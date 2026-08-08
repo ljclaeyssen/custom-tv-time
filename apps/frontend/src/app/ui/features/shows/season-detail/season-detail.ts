@@ -1,7 +1,7 @@
 import { Component, inject, input, numberAttribute, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { DatePipe } from '@angular/common';
-import { EpisodeWithState } from '../../../../domain/models/show.model';
+import { EpisodeWithState, isAired } from '../../../../domain/models/show.model';
 import { ShowsStore } from '../../../../store/shows.store';
 import { MarkSeasonWatched } from '../../../../use-cases/mark-season-watched';
 import { RetrieveSeasonEpisodes } from '../../../../use-cases/retrieve-season-episodes';
@@ -47,6 +47,6 @@ export class SeasonDetail implements OnInit {
   }
 
   protected isAired(episode: EpisodeWithState): boolean {
-    return episode.airDate !== null && episode.airDate <= new Date().toISOString().slice(0, 10);
+    return isAired(episode.airDate);
   }
 }

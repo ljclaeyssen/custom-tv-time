@@ -17,7 +17,7 @@ import { TrackMovieUseCase } from '../../use-cases/track-movie.use-case';
 import { UntrackMovieUseCase } from '../../use-cases/untrack-movie.use-case';
 import { CurrentUser } from '../decorators/current-user.decorator';
 import { SetMovieWatchedDto, TrackMovieDto } from '../dto/track-movie.dto';
-import { JwtAuthGuard } from '../guards/jwt-auth.guard';
+import { AuthenticatedUser, JwtAuthGuard } from '../guards/jwt-auth.guard';
 
 @Controller('movies')
 @UseGuards(JwtAuthGuard)
@@ -30,13 +30,13 @@ export class MoviesController {
   ) {}
 
   @Get()
-  mine(@CurrentUser() user: { userId: string }): Promise<TrackedMovie[]> {
+  mine(@CurrentUser() user: AuthenticatedUser): Promise<TrackedMovie[]> {
     return this.retrieveMyMovies.execute(user.userId);
   }
 
   @Post(':tmdbId')
   track(
-    @CurrentUser() user: { userId: string },
+    @CurrentUser() user: AuthenticatedUser,
     @Param('tmdbId', ParseIntPipe) tmdbId: number,
     @Body() dto: TrackMovieDto,
   ): Promise<TrackedMovie> {
@@ -46,7 +46,7 @@ export class MoviesController {
   @Patch(':tmdbId/watched')
   @HttpCode(204)
   async setWatched(
-    @CurrentUser() user: { userId: string },
+    @CurrentUser() user: AuthenticatedUser,
     @Param('tmdbId', ParseIntPipe) tmdbId: number,
     @Body() dto: SetMovieWatchedDto,
   ): Promise<void> {
@@ -56,7 +56,7 @@ export class MoviesController {
   @Delete(':tmdbId')
   @HttpCode(204)
   async untrack(
-    @CurrentUser() user: { userId: string },
+    @CurrentUser() user: AuthenticatedUser,
     @Param('tmdbId', ParseIntPipe) tmdbId: number,
   ): Promise<void> {
     await this.untrackMovie.execute(user.userId, tmdbId);
