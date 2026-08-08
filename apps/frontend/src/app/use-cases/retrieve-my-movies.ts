@@ -18,8 +18,8 @@ export class RetrieveMyMovies {
       .pipe(
         first(),
         tap((movies) => this.#store.setMovies(movies)),
-        catchError((error: { message?: string }) => {
-          this.#store.setError(error.message ?? 'Impossible de charger vos films');
+        catchError(() => {
+          this.#store.setLoading(false);
           return EMPTY;
         }),
       )

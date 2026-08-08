@@ -5,17 +5,15 @@ interface MoviesState {
   movies: TrackedMovie[];
   loaded: boolean;
   loading: boolean;
-  error: string | null;
 }
 
 @Injectable({ providedIn: 'root' })
 export class MoviesStore {
-  readonly #state = signal<MoviesState>({ movies: [], loaded: false, loading: false, error: null });
+  readonly #state = signal<MoviesState>({ movies: [], loaded: false, loading: false });
 
   readonly movies = computed(() => this.#state().movies);
   readonly loaded = computed(() => this.#state().loaded);
   readonly loading = computed(() => this.#state().loading);
-  readonly error = computed(() => this.#state().error);
   readonly watchlist = computed(() => this.#state().movies.filter((m) => m.watchedAt === null));
   readonly watched = computed(() =>
     this.#state()
@@ -24,7 +22,7 @@ export class MoviesStore {
   );
 
   setMovies(movies: TrackedMovie[]): void {
-    this.#state.update((s) => ({ ...s, movies, loaded: true, loading: false, error: null }));
+    this.#state.update((s) => ({ ...s, movies, loaded: true, loading: false }));
   }
 
   upsertMovie(movie: TrackedMovie): void {
@@ -59,9 +57,5 @@ export class MoviesStore {
 
   setLoading(loading: boolean): void {
     this.#state.update((s) => ({ ...s, loading }));
-  }
-
-  setError(error: string): void {
-    this.#state.update((s) => ({ ...s, error, loading: false }));
   }
 }

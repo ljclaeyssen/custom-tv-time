@@ -1,5 +1,3 @@
-import type { CatalogEpisode, CatalogShowDetail } from '@ctt/shared-models';
-
 export { FollowStatus } from '@ctt/shared-models';
 export type {
   FollowedShow,
@@ -7,9 +5,5 @@ export type {
   WatchNextItem,
   MyShowItem,
   RecentlyWatchedItem,
-  SeasonProgress,
   ShowProgress,
 } from '@ctt/shared-models';
-
-export type Episode = CatalogEpisode;
-export type ShowDetail = CatalogShowDetail;

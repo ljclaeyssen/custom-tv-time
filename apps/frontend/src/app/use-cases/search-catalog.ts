@@ -25,8 +25,8 @@ export class SearchCatalog {
             this.#store.setResults(results);
           }
         }),
-        catchError((error: { message?: string }) => {
-          this.#store.setError(error.message ?? 'Recherche impossible');
+        catchError(() => {
+          this.#store.setLoading(false);
           return EMPTY;
         }),
       )

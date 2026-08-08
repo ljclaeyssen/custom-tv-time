@@ -9,16 +9,12 @@ export class RetrieveProfile {
   readonly #store = inject(AuthStore);
 
   execute(): void {
-    this.#store.setLoading(true);
     this.#gateway
       .getProfile()
       .pipe(
         first(),
         tap((profile) => this.#store.setProfile(profile)),
-        catchError(() => {
-          this.#store.setLoading(false);
-          return EMPTY;
-        }),
+        catchError(() => EMPTY),
       )
       .subscribe();
   }

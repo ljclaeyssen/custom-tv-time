@@ -18,8 +18,8 @@ export class RetrieveMyShows {
       .pipe(
         first(),
         tap((items) => this.#store.setMyShows(items)),
-        catchError((error: { message?: string }) => {
-          this.#store.setError(error.message ?? 'Impossible de charger vos séries');
+        catchError(() => {
+          this.#store.setLoading(false);
           return EMPTY;
         }),
       )

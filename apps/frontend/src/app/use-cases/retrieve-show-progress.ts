@@ -16,8 +16,8 @@ export class RetrieveShowProgress {
       .pipe(
         first(),
         tap((progress) => this.#store.setCurrentShow(progress)),
-        catchError((error: { message?: string }) => {
-          this.#store.setError(error.message ?? 'Série introuvable');
+        catchError(() => {
+          this.#store.setLoading(false);
           return EMPTY;
         }),
       )

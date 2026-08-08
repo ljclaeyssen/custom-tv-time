@@ -17,7 +17,6 @@ interface ShowsState {
   currentShow: ShowProgress | null;
   currentSeasonEpisodes: EpisodeWithState[];
   loading: boolean;
-  error: string | null;
 }
 
 @Injectable({ providedIn: 'root' })
@@ -32,7 +31,6 @@ export class ShowsStore {
     currentShow: null,
     currentSeasonEpisodes: [],
     loading: false,
-    error: null,
   });
 
   readonly watchNext = computed(() => this.#state().watchNext);
@@ -44,42 +42,25 @@ export class ShowsStore {
   readonly currentShow = computed(() => this.#state().currentShow);
   readonly currentSeasonEpisodes = computed(() => this.#state().currentSeasonEpisodes);
   readonly loading = computed(() => this.#state().loading);
-  readonly error = computed(() => this.#state().error);
 
   setWatchNext(watchNext: WatchNextItem[]): void {
-    this.#state.update((s) => ({ ...s, watchNext, watchNextLoaded: true, loading: false, error: null }));
+    this.#state.update((s) => ({ ...s, watchNext, watchNextLoaded: true, loading: false }));
   }
 
   setRecentlyWatched(recentlyWatched: RecentlyWatchedItem[]): void {
     this.#state.update((s) => ({ ...s, recentlyWatched, recentlyWatchedLoaded: true }));
   }
 
-  removeWatchNextItem(tmdbShowId: number): void {
-    this.#state.update((s) => ({
-      ...s,
-      watchNext: s.watchNext.filter((item) => item.show.tmdbShowId !== tmdbShowId),
-    }));
-  }
-
-  replaceWatchNextItem(tmdbShowId: number, item: WatchNextItem | null): void {
-    this.#state.update((s) => ({
-      ...s,
-      watchNext: item
-        ? s.watchNext.map((existing) => (existing.show.tmdbShowId === tmdbShowId ? item : existing))
-        : s.watchNext.filter((existing) => existing.show.tmdbShowId !== tmdbShowId),
-    }));
-  }
-
   setMyShows(myShows: MyShowItem[]): void {
-    this.#state.update((s) => ({ ...s, myShows, myShowsLoaded: true, loading: false, error: null }));
+    this.#state.update((s) => ({ ...s, myShows, myShowsLoaded: true, loading: false }));
   }
 
   setCurrentShow(currentShow: ShowProgress | null): void {
-    this.#state.update((s) => ({ ...s, currentShow, loading: false, error: null }));
+    this.#state.update((s) => ({ ...s, currentShow, loading: false }));
   }
 
   setCurrentSeasonEpisodes(currentSeasonEpisodes: EpisodeWithState[]): void {
-    this.#state.update((s) => ({ ...s, currentSeasonEpisodes, loading: false, error: null }));
+    this.#state.update((s) => ({ ...s, currentSeasonEpisodes, loading: false }));
   }
 
   updateEpisodeState(season: number, episode: number, watched: boolean): void {
@@ -104,9 +85,5 @@ export class ShowsStore {
 
   setLoading(loading: boolean): void {
     this.#state.update((s) => ({ ...s, loading }));
-  }
-
-  setError(error: string): void {
-    this.#state.update((s) => ({ ...s, error, loading: false }));
   }
 }

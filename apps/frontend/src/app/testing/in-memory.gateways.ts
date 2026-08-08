@@ -17,7 +17,7 @@ import {
   ShowProgress,
   WatchNextItem,
 } from '../domain/models/show.model';
-import { ImportReport, Profile } from '../domain/models/user.model';
+import { Profile } from '../domain/models/user.model';
 
 export const FAKE_PROFILE: Profile = {
   user: {
@@ -89,17 +89,6 @@ export const FAKE_STATS: ProfileStatsFull = {
 export class InMemoryProfileGateway extends ProfileGateway {
   override getProfile(): Observable<Profile> {
     return of(FAKE_PROFILE);
-  }
-
-  override importTvtime(): Observable<ImportReport> {
-    return of({
-      seriesImported: 0,
-      seriesSkipped: 0,
-      moviesImported: 0,
-      moviesSkipped: 0,
-      episodesImported: 0,
-      warnings: [],
-    });
   }
 }
 

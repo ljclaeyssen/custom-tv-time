@@ -16,8 +16,8 @@ export class RetrieveSeasonEpisodes {
       .pipe(
         first(),
         tap((episodes) => this.#store.setCurrentSeasonEpisodes(episodes)),
-        catchError((error: { message?: string }) => {
-          this.#store.setError(error.message ?? 'Saison introuvable');
+        catchError(() => {
+          this.#store.setLoading(false);
           return EMPTY;
         }),
       )

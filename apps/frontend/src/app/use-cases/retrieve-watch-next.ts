@@ -18,8 +18,8 @@ export class RetrieveWatchNext {
       .pipe(
         first(),
         tap((items) => this.#store.setWatchNext(items)),
-        catchError((error: { message?: string }) => {
-          this.#store.setError(error.message ?? 'Impossible de charger la liste à voir');
+        catchError(() => {
+          this.#store.setLoading(false);
           return EMPTY;
         }),
       )
