@@ -41,3 +41,14 @@ La v1 couvre le cœur de TV Time : cocher des épisodes ("à voir" recalculé c�
 progression par saison, films vus/watchlist, recherche TMDB, stats profil, import complet
 de l'historique. Le token TMDB ne quitte jamais le backend ; le front ne parle qu'à l'API.
 Les modèles partagés vivent dans `@ctt/shared-models` — plus aucune duplication front/back.
+
+## Déploiement prod (08/08) — FAIT
+
+- **URL** : https://vu.ljclaeyssen.fr (VPS Hetzner CAX21 ARM, 157.180.42.104, projet "oui-mdr")
+- **Méthode** : push sur `main` → GitHub Actions build image ARM64 → GHCR → serveur pull + `docker compose up`
+- Front statique servi par Caddy, backend `127.0.0.1:3003`, postgres dédié `vu-postgres`
+- Convention alignée sur les autres projets du VPS (guild/crypto/strava), aucun impact dessus
+- Données migrées (dump local → prod) : 270 séries, 9828 épisodes, 251 films, user "Lonjon"
+- Callback Discord prod enregistré ; login opérationnel
+- Clé SSH de déploiement `ctt-deploy-github-actions` installée (clé "Home" préservée)
+- Secrets GitHub : VPS_HOST, VPS_USER, VPS_SSH_KEY, PROD_ENV_FILE
