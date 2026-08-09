@@ -1,7 +1,7 @@
 import { Component, computed, inject, input, numberAttribute, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { FOLLOW_STATUS_OPTIONS } from '../../../../domain/models/follow-status.meta';
+import { FOLLOW_STATUS_OPTIONS } from '../../../shared/follow-status-meta';
 import { FollowStatus } from '../../../../domain/models/show.model';
 import { ShowsStore } from '../../../../store/shows.store';
 import { MarkSeasonWatched } from '../../../../use-cases/mark-season-watched';

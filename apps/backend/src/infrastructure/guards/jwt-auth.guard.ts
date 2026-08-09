@@ -23,9 +23,14 @@ export class JwtAuthGuard implements CanActivate {
       throw new UnauthorizedException('Jeton manquant');
     }
     try {
-      const payload = await this.jwtService.verifyAsync<{ sub: string; username: string }>(
+      const payload = await this.jwtService.verifyAsync<{ sub?: string; username?: string }>(
         header.slice('Bearer '.length),
       );
+      // Seuls les jetons de session portent un sub : un state OAuth signé
+      // avec le même secret ne doit pas passer le guard.
+      if (!payload.sub || !payload.username) {
+        throw new Error('payload de session incomplet');
+      }
       request.user = { userId: payload.sub, username: payload.username };
       return true;
     } catch {

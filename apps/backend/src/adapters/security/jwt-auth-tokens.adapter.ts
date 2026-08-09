@@ -15,8 +15,10 @@ export class JwtAuthTokensAdapter extends AuthTokensPort {
 
   async verifyOauthState(state: string): Promise<boolean> {
     try {
-      await this.jwtService.verifyAsync(state);
-      return true;
+      // Le purpose est contrôlé : un jeton de session (même secret) n'est
+      // pas un state OAuth valide.
+      const payload = await this.jwtService.verifyAsync<{ purpose?: string }>(state);
+      return payload.purpose === 'oauth-state';
     } catch {
       return false;
     }

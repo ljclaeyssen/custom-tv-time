@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { isAired, todayIso } from '@ctt/shared-models';
+import { isAired, todayIso } from '../domain/models/watched-episode.model';
 import { CatalogPort } from '../domain/ports/catalog.port';
 import { WatchedEpisodesPort } from '../domain/ports/watched-episodes.port';
 

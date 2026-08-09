@@ -12,10 +12,11 @@ Extrait le 2026-07-05 depuis les API internes de app.tvtime.com (avant fermeture
   flags font foi et sont fusionnés à l'import. **Consommé par l'import**
   (`TVTIME_SEEN_FLAGS_PATH`).
 
-Les sous-ensembles redondants (`series.json`, `movies.json`,
-`watched-episodes.json/.csv`, `audit-shows.json`) ont été retirés du dossier —
-ils restent disponibles dans l'historique git. Le dossier est synchronisé vers
-le VPS à chaque déploiement (source de l'import, montée en lecture seule).
+Les autres fichiers (`series.json`, `movies.json`, `watched-episodes.json/.csv`,
+`audit-shows.json`) sont des sous-ensembles redondants du full-export : aucun
+n'est lu par le code, ils peuvent être supprimés sans risque (tout reste dans
+l'historique git). Le dossier est synchronisé vers le VPS à chaque déploiement
+(source de l'import, montée en lecture seule).
 
 ## Structure
 

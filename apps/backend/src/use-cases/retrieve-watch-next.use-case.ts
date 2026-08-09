@@ -1,7 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { isAired, todayIso } from '@ctt/shared-models';
 import { WatchNextItem } from '../domain/models/progress.model';
-import { episodeKey, seasonKeyPrefix } from '../domain/models/watched-episode.model';
+import { episodeKey, isAired, seasonKeyPrefix, todayIso } from '../domain/models/watched-episode.model';
 import { CatalogPort } from '../domain/ports/catalog.port';
 import { FollowsPort } from '../domain/ports/follows.port';
 import { WatchedEpisodesPort } from '../domain/ports/watched-episodes.port';

@@ -1,4 +1,4 @@
-import { FollowStatus } from './show.model';
+import { FollowStatus } from '../../domain/models/show.model';
 
 /**
  * Libellés FR et ordre d'affichage des statuts de suivi — source de vérité

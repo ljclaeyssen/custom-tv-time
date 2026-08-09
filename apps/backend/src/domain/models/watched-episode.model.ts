@@ -1,5 +1,8 @@
 export type WatchSource = 'import' | 'manual';
 
+// Règle métier partagée front/back, consommée ici via le barrel domain.
+export { isAired, todayIso } from '@ctt/shared-models';
+
 /** Clé composite « saison:épisode », partagée entre use-cases et lecture des sets d'épisodes vus. */
 export function episodeKey(season: number, episode: number): string {
   return `${season}:${episode}`;

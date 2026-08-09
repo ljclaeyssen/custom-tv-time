@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Observable, of, throwError } from 'rxjs';
 import { CatalogGateway } from '../domain/gateways/catalog.gateway';
 import { MoviesGateway } from '../domain/gateways/movies.gateway';
 import { NotificationGateway } from '../domain/gateways/notification.gateway';
@@ -87,90 +87,148 @@ export const FAKE_STATS: ProfileStatsFull = {
   generatedAt: '2026-01-01T00:00:00.000Z',
 };
 
-@Injectable()
-export class InMemoryProfileGateway extends ProfileGateway {
-  override getProfile(): Observable<Profile> {
-    return of(FAKE_PROFILE);
+/** Base des adaptateurs mémoire : données pilotables + échec simulable. */
+abstract class FailableGateway {
+  #failure: Error | null = null;
+
+  /** Les prochains appels échoueront avec cette erreur. */
+  failWith(error: Error): void {
+    this.#failure = error;
+  }
+
+  protected result<T>(value: () => T): Observable<T> {
+    return this.#failure ? throwError(() => this.#failure) : of(value());
   }
 }
 
 @Injectable()
-export class InMemoryShowsGateway extends ShowsGateway {
-  override getWatchNext(): Observable<WatchNextItem[]> {
-    return of([]);
+export class InMemoryProfileGateway extends FailableGateway implements ProfileGateway {
+  #profile: Profile = FAKE_PROFILE;
+
+  feedWith(profile: Profile): void {
+    this.#profile = profile;
   }
 
-  override getRecentlyWatched(): Observable<RecentlyWatchedItem[]> {
-    return of([]);
-  }
-
-  override getMyShows(): Observable<MyShowItem[]> {
-    return of([]);
-  }
-
-  override getShowProgress(): Observable<ShowProgress> {
-    return of(FAKE_SHOW_PROGRESS);
-  }
-
-  override getSeasonEpisodes(): Observable<EpisodeWithState[]> {
-    return of([]);
-  }
-
-  override follow(): Observable<FollowedShow> {
-    return of(FAKE_FOLLOWED_SHOW);
-  }
-
-  override unfollow(): Observable<void> {
-    return of(undefined);
-  }
-
-  override updateStatus(): Observable<void> {
-    return of(undefined);
-  }
-
-  override markEpisodeWatched(): Observable<void> {
-    return of(undefined);
-  }
-
-  override unmarkEpisodeWatched(): Observable<void> {
-    return of(undefined);
-  }
-
-  override markSeasonWatched(): Observable<{ marked: number }> {
-    return of({ marked: 0 });
+  getProfile(): Observable<Profile> {
+    return this.result(() => this.#profile);
   }
 }
 
 @Injectable()
-export class InMemoryMoviesGateway extends MoviesGateway {
-  override getMyMovies(): Observable<TrackedMovie[]> {
-    return of([]);
+export class InMemoryShowsGateway extends FailableGateway implements ShowsGateway {
+  #watchNext: WatchNextItem[] = [];
+  #recentlyWatched: RecentlyWatchedItem[] = [];
+  #myShows: MyShowItem[] = [];
+  #showProgress: ShowProgress = FAKE_SHOW_PROGRESS;
+  #seasonEpisodes: EpisodeWithState[] = [];
+
+  feedWith(data: Partial<{
+    watchNext: WatchNextItem[];
+    recentlyWatched: RecentlyWatchedItem[];
+    myShows: MyShowItem[];
+    showProgress: ShowProgress;
+    seasonEpisodes: EpisodeWithState[];
+  }>): void {
+    this.#watchNext = data.watchNext ?? this.#watchNext;
+    this.#recentlyWatched = data.recentlyWatched ?? this.#recentlyWatched;
+    this.#myShows = data.myShows ?? this.#myShows;
+    this.#showProgress = data.showProgress ?? this.#showProgress;
+    this.#seasonEpisodes = data.seasonEpisodes ?? this.#seasonEpisodes;
   }
 
-  override track(): Observable<TrackedMovie> {
-    return of(FAKE_TRACKED_MOVIE);
+  getWatchNext(): Observable<WatchNextItem[]> {
+    return this.result(() => this.#watchNext);
   }
 
-  override setWatched(): Observable<void> {
-    return of(undefined);
+  getRecentlyWatched(): Observable<RecentlyWatchedItem[]> {
+    return this.result(() => this.#recentlyWatched);
   }
 
-  override untrack(): Observable<void> {
-    return of(undefined);
+  getMyShows(): Observable<MyShowItem[]> {
+    return this.result(() => this.#myShows);
+  }
+
+  getShowProgress(): Observable<ShowProgress> {
+    return this.result(() => this.#showProgress);
+  }
+
+  getSeasonEpisodes(): Observable<EpisodeWithState[]> {
+    return this.result(() => this.#seasonEpisodes);
+  }
+
+  follow(): Observable<FollowedShow> {
+    return this.result(() => FAKE_FOLLOWED_SHOW);
+  }
+
+  unfollow(): Observable<void> {
+    return this.result(() => undefined);
+  }
+
+  updateStatus(): Observable<void> {
+    return this.result(() => undefined);
+  }
+
+  markEpisodeWatched(): Observable<void> {
+    return this.result(() => undefined);
+  }
+
+  unmarkEpisodeWatched(): Observable<void> {
+    return this.result(() => undefined);
+  }
+
+  markSeasonWatched(): Observable<{ marked: number }> {
+    return this.result(() => ({ marked: 0 }));
   }
 }
 
 @Injectable()
-export class InMemoryCatalogGateway extends CatalogGateway {
-  override search(): Observable<CatalogSearchResult[]> {
-    return of([]);
+export class InMemoryMoviesGateway extends FailableGateway implements MoviesGateway {
+  #movies: TrackedMovie[] = [];
+
+  feedWith(movies: TrackedMovie[]): void {
+    this.#movies = movies;
+  }
+
+  getMyMovies(): Observable<TrackedMovie[]> {
+    return this.result(() => this.#movies);
+  }
+
+  track(): Observable<TrackedMovie> {
+    return this.result(() => FAKE_TRACKED_MOVIE);
+  }
+
+  setWatched(): Observable<void> {
+    return this.result(() => undefined);
+  }
+
+  untrack(): Observable<void> {
+    return this.result(() => undefined);
   }
 }
 
 @Injectable()
-export class InMemoryStatsGateway extends StatsGateway {
-  override getStats(): Observable<ProfileStatsFull> {
-    return of(FAKE_STATS);
+export class InMemoryCatalogGateway extends FailableGateway implements CatalogGateway {
+  #results: CatalogSearchResult[] = [];
+
+  feedWith(results: CatalogSearchResult[]): void {
+    this.#results = results;
+  }
+
+  search(): Observable<CatalogSearchResult[]> {
+    return this.result(() => this.#results);
+  }
+}
+
+@Injectable()
+export class InMemoryStatsGateway extends FailableGateway implements StatsGateway {
+  #stats: ProfileStatsFull = FAKE_STATS;
+
+  feedWith(stats: ProfileStatsFull): void {
+    this.#stats = stats;
+  }
+
+  getStats(): Observable<ProfileStatsFull> {
+    return this.result(() => this.#stats);
   }
 }
 

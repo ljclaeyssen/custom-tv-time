@@ -1,6 +1,6 @@
 import { Component, computed, inject, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { FOLLOW_STATUS_META } from '../../../../domain/models/follow-status.meta';
+import { FOLLOW_STATUS_META } from '../../../shared/follow-status-meta';
 import { MyShowItem } from '../../../../domain/models/show.model';
 import { ShowsStore } from '../../../../store/shows.store';
 import { RetrieveMyShows } from '../../../../use-cases/retrieve-my-shows';
@@ -20,7 +20,10 @@ export class MyShows implements OnInit {
   protected readonly sorted = computed(() =>
     [...this.store.myShows()].sort(
       (a, b) =>
-        FOLLOW_STATUS_META[a.show.status].order - FOLLOW_STATUS_META[b.show.status].order ||
+        // Repli ?? 9 : la colonne status est un text libre en base, un statut
+        // inattendu ne doit pas faire planter la page, juste finir en bas.
+        (FOLLOW_STATUS_META[a.show.status]?.order ?? 9) -
+          (FOLLOW_STATUS_META[b.show.status]?.order ?? 9) ||
         a.show.name.localeCompare(b.show.name),
     ),
   );
