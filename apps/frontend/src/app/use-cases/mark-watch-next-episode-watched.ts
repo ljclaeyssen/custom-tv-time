@@ -1,5 +1,6 @@
 import { inject, Injectable } from '@angular/core';
 import { catchError, EMPTY, first, switchMap, tap } from 'rxjs';
+import { NotificationGateway } from '../domain/gateways/notification.gateway';
 import { ShowsGateway } from '../domain/gateways/shows.gateway';
 import { WatchNextItem } from '../domain/models/show.model';
 import { ShowsStore } from '../store/shows.store';
@@ -12,6 +13,7 @@ export class MarkWatchNextEpisodeWatched {
   readonly #store = inject(ShowsStore);
   readonly #stats = inject(StatsStore);
   readonly #retrieveRecent = inject(RetrieveRecentlyWatched);
+  readonly #notifications = inject(NotificationGateway);
 
   execute(item: WatchNextItem): void {
     const { tmdbShowId } = item.show;
@@ -29,7 +31,10 @@ export class MarkWatchNextEpisodeWatched {
           // L'épisode qu'on vient de cocher remonte en tête de "Vu récemment".
           this.#retrieveRecent.execute(true);
         }),
-        catchError(() => EMPTY),
+        catchError(() => {
+          this.#notifications.error('Épisode non enregistré');
+          return EMPTY;
+        }),
       )
       .subscribe();
   }

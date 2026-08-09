@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { CatalogGateway } from '../domain/gateways/catalog.gateway';
 import { MoviesGateway } from '../domain/gateways/movies.gateway';
+import { NotificationGateway } from '../domain/gateways/notification.gateway';
 import { ProfileGateway } from '../domain/gateways/profile.gateway';
 import { ShowsGateway } from '../domain/gateways/shows.gateway';
 import { StatsGateway } from '../domain/gateways/stats.gateway';
@@ -170,6 +171,15 @@ export class InMemoryCatalogGateway extends CatalogGateway {
 export class InMemoryStatsGateway extends StatsGateway {
   override getStats(): Observable<ProfileStatsFull> {
     return of(FAKE_STATS);
+  }
+}
+
+@Injectable()
+export class InMemoryNotificationGateway extends NotificationGateway {
+  readonly errors: string[] = [];
+
+  override error(detail: string): void {
+    this.errors.push(detail);
   }
 }
 

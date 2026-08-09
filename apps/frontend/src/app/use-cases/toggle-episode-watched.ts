@@ -1,5 +1,6 @@
 import { inject, Injectable } from '@angular/core';
 import { catchError, EMPTY, first } from 'rxjs';
+import { NotificationGateway } from '../domain/gateways/notification.gateway';
 import { ShowsGateway } from '../domain/gateways/shows.gateway';
 import { ShowsStore } from '../store/shows.store';
 import { StatsStore } from '../store/stats.store';
@@ -9,6 +10,7 @@ export class ToggleEpisodeWatched {
   readonly #gateway = inject(ShowsGateway);
   readonly #store = inject(ShowsStore);
   readonly #stats = inject(StatsStore);
+  readonly #notifications = inject(NotificationGateway);
 
   execute(tmdbShowId: number, season: number, episode: number, watched: boolean): void {
     // Optimiste : l'UI bascule tout de suite, rollback si l'API échoue.
@@ -23,6 +25,7 @@ export class ToggleEpisodeWatched {
         first(),
         catchError(() => {
           this.#store.updateEpisodeState(season, episode, !watched);
+          this.#notifications.error('Épisode non enregistré');
           return EMPTY;
         }),
       )

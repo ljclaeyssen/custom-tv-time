@@ -1,6 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 import { catchError, EMPTY, first, tap } from 'rxjs';
 import { MoviesGateway } from '../domain/gateways/movies.gateway';
+import { NotificationGateway } from '../domain/gateways/notification.gateway';
 import { MoviesStore } from '../store/movies.store';
 import { StatsStore } from '../store/stats.store';
 
@@ -9,6 +10,7 @@ export class UntrackMovie {
   readonly #gateway = inject(MoviesGateway);
   readonly #store = inject(MoviesStore);
   readonly #stats = inject(StatsStore);
+  readonly #notifications = inject(NotificationGateway);
 
   execute(tmdbMovieId: number): void {
     this.#gateway
@@ -19,7 +21,10 @@ export class UntrackMovie {
           this.#store.removeMovie(tmdbMovieId);
           this.#stats.invalidate();
         }),
-        catchError(() => EMPTY),
+        catchError(() => {
+          this.#notifications.error('Film non retiré');
+          return EMPTY;
+        }),
       )
       .subscribe();
   }

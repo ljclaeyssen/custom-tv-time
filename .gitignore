@@ -14,6 +14,7 @@ tmp/
 # IDE / OS
 .idea/
 .cursor/
+.claude/
 .DS_Store
 
 # Nx

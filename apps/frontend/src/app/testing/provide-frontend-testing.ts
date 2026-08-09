@@ -2,6 +2,7 @@ import { EnvironmentProviders, Provider } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { CatalogGateway } from '../domain/gateways/catalog.gateway';
 import { MoviesGateway } from '../domain/gateways/movies.gateway';
+import { NotificationGateway } from '../domain/gateways/notification.gateway';
 import { ProfileGateway } from '../domain/gateways/profile.gateway';
 import { ShowsGateway } from '../domain/gateways/shows.gateway';
 import { StatsGateway } from '../domain/gateways/stats.gateway';
@@ -10,6 +11,7 @@ import { provideApplicationUseCases } from '../use-cases/use-cases.provider';
 import {
   InMemoryCatalogGateway,
   InMemoryMoviesGateway,
+  InMemoryNotificationGateway,
   InMemoryProfileGateway,
   InMemoryShowsGateway,
   InMemoryStatsGateway,
@@ -30,5 +32,6 @@ export function provideFrontendTesting(): (Provider | EnvironmentProviders)[] {
     { provide: CatalogGateway, useClass: InMemoryCatalogGateway },
     { provide: StatsGateway, useClass: InMemoryStatsGateway },
     { provide: TokenStorageGateway, useClass: InMemoryTokenStorageGateway },
+    { provide: NotificationGateway, useClass: InMemoryNotificationGateway },
   ];
 }

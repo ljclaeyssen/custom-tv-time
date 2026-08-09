@@ -1,5 +1,6 @@
 import { inject, Injectable } from '@angular/core';
 import { CatalogGateway } from '../domain/gateways/catalog.gateway';
+import { NotificationGateway } from '../domain/gateways/notification.gateway';
 import { ExploreStore } from '../store/explore.store';
 import { runQuery } from './run-query';
 
@@ -7,6 +8,7 @@ import { runQuery } from './run-query';
 export class SearchCatalog {
   readonly #gateway = inject(CatalogGateway);
   readonly #store = inject(ExploreStore);
+  readonly #notifications = inject(NotificationGateway);
 
   execute(query: string, type: 'show' | 'movie' | 'all' = 'all'): void {
     this.#store.setQuery(query);
@@ -22,7 +24,10 @@ export class SearchCatalog {
           this.#store.setResults(results);
         }
       },
-      onError: () => this.#store.setLoading(false),
+      onError: () => {
+        this.#store.setLoading(false);
+        this.#notifications.error('Recherche impossible');
+      },
     });
   }
 }

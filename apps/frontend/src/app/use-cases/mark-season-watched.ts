@@ -1,5 +1,6 @@
 import { inject, Injectable } from '@angular/core';
 import { catchError, EMPTY, first, tap } from 'rxjs';
+import { NotificationGateway } from '../domain/gateways/notification.gateway';
 import { ShowsGateway } from '../domain/gateways/shows.gateway';
 import { ShowsStore } from '../store/shows.store';
 import { StatsStore } from '../store/stats.store';
@@ -11,6 +12,7 @@ export class MarkSeasonWatched {
   readonly #store = inject(ShowsStore);
   readonly #stats = inject(StatsStore);
   readonly #retrieveShowProgress = inject(RetrieveShowProgress);
+  readonly #notifications = inject(NotificationGateway);
 
   execute(tmdbShowId: number, seasonNumber: number): void {
     this.#gateway
@@ -22,7 +24,10 @@ export class MarkSeasonWatched {
           this.#stats.invalidate();
           this.#retrieveShowProgress.execute(tmdbShowId);
         }),
-        catchError(() => EMPTY),
+        catchError(() => {
+          this.#notifications.error('Saison non enregistrée');
+          return EMPTY;
+        }),
       )
       .subscribe();
   }
