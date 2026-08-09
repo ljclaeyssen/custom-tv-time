@@ -55,6 +55,17 @@ L'import résout les IDs TheTVDB/IMDb vers TMDB via `/find`, il est idempotent
 - **PWA** : le service worker n'est actif qu'en build production
   (`npx nx build frontend` puis servir `dist/apps/frontend/browser`).
 
+## Démo publique
+
+**https://demo.vu.ljclaeyssen.fr** — build `demo` du frontend pour le portfolio :
+aucune connexion, aucun appel HTTP, gateways in-memory alimentés par de vraies
+données (voir [apps/frontend/src/app/demo/](apps/frontend/src/app/demo/README.md)).
+**Règle d'or : toute évolution du frontend doit faire évoluer la démo en même temps.**
+
+```bash
+npx nx build frontend --configuration=demo   # sortie : dist/apps/frontend-demo
+```
+
 ## Déploiement
 
 **Production : https://vu.ljclaeyssen.fr** (VPS Hetzner ARM partagé). Un push sur `main`

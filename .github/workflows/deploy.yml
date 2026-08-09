@@ -47,10 +47,16 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npx nx build frontend --configuration=production
+      - run: npx nx build frontend --configuration=demo
       - uses: actions/upload-artifact@v4
         with:
           name: frontend
           path: dist/apps/frontend/browser
+          retention-days: 1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: frontend-demo
+          path: dist/apps/frontend-demo/browser
           retention-days: 1
 
   deploy:
@@ -64,6 +70,11 @@ jobs:
           name: frontend
           path: frontend-dist
 
+      - uses: actions/download-artifact@v4
+        with:
+          name: frontend-demo
+          path: frontend-demo-dist
+
       - name: Configurer SSH
         run: |
           mkdir -p ~/.ssh
@@ -74,12 +85,14 @@ jobs:
       - name: Préparer l'arborescence distante
         run: |
           ssh -i ~/.ssh/id_ed25519 "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}" \
-            'mkdir -p /opt/apps/vu/frontend /opt/apps/vu/tvtime-export'
+            'mkdir -p /opt/apps/vu/frontend /opt/apps/vu/frontend-demo /opt/apps/vu/tvtime-export'
 
       - name: Synchroniser frontend, compose et export
         run: |
           rsync -az --delete -e "ssh -i ~/.ssh/id_ed25519" \
             frontend-dist/ "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/opt/apps/vu/frontend/"
+          rsync -az --delete -e "ssh -i ~/.ssh/id_ed25519" \
+            frontend-demo-dist/ "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/opt/apps/vu/frontend-demo/"
           rsync -az -e "ssh -i ~/.ssh/id_ed25519" \
             docker-compose.prod.yml "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/opt/apps/vu/docker-compose.yml"
           rsync -az -e "ssh -i ~/.ssh/id_ed25519" \
@@ -112,4 +125,5 @@ jobs:
           sleep 8
           ssh -i ~/.ssh/id_ed25519 "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}" \
             'curl -s -o /dev/null -w "backend local: %{http_code}\n" http://127.0.0.1:3003/api/shows; \
-             curl -sk -o /dev/null -w "https public: %{http_code}\n" https://vu.ljclaeyssen.fr/ || true'
+             curl -sk -o /dev/null -w "https public: %{http_code}\n" https://vu.ljclaeyssen.fr/ || true; \
+             curl -sk -o /dev/null -w "https demo: %{http_code}\n" https://demo.vu.ljclaeyssen.fr/ || true'

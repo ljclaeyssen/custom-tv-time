@@ -1,3 +1,22 @@
+demo.vu.ljclaeyssen.fr {
+    # Démo statique pour le portfolio : pas d'API, pas de connexion —
+    # build « demo » du frontend (gateways in-memory, données embarquées).
+    root * /opt/apps/vu/frontend-demo
+
+    @manifest path /manifest.webmanifest
+    header @manifest Content-Type "application/manifest+json"
+
+    @noCache path /ngsw.json /manifest.webmanifest /ngsw-worker.js
+    header @noCache Cache-Control "no-cache, no-store, must-revalidate"
+
+    # Le lien « Se connecter avec Discord » ne mène nulle part en démo :
+    # retour à l'app, la session démo est toujours ouverte.
+    redir /api/auth/discord / 302
+
+    try_files {path} /index.html
+    file_server
+}
+
 vu.ljclaeyssen.fr {
     handle /api/* {
         reverse_proxy localhost:3003
