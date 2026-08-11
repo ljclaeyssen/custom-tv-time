@@ -10,7 +10,10 @@ import { RetrieveProfileStatsFull } from './retrieve-profile-stats-full';
 import { RetrieveRecentlyWatched } from './retrieve-recently-watched';
 import { RetrieveSeasonEpisodes } from './retrieve-season-episodes';
 import { RetrieveShowProgress } from './retrieve-show-progress';
+import { RetrieveTimelineDetail } from './retrieve-timeline-detail';
+import { RetrieveTimelines } from './retrieve-timelines';
 import { RetrieveWatchNext } from './retrieve-watch-next';
+import { WatchTimelineItem } from './watch-timeline-item';
 import { RestoreSession } from './restore-session';
 import { SearchCatalog } from './search-catalog';
 import { SetMovieWatched } from './set-movie-watched';
@@ -42,5 +45,8 @@ export function provideApplicationUseCases(): Provider[] {
     SetMovieWatched,
     UntrackMovie,
     SearchCatalog,
+    RetrieveTimelines,
+    RetrieveTimelineDetail,
+    WatchTimelineItem,
   ];
 }

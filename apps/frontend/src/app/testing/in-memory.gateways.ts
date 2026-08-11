@@ -6,10 +6,12 @@ import { NotificationGateway } from '../domain/gateways/notification.gateway';
 import { ProfileGateway } from '../domain/gateways/profile.gateway';
 import { ShowsGateway } from '../domain/gateways/shows.gateway';
 import { StatsGateway } from '../domain/gateways/stats.gateway';
+import { TimelinesGateway } from '../domain/gateways/timelines.gateway';
 import { TokenStorageGateway } from '../domain/gateways/token-storage.gateway';
 import { CatalogSearchResult } from '../domain/models/catalog.model';
 import { TrackedMovie } from '../domain/models/movie.model';
 import { ProfileStatsFull } from '../domain/models/stats.model';
+import { TimelineDetail, TimelineSummary } from '../domain/models/timeline.model';
 import {
   EpisodeWithState,
   FollowedShow,
@@ -75,6 +77,49 @@ export const FAKE_TRACKED_MOVIE: TrackedMovie = {
   releaseDate: null,
   watchedAt: null,
   addedAt: '2026-01-01T00:00:00.000Z',
+};
+
+export const FAKE_TIMELINE_SUMMARY: TimelineSummary = {
+  id: 'timeline-1',
+  slug: 'test',
+  name: 'Frise de test',
+  description: null,
+  posterPath: null,
+  itemCount: 2,
+  completedCount: 1,
+};
+
+export const FAKE_TIMELINE_DETAIL: TimelineDetail = {
+  id: 'timeline-1',
+  slug: 'test',
+  name: 'Frise de test',
+  description: null,
+  items: [
+    {
+      id: 'item-1',
+      position: 10,
+      section: 'Phase 1',
+      itemType: 'movie',
+      tmdbId: 1,
+      seasonNumber: null,
+      title: 'Film de test',
+      posterPath: null,
+      releaseDate: '2020-01-01',
+      progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
+    },
+    {
+      id: 'item-2',
+      position: 20,
+      section: 'Phase 1',
+      itemType: 'season',
+      tmdbId: 2,
+      seasonNumber: 1,
+      title: 'Série de test — Saison 1',
+      posterPath: null,
+      releaseDate: '2021-01-01',
+      progress: { watchedEpisodes: 0, airedEpisodes: 6, completed: false, upcoming: false },
+    },
+  ],
 };
 
 export const FAKE_STATS: ProfileStatsFull = {
@@ -229,6 +274,29 @@ export class InMemoryStatsGateway extends FailableGateway implements StatsGatewa
 
   getStats(): Observable<ProfileStatsFull> {
     return this.result(() => this.#stats);
+  }
+}
+
+@Injectable()
+export class InMemoryTimelinesGateway extends FailableGateway implements TimelinesGateway {
+  #summaries: TimelineSummary[] = [];
+  #detail: TimelineDetail = FAKE_TIMELINE_DETAIL;
+
+  feedWith(data: Partial<{ summaries: TimelineSummary[]; detail: TimelineDetail }>): void {
+    this.#summaries = data.summaries ?? this.#summaries;
+    this.#detail = data.detail ?? this.#detail;
+  }
+
+  getTimelines(): Observable<TimelineSummary[]> {
+    return this.result(() => this.#summaries);
+  }
+
+  getTimelineDetail(): Observable<TimelineDetail> {
+    return this.result(() => this.#detail);
+  }
+
+  watchItem(): Observable<void> {
+    return this.result(() => undefined);
   }
 }
 

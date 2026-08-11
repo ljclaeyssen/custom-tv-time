@@ -35,6 +35,20 @@ export const routes: Routes = [
     loadComponent: () => import('./ui/features/movies/movies/movies').then((m) => m.Movies),
   },
   {
+    path: 'timelines',
+    canActivate: [authGuard],
+    loadComponent: () =>
+      import('./ui/features/timelines/timelines-list/timelines-list').then((m) => m.TimelinesList),
+  },
+  {
+    path: 'timelines/:slug',
+    canActivate: [authGuard],
+    loadComponent: () =>
+      import('./ui/features/timelines/timeline-detail/timeline-detail').then(
+        (m) => m.TimelineDetail,
+      ),
+  },
+  {
     path: 'explore',
     canActivate: [authGuard],
     loadComponent: () => import('./ui/features/explore/explore/explore').then((m) => m.Explore),

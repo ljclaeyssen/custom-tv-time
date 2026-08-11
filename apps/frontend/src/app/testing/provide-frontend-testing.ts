@@ -6,6 +6,7 @@ import { NotificationGateway } from '../domain/gateways/notification.gateway';
 import { ProfileGateway } from '../domain/gateways/profile.gateway';
 import { ShowsGateway } from '../domain/gateways/shows.gateway';
 import { StatsGateway } from '../domain/gateways/stats.gateway';
+import { TimelinesGateway } from '../domain/gateways/timelines.gateway';
 import { TokenStorageGateway } from '../domain/gateways/token-storage.gateway';
 import { provideApplicationUseCases } from '../use-cases/use-cases.provider';
 import {
@@ -15,6 +16,7 @@ import {
   InMemoryProfileGateway,
   InMemoryShowsGateway,
   InMemoryStatsGateway,
+  InMemoryTimelinesGateway,
   InMemoryTokenStorageGateway,
 } from './in-memory.gateways';
 
@@ -31,6 +33,7 @@ export function provideFrontendTesting(): (Provider | EnvironmentProviders)[] {
     { provide: MoviesGateway, useClass: InMemoryMoviesGateway },
     { provide: CatalogGateway, useClass: InMemoryCatalogGateway },
     { provide: StatsGateway, useClass: InMemoryStatsGateway },
+    { provide: TimelinesGateway, useClass: InMemoryTimelinesGateway },
     { provide: TokenStorageGateway, useClass: InMemoryTokenStorageGateway },
     { provide: NotificationGateway, useClass: InMemoryNotificationGateway },
   ];

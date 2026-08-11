@@ -1,0 +1,158 @@
+.header-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+
+  h1 {
+    flex: 1;
+    font-size: 1.4rem;
+  }
+}
+
+.back {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  flex: none;
+}
+
+.description {
+  margin: 0 0 18px;
+  font-size: 0.85rem;
+}
+
+.timeline-section {
+  margin-bottom: 22px;
+}
+
+.section-title {
+  font-size: 1.05rem;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+// La frise : un rail vertical à gauche, un point par item.
+.items {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 18px;
+  border-left: 2px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    background: var(--surface-2);
+    border: 2px solid var(--border);
+  }
+
+  &.completed::before {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+
+  &.next {
+    background: var(--surface);
+    border-color: var(--accent-dim);
+
+    &::before {
+      border-color: var(--accent);
+    }
+  }
+
+  &.upcoming {
+    opacity: 0.55;
+  }
+}
+
+.body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+figure {
+  margin: 0;
+  flex: none;
+  width: 52px;
+  aspect-ratio: 2 / 3;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  --poster-icon-size: 1rem;
+}
+
+.info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  .chip {
+    align-self: flex-start;
+    margin-bottom: 2px;
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 0.92rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .sub {
+    font-size: 0.76rem;
+  }
+}
+
+.progress {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+
+  app-progress-bar {
+    flex: 1;
+  }
+
+  .count {
+    flex: none;
+    font-size: 0.72rem;
+  }
+}
+
+.skeletons {
+  gap: 8px;
+}
+
+.row-skeleton {
+  height: 92px;
+}

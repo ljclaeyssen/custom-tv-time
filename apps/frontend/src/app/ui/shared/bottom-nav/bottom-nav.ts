@@ -12,6 +12,7 @@ export class BottomNav {
     { path: '/shows', icon: 'pi-desktop', label: 'Séries' },
     { path: '/explore', icon: 'pi-search', label: 'Explorer' },
     { path: '/movies', icon: 'pi-ticket', label: 'Films' },
+    { path: '/timelines', icon: 'pi-list-check', label: 'Frises' },
     { path: '/profile', icon: 'pi-user', label: 'Profil' },
   ];
 }

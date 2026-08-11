@@ -2,6 +2,7 @@ import { CatalogEpisode, CatalogShowDetail, FollowedShow } from '../domain/model
 import { CatalogSearchResult } from '../domain/models/catalog.model';
 import { TrackedMovie } from '../domain/models/movie.model';
 import { ProfileStatsFull } from '../domain/models/stats.model';
+import { TimelineDetail } from '../domain/models/timeline.model';
 import { Profile } from '../domain/models/user.model';
 
 // Données statiques de la démo (demo.vu.ljclaeyssen.fr) — extraites du vrai
@@ -4997,3 +4998,169 @@ export const DEMO_STATS: ProfileStatsFull = {
   },
   "generatedAt": "2026-08-09T12:00:00.000Z"
 };
+
+export interface DemoTimelineSeed {
+  posterPath: string | null;
+  detail: TimelineDetail;
+}
+
+// Frise de démo : extrait du MCU réel (posters TMDB authentiques) couvrant
+// tous les états d'item — complété, en cours, pas commencé, « à venir ».
+export const DEMO_TIMELINES: DemoTimelineSeed[] = [
+  {
+    posterPath: '/ylsAO88v2tF0iXRFojPa0UaAJf1.jpg',
+    detail: {
+      id: 'demo-timeline-mcu',
+      slug: 'mcu',
+      name: 'MCU — ordre chronologique',
+      description:
+        "Films et séries du Marvel Cinematic Universe dans l'ordre de l'histoire (extrait).",
+      items: [
+        {
+          id: 'demo-mcu-10',
+          position: 10,
+          section: 'Phase 1',
+          itemType: 'movie',
+          tmdbId: 1771,
+          seasonNumber: null,
+          title: 'Captain America : First Avenger',
+          posterPath: '/l1SP3gyHA5ZEuf72WKx5ihtZZFO.jpg',
+          releaseDate: '2011-07-22',
+          progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
+        },
+        {
+          id: 'demo-mcu-20',
+          position: 20,
+          section: 'Phase 1',
+          itemType: 'movie',
+          tmdbId: 299537,
+          seasonNumber: null,
+          title: 'Captain Marvel',
+          posterPath: '/aRJAoQ6mqPHAKXjP3CqNyLC8FAh.jpg',
+          releaseDate: '2019-03-06',
+          progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
+        },
+        {
+          id: 'demo-mcu-30',
+          position: 30,
+          section: 'Phase 1',
+          itemType: 'movie',
+          tmdbId: 1726,
+          seasonNumber: null,
+          title: 'Iron Man',
+          posterPath: '/kNKUCNLu1lZDGAHOBEHxR6psYHx.jpg',
+          releaseDate: '2008-04-30',
+          progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
+        },
+        {
+          id: 'demo-mcu-40',
+          position: 40,
+          section: 'Phase 1',
+          itemType: 'movie',
+          tmdbId: 10138,
+          seasonNumber: null,
+          title: 'Iron Man 2',
+          posterPath: '/g9DSeSozGi4zpUyeOYZYMNmIv9O.jpg',
+          releaseDate: '2010-04-28',
+          progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
+        },
+        {
+          id: 'demo-mcu-50',
+          position: 50,
+          section: 'Phase 1',
+          itemType: 'movie',
+          tmdbId: 1724,
+          seasonNumber: null,
+          title: "L'Incroyable Hulk",
+          posterPath: '/cImKVGUiEnwLsNUyoMA0a0na2y5.jpg',
+          releaseDate: '2008-06-12',
+          progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
+        },
+        {
+          id: 'demo-mcu-60',
+          position: 60,
+          section: 'Phase 1',
+          itemType: 'movie',
+          tmdbId: 10195,
+          seasonNumber: null,
+          title: 'Thor',
+          posterPath: '/q8pF6s9b9veTQvxTqMDIQf9nJKi.jpg',
+          releaseDate: '2011-04-21',
+          progress: { watchedEpisodes: 0, airedEpisodes: 1, completed: false, upcoming: false },
+        },
+        {
+          id: 'demo-mcu-70',
+          position: 70,
+          section: 'Phase 1',
+          itemType: 'movie',
+          tmdbId: 24428,
+          seasonNumber: null,
+          title: 'Avengers',
+          posterPath: '/ylsAO88v2tF0iXRFojPa0UaAJf1.jpg',
+          releaseDate: '2012-04-25',
+          progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
+        },
+        {
+          id: 'demo-mcu-80',
+          position: 80,
+          section: 'Phase 4',
+          itemType: 'season',
+          tmdbId: 85271,
+          seasonNumber: 1,
+          title: 'WandaVision — Saison 1',
+          posterPath: '/iOaE26zigx4GFBftUdRbD83Mcwe.jpg',
+          releaseDate: '2021-01-15',
+          progress: { watchedEpisodes: 5, airedEpisodes: 9, completed: false, upcoming: false },
+        },
+        {
+          id: 'demo-mcu-90',
+          position: 90,
+          section: 'Phase 4',
+          itemType: 'season',
+          tmdbId: 84958,
+          seasonNumber: 1,
+          title: 'Loki — Saison 1',
+          posterPath: '/x3tgUYJNx58xL5WhuV5sDnujKIh.jpg',
+          releaseDate: '2021-06-09',
+          progress: { watchedEpisodes: 0, airedEpisodes: 6, completed: false, upcoming: false },
+        },
+        {
+          id: 'demo-mcu-100',
+          position: 100,
+          section: 'Phase 4',
+          itemType: 'season',
+          tmdbId: 88396,
+          seasonNumber: 1,
+          title: "Falcon et le Soldat de l'hiver — Saison 1",
+          posterPath: '/kIHqwBzoV8IZZqm1BOazqX0aoOZ.jpg',
+          releaseDate: '2021-03-19',
+          progress: { watchedEpisodes: 0, airedEpisodes: 6, completed: false, upcoming: false },
+        },
+        {
+          id: 'demo-mcu-110',
+          position: 110,
+          section: 'Phase 4',
+          itemType: 'movie',
+          tmdbId: 634649,
+          seasonNumber: null,
+          title: 'Spider-Man : No Way Home',
+          posterPath: '/jwfDFqzxBkXC5bERBZrCEfK9iii.jpg',
+          releaseDate: '2021-12-15',
+          progress: { watchedEpisodes: 0, airedEpisodes: 1, completed: false, upcoming: false },
+        },
+        {
+          id: 'demo-mcu-120',
+          position: 120,
+          section: 'Phase 6',
+          itemType: 'movie',
+          tmdbId: 1003596,
+          seasonNumber: null,
+          title: 'Avengers: Doomsday',
+          posterPath: '/bph5UiAOKLLjla10YuCyKWfKYGG.jpg',
+          releaseDate: '2026-12-16',
+          progress: { watchedEpisodes: 0, airedEpisodes: 0, completed: false, upcoming: true },
+        },
+      ],
+    },
+  },
+];

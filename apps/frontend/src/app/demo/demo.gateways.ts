@@ -5,9 +5,11 @@ import { MoviesGateway } from '../domain/gateways/movies.gateway';
 import { ProfileGateway } from '../domain/gateways/profile.gateway';
 import { ShowsGateway } from '../domain/gateways/shows.gateway';
 import { StatsGateway } from '../domain/gateways/stats.gateway';
+import { TimelinesGateway } from '../domain/gateways/timelines.gateway';
 import { TokenStorageGateway } from '../domain/gateways/token-storage.gateway';
 import { CatalogSearchResult } from '../domain/models/catalog.model';
 import { TrackedMovie } from '../domain/models/movie.model';
+import { TimelineDetail, TimelineSummary } from '../domain/models/timeline.model';
 import {
   CatalogEpisode,
   EpisodeWithState,
@@ -28,6 +30,7 @@ import {
   DEMO_SEARCH,
   DEMO_SHOWS,
   DEMO_STATS,
+  DEMO_TIMELINES,
   DEMO_WATCH_NEXT,
   DemoShowSeed,
 } from './demo-data';
@@ -360,5 +363,60 @@ export class DemoTokenStorageGateway extends TokenStorageGateway {
 
   clear(): void {
     // no-op : la déconnexion ne verrouille pas la démo (recharger suffit à revenir)
+  }
+}
+
+@Injectable()
+export class DemoTimelinesGateway extends TimelinesGateway {
+  // Copie profonde du seed : « marquer vu » mute cet état sans toucher aux données.
+  readonly #timelines = DEMO_TIMELINES.map((seed) => ({
+    posterPath: seed.posterPath,
+    detail: {
+      ...seed.detail,
+      items: seed.detail.items.map((item) => ({ ...item, progress: { ...item.progress } })),
+    },
+  }));
+
+  getTimelines(): Observable<TimelineSummary[]> {
+    return respond(() =>
+      this.#timelines.map(({ posterPath, detail }) => ({
+        id: detail.id,
+        slug: detail.slug,
+        name: detail.name,
+        description: detail.description,
+        posterPath,
+        itemCount: detail.items.length,
+        completedCount: detail.items.filter((i) => i.progress.completed).length,
+      })),
+    );
+  }
+
+  getTimelineDetail(slug: string): Observable<TimelineDetail> {
+    return respond(() => {
+      const found = this.#timelines.find((t) => t.detail.slug === slug);
+      if (!found) {
+        throw new Error(`Frise inconnue : ${slug}`);
+      }
+      return {
+        ...found.detail,
+        items: found.detail.items.map((item) => ({ ...item, progress: { ...item.progress } })),
+      };
+    });
+  }
+
+  watchItem(slug: string, itemId: string): Observable<void> {
+    return respond(() => {
+      const item = this.#timelines
+        .find((t) => t.detail.slug === slug)
+        ?.detail.items.find((i) => i.id === itemId);
+      if (item && !item.progress.upcoming) {
+        item.progress = {
+          ...item.progress,
+          watchedEpisodes: item.progress.airedEpisodes,
+          completed: true,
+        };
+      }
+      return undefined;
+    });
   }
 }

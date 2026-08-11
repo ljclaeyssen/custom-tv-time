@@ -1,0 +1,86 @@
+<div class="page">
+  <div class="header-row">
+    <button class="back" (click)="back()" aria-label="Retour"><i class="pi pi-arrow-left"></i></button>
+    <h1>{{ timeline()?.name ?? 'Frise' }}</h1>
+  </div>
+
+  @if (timeline(); as t) {
+    @if (t.description) {
+      <p class="muted description">{{ t.description }}</p>
+    }
+    @for (section of store.sections(); track $index) {
+      <section class="timeline-section">
+        <h2 class="section-title">{{ section.title }}</h2>
+        <ol class="items">
+          @for (item of section.items; track item.id) {
+            <li
+              class="item"
+              [class.next]="item.id === store.nextItemId()"
+              [class.completed]="item.progress.completed"
+              [class.upcoming]="item.progress.upcoming"
+            >
+              @if (item.itemType === 'season') {
+                <a
+                  class="body"
+                  [routerLink]="['/shows', item.tmdbId, 'season', item.seasonNumber]"
+                >
+                  <figure><app-poster-img [src]="poster(item)" [alt]="item.title" /></figure>
+                  <div class="info">
+                    @if (item.id === store.nextItemId()) {
+                      <span class="chip accent">À regarder</span>
+                    }
+                    <span class="title">{{ item.title }}</span>
+                    <span class="muted sub">{{ sublabel(item) }}</span>
+                    @if (!item.progress.upcoming) {
+                      <div class="progress">
+                        <app-progress-bar
+                          [value]="item.progress.watchedEpisodes"
+                          [total]="item.progress.airedEpisodes"
+                        />
+                        <span class="muted count">
+                          {{ item.progress.watchedEpisodes }} / {{ item.progress.airedEpisodes }}
+                        </span>
+                      </div>
+                    }
+                  </div>
+                </a>
+              } @else {
+                <div class="body">
+                  <figure><app-poster-img [src]="poster(item)" [alt]="item.title" /></figure>
+                  <div class="info">
+                    @if (item.id === store.nextItemId()) {
+                      <span class="chip accent">À regarder</span>
+                    }
+                    <span class="title">{{ item.title }}</span>
+                    <span class="muted sub">{{ sublabel(item) }}</span>
+                  </div>
+                </div>
+              }
+              @if (item.progress.upcoming) {
+                <span class="chip">À venir</span>
+              } @else {
+                <button
+                  class="check-btn"
+                  [class.checked]="item.progress.completed"
+                  [disabled]="item.progress.completed"
+                  (click)="watch(item)"
+                  [attr.aria-label]="item.progress.completed ? 'Déjà vu' : 'Marquer vu'"
+                >
+                  <i class="pi pi-check"></i>
+                </button>
+              }
+            </li>
+          }
+        </ol>
+      </section>
+    }
+  } @else if (store.loading()) {
+    <div class="skeletons">
+      @for (i of [1, 2, 3, 4, 5, 6]; track i) {
+        <div class="skeleton row-skeleton"></div>
+      }
+    </div>
+  } @else {
+    <app-empty-state icon="pi-list-check" message="Frise introuvable" />
+  }
+</div>

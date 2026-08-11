@@ -58,4 +58,9 @@ export class MoviesStore {
   setLoading(loading: boolean): void {
     this.#state.update((s) => ({ ...s, loading }));
   }
+
+  /** Force un rechargement au prochain passage sur l'écran Films. */
+  invalidate(): void {
+    this.#state.update((s) => ({ ...s, loaded: false }));
+  }
 }

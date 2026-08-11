@@ -1,0 +1,31 @@
+<div class="page">
+  <h1 class="page-title">Frises</h1>
+
+  @if (store.loading() && !store.summariesLoaded()) {
+    <div class="poster-grid">
+      @for (i of [1, 2, 3]; track i) {
+        <div class="skeleton poster-skeleton"></div>
+      }
+    </div>
+  } @else if (store.summaries().length === 0) {
+    <app-empty-state
+      icon="pi-list-check"
+      message="Aucune frise"
+      hint="Les frises chronologiques se curent à la main — voir creer-frise.md."
+    />
+  } @else {
+    <div class="poster-grid">
+      @for (timeline of store.summaries(); track timeline.id) {
+        <a [routerLink]="['/timelines', timeline.slug]">
+          <app-poster-card
+            [posterUrl]="poster(timeline)"
+            [name]="timeline.name"
+            [sublabel]="sublabel(timeline)"
+            [progressValue]="timeline.completedCount"
+            [progressTotal]="timeline.itemCount"
+          />
+        </a>
+      }
+    </div>
+  }
+</div>
