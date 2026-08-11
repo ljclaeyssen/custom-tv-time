@@ -16,7 +16,7 @@ function item(overrides: Partial<TimelineItem> & { id: string; section: string }
 }
 
 function detail(items: TimelineItem[]): TimelineDetail {
-  return { id: 't', slug: 't', name: 'Test', description: null, items };
+  return { id: 't', slug: 't', name: 'Test', description: null, remainingMinutes: 0, items };
 }
 
 describe('TimelinesStore', () => {

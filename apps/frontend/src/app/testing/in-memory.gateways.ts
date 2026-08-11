@@ -94,6 +94,7 @@ export const FAKE_TIMELINE_DETAIL: TimelineDetail = {
   slug: 'test',
   name: 'Frise de test',
   description: null,
+  remainingMinutes: 240,
   items: [
     {
       id: 'item-1',

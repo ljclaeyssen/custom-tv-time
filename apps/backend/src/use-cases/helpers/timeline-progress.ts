@@ -1,4 +1,9 @@
-import { TimelineItemProgress, TimelineItemRecord } from '../../domain/models/timeline.model';
+import { MovieMeta, ShowMeta } from '../../domain/models/meta.model';
+import {
+  TimelineItem,
+  TimelineItemProgress,
+  TimelineItemRecord,
+} from '../../domain/models/timeline.model';
 import { TrackedMovie } from '../../domain/models/tracked-movie.model';
 import {
   WatchedEpisode,
@@ -8,6 +13,7 @@ import {
 } from '../../domain/models/watched-episode.model';
 import { CatalogPort } from '../../domain/ports/catalog.port';
 import { mapWithConcurrency } from './concurrency';
+import { DEFAULT_EPISODE_RUNTIME, DEFAULT_MOVIE_RUNTIME } from './meta';
 
 /** Clé « showId:saison » de la map des comptes d'épisodes diffusés. */
 export function seasonAiredKey(tmdbShowId: number, seasonNumber: number): string {
@@ -95,6 +101,31 @@ export function computeItemProgress(
   const prefix = seasonKeyPrefix(item.seasonNumber);
   const watched = keys ? [...keys].filter((k) => k.startsWith(prefix)).length : 0;
   return toProgress(Math.min(watched, aired), aired);
+}
+
+/**
+ * Temps restant pour finir la frise : films sortis non vus + épisodes diffusés
+ * non vus × durée moyenne. Les items « à venir » ne comptent pas (rien à
+ * regarder aujourd'hui).
+ */
+export function computeRemainingMinutes(
+  items: TimelineItem[],
+  showMeta: Map<number, ShowMeta>,
+  movieMeta: Map<number, MovieMeta>,
+): number {
+  let minutes = 0;
+  for (const item of items) {
+    if (item.progress.completed || item.progress.upcoming) {
+      continue;
+    }
+    if (item.itemType === 'movie') {
+      minutes += movieMeta.get(item.tmdbId)?.runtime ?? DEFAULT_MOVIE_RUNTIME;
+    } else {
+      const perEpisode = showMeta.get(item.tmdbId)?.episodeRuntime ?? DEFAULT_EPISODE_RUNTIME;
+      minutes += (item.progress.airedEpisodes - item.progress.watchedEpisodes) * perEpisode;
+    }
+  }
+  return minutes;
 }
 
 function toProgress(watchedEpisodes: number, airedEpisodes: number): TimelineItemProgress {

@@ -51,6 +51,9 @@ Pas d'UI de création — insertion en base via runbook `creer-frise.md`. Plan d
 - [x] 6. UI : écrans liste + détail, routes, 5e onglet bottom nav, `MoviesStore.invalidate()`
 - [x] 7. Démo portfolio : `DEMO_TIMELINES` + `DemoTimelinesGateway` interactif
 - [x] 8. Tests vitest (use-cases + computed du store) — 35 tests verts (12 nouveaux)
+- [x] 9. Temps restant estimé sur le détail d'une frise (idée LJ) : `remainingMinutes`
+      calculé côté backend via les runtimes cachés `show_meta`/`movie_meta` (helper
+      `ensure*Meta` extrait des stats), chip « ≈ X h restantes » / « Frise terminée »
 
 ### Review frises (2026-08-11)
 

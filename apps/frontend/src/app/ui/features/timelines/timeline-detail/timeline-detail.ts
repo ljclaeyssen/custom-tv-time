@@ -30,6 +30,18 @@ export class TimelineDetail implements OnInit {
     return current?.slug === this.slug() ? current : null;
   });
 
+  /** « ≈ 41 h restantes » — null si la frise est finie (ou rien à voir). */
+  protected readonly remainingLabel = computed(() => {
+    const minutes = this.timeline()?.remainingMinutes ?? 0;
+    if (minutes <= 0) {
+      return null;
+    }
+    if (minutes < 60) {
+      return `≈ ${minutes} min restantes`;
+    }
+    return `≈ ${Math.round(minutes / 60).toLocaleString('fr-FR')} h restantes`;
+  });
+
   ngOnInit(): void {
     this.#retrieveTimelineDetail.execute(this.slug());
   }

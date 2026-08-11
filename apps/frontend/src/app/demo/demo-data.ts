@@ -5001,7 +5001,8 @@ export const DEMO_STATS: ProfileStatsFull = {
 
 export interface DemoTimelineSeed {
   posterPath: string | null;
-  detail: TimelineDetail;
+  /** remainingMinutes est recalculé en mémoire par DemoTimelinesGateway. */
+  detail: Omit<TimelineDetail, 'remainingMinutes'>;
 }
 
 // Frise de démo : extrait du MCU réel (posters TMDB authentiques) couvrant

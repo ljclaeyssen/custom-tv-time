@@ -22,4 +22,12 @@ describe('TimelineDetail', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('affiche le temps restant estimé de la frise', () => {
+    fixture.detectChanges();
+
+    const chip = fixture.nativeElement.querySelector('.remaining') as HTMLElement;
+    // FAKE_TIMELINE_DETAIL : remainingMinutes = 240.
+    expect(chip.textContent).toContain('≈ 4 h restantes');
+  });
 });

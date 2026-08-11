@@ -1,15 +1,16 @@
 import { Injectable } from '@nestjs/common';
-import { MovieMeta, ShowMeta } from '../domain/models/meta.model';
 import { ProfileStatsFull } from '../domain/models/stats.model';
 import { CatalogPort } from '../domain/ports/catalog.port';
 import { FollowsPort } from '../domain/ports/follows.port';
 import { StatsMetaPort } from '../domain/ports/stats-meta.port';
 import { TrackedMoviesPort } from '../domain/ports/tracked-movies.port';
 import { WatchedEpisodesPort } from '../domain/ports/watched-episodes.port';
-import { mapWithConcurrency } from './helpers/concurrency';
-
-const DEFAULT_EPISODE_RUNTIME = 40;
-const DEFAULT_MOVIE_RUNTIME = 100;
+import {
+  DEFAULT_EPISODE_RUNTIME,
+  DEFAULT_MOVIE_RUNTIME,
+  ensureMovieMeta,
+  ensureShowMeta,
+} from './helpers/meta';
 
 // Dédoublonne les calculs concurrents (double-tap, deux onglets, retry) : le
 // premier remplissage de cache TMDB est coûteux, inutile de le lancer deux fois.
@@ -49,8 +50,8 @@ export class ComputeProfileStatsUseCase {
 
     // Les deux remplissages de cache en parallèle (divise le temps à froid par ~2).
     const [[showMeta, estimatedShows], [movieMeta, estimatedMovies]] = await Promise.all([
-      this.#ensureShowMeta(showIds),
-      this.#ensureMovieMeta(movieIds),
+      ensureShowMeta(this.meta, this.catalog, showIds),
+      ensureMovieMeta(this.meta, this.catalog, movieIds),
     ]);
     let estimated = estimatedShows || estimatedMovies;
 
@@ -150,63 +151,6 @@ export class ComputeProfileStatsUseCase {
       records,
       generatedAt: new Date().toISOString(),
     };
-  }
-
-  async #ensureShowMeta(showIds: number[]): Promise<[Map<number, ShowMeta>, boolean]> {
-    return this.#ensureMeta(showIds, {
-      getCached: (ids) => this.meta.getShowMeta(ids),
-      fetchOne: async (id) => {
-        const detail = await this.catalog.getShowDetail(id);
-        return { tmdbShowId: id, genres: detail.genres, episodeRuntime: detail.episodeRuntime };
-      },
-      fallback: (id) => ({ tmdbShowId: id, genres: [], episodeRuntime: null }),
-      save: (metas) => this.meta.saveShowMeta(metas),
-      keyOf: (meta) => meta.tmdbShowId,
-    });
-  }
-
-  async #ensureMovieMeta(movieIds: number[]): Promise<[Map<number, MovieMeta>, boolean]> {
-    return this.#ensureMeta(movieIds, {
-      getCached: (ids) => this.meta.getMovieMeta(ids),
-      fetchOne: async (id) => {
-        const detail = await this.catalog.getMovieDetail(id);
-        return { tmdbMovieId: id, runtime: detail.runtime };
-      },
-      fallback: (id) => ({ tmdbMovieId: id, runtime: null }),
-      save: (metas) => this.meta.saveMovieMeta(metas),
-      keyOf: (meta) => meta.tmdbMovieId,
-    });
-  }
-
-  /** Lit le cache de métadonnées TMDB, complète les manquants, et signale si des valeurs sont estimées. */
-  async #ensureMeta<T>(
-    ids: number[],
-    ops: {
-      getCached: (ids: number[]) => Promise<Map<number, T>>;
-      fetchOne: (id: number) => Promise<T>;
-      fallback: (id: number) => T;
-      save: (metas: T[]) => Promise<unknown>;
-      keyOf: (meta: T) => number;
-    },
-  ): Promise<[Map<number, T>, boolean]> {
-    const cached = await ops.getCached(ids);
-    const missing = ids.filter((id) => !cached.has(id));
-    let estimated = false;
-    if (missing.length > 0) {
-      const results = await mapWithConcurrency(missing, 8, async (id): Promise<{ meta: T; ok: boolean }> => {
-        try {
-          return { meta: await ops.fetchOne(id), ok: true };
-        } catch {
-          estimated = true;
-          return { meta: ops.fallback(id), ok: false };
-        }
-      });
-      // On ne persiste QUE les fetches réussis : un échec transitoire ne doit pas
-      // figer l'entrée sur ses valeurs par défaut (pas de negative caching).
-      await ops.save(results.filter((r) => r.ok).map((r) => r.meta));
-      for (const r of results) cached.set(ops.keyOf(r.meta), r.meta);
-    }
-    return [cached, estimated];
   }
 
   #buildDenseMonthly(

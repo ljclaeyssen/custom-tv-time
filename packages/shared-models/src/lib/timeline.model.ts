@@ -42,5 +42,11 @@ export interface TimelineDetail {
   slug: string;
   name: string;
   description: string | null;
+  /**
+   * Temps restant estimé pour finir la frise, en minutes : films sortis non
+   * vus + épisodes diffusés non vus × durée moyenne (runtimes TMDB, avec
+   * défauts quand la durée est inconnue).
+   */
+  remainingMinutes: number;
   items: TimelineItem[];
 }
