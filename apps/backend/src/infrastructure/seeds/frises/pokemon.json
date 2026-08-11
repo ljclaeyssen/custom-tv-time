@@ -1,0 +1,499 @@
+{
+  "slug": "pokemon",
+  "name": "Pokémon — la série et les films",
+  "description": "L'anime Pokémon région par région, chaque film à sa place dans la chronologie.",
+  "posterPath": "/wKkca9Jv6NVqWHTFeFA6P648qAC.jpg",
+  "position": 20,
+  "items": [
+    {
+      "position": 10,
+      "section": "Kanto",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 1,
+      "title": "Pokémon — La Ligue Indigo",
+      "posterPath": "/wKkca9Jv6NVqWHTFeFA6P648qAC.jpg",
+      "releaseDate": "1997-04-01"
+    },
+    {
+      "position": 20,
+      "section": "Kanto",
+      "itemType": "movie",
+      "tmdbId": 10228,
+      "seasonNumber": null,
+      "title": "Pokémon, le film : Mewtwo contre-attaque",
+      "posterPath": "/il4UFCA5irQ991gELA35mbMKeH4.jpg",
+      "releaseDate": "1998-07-18"
+    },
+    {
+      "position": 30,
+      "section": "Îles Orange",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 2,
+      "title": "Pokémon — Les Îles Orange",
+      "posterPath": "/m3tItnLetqPfdsAdSEg02OD4CbV.jpg",
+      "releaseDate": "1999-01-28"
+    },
+    {
+      "position": 40,
+      "section": "Îles Orange",
+      "itemType": "movie",
+      "tmdbId": 12599,
+      "seasonNumber": null,
+      "title": "Pokémon 2 : Le pouvoir est en toi",
+      "posterPath": "/t2xT3LsOOEkG8IoViwU6gYHo9p.jpg",
+      "releaseDate": "1999-07-17"
+    },
+    {
+      "position": 50,
+      "section": "Johto",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 3,
+      "title": "Pokémon — Voyage à Johto",
+      "posterPath": "/5K4PNW8GQavWYBm19AnMCjNh9u9.jpg",
+      "releaseDate": "1999-10-14"
+    },
+    {
+      "position": 60,
+      "section": "Johto",
+      "itemType": "movie",
+      "tmdbId": 10991,
+      "seasonNumber": null,
+      "title": "Pokémon 3 : Le Sort des Zarbi",
+      "posterPath": "/iLclepam7zsk4W5A5eSgOC85Gkt.jpg",
+      "releaseDate": "2000-07-08"
+    },
+    {
+      "position": 70,
+      "section": "Johto",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 4,
+      "title": "Pokémon — Les Champions de Johto",
+      "posterPath": "/wqvAfnCQxkzFmCtIsg0MOPGNLN2.jpg",
+      "releaseDate": "2000-08-03"
+    },
+    {
+      "position": 80,
+      "section": "Johto",
+      "itemType": "movie",
+      "tmdbId": 12600,
+      "seasonNumber": null,
+      "title": "Pokémon 4Ever : Célébi, la voix de la forêt",
+      "posterPath": "/yveO2pAryA56fYbD8GPwDEotjoS.jpg",
+      "releaseDate": "2001-07-07"
+    },
+    {
+      "position": 90,
+      "section": "Johto",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 5,
+      "title": "Pokémon — La quête ultime",
+      "posterPath": "/gOk1JXxUUklJxgayqokISChFHGe.jpg",
+      "releaseDate": "2001-08-09"
+    },
+    {
+      "position": 100,
+      "section": "Johto",
+      "itemType": "movie",
+      "tmdbId": 33875,
+      "seasonNumber": null,
+      "title": "Les Héros Pokémon",
+      "posterPath": "/7mQb3MEwXPguFumilINOS7iPhaN.jpg",
+      "releaseDate": "2002-07-13"
+    },
+    {
+      "position": 110,
+      "section": "Hoenn",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 6,
+      "title": "Pokémon — Advanced",
+      "posterPath": "/gkJlFDvnUu03a8qvb7rhZjtVnil.jpg",
+      "releaseDate": "2002-11-21"
+    },
+    {
+      "position": 120,
+      "section": "Hoenn",
+      "itemType": "movie",
+      "tmdbId": 36218,
+      "seasonNumber": null,
+      "title": "Pokémon : Jirachi, le génie des vœux",
+      "posterPath": "/jKi8Kv2iqLJnQwYWxwC9KRoKPkk.jpg",
+      "releaseDate": "2003-07-19"
+    },
+    {
+      "position": 130,
+      "section": "Hoenn",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 7,
+      "title": "Pokémon — Advanced Challenge",
+      "posterPath": "/q99ZE9dtLJ8dKM6UdhF3zbBHYoA.jpg",
+      "releaseDate": "2003-09-04"
+    },
+    {
+      "position": 140,
+      "section": "Hoenn",
+      "itemType": "movie",
+      "tmdbId": 34065,
+      "seasonNumber": null,
+      "title": "Pokémon : La destinée de Deoxys",
+      "posterPath": "/zKkY05e8rO9ECRuNNbAY8djfJjb.jpg",
+      "releaseDate": "2004-07-22"
+    },
+    {
+      "position": 150,
+      "section": "Hoenn",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 8,
+      "title": "Pokémon — Advanced Battle",
+      "posterPath": "/yfBTpfhfFyT1u8pEon4cRaXXBDv.jpg",
+      "releaseDate": "2004-09-09"
+    },
+    {
+      "position": 160,
+      "section": "Hoenn",
+      "itemType": "movie",
+      "tmdbId": 34067,
+      "seasonNumber": null,
+      "title": "Pokémon : Lucario et le Mystère de Mew",
+      "posterPath": "/37fAJ3FGpQdMElA2icvPRq2fVuF.jpg",
+      "releaseDate": "2005-07-16"
+    },
+    {
+      "position": 170,
+      "section": "Battle Frontier",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 9,
+      "title": "Pokémon — Battle Frontier",
+      "posterPath": "/hqutwchNLYIxO1nXlMkGnqzRhdk.jpg",
+      "releaseDate": "2005-10-06"
+    },
+    {
+      "position": 180,
+      "section": "Battle Frontier",
+      "itemType": "movie",
+      "tmdbId": 16808,
+      "seasonNumber": null,
+      "title": "Pokémon Ranger et le Temple des Mers",
+      "posterPath": "/xL7tTxAZhcpOnOMu2nMiJ9X7DYd.jpg",
+      "releaseDate": "2006-07-15"
+    },
+    {
+      "position": 190,
+      "section": "Sinnoh",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 10,
+      "title": "Pokémon — Diamant et Perle",
+      "posterPath": "/qt6tJ2kgxYjRXahI5Jmu2P5LAhQ.jpg",
+      "releaseDate": "2006-09-28"
+    },
+    {
+      "position": 200,
+      "section": "Sinnoh",
+      "itemType": "movie",
+      "tmdbId": 25961,
+      "seasonNumber": null,
+      "title": "Pokémon : L'ascension de Darkrai",
+      "posterPath": "/nifydfY62VS3ZJyWE9uXw9WF50f.jpg",
+      "releaseDate": "2007-07-14"
+    },
+    {
+      "position": 210,
+      "section": "Sinnoh",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 11,
+      "title": "Pokémon — DP Battle Dimension",
+      "posterPath": "/5gJzXfRuxiDRxSa7mqHMUuXlIqF.jpg",
+      "releaseDate": "2007-11-08"
+    },
+    {
+      "position": 220,
+      "section": "Sinnoh",
+      "itemType": "movie",
+      "tmdbId": 47292,
+      "seasonNumber": null,
+      "title": "Pokémon : Giratina et le Gardien du Ciel",
+      "posterPath": "/aJNhNPKDIiJcqiVWjdq55MOWXBw.jpg",
+      "releaseDate": "2008-07-19"
+    },
+    {
+      "position": 230,
+      "section": "Sinnoh",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 12,
+      "title": "Pokémon — DP Combats Galactiques",
+      "posterPath": "/pDRYxOyv3cbtqVpCqMwFwgey0JR.jpg",
+      "releaseDate": "2008-12-04"
+    },
+    {
+      "position": 240,
+      "section": "Sinnoh",
+      "itemType": "movie",
+      "tmdbId": 39057,
+      "seasonNumber": null,
+      "title": "Pokémon : Arceus et le Joyau de Vie",
+      "posterPath": "/dR5sNZ1wO08RlFsTCljIkXbWVJZ.jpg",
+      "releaseDate": "2009-07-18"
+    },
+    {
+      "position": 250,
+      "section": "Sinnoh",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 13,
+      "title": "Pokémon — DP Les Vainqueurs de la Ligue de Sinnoh",
+      "posterPath": "/2vxT66O3J8N8uBzwMBKbHC9ULNH.jpg",
+      "releaseDate": "2010-01-07"
+    },
+    {
+      "position": 260,
+      "section": "Sinnoh",
+      "itemType": "movie",
+      "tmdbId": 50087,
+      "seasonNumber": null,
+      "title": "Pokémon : Zoroark, le Maître des Illusions",
+      "posterPath": "/pBkos1QrxcaR06tDALlc5m3HOni.jpg",
+      "releaseDate": "2010-07-10"
+    },
+    {
+      "position": 270,
+      "section": "Unys",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 14,
+      "title": "Pokémon — Noir & Blanc",
+      "posterPath": "/qcPrONDqtW8lUmzEBIYIp58jaNH.jpg",
+      "releaseDate": "2010-09-23"
+    },
+    {
+      "position": 280,
+      "section": "Unys",
+      "itemType": "movie",
+      "tmdbId": 115223,
+      "seasonNumber": null,
+      "title": "Pokémon, le film : Noir - Victini et Reshiram",
+      "posterPath": "/b44AiMHXZfNGVPpGOwFKWlhsKo2.jpg",
+      "releaseDate": "2011-07-16"
+    },
+    {
+      "position": 290,
+      "section": "Unys",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 15,
+      "title": "Pokémon — Noir & Blanc - Destinées Rivales",
+      "posterPath": "/qH3g9uJwMmCQmM6VxKZ7reqgfJI.jpg",
+      "releaseDate": "2011-09-22"
+    },
+    {
+      "position": 300,
+      "section": "Unys",
+      "itemType": "movie",
+      "tmdbId": 150213,
+      "seasonNumber": null,
+      "title": "Pokémon, le film : Kyurem VS la Lame de la Justice",
+      "posterPath": "/1VmJxc2t9g1Q0juEsT3PIajv5XN.jpg",
+      "releaseDate": "2012-07-13"
+    },
+    {
+      "position": 310,
+      "section": "Unys",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 16,
+      "title": "Pokémon — Noir & Blanc - Aventures à Unys et au-delà",
+      "posterPath": "/jAxisEzS658FgUGsuPgI1V008NL.jpg",
+      "releaseDate": "2012-10-11"
+    },
+    {
+      "position": 320,
+      "section": "Unys",
+      "itemType": "movie",
+      "tmdbId": 227679,
+      "seasonNumber": null,
+      "title": "Pokémon, le film : Genesect et l’éveil de la légende",
+      "posterPath": "/oTAAbalm5AhPIoAmxkdpz1geHzz.jpg",
+      "releaseDate": "2013-07-13"
+    },
+    {
+      "position": 330,
+      "section": "Kalos",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 17,
+      "title": "Pokémon — XY",
+      "posterPath": "/tu63Az1OBnE6F6DhLi8NLUKZGbo.jpg",
+      "releaseDate": "2013-10-17"
+    },
+    {
+      "position": 340,
+      "section": "Kalos",
+      "itemType": "movie",
+      "tmdbId": 303903,
+      "seasonNumber": null,
+      "title": "Pokémon, le film : Diancie et le cocon de l'annihilation",
+      "posterPath": "/kpJ0VqRuWD0ebrZPxcvpMGmr5c5.jpg",
+      "releaseDate": "2014-07-19"
+    },
+    {
+      "position": 350,
+      "section": "Kalos",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 18,
+      "title": "Pokémon — XY - La Quête de Kalos",
+      "posterPath": "/pF83kGEygL5vsKUXgVnTbD9wGQ.jpg",
+      "releaseDate": "2014-11-13"
+    },
+    {
+      "position": 360,
+      "section": "Kalos",
+      "itemType": "movie",
+      "tmdbId": 350499,
+      "seasonNumber": null,
+      "title": "Pokémon, le film : Hoopa et le choc des légendes",
+      "posterPath": "/cUFINd4cMKgCeCulo0CIJzpSPnk.jpg",
+      "releaseDate": "2015-07-18"
+    },
+    {
+      "position": 370,
+      "section": "Kalos",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 19,
+      "title": "Pokémon — XYZ",
+      "posterPath": "/zUW0hUjWx080HEul73SJSr2PMps.jpg",
+      "releaseDate": "2015-10-29"
+    },
+    {
+      "position": 380,
+      "section": "Kalos",
+      "itemType": "movie",
+      "tmdbId": 382190,
+      "seasonNumber": null,
+      "title": "Pokémon, le film : Volcanion et la merveille mécanique",
+      "posterPath": "/94CNK5a7cNdLpIdSdZuzLq08HOQ.jpg",
+      "releaseDate": "2016-07-16"
+    },
+    {
+      "position": 390,
+      "section": "Alola",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 20,
+      "title": "Pokémon — Soleil et Lune",
+      "posterPath": "/asNrDEZI9TFZV213ELAE0MPAFl0.jpg",
+      "releaseDate": "2016-11-17"
+    },
+    {
+      "position": 400,
+      "section": "Alola",
+      "itemType": "movie",
+      "tmdbId": 436931,
+      "seasonNumber": null,
+      "title": "Pokémon, le film : Je te choisis !",
+      "posterPath": "/6gqxKRCAevYrn1xXaS1JFgQDgGc.jpg",
+      "releaseDate": "2017-07-15"
+    },
+    {
+      "position": 410,
+      "section": "Alola",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 21,
+      "title": "Pokémon — Soleil et Lune - Ultra-Aventures",
+      "posterPath": "/h70w0RljNZdKBjMiiFlTgQ6igKk.jpg",
+      "releaseDate": "2017-10-05"
+    },
+    {
+      "position": 420,
+      "section": "Alola",
+      "itemType": "movie",
+      "tmdbId": 494407,
+      "seasonNumber": null,
+      "title": "Pokémon, le film : Le pouvoir est en nous",
+      "posterPath": "/54HDSHpmTkP6CWTAUqvgRtPJVWC.jpg",
+      "releaseDate": "2018-07-13"
+    },
+    {
+      "position": 430,
+      "section": "Alola",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 22,
+      "title": "Pokémon — Soleil et Lune - Ultra-Légendes",
+      "posterPath": "/wLBRij2XKDvechXd4WlIe5QjLbK.jpg",
+      "releaseDate": "2018-10-21"
+    },
+    {
+      "position": 440,
+      "section": "Alola",
+      "itemType": "movie",
+      "tmdbId": 571891,
+      "seasonNumber": null,
+      "title": "Pokémon : Mewtwo contre-attaque - Évolution",
+      "posterPath": "/sLdboPwYCfSb0c6v1RGbKlV1Bps.jpg",
+      "releaseDate": "2019-07-12"
+    },
+    {
+      "position": 450,
+      "section": "Galar",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 23,
+      "title": "Pokémon — Les Voyages",
+      "posterPath": "/cE2XUQKaZQX1fMDvjDBhNlQzyWM.jpg",
+      "releaseDate": "2019-11-17"
+    },
+    {
+      "position": 460,
+      "section": "Galar",
+      "itemType": "movie",
+      "tmdbId": 662708,
+      "seasonNumber": null,
+      "title": "Pokémon, le film : Les secrets de la jungle",
+      "posterPath": "/b5kaf1rEkdPiE5NhJcpKv4CoOhi.jpg",
+      "releaseDate": "2020-12-25"
+    },
+    {
+      "position": 470,
+      "section": "Galar",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 24,
+      "title": "Pokémon — Les Voyages d'un Maître",
+      "posterPath": "/bayV6HrN4z9N4dMmQeDFzvKFfNn.jpg",
+      "releaseDate": "2020-12-11"
+    },
+    {
+      "position": 480,
+      "section": "Galar",
+      "itemType": "season",
+      "tmdbId": 60572,
+      "seasonNumber": 25,
+      "title": "Pokémon — Les Voyages Ultimes",
+      "posterPath": "/wJCIaDVFDlNM6V6iLX3l8PS9Exr.jpg",
+      "releaseDate": "2021-12-17"
+    },
+    {
+      "position": 490,
+      "section": "Paldea",
+      "itemType": "season",
+      "tmdbId": 220150,
+      "seasonNumber": 1,
+      "title": "Pokémon : Les horizons — Saison 1",
+      "posterPath": "/3yxoF57XE5oAG71FcPOXWxHKv89.jpg",
+      "releaseDate": "2023-04-14"
+    }
+  ]
+}

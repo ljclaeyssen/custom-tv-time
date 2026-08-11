@@ -3,6 +3,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { JwtModule, JwtSignOptions } from '@nestjs/jwt';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ControllersModule } from './infrastructure/modules/controllers.module';
+import { SeedsModule } from './infrastructure/modules/seeds.module';
 
 @Module({
   imports: [
@@ -38,6 +39,7 @@ import { ControllersModule } from './infrastructure/modules/controllers.module';
       }),
     }),
     ControllersModule,
+    SeedsModule,
   ],
 })
 export class AppModule {}

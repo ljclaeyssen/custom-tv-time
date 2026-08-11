@@ -1,0 +1,359 @@
+{
+  "slug": "naruto",
+  "name": "Naruto — la série et les films",
+  "description": "Naruto puis Shippuden, films inclus, dans l'ordre de l'histoire.",
+  "posterPath": "/fXyCDu6ZYsREZGaHcUupQ5CaGSF.jpg",
+  "position": 30,
+  "items": [
+    {
+      "position": 10,
+      "section": "Naruto",
+      "itemType": "season",
+      "tmdbId": 46260,
+      "seasonNumber": 1,
+      "title": "Naruto — Saison 1",
+      "posterPath": "/fXyCDu6ZYsREZGaHcUupQ5CaGSF.jpg",
+      "releaseDate": "2002-10-03"
+    },
+    {
+      "position": 20,
+      "section": "Naruto",
+      "itemType": "season",
+      "tmdbId": 46260,
+      "seasonNumber": 2,
+      "title": "Naruto — Saison 2",
+      "posterPath": "/cMtU474I5r6FldAxPzhjoRaYmLt.jpg",
+      "releaseDate": null
+    },
+    {
+      "position": 30,
+      "section": "Naruto",
+      "itemType": "movie",
+      "tmdbId": 16907,
+      "seasonNumber": null,
+      "title": "Naruto et la Princesse des neiges",
+      "posterPath": "/cGFyv1jFiVGlSsFgOTsK3qe1dli.jpg",
+      "releaseDate": "2004-08-21"
+    },
+    {
+      "position": 40,
+      "section": "Naruto",
+      "itemType": "season",
+      "tmdbId": 46260,
+      "seasonNumber": 3,
+      "title": "Naruto — Saison 3",
+      "posterPath": "/aujg0RC0TXSETGWcEByIGLhwa5T.jpg",
+      "releaseDate": null
+    },
+    {
+      "position": 50,
+      "section": "Naruto",
+      "itemType": "movie",
+      "tmdbId": 16910,
+      "seasonNumber": null,
+      "title": "La Légende de la pierre de Guelel",
+      "posterPath": "/f829KUuE1Y7ZMp0vWstOIq5k5jl.jpg",
+      "releaseDate": "2005-08-06"
+    },
+    {
+      "position": 60,
+      "section": "Naruto",
+      "itemType": "season",
+      "tmdbId": 46260,
+      "seasonNumber": 4,
+      "title": "Naruto — Saison 4",
+      "posterPath": "/oGuATWc7RLxZVxoQJZ2Swh3U54I.jpg",
+      "releaseDate": null
+    },
+    {
+      "position": 70,
+      "section": "Naruto",
+      "itemType": "movie",
+      "tmdbId": 18861,
+      "seasonNumber": null,
+      "title": "Panique sur l'île au croissant de lune",
+      "posterPath": "/rErYAEO1EXKbSu2ynlxzfrmmw4i.jpg",
+      "releaseDate": "2006-08-05"
+    },
+    {
+      "position": 80,
+      "section": "Naruto Shippuden",
+      "itemType": "season",
+      "tmdbId": 31910,
+      "seasonNumber": 1,
+      "title": "Naruto Shippuden — Saison 1",
+      "posterPath": "/2XI6zgUZl33p7FBDF3h3kyLXFV.jpg",
+      "releaseDate": "2007-02-15"
+    },
+    {
+      "position": 90,
+      "section": "Naruto Shippuden",
+      "itemType": "movie",
+      "tmdbId": 20982,
+      "seasonNumber": null,
+      "title": "Naruto Shippuden : Un funeste présage",
+      "posterPath": "/oePJAW89GzOw4qQ3J2fnWHrwQmq.jpg",
+      "releaseDate": "2007-08-04"
+    },
+    {
+      "position": 100,
+      "section": "Naruto Shippuden",
+      "itemType": "season",
+      "tmdbId": 31910,
+      "seasonNumber": 2,
+      "title": "Naruto Shippuden — Saison 2",
+      "posterPath": "/ze8POMQoKvve9t00BfWGgwZrFL9.jpg",
+      "releaseDate": "2007-11-06"
+    },
+    {
+      "position": 110,
+      "section": "Naruto Shippuden",
+      "itemType": "season",
+      "tmdbId": 31910,
+      "seasonNumber": 3,
+      "title": "Naruto Shippuden — Saison 3",
+      "posterPath": "/o2UKkrFKIz1a3CeJlzJBsDsCBif.jpg",
+      "releaseDate": "2008-04-02"
+    },
+    {
+      "position": 120,
+      "section": "Naruto Shippuden",
+      "itemType": "movie",
+      "tmdbId": 17581,
+      "seasonNumber": null,
+      "title": "Naruto Shippuden : Les Liens",
+      "posterPath": "/syhOCZUhv7sz9eYIWPgmfAgi0mz.jpg",
+      "releaseDate": "2008-08-02"
+    },
+    {
+      "position": 130,
+      "section": "Naruto Shippuden",
+      "itemType": "season",
+      "tmdbId": 31910,
+      "seasonNumber": 4,
+      "title": "Naruto Shippuden — Saison 4",
+      "posterPath": "/fFvcgiRMERR0fc5JZ0wGcXma7yX.jpg",
+      "releaseDate": "2008-08-20"
+    },
+    {
+      "position": 140,
+      "section": "Naruto Shippuden",
+      "itemType": "season",
+      "tmdbId": 31910,
+      "seasonNumber": 5,
+      "title": "Naruto Shippuden — Saison 5",
+      "posterPath": "/cfPMNJ9qz2N6keyjoMDnboUlATs.jpg",
+      "releaseDate": "2008-12-17"
+    },
+    {
+      "position": 150,
+      "section": "Naruto Shippuden",
+      "itemType": "season",
+      "tmdbId": 31910,
+      "seasonNumber": 6,
+      "title": "Naruto Shippuden — Saison 6",
+      "posterPath": "/qrtjO0LJkHhcopa97PMxijkdGiT.jpg",
+      "releaseDate": "2009-06-10"
+    },
+    {
+      "position": 160,
+      "section": "Naruto Shippuden",
+      "itemType": "movie",
+      "tmdbId": 36728,
+      "seasonNumber": null,
+      "title": "Naruto Shippuden : La Flamme de la volonté",
+      "posterPath": "/gjGFo0MpuAxhRswXhsGgIHsR0Qw.jpg",
+      "releaseDate": "2009-08-01"
+    },
+    {
+      "position": 170,
+      "section": "Naruto Shippuden",
+      "itemType": "season",
+      "tmdbId": 31910,
+      "seasonNumber": 7,
+      "title": "Naruto Shippuden — Saison 7",
+      "posterPath": "/pXrMAlvwaSLuq9NFMMX1Im3AGzi.jpg",
+      "releaseDate": "2010-01-20"
+    },
+    {
+      "position": 180,
+      "section": "Naruto Shippuden",
+      "itemType": "season",
+      "tmdbId": 31910,
+      "seasonNumber": 8,
+      "title": "Naruto Shippuden — Saison 8",
+      "posterPath": "/qczUSuPNO7Y2m69X4digzzBkUvM.jpg",
+      "releaseDate": "2010-03-24"
+    },
+    {
+      "position": 190,
+      "section": "Naruto Shippuden",
+      "itemType": "movie",
+      "tmdbId": 50723,
+      "seasonNumber": null,
+      "title": "Naruto Shippuden : La Tour Perdue",
+      "posterPath": "/6ObnK5ypY6ZEYNbQADMRIeJvh6n.jpg",
+      "releaseDate": "2010-07-31"
+    },
+    {
+      "position": 200,
+      "section": "Naruto Shippuden",
+      "itemType": "season",
+      "tmdbId": 31910,
+      "seasonNumber": 9,
+      "title": "Naruto Shippuden — Saison 9",
+      "posterPath": "/vPbQZLpExV6XcniQTWsUtM8Aw79.jpg",
+      "releaseDate": "2010-09-01"
+    },
+    {
+      "position": 210,
+      "section": "Naruto Shippuden",
+      "itemType": "season",
+      "tmdbId": 31910,
+      "seasonNumber": 10,
+      "title": "Naruto Shippuden — Saison 10",
+      "posterPath": "/dmDrWDBwD5M7zbKQTWwo7XcdwQs.jpg",
+      "releaseDate": "2011-02-10"
+    },
+    {
+      "position": 220,
+      "section": "Naruto Shippuden",
+      "itemType": "season",
+      "tmdbId": 31910,
+      "seasonNumber": 11,
+      "title": "Naruto Shippuden — Saison 11",
+      "posterPath": "/u1TzDQcsL3h5w0rXi21V0Qd4lkb.jpg",
+      "releaseDate": "2011-07-28"
+    },
+    {
+      "position": 230,
+      "section": "Naruto Shippuden",
+      "itemType": "movie",
+      "tmdbId": 75624,
+      "seasonNumber": null,
+      "title": "Naruto Shippuden : La Prison de Sang",
+      "posterPath": "/6nGfhj5IwhdqcCjoZdeMpWhABxu.jpg",
+      "releaseDate": "2011-07-30"
+    },
+    {
+      "position": 240,
+      "section": "Naruto Shippuden",
+      "itemType": "season",
+      "tmdbId": 31910,
+      "seasonNumber": 12,
+      "title": "Naruto Shippuden — Saison 12",
+      "posterPath": "/A5l0X3H04F8Ekuz5TtXBXs6DA9x.jpg",
+      "releaseDate": "2012-01-04"
+    },
+    {
+      "position": 250,
+      "section": "Naruto Shippuden",
+      "itemType": "movie",
+      "tmdbId": 118406,
+      "seasonNumber": null,
+      "title": "Naruto Shippuden : Road to Ninja",
+      "posterPath": "/756mheMDfIawqtBkfaeRAgkMdDD.jpg",
+      "releaseDate": "2012-07-28"
+    },
+    {
+      "position": 260,
+      "section": "Naruto Shippuden",
+      "itemType": "season",
+      "tmdbId": 31910,
+      "seasonNumber": 13,
+      "title": "Naruto Shippuden — Saison 13",
+      "posterPath": "/wjHTnJXCcBAcJW7yrTW3XrcelyB.jpg",
+      "releaseDate": "2012-08-22"
+    },
+    {
+      "position": 270,
+      "section": "Naruto Shippuden",
+      "itemType": "season",
+      "tmdbId": 31910,
+      "seasonNumber": 14,
+      "title": "Naruto Shippuden — Saison 14",
+      "posterPath": "/8oPmaJz95Bg6wIZTLQotCk7dp4e.jpg",
+      "releaseDate": "2013-01-16"
+    },
+    {
+      "position": 280,
+      "section": "Naruto Shippuden",
+      "itemType": "season",
+      "tmdbId": 31910,
+      "seasonNumber": 15,
+      "title": "Naruto Shippuden — Saison 15",
+      "posterPath": "/MhK3QEd0cQixRr3P6MRIifC3zH.jpg",
+      "releaseDate": "2013-07-18"
+    },
+    {
+      "position": 290,
+      "section": "Naruto Shippuden",
+      "itemType": "season",
+      "tmdbId": 31910,
+      "seasonNumber": 16,
+      "title": "Naruto Shippuden — Saison 16",
+      "posterPath": "/aS4YycVCsaGWsJqOfxmXOv8lrnE.jpg",
+      "releaseDate": "2014-02-05"
+    },
+    {
+      "position": 300,
+      "section": "Naruto Shippuden",
+      "itemType": "season",
+      "tmdbId": 31910,
+      "seasonNumber": 17,
+      "title": "Naruto Shippuden — Saison 17",
+      "posterPath": "/er2kG1cnwUwaHYeg1qv1KXvUoY1.jpg",
+      "releaseDate": "2014-05-14"
+    },
+    {
+      "position": 310,
+      "section": "Naruto Shippuden",
+      "itemType": "season",
+      "tmdbId": 31910,
+      "seasonNumber": 18,
+      "title": "Naruto Shippuden — Saison 18",
+      "posterPath": "/kSgRsoqkJFcBIHzE9JXIfyZd9ru.jpg",
+      "releaseDate": "2014-08-20"
+    },
+    {
+      "position": 320,
+      "section": "Naruto Shippuden",
+      "itemType": "season",
+      "tmdbId": 31910,
+      "seasonNumber": 19,
+      "title": "Naruto Shippuden — Saison 19",
+      "posterPath": "/iZJOiQAhiND6IDYnRdt27BWk7e0.jpg",
+      "releaseDate": null
+    },
+    {
+      "position": 330,
+      "section": "Naruto Shippuden",
+      "itemType": "season",
+      "tmdbId": 31910,
+      "seasonNumber": 20,
+      "title": "Naruto Shippuden — Saison 20",
+      "posterPath": "/ofXpERfE4Rol1avkzHQ5CsKrfBz.jpg",
+      "releaseDate": "2015-05-27"
+    },
+    {
+      "position": 340,
+      "section": "Épilogue",
+      "itemType": "movie",
+      "tmdbId": 317442,
+      "seasonNumber": null,
+      "title": "Naruto the Last : Le Film",
+      "posterPath": "/jrSF0wDJxBvraQqd7F0YxAlt1xr.jpg",
+      "releaseDate": "2014-12-06"
+    },
+    {
+      "position": 350,
+      "section": "Épilogue",
+      "itemType": "movie",
+      "tmdbId": 347201,
+      "seasonNumber": null,
+      "title": "Boruto : Naruto, le film",
+      "posterPath": "/dB7yzSdNNOX8HjHRAgfsO7ybkMT.jpg",
+      "releaseDate": "2015-08-07"
+    }
+  ]
+}

@@ -12,8 +12,12 @@ import { RetrieveRecentlyWatchedUseCase } from '../../use-cases/retrieve-recentl
 import { RetrieveProfileStatsUseCase } from '../../use-cases/retrieve-profile-stats.use-case';
 import { RetrieveSeasonEpisodesUseCase } from '../../use-cases/retrieve-season-episodes.use-case';
 import { RetrieveShowProgressUseCase } from '../../use-cases/retrieve-show-progress.use-case';
+import { RetrieveTimelineDetailUseCase } from '../../use-cases/retrieve-timeline-detail.use-case';
+import { RetrieveTimelinesUseCase } from '../../use-cases/retrieve-timelines.use-case';
 import { RetrieveWatchNextUseCase } from '../../use-cases/retrieve-watch-next.use-case';
 import { SearchCatalogUseCase } from '../../use-cases/search-catalog.use-case';
+import { SyncTimelinesUseCase } from '../../use-cases/sync-timelines.use-case';
+import { WatchTimelineItemUseCase } from '../../use-cases/watch-timeline-item.use-case';
 import { SetMovieWatchedUseCase } from '../../use-cases/set-movie-watched.use-case';
 import { StartDiscordLoginUseCase } from '../../use-cases/start-discord-login.use-case';
 import { TrackMovieUseCase } from '../../use-cases/track-movie.use-case';
@@ -43,6 +47,10 @@ const useCases = [
   SetMovieWatchedUseCase,
   UntrackMovieUseCase,
   SearchCatalogUseCase,
+  RetrieveTimelinesUseCase,
+  RetrieveTimelineDetailUseCase,
+  WatchTimelineItemUseCase,
+  SyncTimelinesUseCase,
   RetrieveProfileStatsUseCase,
   ComputeProfileStatsUseCase,
   ImportTvtimeExportUseCase,

@@ -34,6 +34,35 @@
 - [ ] Écrire de vrais tests métier (frontend : gateways in-memory prêts dans
       `apps/frontend/src/app/testing/` ; backend : aucun test à ce jour)
 
+## Frises chronologiques (2026-08-11) — plan approuvé
+
+Feature « Timelines » : frises d'ordre de visionnage (films + saisons, ex. MCU par phases).
+Pas d'UI de création — insertion en base via runbook `creer-frise.md`. Plan détaillé :
+`~/.claude/plans/frolicking-stirring-star.md`.
+
+- [x] 1. shared-models : `timeline.model.ts` + export barrel
+- [x] 2. Backend lecture : entités, port, adapter, helper progression, 2 use-cases GET, contrôleur, wiring
+- [x] 3. Runbook `creer-frise.md` + génération : seeds de curation `tools/frises/*.json` →
+      `tools/generate-frise.mjs` → JSON résolus versionnés (MCU 50, Pokémon 49, Naruto 35)
+- [x] 3bis. Publication automatisée (demande LJ) : `SyncTimelinesUseCase` + `TimelinesSeeder`
+      au boot — la base est un miroir des JSON versionnés, plus aucun SQL manuel dev/prod
+- [x] 4. Backend action : `WatchTimelineItemUseCase` (auto-track film / auto-follow + saison vue)
+- [x] 5. Frontend plomberie ×3 : gateway abstraite + Rest/Demo/InMemory, store, use-cases
+- [x] 6. UI : écrans liste + détail, routes, 5e onglet bottom nav, `MoviesStore.invalidate()`
+- [x] 7. Démo portfolio : `DEMO_TIMELINES` + `DemoTimelinesGateway` interactif
+- [x] 8. Tests vitest (use-cases + computed du store) — 35 tests verts (12 nouveaux)
+
+### Review frises (2026-08-11)
+
+Vérifié de bout en bout en dev : `GET /api/timelines` (MCU 19/50, Pokémon 13/49,
+Naruto 21/35 — progression dérivée du vrai tracking), marquer-vu depuis la frise
+(film → track+vu ; saison non suivie → auto-follow + épisodes diffusés marqués ;
+404 propre ; données de test rollbackées), UI mobile (badge « À regarder », barres
+par saison, « À venir » sur Doomsday), démo interactive. Builds + lint + vitest verts.
+Publication : sync au boot vérifiée (1ᵉʳ boot « 1 mise à jour, 2 inchangées », 2ᵉ boot
+« 3 inchangées » = idempotent, mêmes progressions 19/50, 13/49, 21/35). En prod, les
+frises arriveront toutes seules au prochain déploiement.
+
 ## Review
 
 La v1 couvre le cœur de TV Time : cocher des épisodes ("à voir" recalculé côté serveur),

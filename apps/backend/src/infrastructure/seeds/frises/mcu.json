@@ -1,0 +1,509 @@
+{
+  "slug": "mcu",
+  "name": "MCU — ordre chronologique",
+  "description": "Films et séries du Marvel Cinematic Universe dans l'ordre de l'histoire, phase par phase.",
+  "posterPath": "/ylsAO88v2tF0iXRFojPa0UaAJf1.jpg",
+  "position": 10,
+  "items": [
+    {
+      "position": 10,
+      "section": "Phase 1",
+      "itemType": "movie",
+      "tmdbId": 1771,
+      "seasonNumber": null,
+      "title": "Captain America : First Avenger",
+      "posterPath": "/l1SP3gyHA5ZEuf72WKx5ihtZZFO.jpg",
+      "releaseDate": "2011-07-22"
+    },
+    {
+      "position": 20,
+      "section": "Phase 1",
+      "itemType": "movie",
+      "tmdbId": 299537,
+      "seasonNumber": null,
+      "title": "Captain Marvel",
+      "posterPath": "/aRJAoQ6mqPHAKXjP3CqNyLC8FAh.jpg",
+      "releaseDate": "2019-03-06"
+    },
+    {
+      "position": 30,
+      "section": "Phase 1",
+      "itemType": "movie",
+      "tmdbId": 1726,
+      "seasonNumber": null,
+      "title": "Iron Man",
+      "posterPath": "/kNKUCNLu1lZDGAHOBEHxR6psYHx.jpg",
+      "releaseDate": "2008-04-30"
+    },
+    {
+      "position": 40,
+      "section": "Phase 1",
+      "itemType": "movie",
+      "tmdbId": 10138,
+      "seasonNumber": null,
+      "title": "Iron Man 2",
+      "posterPath": "/g9DSeSozGi4zpUyeOYZYMNmIv9O.jpg",
+      "releaseDate": "2010-04-28"
+    },
+    {
+      "position": 50,
+      "section": "Phase 1",
+      "itemType": "movie",
+      "tmdbId": 1724,
+      "seasonNumber": null,
+      "title": "L'Incroyable Hulk",
+      "posterPath": "/cImKVGUiEnwLsNUyoMA0a0na2y5.jpg",
+      "releaseDate": "2008-06-12"
+    },
+    {
+      "position": 60,
+      "section": "Phase 1",
+      "itemType": "movie",
+      "tmdbId": 10195,
+      "seasonNumber": null,
+      "title": "Thor",
+      "posterPath": "/q8pF6s9b9veTQvxTqMDIQf9nJKi.jpg",
+      "releaseDate": "2011-04-21"
+    },
+    {
+      "position": 70,
+      "section": "Phase 1",
+      "itemType": "movie",
+      "tmdbId": 24428,
+      "seasonNumber": null,
+      "title": "Avengers",
+      "posterPath": "/ylsAO88v2tF0iXRFojPa0UaAJf1.jpg",
+      "releaseDate": "2012-04-25"
+    },
+    {
+      "position": 80,
+      "section": "Phase 2",
+      "itemType": "movie",
+      "tmdbId": 68721,
+      "seasonNumber": null,
+      "title": "Iron Man 3",
+      "posterPath": "/sE71EBrRMfW0NKMHlXPO55Km88X.jpg",
+      "releaseDate": "2013-04-18"
+    },
+    {
+      "position": 90,
+      "section": "Phase 2",
+      "itemType": "movie",
+      "tmdbId": 76338,
+      "seasonNumber": null,
+      "title": "Thor : Le Monde des ténèbres",
+      "posterPath": "/eAIGX0nlwlb5sMb4uDRGNFqMyG9.jpg",
+      "releaseDate": "2013-10-30"
+    },
+    {
+      "position": 100,
+      "section": "Phase 2",
+      "itemType": "movie",
+      "tmdbId": 100402,
+      "seasonNumber": null,
+      "title": "Captain America : Le Soldat de l'hiver",
+      "posterPath": "/n3Xa8g1sWrUVUal6zk0OoC9ARo1.jpg",
+      "releaseDate": "2014-03-20"
+    },
+    {
+      "position": 110,
+      "section": "Phase 2",
+      "itemType": "movie",
+      "tmdbId": 118340,
+      "seasonNumber": null,
+      "title": "Les Gardiens de la Galaxie",
+      "posterPath": "/9a6fGeSV5kffyNPPMWCPhLOhLdJ.jpg",
+      "releaseDate": "2014-07-30"
+    },
+    {
+      "position": 120,
+      "section": "Phase 2",
+      "itemType": "movie",
+      "tmdbId": 283995,
+      "seasonNumber": null,
+      "title": "Les Gardiens de la Galaxie Vol. 2",
+      "posterPath": "/brgkPEPQJNGLuKRy8omRTcDfDuL.jpg",
+      "releaseDate": "2017-04-25"
+    },
+    {
+      "position": 130,
+      "section": "Phase 2",
+      "itemType": "movie",
+      "tmdbId": 99861,
+      "seasonNumber": null,
+      "title": "Avengers : L'Ère d'Ultron",
+      "posterPath": "/A0tw88n1byyR2vodhJMlFPQGQgF.jpg",
+      "releaseDate": "2015-04-22"
+    },
+    {
+      "position": 140,
+      "section": "Phase 2",
+      "itemType": "movie",
+      "tmdbId": 102899,
+      "seasonNumber": null,
+      "title": "Ant-Man",
+      "posterPath": "/hAH2Rt2WvfMBK2tZDLMNuUTUwxG.jpg",
+      "releaseDate": "2015-07-14"
+    },
+    {
+      "position": 150,
+      "section": "Phase 3",
+      "itemType": "movie",
+      "tmdbId": 271110,
+      "seasonNumber": null,
+      "title": "Captain America : Civil War",
+      "posterPath": "/i2nc9IAP1xRWoa3MgeR7ldsshkV.jpg",
+      "releaseDate": "2016-04-27"
+    },
+    {
+      "position": 160,
+      "section": "Phase 3",
+      "itemType": "movie",
+      "tmdbId": 497698,
+      "seasonNumber": null,
+      "title": "Black Widow",
+      "posterPath": "/tIdq9lGrbSsq3RkgB9r0g0vYTbl.jpg",
+      "releaseDate": "2021-07-07"
+    },
+    {
+      "position": 170,
+      "section": "Phase 3",
+      "itemType": "movie",
+      "tmdbId": 284054,
+      "seasonNumber": null,
+      "title": "Black Panther",
+      "posterPath": "/g94IcdzPswTYl1ISdgn2EwvaZtt.jpg",
+      "releaseDate": "2018-02-13"
+    },
+    {
+      "position": 180,
+      "section": "Phase 3",
+      "itemType": "movie",
+      "tmdbId": 315635,
+      "seasonNumber": null,
+      "title": "Spider-Man : Homecoming",
+      "posterPath": "/wFNNv1ZHglNdXJLYiEgpLY5sa9S.jpg",
+      "releaseDate": "2017-07-05"
+    },
+    {
+      "position": 190,
+      "section": "Phase 3",
+      "itemType": "movie",
+      "tmdbId": 284052,
+      "seasonNumber": null,
+      "title": "Doctor Strange",
+      "posterPath": "/7wZ7mx7tY5SgflQKuJmQvwu3wGm.jpg",
+      "releaseDate": "2016-10-25"
+    },
+    {
+      "position": 200,
+      "section": "Phase 3",
+      "itemType": "movie",
+      "tmdbId": 284053,
+      "seasonNumber": null,
+      "title": "Thor : Ragnarok",
+      "posterPath": "/mAA8RXkgF87jSWWMSf6hgLl73mk.jpg",
+      "releaseDate": "2017-10-02"
+    },
+    {
+      "position": 210,
+      "section": "Phase 3",
+      "itemType": "movie",
+      "tmdbId": 363088,
+      "seasonNumber": null,
+      "title": "Ant-Man et la Guêpe",
+      "posterPath": "/r3Vapr4sdXOhHBThTNtfuijKe5V.jpg",
+      "releaseDate": "2018-07-04"
+    },
+    {
+      "position": 220,
+      "section": "Phase 3",
+      "itemType": "movie",
+      "tmdbId": 299536,
+      "seasonNumber": null,
+      "title": "Avengers : Infinity War",
+      "posterPath": "/hSfuKPtyEryeFzapZ8UgZd4aESu.jpg",
+      "releaseDate": "2018-04-25"
+    },
+    {
+      "position": 230,
+      "section": "Phase 3",
+      "itemType": "movie",
+      "tmdbId": 299534,
+      "seasonNumber": null,
+      "title": "Avengers : Endgame",
+      "posterPath": "/wF7jv3x51hXgkl7t5KHePuRjXc8.jpg",
+      "releaseDate": "2019-04-24"
+    },
+    {
+      "position": 240,
+      "section": "Phase 4",
+      "itemType": "season",
+      "tmdbId": 84958,
+      "seasonNumber": 1,
+      "title": "Loki — Saison 1",
+      "posterPath": "/x3tgUYJNx58xL5WhuV5sDnujKIh.jpg",
+      "releaseDate": "2021-06-09"
+    },
+    {
+      "position": 250,
+      "section": "Phase 4",
+      "itemType": "season",
+      "tmdbId": 85271,
+      "seasonNumber": 1,
+      "title": "WandaVision — Mini-série",
+      "posterPath": "/iOaE26zigx4GFBftUdRbD83Mcwe.jpg",
+      "releaseDate": "2021-01-15"
+    },
+    {
+      "position": 260,
+      "section": "Phase 4",
+      "itemType": "season",
+      "tmdbId": 88396,
+      "seasonNumber": 1,
+      "title": "Falcon et le Soldat de l'hiver — Mini-série",
+      "posterPath": "/kIHqwBzoV8IZZqm1BOazqX0aoOZ.jpg",
+      "releaseDate": "2021-03-19"
+    },
+    {
+      "position": 270,
+      "section": "Phase 4",
+      "itemType": "movie",
+      "tmdbId": 566525,
+      "seasonNumber": null,
+      "title": "Shang-Chi et la Légende des Dix Anneaux",
+      "posterPath": "/g54eUtuCTAOQaNlVpr7Kpr7sVoH.jpg",
+      "releaseDate": "2021-09-01"
+    },
+    {
+      "position": 280,
+      "section": "Phase 4",
+      "itemType": "movie",
+      "tmdbId": 524434,
+      "seasonNumber": null,
+      "title": "Les Éternels",
+      "posterPath": "/vV7TrS7PNRZJHCxNmiYN1SU7s1w.jpg",
+      "releaseDate": "2021-11-03"
+    },
+    {
+      "position": 290,
+      "section": "Phase 4",
+      "itemType": "movie",
+      "tmdbId": 634649,
+      "seasonNumber": null,
+      "title": "Spider-Man : No Way Home",
+      "posterPath": "/jwfDFqzxBkXC5bERBZrCEfK9iii.jpg",
+      "releaseDate": "2021-12-15"
+    },
+    {
+      "position": 300,
+      "section": "Phase 4",
+      "itemType": "movie",
+      "tmdbId": 453395,
+      "seasonNumber": null,
+      "title": "Doctor Strange in the Multiverse of Madness",
+      "posterPath": "/arfzjn1tGvXWwkX7eaGVuXsc0mp.jpg",
+      "releaseDate": "2022-05-04"
+    },
+    {
+      "position": 310,
+      "section": "Phase 4",
+      "itemType": "season",
+      "tmdbId": 88329,
+      "seasonNumber": 1,
+      "title": "Hawkeye — Mini-série",
+      "posterPath": "/4vnAui7UHJ4FByiocD2gQpmcq6B.jpg",
+      "releaseDate": "2021-11-24"
+    },
+    {
+      "position": 320,
+      "section": "Phase 4",
+      "itemType": "season",
+      "tmdbId": 92749,
+      "seasonNumber": 1,
+      "title": "Moon Knight — Mini-série",
+      "posterPath": "/7RE4hinEXF9DzPYd4QJsKC5QHDw.jpg",
+      "releaseDate": "2022-03-30"
+    },
+    {
+      "position": 330,
+      "section": "Phase 4",
+      "itemType": "season",
+      "tmdbId": 92782,
+      "seasonNumber": 1,
+      "title": "Miss Marvel — Mini-série",
+      "posterPath": "/3x1eRyuz2NOOSXODDcDl9EjGRQ.jpg",
+      "releaseDate": "2022-06-08"
+    },
+    {
+      "position": 340,
+      "section": "Phase 4",
+      "itemType": "movie",
+      "tmdbId": 616037,
+      "seasonNumber": null,
+      "title": "Thor : Love and Thunder",
+      "posterPath": "/kSMarEm3ESOOr11dzsep2RZ1ClD.jpg",
+      "releaseDate": "2022-07-06"
+    },
+    {
+      "position": 350,
+      "section": "Phase 4",
+      "itemType": "season",
+      "tmdbId": 92783,
+      "seasonNumber": 1,
+      "title": "She-Hulk : Avocate — Mini-série",
+      "posterPath": "/poWy1hDzaIFv6UaYtFDNcNfiM2C.jpg",
+      "releaseDate": "2022-08-18"
+    },
+    {
+      "position": 360,
+      "section": "Phase 4",
+      "itemType": "movie",
+      "tmdbId": 505642,
+      "seasonNumber": null,
+      "title": "Black Panther : Wakanda Forever",
+      "posterPath": "/rNTKgJdJ8tyfpiUug5ittECK8CS.jpg",
+      "releaseDate": "2022-11-09"
+    },
+    {
+      "position": 370,
+      "section": "Phase 5",
+      "itemType": "movie",
+      "tmdbId": 640146,
+      "seasonNumber": null,
+      "title": "Ant-Man et la Guêpe : Quantumania",
+      "posterPath": "/2hq8EKF6kaUyOxB9KhmIb5JUxEe.jpg",
+      "releaseDate": "2023-02-15"
+    },
+    {
+      "position": 380,
+      "section": "Phase 5",
+      "itemType": "movie",
+      "tmdbId": 447365,
+      "seasonNumber": null,
+      "title": "Les Gardiens de la Galaxie : Volume 3",
+      "posterPath": "/dnyQnKSSqQ8aOEMiE5hYDNJO4dE.jpg",
+      "releaseDate": "2023-05-03"
+    },
+    {
+      "position": 390,
+      "section": "Phase 5",
+      "itemType": "season",
+      "tmdbId": 114472,
+      "seasonNumber": 1,
+      "title": "Secret Invasion — Saison 1",
+      "posterPath": "/fvdcfny0M7SvZd7Zk6n1DjTW2yx.jpg",
+      "releaseDate": "2023-06-21"
+    },
+    {
+      "position": 400,
+      "section": "Phase 5",
+      "itemType": "season",
+      "tmdbId": 84958,
+      "seasonNumber": 2,
+      "title": "Loki — Saison 2",
+      "posterPath": "/tGdaskDMBdGonOnuvkrAP9sd0mt.jpg",
+      "releaseDate": "2023-10-05"
+    },
+    {
+      "position": 410,
+      "section": "Phase 5",
+      "itemType": "movie",
+      "tmdbId": 609681,
+      "seasonNumber": null,
+      "title": "The Marvels",
+      "posterPath": "/mqAQO6j5gkq6iwCXNbXpzf0RXBU.jpg",
+      "releaseDate": "2023-11-08"
+    },
+    {
+      "position": 420,
+      "section": "Phase 5",
+      "itemType": "season",
+      "tmdbId": 122226,
+      "seasonNumber": 1,
+      "title": "Echo — Saison 1",
+      "posterPath": "/jan56QpNmBKTHOff4I3Zc9NFnxf.jpg",
+      "releaseDate": "2024-01-09"
+    },
+    {
+      "position": 430,
+      "section": "Phase 5",
+      "itemType": "movie",
+      "tmdbId": 533535,
+      "seasonNumber": null,
+      "title": "Deadpool & Wolverine",
+      "posterPath": "/7CtRdKd5hQPB2b1apKCqxxQUKSf.jpg",
+      "releaseDate": "2024-07-24"
+    },
+    {
+      "position": 440,
+      "section": "Phase 5",
+      "itemType": "season",
+      "tmdbId": 138501,
+      "seasonNumber": 1,
+      "title": "Agatha All Along — Mini-série",
+      "posterPath": "/cXEE6EsLJNwEwOCedX04Uixfq5O.jpg",
+      "releaseDate": "2024-09-18"
+    },
+    {
+      "position": 450,
+      "section": "Phase 5",
+      "itemType": "season",
+      "tmdbId": 202555,
+      "seasonNumber": 1,
+      "title": "Daredevil : Born Again — Saison 1",
+      "posterPath": "/9ERtLvFN1nFCabGaFkC6tiroglm.jpg",
+      "releaseDate": "2025-03-04"
+    },
+    {
+      "position": 460,
+      "section": "Phase 5",
+      "itemType": "movie",
+      "tmdbId": 822119,
+      "seasonNumber": null,
+      "title": "Captain America : Brave New World",
+      "posterPath": "/wDRXmiAEJdhNIcuetM4016fOCx8.jpg",
+      "releaseDate": "2025-02-12"
+    },
+    {
+      "position": 470,
+      "section": "Phase 5",
+      "itemType": "movie",
+      "tmdbId": 986056,
+      "seasonNumber": null,
+      "title": "Thunderbolts*",
+      "posterPath": "/zctISSBEZRgVQPG178HqRJMnc4x.jpg",
+      "releaseDate": "2025-04-30"
+    },
+    {
+      "position": 480,
+      "section": "Phase 6",
+      "itemType": "movie",
+      "tmdbId": 617126,
+      "seasonNumber": null,
+      "title": "Les 4 Fantastiques : Premiers Pas",
+      "posterPath": "/rNc4KARs6fVa4axzvuv3NfUiNy1.jpg",
+      "releaseDate": "2025-07-23"
+    },
+    {
+      "position": 490,
+      "section": "Phase 6",
+      "itemType": "movie",
+      "tmdbId": 969681,
+      "seasonNumber": null,
+      "title": "Spider-Man : Brand New Day",
+      "posterPath": "/jjCCZcCtggGjKik2gXjyux1VEdZ.jpg",
+      "releaseDate": "2026-07-29"
+    },
+    {
+      "position": 500,
+      "section": "Phase 6",
+      "itemType": "movie",
+      "tmdbId": 1003596,
+      "seasonNumber": null,
+      "title": "Avengers: Doomsday",
+      "posterPath": "/bph5UiAOKLLjla10YuCyKWfKYGG.jpg",
+      "releaseDate": "2026-12-16"
+    }
+  ]
+}
