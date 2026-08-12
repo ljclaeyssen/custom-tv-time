@@ -1,0 +1,16 @@
+{
+  "slug": "the-witcher",
+  "name": "The Witcher — chronologie",
+  "description": "Blood Origin, les films d'animation et la série, remis dans l'ordre.",
+  "position": 120,
+  "posterFrom": "The Witcher",
+  "items": [
+    { "section": "Origines", "type": "season", "query": "The Witcher Blood Origin", "year": 2022, "season": 1 },
+    { "section": "Origines", "type": "movie", "query": "Le Cauchemar du Loup", "year": 2021 },
+    { "section": "La saga", "type": "season", "query": "The Witcher", "year": 2019, "season": 1 },
+    { "section": "La saga", "type": "movie", "query": "Les Sirènes des abysses", "year": 2025 },
+    { "section": "La saga", "type": "season", "query": "The Witcher", "year": 2019, "season": 2 },
+    { "section": "La saga", "type": "season", "query": "The Witcher", "year": 2019, "season": 3 },
+    { "section": "La saga", "type": "season", "query": "The Witcher", "year": 2019, "season": 4 }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "harry-potter",
+  "name": "Monde des sorciers — chronologie",
+  "description": "Les Animaux fantastiques puis Harry Potter, dans l'ordre de l'histoire.",
+  "position": 80,
+  "posterFrom": "Harry Potter à l'école des sorciers",
+  "items": [
+    { "section": "Animaux fantastiques", "type": "movie", "query": "Les Animaux fantastiques", "year": 2016 },
+    { "section": "Animaux fantastiques", "type": "movie", "query": "Les Crimes de Grindelwald", "year": 2018 },
+    { "section": "Animaux fantastiques", "type": "movie", "query": "Les Secrets de Dumbledore", "year": 2022 },
+    { "section": "Harry Potter", "type": "movie", "query": "Harry Potter à l'école des sorciers", "year": 2001 },
+    { "section": "Harry Potter", "type": "movie", "query": "Harry Potter et la Chambre des secrets", "year": 2002 },
+    { "section": "Harry Potter", "type": "movie", "query": "Le Prisonnier d'Azkaban", "year": 2004 },
+    { "section": "Harry Potter", "type": "movie", "query": "La Coupe de feu", "year": 2005 },
+    { "section": "Harry Potter", "type": "movie", "query": "L'Ordre du Phénix", "year": 2007 },
+    { "section": "Harry Potter", "type": "movie", "query": "Le Prince de sang-mêlé", "year": 2009 },
+    { "section": "Harry Potter", "type": "movie", "query": "Les Reliques de la Mort 1ère partie", "year": 2010 },
+    { "section": "Harry Potter", "type": "movie", "query": "Les Reliques de la Mort 2ème partie", "year": 2011 }
+  ]
+}

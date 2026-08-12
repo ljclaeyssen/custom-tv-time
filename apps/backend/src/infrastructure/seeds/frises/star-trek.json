@@ -1,0 +1,639 @@
+{
+  "slug": "star-trek",
+  "name": "Star Trek — chronologie interne",
+  "description": "Toutes les séries et tous les films dans l'ordre des dates stellaires, ères TNG/DS9/Voyager entrelacées.",
+  "posterPath": "/tMpOTMaVKgeFI30y9uLwL3iNrB0.jpg",
+  "position": 60,
+  "items": [
+    {
+      "position": 10,
+      "section": "Ère Archer",
+      "itemType": "season",
+      "tmdbId": 314,
+      "seasonNumber": 1,
+      "title": "Star Trek: Enterprise — Saison 1",
+      "posterPath": "/cS8jkzjYZjbSDLcLXANwNJp36E9.jpg",
+      "releaseDate": "2001-09-26"
+    },
+    {
+      "position": 20,
+      "section": "Ère Archer",
+      "itemType": "season",
+      "tmdbId": 314,
+      "seasonNumber": 2,
+      "title": "Star Trek: Enterprise — Saison 2",
+      "posterPath": "/1JQkVR4ftBxFWBVOOwWQgFsmgGc.jpg",
+      "releaseDate": "2002-09-08"
+    },
+    {
+      "position": 30,
+      "section": "Ère Archer",
+      "itemType": "season",
+      "tmdbId": 314,
+      "seasonNumber": 3,
+      "title": "Star Trek: Enterprise — Saison 3",
+      "posterPath": "/swfO2KqqjFklLASgcpn8SulL05E.jpg",
+      "releaseDate": "2003-09-10"
+    },
+    {
+      "position": 40,
+      "section": "Ère Archer",
+      "itemType": "season",
+      "tmdbId": 314,
+      "seasonNumber": 4,
+      "title": "Star Trek: Enterprise — Saison 4",
+      "posterPath": "/2XQ84QUdgLA1fQ78QAl44l8tSiW.jpg",
+      "releaseDate": "2004-10-08"
+    },
+    {
+      "position": 50,
+      "section": "Ère Discovery",
+      "itemType": "season",
+      "tmdbId": 67198,
+      "seasonNumber": 1,
+      "title": "Star Trek: Discovery — Saison 1",
+      "posterPath": "/gcTuixfdGRXSuhceJUD4ZZLhDv5.jpg",
+      "releaseDate": "2017-09-24"
+    },
+    {
+      "position": 60,
+      "section": "Ère Discovery",
+      "itemType": "season",
+      "tmdbId": 67198,
+      "seasonNumber": 2,
+      "title": "Star Trek: Discovery — Saison 2",
+      "posterPath": "/86eYuXPcAid92k18Y2rBCs61qwW.jpg",
+      "releaseDate": "2019-01-17"
+    },
+    {
+      "position": 70,
+      "section": "Ère Pike",
+      "itemType": "season",
+      "tmdbId": 103516,
+      "seasonNumber": 1,
+      "title": "Star Trek: Strange New Worlds — Saison 1",
+      "posterPath": "/a3DE1YZlQITxuf3geYiObouEct3.jpg",
+      "releaseDate": "2022-05-05"
+    },
+    {
+      "position": 80,
+      "section": "Ère Pike",
+      "itemType": "season",
+      "tmdbId": 103516,
+      "seasonNumber": 2,
+      "title": "Star Trek: Strange New Worlds — Saison 2",
+      "posterPath": "/c6iC4uhI2cOLj8vSsuRqXO3ky0o.jpg",
+      "releaseDate": "2023-06-15"
+    },
+    {
+      "position": 90,
+      "section": "Ère Pike",
+      "itemType": "season",
+      "tmdbId": 103516,
+      "seasonNumber": 3,
+      "title": "Star Trek: Strange New Worlds — Saison 3",
+      "posterPath": "/cFB9orpbaxleWmz6S3SQmwKkvO6.jpg",
+      "releaseDate": "2025-07-17"
+    },
+    {
+      "position": 100,
+      "section": "Ère Pike",
+      "itemType": "season",
+      "tmdbId": 103516,
+      "seasonNumber": 4,
+      "title": "Star Trek: Strange New Worlds — Saison 4",
+      "posterPath": "/zI6EvDWrxvfv1TAGWp3FvPFGmaG.jpg",
+      "releaseDate": "2026-07-23"
+    },
+    {
+      "position": 110,
+      "section": "Ère Kirk",
+      "itemType": "season",
+      "tmdbId": 253,
+      "seasonNumber": 1,
+      "title": "Star Trek — Saison 1",
+      "posterPath": "/wRABAsbEYSkceLIYNhrANlInMnS.jpg",
+      "releaseDate": "1966-09-08"
+    },
+    {
+      "position": 120,
+      "section": "Ère Kirk",
+      "itemType": "season",
+      "tmdbId": 253,
+      "seasonNumber": 2,
+      "title": "Star Trek — Saison 2",
+      "posterPath": "/sVZe4ZbVha5hK7JJxLbuWF27Y0R.jpg",
+      "releaseDate": "1967-09-14"
+    },
+    {
+      "position": 130,
+      "section": "Ère Kirk",
+      "itemType": "season",
+      "tmdbId": 253,
+      "seasonNumber": 3,
+      "title": "Star Trek — Saison 3",
+      "posterPath": "/zL4FDcgCaVE6FOOcHagnOUymiQz.jpg",
+      "releaseDate": "1968-09-20"
+    },
+    {
+      "position": 140,
+      "section": "Ère Kirk",
+      "itemType": "season",
+      "tmdbId": 1992,
+      "seasonNumber": 1,
+      "title": "Star Trek : La Série animée — Saison 1",
+      "posterPath": "/o5808Gquu1oTAjlGkhPO6g0ndo.jpg",
+      "releaseDate": "1973-09-08"
+    },
+    {
+      "position": 150,
+      "section": "Ère Kirk",
+      "itemType": "season",
+      "tmdbId": 1992,
+      "seasonNumber": 2,
+      "title": "Star Trek : La Série animée — Saison 2",
+      "posterPath": "/y9hbJBaNB5ulm5FArs2PXRP371N.jpg",
+      "releaseDate": "1974-09-07"
+    },
+    {
+      "position": 160,
+      "section": "Films originaux",
+      "itemType": "movie",
+      "tmdbId": 152,
+      "seasonNumber": null,
+      "title": "Star Trek, le film",
+      "posterPath": "/bkK2EHhhij0L5ePWLQORBrzO4IN.jpg",
+      "releaseDate": "1979-12-07"
+    },
+    {
+      "position": 170,
+      "section": "Films originaux",
+      "itemType": "movie",
+      "tmdbId": 154,
+      "seasonNumber": null,
+      "title": "Star Trek II : La Colère de Khan",
+      "posterPath": "/avb0wORx5CzhSfs0ZnKh1UeBsya.jpg",
+      "releaseDate": "1982-06-04"
+    },
+    {
+      "position": 180,
+      "section": "Films originaux",
+      "itemType": "movie",
+      "tmdbId": 157,
+      "seasonNumber": null,
+      "title": "Star Trek III : À la recherche de Spock",
+      "posterPath": "/a4U4it6vaTSqUDaQMXzujTIvu01.jpg",
+      "releaseDate": "1984-06-01"
+    },
+    {
+      "position": 190,
+      "section": "Films originaux",
+      "itemType": "movie",
+      "tmdbId": 168,
+      "seasonNumber": null,
+      "title": "Star Trek IV : Retour sur Terre",
+      "posterPath": "/c1feYVjxUb8QGdVxsmt7Q2FIzc.jpg",
+      "releaseDate": "1986-11-26"
+    },
+    {
+      "position": 200,
+      "section": "Films originaux",
+      "itemType": "movie",
+      "tmdbId": 172,
+      "seasonNumber": null,
+      "title": "Star Trek V : L'Ultime Frontière",
+      "posterPath": "/uwBoOjAEWSAXtib2Y6Jw96H6DNg.jpg",
+      "releaseDate": "1989-06-09"
+    },
+    {
+      "position": 210,
+      "section": "Films originaux",
+      "itemType": "movie",
+      "tmdbId": 174,
+      "seasonNumber": null,
+      "title": "Star Trek VI : Terre inconnue",
+      "posterPath": "/jA1lEjn8kGIrYKiw29sZE3qB7HT.jpg",
+      "releaseDate": "1991-12-06"
+    },
+    {
+      "position": 220,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "season",
+      "tmdbId": 655,
+      "seasonNumber": 1,
+      "title": "Star Trek : La Nouvelle Génération — Saison 1",
+      "posterPath": "/tMpOTMaVKgeFI30y9uLwL3iNrB0.jpg",
+      "releaseDate": "1987-09-28"
+    },
+    {
+      "position": 230,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "season",
+      "tmdbId": 655,
+      "seasonNumber": 2,
+      "title": "Star Trek : La Nouvelle Génération — Saison 2",
+      "posterPath": "/9jcQQS7MR2fQ7WiSvg1VOXOLtLX.jpg",
+      "releaseDate": "1988-11-21"
+    },
+    {
+      "position": 240,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "season",
+      "tmdbId": 655,
+      "seasonNumber": 3,
+      "title": "Star Trek : La Nouvelle Génération — Saison 3",
+      "posterPath": "/uhk10j9FQtEn0ropXuanJCzgq94.jpg",
+      "releaseDate": "1989-09-25"
+    },
+    {
+      "position": 250,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "season",
+      "tmdbId": 655,
+      "seasonNumber": 4,
+      "title": "Star Trek : La Nouvelle Génération — Saison 4",
+      "posterPath": "/icWxooSV0M9PrrD3RwENkcO9650.jpg",
+      "releaseDate": "1990-09-24"
+    },
+    {
+      "position": 260,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "season",
+      "tmdbId": 655,
+      "seasonNumber": 5,
+      "title": "Star Trek : La Nouvelle Génération — Saison 5",
+      "posterPath": "/zNPlOaQwIuYgUseUV6eVNRd7fO7.jpg",
+      "releaseDate": "1991-09-23"
+    },
+    {
+      "position": 270,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "season",
+      "tmdbId": 655,
+      "seasonNumber": 6,
+      "title": "Star Trek : La Nouvelle Génération — Saison 6",
+      "posterPath": "/fJxtWtsBF93ynb7rbklUg4y4tkS.jpg",
+      "releaseDate": "1992-09-21"
+    },
+    {
+      "position": 280,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "season",
+      "tmdbId": 580,
+      "seasonNumber": 1,
+      "title": "Star Trek: Deep Space Nine — Saison 1",
+      "posterPath": "/oSISMOrw5YJHwSm1mkSDPn4BUIP.jpg",
+      "releaseDate": "1993-01-03"
+    },
+    {
+      "position": 290,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "season",
+      "tmdbId": 655,
+      "seasonNumber": 7,
+      "title": "Star Trek : La Nouvelle Génération — Saison 7",
+      "posterPath": "/z58MBPRPBpd7vzcmYwfZfZuKx3w.jpg",
+      "releaseDate": "1993-09-20"
+    },
+    {
+      "position": 300,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "season",
+      "tmdbId": 580,
+      "seasonNumber": 2,
+      "title": "Star Trek: Deep Space Nine — Saison 2",
+      "posterPath": "/umP8YuuS9kq7uLKdOjwl9J8EoQv.jpg",
+      "releaseDate": "1993-09-26"
+    },
+    {
+      "position": 310,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "movie",
+      "tmdbId": 193,
+      "seasonNumber": null,
+      "title": "Star Trek : Générations",
+      "posterPath": "/3YlXnG9DwBarTdeGc8yoq8c6dFi.jpg",
+      "releaseDate": "1994-11-18"
+    },
+    {
+      "position": 320,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "season",
+      "tmdbId": 580,
+      "seasonNumber": 3,
+      "title": "Star Trek: Deep Space Nine — Saison 3",
+      "posterPath": "/v5jkofSquJF27PZwSD1TMobDLkH.jpg",
+      "releaseDate": "1994-09-26"
+    },
+    {
+      "position": 330,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "season",
+      "tmdbId": 1855,
+      "seasonNumber": 1,
+      "title": "Star Trek: Voyager — Saison 1",
+      "posterPath": "/z7UY1EXfpFi1DnpRkJQ7hTM1bd.jpg",
+      "releaseDate": "1995-01-16"
+    },
+    {
+      "position": 340,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "season",
+      "tmdbId": 580,
+      "seasonNumber": 4,
+      "title": "Star Trek: Deep Space Nine — Saison 4",
+      "posterPath": "/97BzxzeTpGmnfCRSM5BRB5dbD2o.jpg",
+      "releaseDate": "1995-10-02"
+    },
+    {
+      "position": 350,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "season",
+      "tmdbId": 1855,
+      "seasonNumber": 2,
+      "title": "Star Trek: Voyager — Saison 2",
+      "posterPath": "/eX8mvxqrthsLWbaPD8qnmhtEtJP.jpg",
+      "releaseDate": "1995-08-28"
+    },
+    {
+      "position": 360,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "season",
+      "tmdbId": 580,
+      "seasonNumber": 5,
+      "title": "Star Trek: Deep Space Nine — Saison 5",
+      "posterPath": "/A3M9fXn3eZOG8v7zhWzz7UJF0pj.jpg",
+      "releaseDate": "1996-09-30"
+    },
+    {
+      "position": 370,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "season",
+      "tmdbId": 1855,
+      "seasonNumber": 3,
+      "title": "Star Trek: Voyager — Saison 3",
+      "posterPath": "/4GroCsyLvt872DvhATKcxTA3X2G.jpg",
+      "releaseDate": "1996-09-04"
+    },
+    {
+      "position": 380,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "movie",
+      "tmdbId": 199,
+      "seasonNumber": null,
+      "title": "Star Trek : Premier contact",
+      "posterPath": "/4iBOsMZ61fGsaOu6arem8EnOD4B.jpg",
+      "releaseDate": "1996-11-22"
+    },
+    {
+      "position": 390,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "season",
+      "tmdbId": 580,
+      "seasonNumber": 6,
+      "title": "Star Trek: Deep Space Nine — Saison 6",
+      "posterPath": "/w9VPMxlIYwZa8LgvBzPU4GGmgvz.jpg",
+      "releaseDate": "1997-09-29"
+    },
+    {
+      "position": 400,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "season",
+      "tmdbId": 1855,
+      "seasonNumber": 4,
+      "title": "Star Trek: Voyager — Saison 4",
+      "posterPath": "/yNuRBBN2GvzxBOWov9Z3HRC8g3a.jpg",
+      "releaseDate": "1997-09-03"
+    },
+    {
+      "position": 410,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "season",
+      "tmdbId": 580,
+      "seasonNumber": 7,
+      "title": "Star Trek: Deep Space Nine — Saison 7",
+      "posterPath": "/o7bE2QNlWbpCMVP4rCGon4TZiWN.jpg",
+      "releaseDate": "1998-09-30"
+    },
+    {
+      "position": 420,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "season",
+      "tmdbId": 1855,
+      "seasonNumber": 5,
+      "title": "Star Trek: Voyager — Saison 5",
+      "posterPath": "/97hBTmO2ZG2iPs7FZubxNvYr8J4.jpg",
+      "releaseDate": "1998-10-14"
+    },
+    {
+      "position": 430,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "movie",
+      "tmdbId": 200,
+      "seasonNumber": null,
+      "title": "Star Trek : Insurrection",
+      "posterPath": "/opQjWTGt7jIAt9g647iaX4cc63e.jpg",
+      "releaseDate": "1998-12-11"
+    },
+    {
+      "position": 440,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "season",
+      "tmdbId": 1855,
+      "seasonNumber": 6,
+      "title": "Star Trek: Voyager — Saison 6",
+      "posterPath": "/5wcBZgZpuRtHtkpRzDKknzKiFOU.jpg",
+      "releaseDate": "1999-09-22"
+    },
+    {
+      "position": 450,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "season",
+      "tmdbId": 1855,
+      "seasonNumber": 7,
+      "title": "Star Trek: Voyager — Saison 7",
+      "posterPath": "/6Bxr2Ak2R5LwvXEzDm15Horfkzj.jpg",
+      "releaseDate": "2000-10-04"
+    },
+    {
+      "position": 460,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "movie",
+      "tmdbId": 201,
+      "seasonNumber": null,
+      "title": "Star Trek: Nemesis",
+      "posterPath": "/adjTXEaAQmu8WX2UEnjFc1jSs8C.jpg",
+      "releaseDate": "2002-12-13"
+    },
+    {
+      "position": 470,
+      "section": "Ère TNG / DS9 / Voyager",
+      "itemType": "movie",
+      "tmdbId": 1114894,
+      "seasonNumber": null,
+      "title": "Star Trek : Section 31",
+      "posterPath": "/fNu6P4jYU55Cb3CC2SndtAKvois.jpg",
+      "releaseDate": "2025-01-15"
+    },
+    {
+      "position": 480,
+      "section": "Après Voyager",
+      "itemType": "season",
+      "tmdbId": 85948,
+      "seasonNumber": 1,
+      "title": "Star Trek: Lower Decks — Saison 1",
+      "posterPath": "/115b8vxm1DhFqzU8zVp1AjiHpoY.jpg",
+      "releaseDate": "2020-08-06"
+    },
+    {
+      "position": 490,
+      "section": "Après Voyager",
+      "itemType": "season",
+      "tmdbId": 85948,
+      "seasonNumber": 2,
+      "title": "Star Trek: Lower Decks — Saison 2",
+      "posterPath": "/gw6PbZmwu46ZlWqQXbmUCuMXUzP.jpg",
+      "releaseDate": "2021-08-12"
+    },
+    {
+      "position": 500,
+      "section": "Après Voyager",
+      "itemType": "season",
+      "tmdbId": 85948,
+      "seasonNumber": 3,
+      "title": "Star Trek: Lower Decks — Saison 3",
+      "posterPath": "/aNnbTh6w4jtuKVXN3pI5IOvjrcG.jpg",
+      "releaseDate": "2022-08-25"
+    },
+    {
+      "position": 510,
+      "section": "Après Voyager",
+      "itemType": "season",
+      "tmdbId": 85948,
+      "seasonNumber": 4,
+      "title": "Star Trek: Lower Decks — Saison 4",
+      "posterPath": "/pwnAsk9i1wmXWOjqCDn4r5bRxIt.jpg",
+      "releaseDate": "2023-09-07"
+    },
+    {
+      "position": 520,
+      "section": "Après Voyager",
+      "itemType": "season",
+      "tmdbId": 85948,
+      "seasonNumber": 5,
+      "title": "Star Trek: Lower Decks — Saison 5",
+      "posterPath": "/gKfusipzJyKm2zn99I2Alr3ETX3.jpg",
+      "releaseDate": "2024-10-24"
+    },
+    {
+      "position": 530,
+      "section": "Après Voyager",
+      "itemType": "season",
+      "tmdbId": 106393,
+      "seasonNumber": 1,
+      "title": "Star Trek: Prodigy — Saison 1",
+      "posterPath": "/qiIHiqCwVu5SGa7Fkg0AVZkRGSR.jpg",
+      "releaseDate": "2021-10-28"
+    },
+    {
+      "position": 540,
+      "section": "Après Voyager",
+      "itemType": "season",
+      "tmdbId": 106393,
+      "seasonNumber": 2,
+      "title": "Star Trek: Prodigy — Saison 2",
+      "posterPath": "/hUzSjQYNZ1T0yiKDTzvxsTJR4of.jpg",
+      "releaseDate": "2024-07-01"
+    },
+    {
+      "position": 550,
+      "section": "XXVe siècle",
+      "itemType": "season",
+      "tmdbId": 85949,
+      "seasonNumber": 1,
+      "title": "Star Trek: Picard — Saison 1",
+      "posterPath": "/eCRZpDo9l6A1gs8gqtdW9XpKChr.jpg",
+      "releaseDate": "2020-01-23"
+    },
+    {
+      "position": 560,
+      "section": "XXVe siècle",
+      "itemType": "season",
+      "tmdbId": 85949,
+      "seasonNumber": 2,
+      "title": "Star Trek: Picard — Saison 2",
+      "posterPath": "/rfXPdqXt4NfR8HPVppJPX09zrq2.jpg",
+      "releaseDate": "2022-03-03"
+    },
+    {
+      "position": 570,
+      "section": "XXVe siècle",
+      "itemType": "season",
+      "tmdbId": 85949,
+      "seasonNumber": 3,
+      "title": "Star Trek: Picard — Saison 3",
+      "posterPath": "/nIOl1l8pihkPaxjepRmfZCJ8M0y.jpg",
+      "releaseDate": "2023-02-16"
+    },
+    {
+      "position": 580,
+      "section": "Futur lointain",
+      "itemType": "season",
+      "tmdbId": 67198,
+      "seasonNumber": 3,
+      "title": "Star Trek: Discovery — Saison 3",
+      "posterPath": "/61TxOTLPV67c5A1QLxjF3qS7E6E.jpg",
+      "releaseDate": "2020-10-15"
+    },
+    {
+      "position": 590,
+      "section": "Futur lointain",
+      "itemType": "season",
+      "tmdbId": 67198,
+      "seasonNumber": 4,
+      "title": "Star Trek: Discovery — Saison 4",
+      "posterPath": "/ljQoQF1O1PkGpTT4NEZgPsh8dFx.jpg",
+      "releaseDate": "2021-11-18"
+    },
+    {
+      "position": 600,
+      "section": "Futur lointain",
+      "itemType": "season",
+      "tmdbId": 67198,
+      "seasonNumber": 5,
+      "title": "Star Trek: Discovery — Saison 5",
+      "posterPath": "/sx4UsFaRa5fNVWT9fQFrHZB246v.jpg",
+      "releaseDate": "2024-04-04"
+    },
+    {
+      "position": 610,
+      "section": "Timeline Kelvin",
+      "itemType": "movie",
+      "tmdbId": 13475,
+      "seasonNumber": null,
+      "title": "Star Trek",
+      "posterPath": "/uS0YI879KkgUCk5tvbqDZXLb8mU.jpg",
+      "releaseDate": "2009-05-06"
+    },
+    {
+      "position": 620,
+      "section": "Timeline Kelvin",
+      "itemType": "movie",
+      "tmdbId": 54138,
+      "seasonNumber": null,
+      "title": "Star Trek Into Darkness",
+      "posterPath": "/g9XEl6WP5IFixRhpQBezZ6TDbk4.jpg",
+      "releaseDate": "2013-05-05"
+    },
+    {
+      "position": 630,
+      "section": "Timeline Kelvin",
+      "itemType": "movie",
+      "tmdbId": 188927,
+      "seasonNumber": null,
+      "title": "Star Trek : Sans limites",
+      "posterPath": "/aerpiFz3XsTg6ICP2qSxRriKTPd.jpg",
+      "releaseDate": "2016-07-07"
+    }
+  ]
+}

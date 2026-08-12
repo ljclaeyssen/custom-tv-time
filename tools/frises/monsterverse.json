@@ -1,0 +1,16 @@
+{
+  "slug": "monsterverse",
+  "name": "Monsterverse — chronologie",
+  "description": "Godzilla, Kong et Monarch dans l'ordre de l'histoire.",
+  "position": 100,
+  "posterFrom": "Godzilla vs Kong",
+  "items": [
+    { "section": "Monsterverse", "type": "movie", "query": "Kong Skull Island", "year": 2017 },
+    { "section": "Monsterverse", "type": "movie", "query": "Godzilla", "year": 2014 },
+    { "section": "Monsterverse", "type": "season", "query": "Monarch Legacy of Monsters", "year": 2023, "season": 1 },
+    { "section": "Monsterverse", "type": "season", "query": "Monarch Legacy of Monsters", "year": 2023, "season": 2 },
+    { "section": "Monsterverse", "type": "movie", "query": "Godzilla II Roi des Monstres", "year": 2019 },
+    { "section": "Monsterverse", "type": "movie", "query": "Godzilla vs Kong", "year": 2021 },
+    { "section": "Monsterverse", "type": "movie", "query": "Godzilla x Kong Le Nouvel Empire", "year": 2024 }
+  ]
+}

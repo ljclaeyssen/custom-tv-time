@@ -1,0 +1,119 @@
+{
+  "slug": "harry-potter",
+  "name": "Monde des sorciers — chronologie",
+  "description": "Les Animaux fantastiques puis Harry Potter, dans l'ordre de l'histoire.",
+  "posterPath": "/fbxQ44VRdM2PVzHSNajUseUteem.jpg",
+  "position": 80,
+  "items": [
+    {
+      "position": 10,
+      "section": "Animaux fantastiques",
+      "itemType": "movie",
+      "tmdbId": 259316,
+      "seasonNumber": null,
+      "title": "Les Animaux Fantastiques",
+      "posterPath": "/7641iyvTdREC0eO2YUPmIk4PtrO.jpg",
+      "releaseDate": "2016-11-16"
+    },
+    {
+      "position": 20,
+      "section": "Animaux fantastiques",
+      "itemType": "movie",
+      "tmdbId": 338952,
+      "seasonNumber": null,
+      "title": "Les Animaux Fantastiques : Les Crimes de Grindelwald",
+      "posterPath": "/aU1AKE8tTkZouGNImmArvfP5smR.jpg",
+      "releaseDate": "2018-11-14"
+    },
+    {
+      "position": 30,
+      "section": "Animaux fantastiques",
+      "itemType": "movie",
+      "tmdbId": 338953,
+      "seasonNumber": null,
+      "title": "Les Animaux fantastiques : Les Secrets de Dumbledore",
+      "posterPath": "/gzvSMS4MqBg2ThgGOS2YkNkoebf.jpg",
+      "releaseDate": "2022-04-06"
+    },
+    {
+      "position": 40,
+      "section": "Harry Potter",
+      "itemType": "movie",
+      "tmdbId": 671,
+      "seasonNumber": null,
+      "title": "Harry Potter à l'école des sorciers",
+      "posterPath": "/fbxQ44VRdM2PVzHSNajUseUteem.jpg",
+      "releaseDate": "2001-11-16"
+    },
+    {
+      "position": 50,
+      "section": "Harry Potter",
+      "itemType": "movie",
+      "tmdbId": 672,
+      "seasonNumber": null,
+      "title": "Harry Potter et la Chambre des secrets",
+      "posterPath": "/8KpHRokGpiaqEGpjYe0rpywtvUx.jpg",
+      "releaseDate": "2002-11-13"
+    },
+    {
+      "position": 60,
+      "section": "Harry Potter",
+      "itemType": "movie",
+      "tmdbId": 673,
+      "seasonNumber": null,
+      "title": "Harry Potter et le Prisonnier d'Azkaban",
+      "posterPath": "/t4P2079IyK19njHDP2GwQrKdvzd.jpg",
+      "releaseDate": "2004-05-31"
+    },
+    {
+      "position": 70,
+      "section": "Harry Potter",
+      "itemType": "movie",
+      "tmdbId": 674,
+      "seasonNumber": null,
+      "title": "Harry Potter et la Coupe de feu",
+      "posterPath": "/hBak1pn5pbI4ycAbrgMMn1YI7P1.jpg",
+      "releaseDate": "2005-11-16"
+    },
+    {
+      "position": 80,
+      "section": "Harry Potter",
+      "itemType": "movie",
+      "tmdbId": 675,
+      "seasonNumber": null,
+      "title": "Harry Potter et l'Ordre du Phénix",
+      "posterPath": "/9ZfpCVNx0y8jpColnnfdA1HI4Zb.jpg",
+      "releaseDate": "2007-07-08"
+    },
+    {
+      "position": 90,
+      "section": "Harry Potter",
+      "itemType": "movie",
+      "tmdbId": 767,
+      "seasonNumber": null,
+      "title": "Harry Potter et le Prince de sang-mêlé",
+      "posterPath": "/A4WWOzWUASfUeESXxduQxVmoD7t.jpg",
+      "releaseDate": "2009-07-15"
+    },
+    {
+      "position": 100,
+      "section": "Harry Potter",
+      "itemType": "movie",
+      "tmdbId": 12444,
+      "seasonNumber": null,
+      "title": "Harry Potter et les Reliques de la Mort - 1ère partie",
+      "posterPath": "/yJm61MmTMjOmNXxPxdoaIkdqnOm.jpg",
+      "releaseDate": "2010-11-17"
+    },
+    {
+      "position": 110,
+      "section": "Harry Potter",
+      "itemType": "movie",
+      "tmdbId": 12445,
+      "seasonNumber": null,
+      "title": "Harry Potter et les Reliques de la Mort - 2ème partie",
+      "posterPath": "/alQOPmKEPHkH4BLMEla1vTNYrUr.jpg",
+      "releaseDate": "2011-07-12"
+    }
+  ]
+}

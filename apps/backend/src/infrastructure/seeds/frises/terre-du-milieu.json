@@ -1,0 +1,109 @@
+{
+  "slug": "terre-du-milieu",
+  "name": "Terre du Milieu — chronologie",
+  "description": "Des Anneaux de pouvoir au Retour du roi, dans l'ordre des âges.",
+  "posterPath": "/5OPg6M0yHr21Ovs1fni2H1xpKuF.jpg",
+  "position": 90,
+  "items": [
+    {
+      "position": 10,
+      "section": "Second Âge",
+      "itemType": "season",
+      "tmdbId": 84773,
+      "seasonNumber": 1,
+      "title": "Le Seigneur des anneaux : Les Anneaux de pouvoir — Saison 1",
+      "posterPath": "/b3glLVSC3bBZXkFKOPEXlgEB0Ta.jpg",
+      "releaseDate": "2022-08-31"
+    },
+    {
+      "position": 20,
+      "section": "Second Âge",
+      "itemType": "season",
+      "tmdbId": 84773,
+      "seasonNumber": 2,
+      "title": "Le Seigneur des anneaux : Les Anneaux de pouvoir — Saison 2",
+      "posterPath": "/cx3LSGCWyxwdHHcZyvg7bOL5voi.jpg",
+      "releaseDate": "2024-08-29"
+    },
+    {
+      "position": 30,
+      "section": "Second Âge",
+      "itemType": "season",
+      "tmdbId": 84773,
+      "seasonNumber": 3,
+      "title": "Le Seigneur des anneaux : Les Anneaux de pouvoir — Saison 3",
+      "posterPath": "/xw9VIpdX0n0BNQRMLWj8Y0T4yew.jpg",
+      "releaseDate": "2026-11-10"
+    },
+    {
+      "position": 40,
+      "section": "Troisième Âge",
+      "itemType": "movie",
+      "tmdbId": 839033,
+      "seasonNumber": null,
+      "title": "Le Seigneur des anneaux : La Guerre des Rohirrim",
+      "posterPath": "/bcDGIZKQ959tnMn0qLl6GxOkbO3.jpg",
+      "releaseDate": "2024-12-05"
+    },
+    {
+      "position": 50,
+      "section": "Troisième Âge",
+      "itemType": "movie",
+      "tmdbId": 49051,
+      "seasonNumber": null,
+      "title": "Le Hobbit : Un voyage inattendu",
+      "posterPath": "/mdy9mG31U7jSB8edfRELv53Yfjp.jpg",
+      "releaseDate": "2012-12-12"
+    },
+    {
+      "position": 60,
+      "section": "Troisième Âge",
+      "itemType": "movie",
+      "tmdbId": 57158,
+      "seasonNumber": null,
+      "title": "Le Hobbit : La Désolation de Smaug",
+      "posterPath": "/9JPVtscMdWGmOoWxNmc1hGdkxtM.jpg",
+      "releaseDate": "2013-12-11"
+    },
+    {
+      "position": 70,
+      "section": "Troisième Âge",
+      "itemType": "movie",
+      "tmdbId": 122917,
+      "seasonNumber": null,
+      "title": "Le Hobbit : La Bataille des cinq armées",
+      "posterPath": "/h4wjbuC61iMaCqrO3bmGQ3ibuJE.jpg",
+      "releaseDate": "2014-12-10"
+    },
+    {
+      "position": 80,
+      "section": "La Guerre de l'Anneau",
+      "itemType": "movie",
+      "tmdbId": 120,
+      "seasonNumber": null,
+      "title": "Le Seigneur des anneaux : La Communauté de l'anneau",
+      "posterPath": "/5OPg6M0yHr21Ovs1fni2H1xpKuF.jpg",
+      "releaseDate": "2001-12-18"
+    },
+    {
+      "position": 90,
+      "section": "La Guerre de l'Anneau",
+      "itemType": "movie",
+      "tmdbId": 121,
+      "seasonNumber": null,
+      "title": "Le Seigneur des anneaux : Les Deux Tours",
+      "posterPath": "/qVHBqQYLDRs7ESjP9q6o9iPHLWj.jpg",
+      "releaseDate": "2002-12-18"
+    },
+    {
+      "position": 100,
+      "section": "La Guerre de l'Anneau",
+      "itemType": "movie",
+      "tmdbId": 122,
+      "seasonNumber": null,
+      "title": "Le Seigneur des anneaux : Le Retour du roi",
+      "posterPath": "/ypUCFOvOf07bcHy81jng9LyMUfi.jpg",
+      "releaseDate": "2003-12-17"
+    }
+  ]
+}

@@ -93,10 +93,12 @@ for (const [index, item] of seed.items.entries()) {
       throw new Error(`Saison ${item.season} introuvable : ${item.query} (#${show.id})`);
     }
     // Nom de saison TMDB s'il est parlant (« La Ligue Indigo »), sinon « Saison N ».
+    // Le seed peut forcer le libellé avec "label" quand TMDB nomme mal la saison.
     const seasonLabel =
-      season.name && !/^(saison|season)\s*\d+$/i.test(season.name.trim())
+      item.label ??
+      (season.name && !/^(saison|season)\s*\d+$/i.test(season.name.trim())
         ? season.name
-        : `Saison ${item.season}`;
+        : `Saison ${item.season}`);
     items.push({
       query: item.query,
       resolved: {

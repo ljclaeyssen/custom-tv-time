@@ -1,0 +1,219 @@
+{
+  "slug": "star-wars",
+  "name": "Star Wars — canon principal",
+  "description": "Films et séries live action dans l'ordre de la chronologie galactique.",
+  "posterPath": "/qelTNHrBSYjPvwdzsDBPVsqnNzc.jpg",
+  "position": 40,
+  "items": [
+    {
+      "position": 10,
+      "section": "République",
+      "itemType": "movie",
+      "tmdbId": 1893,
+      "seasonNumber": null,
+      "title": "Star Wars, épisode I - La Menace fantôme",
+      "posterPath": "/fpEC910v5DrMvZteRNlKzXeHiHY.jpg",
+      "releaseDate": "1999-05-19"
+    },
+    {
+      "position": 20,
+      "section": "République",
+      "itemType": "movie",
+      "tmdbId": 1894,
+      "seasonNumber": null,
+      "title": "Star Wars, épisode II - L'Attaque des clones",
+      "posterPath": "/3nqpcTkODCBhuKuDQJ1dtRhgTqZ.jpg",
+      "releaseDate": "2002-05-15"
+    },
+    {
+      "position": 30,
+      "section": "République",
+      "itemType": "movie",
+      "tmdbId": 1895,
+      "seasonNumber": null,
+      "title": "Star Wars, épisode III - La Revanche des Sith",
+      "posterPath": "/2RcBuU8cdxFxCJibbiYCGNLApfz.jpg",
+      "releaseDate": "2005-05-17"
+    },
+    {
+      "position": 40,
+      "section": "Ère impériale",
+      "itemType": "movie",
+      "tmdbId": 348350,
+      "seasonNumber": null,
+      "title": "Solo: A Star Wars Story",
+      "posterPath": "/oMCIfJMezZeJvLK124uj4T0BpAy.jpg",
+      "releaseDate": "2018-05-15"
+    },
+    {
+      "position": 50,
+      "section": "Ère impériale",
+      "itemType": "season",
+      "tmdbId": 92830,
+      "seasonNumber": 1,
+      "title": "Obi-Wan Kenobi — Mini-série",
+      "posterPath": "/oPkm7vwYCa1McT8jEIFWLj393s4.jpg",
+      "releaseDate": "2022-05-26"
+    },
+    {
+      "position": 60,
+      "section": "Ère impériale",
+      "itemType": "season",
+      "tmdbId": 83867,
+      "seasonNumber": 1,
+      "title": "Star Wars : Andor — Saison 1",
+      "posterPath": "/LjQW3hzjRDsFigRjkYn4wvjfqY.jpg",
+      "releaseDate": "2022-09-21"
+    },
+    {
+      "position": 70,
+      "section": "Ère impériale",
+      "itemType": "season",
+      "tmdbId": 83867,
+      "seasonNumber": 2,
+      "title": "Star Wars : Andor — Saison 2",
+      "posterPath": "/xLpjl8gqNVo6Vu04ZT27foWsAXz.jpg",
+      "releaseDate": "2025-04-22"
+    },
+    {
+      "position": 80,
+      "section": "Ère impériale",
+      "itemType": "movie",
+      "tmdbId": 330459,
+      "seasonNumber": null,
+      "title": "Rogue One : A Star Wars Story",
+      "posterPath": "/obsGPyNOAwkQbLRQOHR6a21VT23.jpg",
+      "releaseDate": "2016-12-14"
+    },
+    {
+      "position": 90,
+      "section": "Trilogie originale",
+      "itemType": "movie",
+      "tmdbId": 11,
+      "seasonNumber": null,
+      "title": "La Guerre des étoiles",
+      "posterPath": "/qelTNHrBSYjPvwdzsDBPVsqnNzc.jpg",
+      "releaseDate": "1977-05-25"
+    },
+    {
+      "position": 100,
+      "section": "Trilogie originale",
+      "itemType": "movie",
+      "tmdbId": 1891,
+      "seasonNumber": null,
+      "title": "L'Empire contre-attaque",
+      "posterPath": "/qDvctAykmNWAmi9G2GrVrwWx3pr.jpg",
+      "releaseDate": "1980-05-20"
+    },
+    {
+      "position": 110,
+      "section": "Trilogie originale",
+      "itemType": "movie",
+      "tmdbId": 1892,
+      "seasonNumber": null,
+      "title": "Le Retour du Jedi",
+      "posterPath": "/tEQlCGiiWvMvfD7Sz8d99Pouy39.jpg",
+      "releaseDate": "1983-05-25"
+    },
+    {
+      "position": 120,
+      "section": "Nouvelle République",
+      "itemType": "season",
+      "tmdbId": 82856,
+      "seasonNumber": 1,
+      "title": "The Mandalorian — Saison 1",
+      "posterPath": "/qMt7OAu2d1rBhhW6fyL4q7bwI9A.jpg",
+      "releaseDate": "2019-11-12"
+    },
+    {
+      "position": 130,
+      "section": "Nouvelle République",
+      "itemType": "season",
+      "tmdbId": 82856,
+      "seasonNumber": 2,
+      "title": "The Mandalorian — Saison 2",
+      "posterPath": "/potwbcu7NXw2JPV3VQMwxaDhM31.jpg",
+      "releaseDate": "2020-10-30"
+    },
+    {
+      "position": 140,
+      "section": "Nouvelle République",
+      "itemType": "season",
+      "tmdbId": 115036,
+      "seasonNumber": 1,
+      "title": "Le Livre de Boba Fett — Saison 1",
+      "posterPath": "/wCGsQe3q185LuwmjPFeMMGl2Lr3.jpg",
+      "releaseDate": "2021-12-29"
+    },
+    {
+      "position": 150,
+      "section": "Nouvelle République",
+      "itemType": "season",
+      "tmdbId": 82856,
+      "seasonNumber": 3,
+      "title": "The Mandalorian — Saison 3",
+      "posterPath": "/x2xsbGlWLOivpPJ1SuyOxLuZjap.jpg",
+      "releaseDate": "2023-03-01"
+    },
+    {
+      "position": 160,
+      "section": "Nouvelle République",
+      "itemType": "season",
+      "tmdbId": 114461,
+      "seasonNumber": 1,
+      "title": "Ahsoka — Saison 1",
+      "posterPath": "/laCJxobHoPVaLQTKxc14Y2zV64J.jpg",
+      "releaseDate": "2023-08-22"
+    },
+    {
+      "position": 170,
+      "section": "Nouvelle République",
+      "itemType": "season",
+      "tmdbId": 202879,
+      "seasonNumber": 1,
+      "title": "Star Wars : Skeleton Crew — Saison 1",
+      "posterPath": "/7TnPY15nZiPJyJ1b0LLA3D9Exh.jpg",
+      "releaseDate": "2024-12-02"
+    },
+    {
+      "position": 180,
+      "section": "Nouvelle République",
+      "itemType": "movie",
+      "tmdbId": 1228710,
+      "seasonNumber": null,
+      "title": "Star Wars : The Mandalorian and Grogu",
+      "posterPath": "/eUOVyCSZrUH6aPfhsfd7j0bxGOl.jpg",
+      "releaseDate": "2026-05-20"
+    },
+    {
+      "position": 190,
+      "section": "Postlogie",
+      "itemType": "movie",
+      "tmdbId": 140607,
+      "seasonNumber": null,
+      "title": "Star Wars : Le Réveil de la Force",
+      "posterPath": "/zKZ1iF1ABqL7a16u6Im8JTQKp7H.jpg",
+      "releaseDate": "2015-12-15"
+    },
+    {
+      "position": 200,
+      "section": "Postlogie",
+      "itemType": "movie",
+      "tmdbId": 181808,
+      "seasonNumber": null,
+      "title": "Star Wars : Les Derniers Jedi",
+      "posterPath": "/pS80gMevVINVyrwEHrILOxqwdAY.jpg",
+      "releaseDate": "2017-12-13"
+    },
+    {
+      "position": 210,
+      "section": "Postlogie",
+      "itemType": "movie",
+      "tmdbId": 181812,
+      "seasonNumber": null,
+      "title": "Star Wars : L'Ascension de Skywalker",
+      "posterPath": "/1pQc75SdFOKpo2AqoL58z5kF3YI.jpg",
+      "releaseDate": "2019-12-18"
+    }
+  ]
+}

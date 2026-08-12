@@ -1,0 +1,19 @@
+{
+  "slug": "terre-du-milieu",
+  "name": "Terre du Milieu — chronologie",
+  "description": "Des Anneaux de pouvoir au Retour du roi, dans l'ordre des âges.",
+  "position": 90,
+  "posterFrom": "La Communauté de l'anneau",
+  "items": [
+    { "section": "Second Âge", "type": "season", "query": "Le Seigneur des anneaux Les Anneaux de pouvoir", "year": 2022, "season": 1 },
+    { "section": "Second Âge", "type": "season", "query": "Le Seigneur des anneaux Les Anneaux de pouvoir", "year": 2022, "season": 2 },
+    { "section": "Second Âge", "type": "season", "query": "Le Seigneur des anneaux Les Anneaux de pouvoir", "year": 2022, "season": 3 },
+    { "section": "Troisième Âge", "type": "movie", "query": "La Guerre des Rohirrim", "year": 2024 },
+    { "section": "Troisième Âge", "type": "movie", "query": "Le Hobbit Un voyage inattendu", "year": 2012 },
+    { "section": "Troisième Âge", "type": "movie", "query": "La Désolation de Smaug", "year": 2013 },
+    { "section": "Troisième Âge", "type": "movie", "query": "La Bataille des Cinq Armées", "year": 2014 },
+    { "section": "La Guerre de l'Anneau", "type": "movie", "query": "La Communauté de l'anneau", "year": 2001 },
+    { "section": "La Guerre de l'Anneau", "type": "movie", "query": "Les Deux Tours", "year": 2002 },
+    { "section": "La Guerre de l'Anneau", "type": "movie", "query": "Le Retour du roi", "year": 2003 }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "slug": "alien",
+  "name": "Alien — chronologie",
+  "description": "De Prometheus à Resurrection, série Alien: Earth incluse.",
+  "posterPath": "/l8CES84JndFlNfBNMxdLRYaLvI6.jpg",
+  "position": 110,
+  "items": [
+    {
+      "position": 10,
+      "section": "Chronologie",
+      "itemType": "movie",
+      "tmdbId": 70981,
+      "seasonNumber": null,
+      "title": "Prometheus",
+      "posterPath": "/p3B5dRNXnpBNGR16r0zdLiMuvMb.jpg",
+      "releaseDate": "2012-05-30"
+    },
+    {
+      "position": 20,
+      "section": "Chronologie",
+      "itemType": "movie",
+      "tmdbId": 126889,
+      "seasonNumber": null,
+      "title": "Alien : Covenant",
+      "posterPath": "/gJL4noFkpXHkNBX2MgzEo6PbYUy.jpg",
+      "releaseDate": "2017-05-09"
+    },
+    {
+      "position": 30,
+      "section": "Chronologie",
+      "itemType": "season",
+      "tmdbId": 157239,
+      "seasonNumber": 1,
+      "title": "Alien: Earth — Saison 1",
+      "posterPath": "/5DoExDwDmP5aXMJYbyEaDDTnCHm.jpg",
+      "releaseDate": "2025-08-12"
+    },
+    {
+      "position": 40,
+      "section": "Chronologie",
+      "itemType": "movie",
+      "tmdbId": 348,
+      "seasonNumber": null,
+      "title": "Alien, le huitième passager",
+      "posterPath": "/l8CES84JndFlNfBNMxdLRYaLvI6.jpg",
+      "releaseDate": "1979-05-25"
+    },
+    {
+      "position": 50,
+      "section": "Chronologie",
+      "itemType": "movie",
+      "tmdbId": 945961,
+      "seasonNumber": null,
+      "title": "Alien : Romulus",
+      "posterPath": "/xmDypImhT0OOloQIj3JLslUrBw8.jpg",
+      "releaseDate": "2024-08-13"
+    },
+    {
+      "position": 60,
+      "section": "Chronologie",
+      "itemType": "movie",
+      "tmdbId": 679,
+      "seasonNumber": null,
+      "title": "Aliens, le retour",
+      "posterPath": "/uafMg29wVV4XvxPS59s8nBBbP4i.jpg",
+      "releaseDate": "1986-07-18"
+    },
+    {
+      "position": 70,
+      "section": "Chronologie",
+      "itemType": "movie",
+      "tmdbId": 8077,
+      "seasonNumber": null,
+      "title": "Alien³",
+      "posterPath": "/z2nli2Do5OjHGqSvaW50e5N4yCI.jpg",
+      "releaseDate": "1992-05-22"
+    },
+    {
+      "position": 80,
+      "section": "Chronologie",
+      "itemType": "movie",
+      "tmdbId": 8078,
+      "seasonNumber": null,
+      "title": "Alien, la résurrection",
+      "posterPath": "/ePPdAnGJk9mR1qNxHhGrIhLAo4Q.jpg",
+      "releaseDate": "1997-11-12"
+    }
+  ]
+}

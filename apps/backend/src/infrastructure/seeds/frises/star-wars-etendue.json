@@ -1,0 +1,409 @@
+{
+  "slug": "star-wars-etendue",
+  "name": "Star Wars — chronologie étendue",
+  "description": "Le canon complet, animé compris : Clone Wars, Bad Batch, Rebels, Tales et Resistance intercalés.",
+  "posterPath": "/qelTNHrBSYjPvwdzsDBPVsqnNzc.jpg",
+  "position": 50,
+  "items": [
+    {
+      "position": 10,
+      "section": "République",
+      "itemType": "movie",
+      "tmdbId": 1893,
+      "seasonNumber": null,
+      "title": "Star Wars, épisode I - La Menace fantôme",
+      "posterPath": "/fpEC910v5DrMvZteRNlKzXeHiHY.jpg",
+      "releaseDate": "1999-05-19"
+    },
+    {
+      "position": 20,
+      "section": "République",
+      "itemType": "movie",
+      "tmdbId": 1894,
+      "seasonNumber": null,
+      "title": "Star Wars, épisode II - L'Attaque des clones",
+      "posterPath": "/3nqpcTkODCBhuKuDQJ1dtRhgTqZ.jpg",
+      "releaseDate": "2002-05-15"
+    },
+    {
+      "position": 30,
+      "section": "République",
+      "itemType": "movie",
+      "tmdbId": 12180,
+      "seasonNumber": null,
+      "title": "Star Wars : The Clone Wars",
+      "posterPath": "/bYVJUHDDqN4N44HtUNZ9m1eQpMO.jpg",
+      "releaseDate": "2008-08-05"
+    },
+    {
+      "position": 40,
+      "section": "République",
+      "itemType": "season",
+      "tmdbId": 4194,
+      "seasonNumber": 1,
+      "title": "Star Wars : The Clone Wars — Saison 1 - Une galaxie divisée",
+      "posterPath": "/Ml3xdabHCDy1BtMyQWqRoMSjUZ.jpg",
+      "releaseDate": "2008-10-03"
+    },
+    {
+      "position": 50,
+      "section": "République",
+      "itemType": "season",
+      "tmdbId": 4194,
+      "seasonNumber": 2,
+      "title": "Star Wars : The Clone Wars — Saison 2 - La montée en puissance des chasseurs de primes",
+      "posterPath": "/vpKUdqBEURNzRILKmRnB5hsvX1n.jpg",
+      "releaseDate": "2009-10-02"
+    },
+    {
+      "position": 60,
+      "section": "République",
+      "itemType": "season",
+      "tmdbId": 4194,
+      "seasonNumber": 3,
+      "title": "Star Wars : The Clone Wars — Saison 3 - Les secrets révélés",
+      "posterPath": "/fpddfM3G3R6nn7BxKplBdaRW6i5.jpg",
+      "releaseDate": "2010-09-17"
+    },
+    {
+      "position": 70,
+      "section": "République",
+      "itemType": "season",
+      "tmdbId": 4194,
+      "seasonNumber": 4,
+      "title": "Star Wars : The Clone Wars — Saison 4 - Les lignes de bataille",
+      "posterPath": "/9njuEhcMRoUzYhYjZyKbHlsopOG.jpg",
+      "releaseDate": "2011-09-16"
+    },
+    {
+      "position": 80,
+      "section": "République",
+      "itemType": "season",
+      "tmdbId": 4194,
+      "seasonNumber": 5,
+      "title": "Star Wars : The Clone Wars — Saison 5 - Qui succombera ?",
+      "posterPath": "/sEa3ssyvHRah3HLIBuDUng5rdE6.jpg",
+      "releaseDate": "2012-09-29"
+    },
+    {
+      "position": 90,
+      "section": "République",
+      "itemType": "season",
+      "tmdbId": 4194,
+      "seasonNumber": 6,
+      "title": "Star Wars : The Clone Wars — Saison 6 - Les missions perdues",
+      "posterPath": "/1yFI7vOWZnUWJ0c39ZwlJv8vEqB.jpg",
+      "releaseDate": "2014-03-07"
+    },
+    {
+      "position": 100,
+      "section": "République",
+      "itemType": "season",
+      "tmdbId": 4194,
+      "seasonNumber": 7,
+      "title": "Star Wars : The Clone Wars — Saison 7 - La saison finale",
+      "posterPath": "/tVS5rFjbY1hJLwv1EA1nRNf1s5u.jpg",
+      "releaseDate": "2020-02-21"
+    },
+    {
+      "position": 110,
+      "section": "République",
+      "itemType": "season",
+      "tmdbId": 203085,
+      "seasonNumber": 1,
+      "title": "Star Wars: Tales of the Jedi — Saison 1",
+      "posterPath": "/l6p2eG9YDt7x6OgTC2PCW8yvVqb.jpg",
+      "releaseDate": "2022-10-26"
+    },
+    {
+      "position": 120,
+      "section": "République",
+      "itemType": "movie",
+      "tmdbId": 1895,
+      "seasonNumber": null,
+      "title": "Star Wars, épisode III - La Revanche des Sith",
+      "posterPath": "/2RcBuU8cdxFxCJibbiYCGNLApfz.jpg",
+      "releaseDate": "2005-05-17"
+    },
+    {
+      "position": 130,
+      "section": "Aube de l'Empire",
+      "itemType": "season",
+      "tmdbId": 105971,
+      "seasonNumber": 1,
+      "title": "Star Wars : The Bad Batch — Saison 1",
+      "posterPath": "/71bdaIjnP5KXARZF8duF4X6ULu0.jpg",
+      "releaseDate": "2021-05-04"
+    },
+    {
+      "position": 140,
+      "section": "Aube de l'Empire",
+      "itemType": "season",
+      "tmdbId": 105971,
+      "seasonNumber": 2,
+      "title": "Star Wars : The Bad Batch — Saison 2",
+      "posterPath": "/wXm8dXA46uNZj9ldk2VSH0Is1UQ.jpg",
+      "releaseDate": "2023-01-04"
+    },
+    {
+      "position": 150,
+      "section": "Aube de l'Empire",
+      "itemType": "season",
+      "tmdbId": 105971,
+      "seasonNumber": 3,
+      "title": "Star Wars : The Bad Batch — Saison 3",
+      "posterPath": "/onw9zVT6ritPv9VCP94Rd0YQwNQ.jpg",
+      "releaseDate": "2024-02-21"
+    },
+    {
+      "position": 160,
+      "section": "Aube de l'Empire",
+      "itemType": "movie",
+      "tmdbId": 348350,
+      "seasonNumber": null,
+      "title": "Solo: A Star Wars Story",
+      "posterPath": "/oMCIfJMezZeJvLK124uj4T0BpAy.jpg",
+      "releaseDate": "2018-05-15"
+    },
+    {
+      "position": 170,
+      "section": "Aube de l'Empire",
+      "itemType": "season",
+      "tmdbId": 92830,
+      "seasonNumber": 1,
+      "title": "Obi-Wan Kenobi — Mini-série",
+      "posterPath": "/oPkm7vwYCa1McT8jEIFWLj393s4.jpg",
+      "releaseDate": "2022-05-26"
+    },
+    {
+      "position": 180,
+      "section": "Aube de l'Empire",
+      "itemType": "season",
+      "tmdbId": 251091,
+      "seasonNumber": 1,
+      "title": "Star Wars: Tales of the Empire — Saison 1",
+      "posterPath": "/qA28nLteurVboSSzltuyYt1lvlC.jpg",
+      "releaseDate": "2024-05-03"
+    },
+    {
+      "position": 190,
+      "section": "Aube de l'Empire",
+      "itemType": "season",
+      "tmdbId": 83867,
+      "seasonNumber": 1,
+      "title": "Star Wars : Andor — Saison 1",
+      "posterPath": "/LjQW3hzjRDsFigRjkYn4wvjfqY.jpg",
+      "releaseDate": "2022-09-21"
+    },
+    {
+      "position": 200,
+      "section": "Aube de l'Empire",
+      "itemType": "season",
+      "tmdbId": 60554,
+      "seasonNumber": 1,
+      "title": "Star Wars Rebels — Saison 1",
+      "posterPath": "/i74UkSJQAYcqQXuKVAS71m1BgJt.jpg",
+      "releaseDate": "2014-10-13"
+    },
+    {
+      "position": 210,
+      "section": "Aube de l'Empire",
+      "itemType": "season",
+      "tmdbId": 60554,
+      "seasonNumber": 2,
+      "title": "Star Wars Rebels — Saison 2",
+      "posterPath": "/2WN0noMfymQ1YvZFRu65J9D7MJ2.jpg",
+      "releaseDate": "2015-10-14"
+    },
+    {
+      "position": 220,
+      "section": "Aube de l'Empire",
+      "itemType": "season",
+      "tmdbId": 60554,
+      "seasonNumber": 3,
+      "title": "Star Wars Rebels — Saison 3",
+      "posterPath": "/9qpFnPBhFMNqLofwDkVXUxi0VwD.jpg",
+      "releaseDate": "2016-09-24"
+    },
+    {
+      "position": 230,
+      "section": "Aube de l'Empire",
+      "itemType": "season",
+      "tmdbId": 83867,
+      "seasonNumber": 2,
+      "title": "Star Wars : Andor — Saison 2",
+      "posterPath": "/xLpjl8gqNVo6Vu04ZT27foWsAXz.jpg",
+      "releaseDate": "2025-04-22"
+    },
+    {
+      "position": 240,
+      "section": "Aube de l'Empire",
+      "itemType": "season",
+      "tmdbId": 60554,
+      "seasonNumber": 4,
+      "title": "Star Wars Rebels — Saison 4",
+      "posterPath": "/xVTgpQaYVSgFAIbS2TRamrUz0Aq.jpg",
+      "releaseDate": "2017-10-16"
+    },
+    {
+      "position": 250,
+      "section": "Aube de l'Empire",
+      "itemType": "movie",
+      "tmdbId": 330459,
+      "seasonNumber": null,
+      "title": "Rogue One : A Star Wars Story",
+      "posterPath": "/obsGPyNOAwkQbLRQOHR6a21VT23.jpg",
+      "releaseDate": "2016-12-14"
+    },
+    {
+      "position": 260,
+      "section": "Trilogie originale",
+      "itemType": "movie",
+      "tmdbId": 11,
+      "seasonNumber": null,
+      "title": "La Guerre des étoiles",
+      "posterPath": "/qelTNHrBSYjPvwdzsDBPVsqnNzc.jpg",
+      "releaseDate": "1977-05-25"
+    },
+    {
+      "position": 270,
+      "section": "Trilogie originale",
+      "itemType": "movie",
+      "tmdbId": 1891,
+      "seasonNumber": null,
+      "title": "L'Empire contre-attaque",
+      "posterPath": "/qDvctAykmNWAmi9G2GrVrwWx3pr.jpg",
+      "releaseDate": "1980-05-20"
+    },
+    {
+      "position": 280,
+      "section": "Trilogie originale",
+      "itemType": "movie",
+      "tmdbId": 1892,
+      "seasonNumber": null,
+      "title": "Le Retour du Jedi",
+      "posterPath": "/tEQlCGiiWvMvfD7Sz8d99Pouy39.jpg",
+      "releaseDate": "1983-05-25"
+    },
+    {
+      "position": 290,
+      "section": "Nouvelle République",
+      "itemType": "season",
+      "tmdbId": 82856,
+      "seasonNumber": 1,
+      "title": "The Mandalorian — Saison 1",
+      "posterPath": "/qMt7OAu2d1rBhhW6fyL4q7bwI9A.jpg",
+      "releaseDate": "2019-11-12"
+    },
+    {
+      "position": 300,
+      "section": "Nouvelle République",
+      "itemType": "season",
+      "tmdbId": 82856,
+      "seasonNumber": 2,
+      "title": "The Mandalorian — Saison 2",
+      "posterPath": "/potwbcu7NXw2JPV3VQMwxaDhM31.jpg",
+      "releaseDate": "2020-10-30"
+    },
+    {
+      "position": 310,
+      "section": "Nouvelle République",
+      "itemType": "season",
+      "tmdbId": 115036,
+      "seasonNumber": 1,
+      "title": "Le Livre de Boba Fett — Saison 1",
+      "posterPath": "/wCGsQe3q185LuwmjPFeMMGl2Lr3.jpg",
+      "releaseDate": "2021-12-29"
+    },
+    {
+      "position": 320,
+      "section": "Nouvelle République",
+      "itemType": "season",
+      "tmdbId": 82856,
+      "seasonNumber": 3,
+      "title": "The Mandalorian — Saison 3",
+      "posterPath": "/x2xsbGlWLOivpPJ1SuyOxLuZjap.jpg",
+      "releaseDate": "2023-03-01"
+    },
+    {
+      "position": 330,
+      "section": "Nouvelle République",
+      "itemType": "season",
+      "tmdbId": 114461,
+      "seasonNumber": 1,
+      "title": "Ahsoka — Saison 1",
+      "posterPath": "/laCJxobHoPVaLQTKxc14Y2zV64J.jpg",
+      "releaseDate": "2023-08-22"
+    },
+    {
+      "position": 340,
+      "section": "Nouvelle République",
+      "itemType": "season",
+      "tmdbId": 202879,
+      "seasonNumber": 1,
+      "title": "Star Wars : Skeleton Crew — Saison 1",
+      "posterPath": "/7TnPY15nZiPJyJ1b0LLA3D9Exh.jpg",
+      "releaseDate": "2024-12-02"
+    },
+    {
+      "position": 350,
+      "section": "Nouvelle République",
+      "itemType": "movie",
+      "tmdbId": 1228710,
+      "seasonNumber": null,
+      "title": "Star Wars : The Mandalorian and Grogu",
+      "posterPath": "/eUOVyCSZrUH6aPfhsfd7j0bxGOl.jpg",
+      "releaseDate": "2026-05-20"
+    },
+    {
+      "position": 360,
+      "section": "Résistance",
+      "itemType": "season",
+      "tmdbId": 79093,
+      "seasonNumber": 1,
+      "title": "Star Wars Resistance — Saison 1",
+      "posterPath": "/hHPbh6mJkpxGREMKgJ9FpZNlxPd.jpg",
+      "releaseDate": "2018-10-07"
+    },
+    {
+      "position": 370,
+      "section": "Résistance",
+      "itemType": "movie",
+      "tmdbId": 140607,
+      "seasonNumber": null,
+      "title": "Star Wars : Le Réveil de la Force",
+      "posterPath": "/zKZ1iF1ABqL7a16u6Im8JTQKp7H.jpg",
+      "releaseDate": "2015-12-15"
+    },
+    {
+      "position": 380,
+      "section": "Résistance",
+      "itemType": "season",
+      "tmdbId": 79093,
+      "seasonNumber": 2,
+      "title": "Star Wars Resistance — Saison 2",
+      "posterPath": "/xul6SG8rar3wkHPY8YusUtxcdlZ.jpg",
+      "releaseDate": "2019-10-06"
+    },
+    {
+      "position": 390,
+      "section": "Résistance",
+      "itemType": "movie",
+      "tmdbId": 181808,
+      "seasonNumber": null,
+      "title": "Star Wars : Les Derniers Jedi",
+      "posterPath": "/pS80gMevVINVyrwEHrILOxqwdAY.jpg",
+      "releaseDate": "2017-12-13"
+    },
+    {
+      "position": 400,
+      "section": "Résistance",
+      "itemType": "movie",
+      "tmdbId": 181812,
+      "seasonNumber": null,
+      "title": "Star Wars : L'Ascension de Skywalker",
+      "posterPath": "/1pQc75SdFOKpo2AqoL58z5kF3YI.jpg",
+      "releaseDate": "2019-12-18"
+    }
+  ]
+}

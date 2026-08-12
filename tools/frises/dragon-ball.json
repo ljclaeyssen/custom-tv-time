@@ -1,0 +1,26 @@
+{
+  "slug": "dragon-ball",
+  "name": "Dragon Ball — la saga",
+  "description": "De Dragon Ball à Daima, films canon inclus (GT en suite alternative).",
+  "position": 70,
+  "posterFrom": "Dragon Ball Z",
+  "items": [
+    { "section": "Dragon Ball", "type": "season", "query": "Dragon Ball", "year": 1986, "season": 1 },
+    { "section": "Dragon Ball Z", "type": "season", "query": "Dragon Ball Z", "year": 1989, "season": 1 },
+    { "section": "Dragon Ball Z", "type": "season", "query": "Dragon Ball Z", "year": 1989, "season": 2 },
+    { "section": "Dragon Ball Z", "type": "season", "query": "Dragon Ball Z", "year": 1989, "season": 3 },
+    { "section": "Dragon Ball Z", "type": "season", "query": "Dragon Ball Z", "year": 1989, "season": 4 },
+    { "section": "Dragon Ball Z", "type": "season", "query": "Dragon Ball Z", "year": 1989, "season": 5 },
+    { "section": "Dragon Ball Z", "type": "season", "query": "Dragon Ball Z", "year": 1989, "season": 6 },
+    { "section": "Dragon Ball Z", "type": "season", "query": "Dragon Ball Z", "year": 1989, "season": 7 },
+    { "section": "Dragon Ball Z", "type": "season", "query": "Dragon Ball Z", "year": 1989, "season": 8 },
+    { "section": "Dragon Ball Z", "type": "season", "query": "Dragon Ball Z", "year": 1989, "season": 9 },
+    { "section": "Daima", "type": "season", "query": "Dragon Ball Daima", "year": 2024, "season": 1 },
+    { "section": "L'ère Super", "type": "movie", "query": "Battle of Gods", "year": 2013 },
+    { "section": "L'ère Super", "type": "movie", "query": "La Résurrection de F", "year": 2015 },
+    { "section": "L'ère Super", "type": "season", "query": "Dragon Ball Super", "year": 2015, "season": 1, "label": "Saison 1" },
+    { "section": "L'ère Super", "type": "movie", "query": "Dragon Ball Super Broly", "year": 2018 },
+    { "section": "L'ère Super", "type": "movie", "query": "Super Hero", "year": 2022 },
+    { "section": "GT — suite alternative", "type": "season", "query": "Dragon Ball GT", "year": 1996, "season": 1 }
+  ]
+}

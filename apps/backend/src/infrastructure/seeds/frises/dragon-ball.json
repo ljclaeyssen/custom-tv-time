@@ -1,0 +1,179 @@
+{
+  "slug": "dragon-ball",
+  "name": "Dragon Ball — la saga",
+  "description": "De Dragon Ball à Daima, films canon inclus (GT en suite alternative).",
+  "posterPath": "/eJFG6wtWPvrx7SJdDb953BPxmCu.jpg",
+  "position": 70,
+  "items": [
+    {
+      "position": 10,
+      "section": "Dragon Ball",
+      "itemType": "season",
+      "tmdbId": 12609,
+      "seasonNumber": 1,
+      "title": "Dragon Ball — Saison 1",
+      "posterPath": "/4OEButVND87a4V0LyeSV5FQgWdm.jpg",
+      "releaseDate": "1986-02-26"
+    },
+    {
+      "position": 20,
+      "section": "Dragon Ball Z",
+      "itemType": "season",
+      "tmdbId": 12971,
+      "seasonNumber": 1,
+      "title": "Dragon Ball Z — Saga Saïyens",
+      "posterPath": "/eJFG6wtWPvrx7SJdDb953BPxmCu.jpg",
+      "releaseDate": "1989-04-26"
+    },
+    {
+      "position": 30,
+      "section": "Dragon Ball Z",
+      "itemType": "season",
+      "tmdbId": 12971,
+      "seasonNumber": 2,
+      "title": "Dragon Ball Z — Saga Namek",
+      "posterPath": "/5c1GOeSGUyHQUKEYBHvKqLLm5BR.jpg",
+      "releaseDate": "1990-03-14"
+    },
+    {
+      "position": 40,
+      "section": "Dragon Ball Z",
+      "itemType": "season",
+      "tmdbId": 12971,
+      "seasonNumber": 3,
+      "title": "Dragon Ball Z — Saga Freezer",
+      "posterPath": "/1A5u8Jdi0DwOzs3lsanSdjVQaQ3.jpg",
+      "releaseDate": "1991-01-30"
+    },
+    {
+      "position": 50,
+      "section": "Dragon Ball Z",
+      "itemType": "season",
+      "tmdbId": 12971,
+      "seasonNumber": 4,
+      "title": "Dragon Ball Z — Saga Cyborgs",
+      "posterPath": "/jkcnVEYX7hc9v51U81sjYdGK4e2.jpg",
+      "releaseDate": "1991-09-18"
+    },
+    {
+      "position": 60,
+      "section": "Dragon Ball Z",
+      "itemType": "season",
+      "tmdbId": 12971,
+      "seasonNumber": 5,
+      "title": "Dragon Ball Z — Saga Cell",
+      "posterPath": "/cNknPmSnNK5XYINYwbAsF3F50G3.jpg",
+      "releaseDate": "1992-05-20"
+    },
+    {
+      "position": 70,
+      "section": "Dragon Ball Z",
+      "itemType": "season",
+      "tmdbId": 12971,
+      "seasonNumber": 6,
+      "title": "Dragon Ball Z — Saga Cell Game",
+      "posterPath": "/mebB6iWXH1X8s0onNT4YUUx53Zf.jpg",
+      "releaseDate": "1992-11-25"
+    },
+    {
+      "position": 80,
+      "section": "Dragon Ball Z",
+      "itemType": "season",
+      "tmdbId": 12971,
+      "seasonNumber": 7,
+      "title": "Dragon Ball Z — Saga Great Saiyaman",
+      "posterPath": "/foGIyYOV0UYr9LIajvBHmyrn8qI.jpg",
+      "releaseDate": "1993-07-28"
+    },
+    {
+      "position": 90,
+      "section": "Dragon Ball Z",
+      "itemType": "season",
+      "tmdbId": 12971,
+      "seasonNumber": 8,
+      "title": "Dragon Ball Z — Saga Babidi et Boo",
+      "posterPath": "/15cKNYixdAtmGq9X0j8FzrAyJT4.jpg",
+      "releaseDate": "1994-03-09"
+    },
+    {
+      "position": 100,
+      "section": "Dragon Ball Z",
+      "itemType": "season",
+      "tmdbId": 12971,
+      "seasonNumber": 9,
+      "title": "Dragon Ball Z — Saga Boo",
+      "posterPath": "/2xLUnHnMydSIRp4qS4HCizl7d5w.jpg",
+      "releaseDate": "1995-02-01"
+    },
+    {
+      "position": 110,
+      "section": "Daima",
+      "itemType": "season",
+      "tmdbId": 236994,
+      "seasonNumber": 1,
+      "title": "Dragon Ball DAIMA — Saison 1",
+      "posterPath": "/kgv2x9vUvKF7ocNiRQqWojfWTve.jpg",
+      "releaseDate": "2024-10-11"
+    },
+    {
+      "position": 120,
+      "section": "L'ère Super",
+      "itemType": "movie",
+      "tmdbId": 126963,
+      "seasonNumber": null,
+      "title": "Dragon Ball Z - Battle of Gods",
+      "posterPath": "/dlY37gsVWFKsbMQt7LF9vFfsAsC.jpg",
+      "releaseDate": "2013-03-30"
+    },
+    {
+      "position": 130,
+      "section": "L'ère Super",
+      "itemType": "movie",
+      "tmdbId": 303857,
+      "seasonNumber": null,
+      "title": "Dragon Ball Z - La Résurrection de ‘F’",
+      "posterPath": "/2eNCSu4hpHhULOW1AChZMXbmx6E.jpg",
+      "releaseDate": "2015-04-18"
+    },
+    {
+      "position": 140,
+      "section": "L'ère Super",
+      "itemType": "season",
+      "tmdbId": 62715,
+      "seasonNumber": 1,
+      "title": "Dragon Ball Super — Saison 1",
+      "posterPath": "/ruLBbIX15HrECgLJ3uZPo6X3YCN.jpg",
+      "releaseDate": "2015-07-05"
+    },
+    {
+      "position": 150,
+      "section": "L'ère Super",
+      "itemType": "movie",
+      "tmdbId": 503314,
+      "seasonNumber": null,
+      "title": "Dragon Ball Super - Broly",
+      "posterPath": "/baxPKXiQCNMdccDGebcnZdHhIzC.jpg",
+      "releaseDate": "2018-12-14"
+    },
+    {
+      "position": 160,
+      "section": "L'ère Super",
+      "itemType": "movie",
+      "tmdbId": 610150,
+      "seasonNumber": null,
+      "title": "Dragon Ball Super : Super Hero",
+      "posterPath": "/6wfZujKSQHfsEXyAdOFdCj29x6U.jpg",
+      "releaseDate": "2022-06-11"
+    },
+    {
+      "position": 170,
+      "section": "GT — suite alternative",
+      "itemType": "season",
+      "tmdbId": 12697,
+      "seasonNumber": 1,
+      "title": "Dragon Ball GT — Saison 1",
+      "posterPath": "/9KFLERTC8buzh8MwlwgU9Z0IewP.jpg",
+      "releaseDate": "1996-02-07"
+    }
+  ]
+}

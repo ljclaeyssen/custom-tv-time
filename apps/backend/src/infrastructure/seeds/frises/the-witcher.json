@@ -1,0 +1,79 @@
+{
+  "slug": "the-witcher",
+  "name": "The Witcher — chronologie",
+  "description": "Blood Origin, les films d'animation et la série, remis dans l'ordre.",
+  "posterPath": "/tVTlShbRIfqq3cd6BMjsbXH6PyK.jpg",
+  "position": 120,
+  "items": [
+    {
+      "position": 10,
+      "section": "Origines",
+      "itemType": "season",
+      "tmdbId": 106541,
+      "seasonNumber": 1,
+      "title": "The Witcher : L'héritage du sang — Mini-série",
+      "posterPath": "/49WEpzSvhz2KoPNblU3FT2gVbzP.jpg",
+      "releaseDate": "2022-12-25"
+    },
+    {
+      "position": 20,
+      "section": "Origines",
+      "itemType": "movie",
+      "tmdbId": 666243,
+      "seasonNumber": null,
+      "title": "The Witcher : Le cauchemar du Loup",
+      "posterPath": "/4nbCNUIiwosUreAmmPn0nrHCivI.jpg",
+      "releaseDate": "2021-08-22"
+    },
+    {
+      "position": 30,
+      "section": "La saga",
+      "itemType": "season",
+      "tmdbId": 71912,
+      "seasonNumber": 1,
+      "title": "The Witcher — Saison 1",
+      "posterPath": "/tVTlShbRIfqq3cd6BMjsbXH6PyK.jpg",
+      "releaseDate": "2019-12-20"
+    },
+    {
+      "position": 40,
+      "section": "La saga",
+      "itemType": "movie",
+      "tmdbId": 1203329,
+      "seasonNumber": null,
+      "title": "The Witcher : Les sirènes des abysses",
+      "posterPath": "/wj6EJLrBLv90A39NsiQqS01sY2v.jpg",
+      "releaseDate": "2025-02-10"
+    },
+    {
+      "position": 50,
+      "section": "La saga",
+      "itemType": "season",
+      "tmdbId": 71912,
+      "seasonNumber": 2,
+      "title": "The Witcher — Saison 2",
+      "posterPath": "/a6arUlYOKAqDmxHoS2vTSYuoAd7.jpg",
+      "releaseDate": "2021-12-17"
+    },
+    {
+      "position": 60,
+      "section": "La saga",
+      "itemType": "season",
+      "tmdbId": 71912,
+      "seasonNumber": 3,
+      "title": "The Witcher — Saison 3",
+      "posterPath": "/zhamFnr7Wm7vqQEW5xXm4xQMMgY.jpg",
+      "releaseDate": "2023-06-29"
+    },
+    {
+      "position": 70,
+      "section": "La saga",
+      "itemType": "season",
+      "tmdbId": 71912,
+      "seasonNumber": 4,
+      "title": "The Witcher — Saison 4",
+      "posterPath": "/d74mHAWr5Q73O7lINSME4YBDhhh.jpg",
+      "releaseDate": "2025-10-30"
+    }
+  ]
+}

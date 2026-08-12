@@ -1,0 +1,17 @@
+{
+  "slug": "alien",
+  "name": "Alien — chronologie",
+  "description": "De Prometheus à Resurrection, série Alien: Earth incluse.",
+  "position": 110,
+  "posterFrom": "Alien",
+  "items": [
+    { "section": "Chronologie", "type": "movie", "query": "Prometheus", "year": 2012 },
+    { "section": "Chronologie", "type": "movie", "query": "Alien Covenant", "year": 2017 },
+    { "section": "Chronologie", "type": "season", "query": "Alien Earth", "year": 2025, "season": 1 },
+    { "section": "Chronologie", "type": "movie", "query": "Alien", "year": 1979 },
+    { "section": "Chronologie", "type": "movie", "query": "Alien Romulus", "year": 2024 },
+    { "section": "Chronologie", "type": "movie", "query": "Aliens le retour", "year": 1986 },
+    { "section": "Chronologie", "type": "movie", "query": "Alien 3", "year": 1992 },
+    { "section": "Chronologie", "type": "movie", "query": "Alien la résurrection", "year": 1997 }
+  ]
+}

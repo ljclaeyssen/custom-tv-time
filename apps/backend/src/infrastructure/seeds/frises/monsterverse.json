@@ -1,0 +1,79 @@
+{
+  "slug": "monsterverse",
+  "name": "Monsterverse — chronologie",
+  "description": "Godzilla, Kong et Monarch dans l'ordre de l'histoire.",
+  "posterPath": "/4bTShLVFnVKK31cowgjdAIZV84T.jpg",
+  "position": 100,
+  "items": [
+    {
+      "position": 10,
+      "section": "Monsterverse",
+      "itemType": "movie",
+      "tmdbId": 293167,
+      "seasonNumber": null,
+      "title": "Kong : Skull Island",
+      "posterPath": "/q5Vsx5zbkLp4s0YHHszFOdOM6zS.jpg",
+      "releaseDate": "2017-03-08"
+    },
+    {
+      "position": 20,
+      "section": "Monsterverse",
+      "itemType": "movie",
+      "tmdbId": 124905,
+      "seasonNumber": null,
+      "title": "Godzilla",
+      "posterPath": "/z0CpCYiaUikJrcftPnb0jYCYmoo.jpg",
+      "releaseDate": "2014-05-14"
+    },
+    {
+      "position": 30,
+      "section": "Monsterverse",
+      "itemType": "season",
+      "tmdbId": 202411,
+      "seasonNumber": 1,
+      "title": "Monarch: Legacy of Monsters — Saison 1",
+      "posterPath": "/mN5x3sURbQ3tqWphqpae9xARMsp.jpg",
+      "releaseDate": "2023-11-15"
+    },
+    {
+      "position": 40,
+      "section": "Monsterverse",
+      "itemType": "season",
+      "tmdbId": 202411,
+      "seasonNumber": 2,
+      "title": "Monarch: Legacy of Monsters — Saison 2",
+      "posterPath": "/qhl9uTx5jdTItjGQtNRI8Cv68bf.jpg",
+      "releaseDate": "2026-02-26"
+    },
+    {
+      "position": 50,
+      "section": "Monsterverse",
+      "itemType": "movie",
+      "tmdbId": 373571,
+      "seasonNumber": null,
+      "title": "Godzilla II : Roi des Monstres",
+      "posterPath": "/rmM0NovZxrIT9f6OIoUyzWwRQ1L.jpg",
+      "releaseDate": "2019-05-29"
+    },
+    {
+      "position": 60,
+      "section": "Monsterverse",
+      "itemType": "movie",
+      "tmdbId": 399566,
+      "seasonNumber": null,
+      "title": "Godzilla vs. Kong",
+      "posterPath": "/4bTShLVFnVKK31cowgjdAIZV84T.jpg",
+      "releaseDate": "2021-03-24"
+    },
+    {
+      "position": 70,
+      "section": "Monsterverse",
+      "itemType": "movie",
+      "tmdbId": 823464,
+      "seasonNumber": null,
+      "title": "Godzilla x Kong : Le Nouvel Empire",
+      "posterPath": "/nKnWr062zhRvk48NtK27zz3oLgS.jpg",
+      "releaseDate": "2024-03-27"
+    }
+  ]
+}
