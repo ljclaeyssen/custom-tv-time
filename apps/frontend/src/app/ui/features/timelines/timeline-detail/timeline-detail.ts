@@ -46,7 +46,9 @@ export class TimelineDetail implements OnInit {
     if (minutes < 60) {
       return `≈ ${minutes} min`;
     }
-    return `≈ ${Math.round(minutes / 60).toLocaleString('fr-FR')} h`;
+    const hours = Math.floor(minutes / 60).toLocaleString('fr-FR');
+    const rest = minutes % 60;
+    return rest > 0 ? `≈ ${hours} h ${String(rest).padStart(2, '0')} min` : `≈ ${hours} h`;
   }
 
   protected isCollapsed(section: TimelineSection, index: number): boolean {

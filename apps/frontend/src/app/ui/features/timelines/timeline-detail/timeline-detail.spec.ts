@@ -97,5 +97,11 @@ describe('TimelineDetail', () => {
       expect(sections[1].querySelector('.section-header')?.textContent).toContain('≈ 2 h');
       expect(sections[1].querySelector('.items')).not.toBeNull();
     });
+
+    it('affiche les minutes dans les estimations quand l’heure n’est pas ronde', () => {
+      expect(component['remaining'](165)).toBe('≈ 2 h 45 min');
+      expect(component['remaining'](120)).toBe('≈ 2 h');
+      expect(component['remaining'](45)).toBe('≈ 45 min');
+    });
   });
 });
