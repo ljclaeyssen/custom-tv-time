@@ -71,6 +71,31 @@ Publication : sync au boot vérifiée (1ᵉʳ boot « 1 mise à jour, 2 inchang�
 « 3 inchangées » = idempotent, mêmes progressions 19/50, 13/49, 21/35). En prod, les
 frises arriveront toutes seules au prochain déploiement.
 
+## Temps restant / temps passé sur le détail série (2026-08-12) — plan
+
+Demande LJ : badges de temps sur `/shows/:showId` (comme les frises) + temps passé partout.
+Généralisation de la mécanique des frises (aired counts + runtimes moyens, défauts 40/100 min).
+
+- [x] 1. shared-models : `watchedMinutes` sur `TimelineItem`/`TimelineDetail` ;
+      `watchedMinutes` + `remainingMinutes` sur `SeasonProgress`/`ShowProgress`
+- [x] 2. Backend helpers : `loadAiredCounts` généralisé (refs `{tmdbShowId, seasonNumber}`),
+      `itemRemainingMinutes` → `itemWatchTime` (restant + passé)
+- [x] 3. Backend use-cases : `retrieve-timeline-detail` (meta étendue aux items entamés,
+      sommes passé/restant) ; `retrieve-show-progress` (aired counts par saison via cache
+      TMDB 6 h, runtime = `episodeRuntime ?? 40`, saison en échec → restant 0, écran intact)
+- [x] 4. Front : util partagé `formatMinutes` (extrait de timeline-detail), chips passé
+      (pi-history) + restant (pi-clock) sur le header show, les lignes saisons et le
+      header des frises
+- [x] 5. Démo (règle LJ) : `getShowProgress` + `DemoTimelinesGateway` calculent les temps ;
+      `DEMO_TIMELINES` enrichi de `watchedMinutes` ; fakes testing + specs à jour
+- [x] 6. Vérif : lint + vitest + build backend + build demo + contrôle visuel (serve demo)
+
+Fait. Le calcul passé/restant est centralisé dans `watchTime(vus, diffusés, durée)` —
+une seule règle pour les frises et l'écran série. `retrieve-timelines` a suivi la nouvelle
+signature de `loadAiredCounts`. Contrôle visuel sur la démo : frise MCU « ≈ 14 h 40 min
+restantes / ≈ 15 h 52 min passées », One Piece « ≈ 386 h restantes / ≈ 61 h 36 min passées »
+avec les deux chips par saison entamée. Lint + 47 tests verts, builds backend et démo OK.
+
 ## Review
 
 La v1 couvre le cœur de TV Time : cocher des épisodes ("à voir" recalculé côté serveur),

@@ -29,7 +29,13 @@ export class RetrieveTimelinesUseCase {
 
     const today = todayIso();
     const maps = buildUserWatchMaps(movies, episodes);
-    const airedCounts = await loadAiredCounts(this.catalog, allItems, today);
+    const airedCounts = await loadAiredCounts(
+      this.catalog,
+      allItems
+        .filter((item) => item.itemType === 'season' && item.seasonNumber !== null)
+        .map((item) => ({ tmdbShowId: item.tmdbId, seasonNumber: item.seasonNumber as number })),
+      today,
+    );
 
     return timelines.map((timeline) => {
       const items = allItems.filter((item) => item.timelineId === timeline.id);

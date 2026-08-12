@@ -27,6 +27,11 @@ export interface TimelineItem {
   progress: TimelineItemProgress;
   /** Temps restant estimé sur cet item, en minutes (0 si complété ou « à venir »). */
   remainingMinutes: number;
+  /**
+   * Temps déjà passé estimé sur cet item, en minutes : épisodes vus × durée
+   * moyenne, ou runtime du film s'il est vu (0 sur un item « à venir »).
+   */
+  watchedMinutes: number;
 }
 
 export interface TimelineSummary {
@@ -50,5 +55,10 @@ export interface TimelineDetail {
    * vus × durée moyenne — runtimes TMDB, défauts quand la durée est inconnue).
    */
   remainingMinutes: number;
+  /**
+   * Temps déjà passé estimé sur la frise, en minutes : somme des
+   * `watchedMinutes` des items (films vus + épisodes vus × durée moyenne).
+   */
+  watchedMinutes: number;
   items: TimelineItem[];
 }

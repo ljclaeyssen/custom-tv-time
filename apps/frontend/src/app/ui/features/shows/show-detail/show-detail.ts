@@ -8,6 +8,7 @@ import { MarkSeasonWatched } from '../../../../use-cases/mark-season-watched';
 import { RetrieveShowProgress } from '../../../../use-cases/retrieve-show-progress';
 import { ToggleShowFollow } from '../../../../use-cases/toggle-show-follow';
 import { UpdateShowStatus } from '../../../../use-cases/update-show-status';
+import { formatMinutes } from '../../../../utils/format-minutes';
 import { tmdbImage } from '../../../../utils/tmdb-image';
 import { ProgressBar } from '../../../shared/progress-bar/progress-bar';
 
@@ -34,6 +35,22 @@ export class ShowDetail implements OnInit {
   protected readonly posterUrl = computed(() =>
     tmdbImage(this.store.currentShow()?.detail.posterPath ?? null, 'w342'),
   );
+
+  /** « ≈ 12 h restantes » — null si tout le diffusé est vu. */
+  protected readonly remainingLabel = computed(() => {
+    const minutes = this.store.currentShow()?.remainingMinutes ?? 0;
+    return minutes > 0 ? `${formatMinutes(minutes)} restantes` : null;
+  });
+
+  /** « ≈ 30 h passées » — null tant que rien n'a été vu sur la série. */
+  protected readonly watchedLabel = computed(() => {
+    const minutes = this.store.currentShow()?.watchedMinutes ?? 0;
+    return minutes > 0 ? `${formatMinutes(minutes)} passées` : null;
+  });
+
+  protected time(minutes: number): string {
+    return formatMinutes(minutes);
+  }
 
   ngOnInit(): void {
     this.#retrieveShowProgress.execute(this.tmdbId());

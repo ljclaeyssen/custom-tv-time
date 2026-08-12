@@ -28,6 +28,14 @@ header {
   margin-inline: auto;
 }
 
+.time-chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  max-width: 720px;
+  margin: 12px auto 0;
+}
+
 .poster {
   width: 96px;
   border-radius: 12px;
@@ -112,6 +120,13 @@ header {
   .season-name {
     font-weight: 700;
   }
+}
+
+.season-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .hero-skeleton {

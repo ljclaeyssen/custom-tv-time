@@ -20,6 +20,7 @@ function fakeItem(overrides: Partial<TimelineItem> & { id: string; section: stri
     releaseDate: null,
     progress: { watchedEpisodes: 0, airedEpisodes: 1, completed: false, upcoming: false },
     remainingMinutes: 100,
+    watchedMinutes: 0,
     ...overrides,
   };
 }
@@ -27,6 +28,7 @@ function fakeItem(overrides: Partial<TimelineItem> & { id: string; section: stri
 const COMPLETED = {
   progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
   remainingMinutes: 0,
+  watchedMinutes: 100,
 };
 
 describe('TimelineDetail', () => {
@@ -52,9 +54,17 @@ describe('TimelineDetail', () => {
   it('affiche le temps restant estimé de la frise', () => {
     fixture.detectChanges();
 
-    const chip = fixture.nativeElement.querySelector('.remaining') as HTMLElement;
+    const chips = fixture.nativeElement.querySelector('.time-chips') as HTMLElement;
     // FAKE_TIMELINE_DETAIL : remainingMinutes = 240.
-    expect(chip.textContent).toContain('≈ 4 h restantes');
+    expect(chips.textContent).toContain('≈ 4 h restantes');
+  });
+
+  it('affiche le temps déjà passé sur la frise', () => {
+    fixture.detectChanges();
+
+    const chips = fixture.nativeElement.querySelector('.time-chips') as HTMLElement;
+    // FAKE_TIMELINE_DETAIL : watchedMinutes = 100.
+    expect(chips.textContent).toContain('≈ 1 h 40 min passées');
   });
 
   describe('sections', () => {

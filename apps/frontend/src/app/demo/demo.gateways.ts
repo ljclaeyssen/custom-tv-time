@@ -15,8 +15,10 @@ import {
   EpisodeWithState,
   FollowedShow,
   FollowStatus,
+  isAired,
   MyShowItem,
   RecentlyWatchedItem,
+  SeasonProgress,
   ShowProgress,
   WatchNextItem,
 } from '../domain/models/show.model';
@@ -37,6 +39,9 @@ import {
 
 /** Petite latence simulée : les squelettes de chargement restent visibles. */
 const LATENCY_MS = 250;
+
+/** Durée moyenne d'un épisode quand la série de démo ne la connaît pas (même défaut que le back). */
+const DEMO_EPISODE_RUNTIME = 40;
 
 const respond = <T>(value: () => T): Observable<T> =>
   new Observable<T>((subscriber) => {
@@ -130,19 +135,32 @@ export class DemoShowsGateway extends ShowsGateway {
       if (!s) {
         throw new Error(`Série inconnue de la démo : ${tmdbShowId}`);
       }
+      // Même estimation que le back : durée moyenne d'un épisode × vus / diffusés.
+      const perEpisode = s.detail.episodeRuntime ?? DEMO_EPISODE_RUNTIME;
+      const seasons: SeasonProgress[] = s.detail.seasons.map((season) => {
+        const watchedCount = this.#watchedInSeason(s, season.seasonNumber);
+        const aired = this.#episodesOf(s, season.seasonNumber).filter((e) =>
+          isAired(e.airDate),
+        ).length;
+        return {
+          seasonNumber: season.seasonNumber,
+          name: season.name,
+          episodeCount: season.episodeCount,
+          watchedCount,
+          posterPath: season.posterPath,
+          airDate: season.airDate,
+          watchedMinutes: watchedCount * perEpisode,
+          remainingMinutes: Math.max(0, aired - watchedCount) * perEpisode,
+        };
+      });
       return {
         detail: s.detail,
         followed: s.followed,
         status: s.followed ? s.show.status : null,
         watchedCount: s.watchedCount,
-        seasons: s.detail.seasons.map((season) => ({
-          seasonNumber: season.seasonNumber,
-          name: season.name,
-          episodeCount: season.episodeCount,
-          watchedCount: this.#watchedInSeason(s, season.seasonNumber),
-          posterPath: season.posterPath,
-          airDate: season.airDate,
-        })),
+        watchedMinutes: seasons.reduce((sum, season) => sum + season.watchedMinutes, 0),
+        remainingMinutes: seasons.reduce((sum, season) => sum + season.remainingMinutes, 0),
+        seasons,
       };
     });
   }
@@ -443,6 +461,7 @@ export class DemoTimelinesGateway extends TimelinesGateway {
       return {
         ...found.detail,
         remainingMinutes: found.detail.items.reduce((sum, item) => sum + item.remainingMinutes, 0),
+        watchedMinutes: found.detail.items.reduce((sum, item) => sum + item.watchedMinutes, 0),
         items: found.detail.items.map((item) => ({ ...item, progress: { ...item.progress } })),
       };
     });
@@ -459,6 +478,8 @@ export class DemoTimelinesGateway extends TimelinesGateway {
           watchedEpisodes: item.progress.airedEpisodes,
           completed: true,
         };
+        // Ce qui restait vient d'être vu : le temps bascule d'un compteur à l'autre.
+        item.watchedMinutes += item.remainingMinutes;
         item.remainingMinutes = 0;
       }
       return undefined;

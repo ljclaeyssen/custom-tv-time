@@ -5,6 +5,7 @@ import { TimelineItem } from '../../../../domain/models/timeline.model';
 import { TimelineSection, TimelinesStore } from '../../../../store/timelines.store';
 import { RetrieveTimelineDetail } from '../../../../use-cases/retrieve-timeline-detail';
 import { WatchTimelineItem } from '../../../../use-cases/watch-timeline-item';
+import { formatMinutes } from '../../../../utils/format-minutes';
 import { tmdbImage } from '../../../../utils/tmdb-image';
 import { EmptyState } from '../../../shared/empty-state/empty-state';
 import { PosterImg } from '../../../shared/poster-img/poster-img';
@@ -36,6 +37,12 @@ export class TimelineDetail implements OnInit {
     return minutes > 0 ? `${this.remaining(minutes)} restantes` : null;
   });
 
+  /** « ≈ 12 h passées » — null tant que rien n'a été vu sur la frise. */
+  protected readonly watchedLabel = computed(() => {
+    const minutes = this.timeline()?.watchedMinutes ?? 0;
+    return minutes > 0 ? `${this.remaining(minutes)} passées` : null;
+  });
+
   /**
    * Sections terminées dépliées à la main (indexes). État volontairement local
    * et volatil : tout est replié à nouveau au rechargement de l'écran.
@@ -43,12 +50,7 @@ export class TimelineDetail implements OnInit {
   readonly #expandedSections = signal<ReadonlySet<number>>(new Set());
 
   protected remaining(minutes: number): string {
-    if (minutes < 60) {
-      return `≈ ${minutes} min`;
-    }
-    const hours = Math.floor(minutes / 60).toLocaleString('fr-FR');
-    const rest = minutes % 60;
-    return rest > 0 ? `≈ ${hours} h ${String(rest).padStart(2, '0')} min` : `≈ ${hours} h`;
+    return formatMinutes(minutes);
   }
 
   protected isCollapsed(section: TimelineSection, index: number): boolean {

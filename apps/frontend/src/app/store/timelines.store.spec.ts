@@ -12,12 +12,21 @@ function item(overrides: Partial<TimelineItem> & { id: string; section: string }
     releaseDate: null,
     progress: { watchedEpisodes: 0, airedEpisodes: 1, completed: false, upcoming: false },
     remainingMinutes: 0,
+    watchedMinutes: 0,
     ...overrides,
   };
 }
 
 function detail(items: TimelineItem[]): TimelineDetail {
-  return { id: 't', slug: 't', name: 'Test', description: null, remainingMinutes: 0, items };
+  return {
+    id: 't',
+    slug: 't',
+    name: 'Test',
+    description: null,
+    remainingMinutes: 0,
+    watchedMinutes: 0,
+    items,
+  };
 }
 
 describe('TimelinesStore', () => {

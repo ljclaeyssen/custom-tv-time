@@ -5,11 +5,16 @@
   </div>
 
   @if (timeline(); as t) {
-    @if (remainingLabel(); as remaining) {
-      <span class="chip accent remaining"><i class="pi pi-clock"></i>{{ remaining }}</span>
-    } @else {
-      <span class="chip remaining"><i class="pi pi-check"></i>Frise terminée</span>
-    }
+    <div class="time-chips">
+      @if (remainingLabel(); as remaining) {
+        <span class="chip accent"><i class="pi pi-clock"></i>{{ remaining }}</span>
+      } @else {
+        <span class="chip"><i class="pi pi-check"></i>Frise terminée</span>
+      }
+      @if (watchedLabel(); as watched) {
+        <span class="chip"><i class="pi pi-history"></i>{{ watched }}</span>
+      }
+    </div>
     @if (t.description) {
       <p class="muted description">{{ t.description }}</p>
     }

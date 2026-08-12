@@ -48,22 +48,17 @@ export function buildUserWatchMaps(
 }
 
 /**
- * Charge le nombre d'épisodes DIFFUSÉS de chaque saison référencée par les items.
- * Une saison TMDB en échec est absente de la map : l'item sera « à venir »
- * plutôt que de casser tout l'écran (même stratégie que watch-next).
+ * Charge le nombre d'épisodes DIFFUSÉS de chaque saison référencée (l'appelant
+ * fournit les couples série/saison qui l'intéressent). Une saison TMDB en échec
+ * est absente de la map : elle sera traitée comme « à venir » plutôt que de
+ * casser tout l'écran (même stratégie que watch-next).
  */
 export async function loadAiredCounts(
   catalog: CatalogPort,
-  items: TimelineItemRecord[],
+  refs: ReadonlyArray<{ tmdbShowId: number; seasonNumber: number }>,
   today: string,
 ): Promise<Map<string, number>> {
-  const keys = [
-    ...new Set(
-      items
-        .filter((i) => i.itemType === 'season' && i.seasonNumber !== null)
-        .map((i) => seasonAiredKey(i.tmdbId, i.seasonNumber as number)),
-    ),
-  ];
+  const keys = [...new Set(refs.map((r) => seasonAiredKey(r.tmdbShowId, r.seasonNumber)))];
   const counts = new Map<string, number>();
   await mapWithConcurrency(keys, 8, async (key) => {
     const [tmdbShowId, seasonNumber] = key.split(':').map(Number);
@@ -104,23 +99,38 @@ export function computeItemProgress(
 }
 
 /**
- * Temps restant estimé sur un item : film sorti non vu, ou épisodes diffusés
- * non vus × durée moyenne. Un item complété ou « à venir » ne compte pas
- * (rien à regarder aujourd'hui).
+ * Temps passé / restant estimé sur un item : le passé compte ce qui est vu, le
+ * restant ce qui est diffusé et pas encore vu — le tout × la durée de l'unité
+ * (runtime du film, durée moyenne d'un épisode). Un item « à venir » ne compte
+ * ni d'un côté ni de l'autre (rien de diffusé, donc rien à regarder).
  */
-export function itemRemainingMinutes(
+export function itemWatchTime(
   item: Pick<TimelineItem, 'itemType' | 'tmdbId' | 'progress'>,
   showMeta: Map<number, ShowMeta>,
   movieMeta: Map<number, MovieMeta>,
-): number {
-  if (item.progress.completed || item.progress.upcoming) {
-    return 0;
+): WatchTime {
+  if (item.progress.upcoming) {
+    return { watchedMinutes: 0, remainingMinutes: 0 };
   }
-  if (item.itemType === 'movie') {
-    return movieMeta.get(item.tmdbId)?.runtime ?? DEFAULT_MOVIE_RUNTIME;
-  }
-  const perEpisode = showMeta.get(item.tmdbId)?.episodeRuntime ?? DEFAULT_EPISODE_RUNTIME;
-  return (item.progress.airedEpisodes - item.progress.watchedEpisodes) * perEpisode;
+  const perUnit =
+    item.itemType === 'movie'
+      ? movieMeta.get(item.tmdbId)?.runtime ?? DEFAULT_MOVIE_RUNTIME
+      : showMeta.get(item.tmdbId)?.episodeRuntime ?? DEFAULT_EPISODE_RUNTIME;
+  return watchTime(item.progress.watchedEpisodes, item.progress.airedEpisodes, perUnit);
+}
+
+/** Temps passé / restant en minutes, estimés sur une même durée unitaire. */
+export interface WatchTime {
+  watchedMinutes: number;
+  remainingMinutes: number;
+}
+
+/** Cœur du calcul, partagé entre les frises et l'écran série. */
+export function watchTime(watched: number, aired: number, perUnit: number): WatchTime {
+  return {
+    watchedMinutes: watched * perUnit,
+    remainingMinutes: Math.max(0, aired - watched) * perUnit,
+  };
 }
 
 function toProgress(watchedEpisodes: number, airedEpisodes: number): TimelineItemProgress {

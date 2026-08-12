@@ -5001,8 +5001,8 @@ export const DEMO_STATS: ProfileStatsFull = {
 
 export interface DemoTimelineSeed {
   posterPath: string | null;
-  /** remainingMinutes est recalculé en mémoire par DemoTimelinesGateway. */
-  detail: Omit<TimelineDetail, 'remainingMinutes'>;
+  /** Les totaux de temps sont recalculés en mémoire par DemoTimelinesGateway. */
+  detail: Omit<TimelineDetail, 'remainingMinutes' | 'watchedMinutes'>;
 }
 
 // Frise de démo : extrait du MCU réel (posters TMDB authentiques) couvrant
@@ -5029,6 +5029,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           releaseDate: '2011-07-22',
           progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
           remainingMinutes: 0,
+          watchedMinutes: 124,
         },
         {
           id: 'demo-mcu-20',
@@ -5042,6 +5043,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           releaseDate: '2019-03-06',
           progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
           remainingMinutes: 0,
+          watchedMinutes: 123,
         },
         {
           id: 'demo-mcu-30',
@@ -5055,6 +5057,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           releaseDate: '2008-04-30',
           progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
           remainingMinutes: 0,
+          watchedMinutes: 126,
         },
         {
           id: 'demo-mcu-40',
@@ -5068,6 +5071,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           releaseDate: '2010-04-28',
           progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
           remainingMinutes: 0,
+          watchedMinutes: 124,
         },
         {
           id: 'demo-mcu-50',
@@ -5081,6 +5085,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           releaseDate: '2008-06-12',
           progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
           remainingMinutes: 0,
+          watchedMinutes: 112,
         },
         {
           id: 'demo-mcu-60',
@@ -5094,6 +5099,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           releaseDate: '2011-04-21',
           progress: { watchedEpisodes: 0, airedEpisodes: 1, completed: false, upcoming: false },
           remainingMinutes: 120,
+          watchedMinutes: 0,
         },
         {
           id: 'demo-mcu-70',
@@ -5107,6 +5113,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           releaseDate: '2012-04-25',
           progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
           remainingMinutes: 0,
+          watchedMinutes: 143,
         },
         {
           id: 'demo-mcu-80',
@@ -5120,6 +5127,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           releaseDate: '2021-01-15',
           progress: { watchedEpisodes: 5, airedEpisodes: 9, completed: false, upcoming: false },
           remainingMinutes: 160,
+          watchedMinutes: 200,
         },
         {
           id: 'demo-mcu-90',
@@ -5133,6 +5141,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           releaseDate: '2021-06-09',
           progress: { watchedEpisodes: 0, airedEpisodes: 6, completed: false, upcoming: false },
           remainingMinutes: 240,
+          watchedMinutes: 0,
         },
         {
           id: 'demo-mcu-100',
@@ -5146,6 +5155,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           releaseDate: '2021-03-19',
           progress: { watchedEpisodes: 0, airedEpisodes: 6, completed: false, upcoming: false },
           remainingMinutes: 240,
+          watchedMinutes: 0,
         },
         {
           id: 'demo-mcu-110',
@@ -5159,6 +5169,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           releaseDate: '2021-12-15',
           progress: { watchedEpisodes: 0, airedEpisodes: 1, completed: false, upcoming: false },
           remainingMinutes: 120,
+          watchedMinutes: 0,
         },
         {
           id: 'demo-mcu-120',
@@ -5172,6 +5183,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           releaseDate: '2026-12-16',
           progress: { watchedEpisodes: 0, airedEpisodes: 0, completed: false, upcoming: true },
           remainingMinutes: 0,
+          watchedMinutes: 0,
         },
       ],
     },

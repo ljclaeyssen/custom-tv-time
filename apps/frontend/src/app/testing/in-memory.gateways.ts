@@ -64,6 +64,8 @@ export const FAKE_SHOW_PROGRESS: ShowProgress = {
   followed: false,
   status: null,
   watchedCount: 0,
+  watchedMinutes: 0,
+  remainingMinutes: 0,
   seasons: [],
 };
 
@@ -110,6 +112,7 @@ export const FAKE_TIMELINE_DETAIL: TimelineDetail = {
   name: 'Frise de test',
   description: null,
   remainingMinutes: 240,
+  watchedMinutes: 100,
   items: [
     {
       id: 'item-1',
@@ -123,6 +126,7 @@ export const FAKE_TIMELINE_DETAIL: TimelineDetail = {
       releaseDate: '2020-01-01',
       progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
       remainingMinutes: 0,
+      watchedMinutes: 100,
     },
     {
       id: 'item-2',
@@ -136,6 +140,7 @@ export const FAKE_TIMELINE_DETAIL: TimelineDetail = {
       releaseDate: '2021-01-01',
       progress: { watchedEpisodes: 0, airedEpisodes: 6, completed: false, upcoming: false },
       remainingMinutes: 240,
+      watchedMinutes: 0,
     },
   ],
 };

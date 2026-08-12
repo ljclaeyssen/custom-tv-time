@@ -11,7 +11,7 @@ import { ensureMovieMeta, ensureShowMeta } from './helpers/meta';
 import {
   buildUserWatchMaps,
   computeItemProgress,
-  itemRemainingMinutes,
+  itemWatchTime,
   loadAiredCounts,
 } from './helpers/timeline-progress';
 
@@ -39,22 +39,29 @@ export class RetrieveTimelineDetailUseCase {
 
     const today = todayIso();
     const maps = buildUserWatchMaps(movies, episodes);
-    const airedCounts = await loadAiredCounts(this.catalog, records, today);
+    const airedCounts = await loadAiredCounts(
+      this.catalog,
+      records
+        .filter((r) => r.itemType === 'season' && r.seasonNumber !== null)
+        .map((r) => ({ tmdbShowId: r.tmdbId, seasonNumber: r.seasonNumber as number })),
+      today,
+    );
 
     const progressed = records.map((record) => ({
       record,
       progress: computeItemProgress(record, maps, airedCounts, today),
     }));
 
-    // Runtimes uniquement pour ce qui reste à voir (cache show_meta/movie_meta,
-    // même canal que les stats — les manquants sont résolus via TMDB puis persistés).
-    const remaining = progressed.filter((p) => !p.progress.completed && !p.progress.upcoming);
+    // Runtimes pour tout ce qui est diffusé — un item complété en a besoin pour
+    // son temps passé (cache show_meta/movie_meta, même canal que les stats :
+    // les manquants sont résolus via TMDB puis persistés).
+    const aired = progressed.filter((p) => !p.progress.upcoming);
     const [[showMeta], [movieMeta]] = await Promise.all([
       ensureShowMeta(this.meta, this.catalog, [
-        ...new Set(remaining.filter((p) => p.record.itemType === 'season').map((p) => p.record.tmdbId)),
+        ...new Set(aired.filter((p) => p.record.itemType === 'season').map((p) => p.record.tmdbId)),
       ]),
       ensureMovieMeta(this.meta, this.catalog, [
-        ...new Set(remaining.filter((p) => p.record.itemType === 'movie').map((p) => p.record.tmdbId)),
+        ...new Set(aired.filter((p) => p.record.itemType === 'movie').map((p) => p.record.tmdbId)),
       ]),
     ]);
 
@@ -69,7 +76,7 @@ export class RetrieveTimelineDetailUseCase {
       posterPath: record.posterPath,
       releaseDate: record.releaseDate,
       progress,
-      remainingMinutes: itemRemainingMinutes(
+      ...itemWatchTime(
         { itemType: record.itemType, tmdbId: record.tmdbId, progress },
         showMeta,
         movieMeta,
@@ -82,6 +89,7 @@ export class RetrieveTimelineDetailUseCase {
       name: timeline.name,
       description: timeline.description,
       remainingMinutes: items.reduce((sum, item) => sum + item.remainingMinutes, 0),
+      watchedMinutes: items.reduce((sum, item) => sum + item.watchedMinutes, 0),
       items,
     };
   }

@@ -89,6 +89,16 @@ export interface SeasonProgress {
   watchedCount: number;
   posterPath: string | null;
   airDate: string | null;
+  /**
+   * Temps déjà passé estimé sur la saison, en minutes : épisodes vus × durée
+   * moyenne d'un épisode.
+   */
+  watchedMinutes: number;
+  /**
+   * Temps restant estimé sur la saison, en minutes : épisodes DIFFUSÉS non vus
+   * × durée moyenne (rien à regarder aujourd'hui sur ce qui n'est pas diffusé).
+   */
+  remainingMinutes: number;
 }
 
 export interface ShowProgress {
@@ -96,5 +106,9 @@ export interface ShowProgress {
   followed: boolean;
   status: FollowStatus | null;
   watchedCount: number;
+  /** Temps déjà passé estimé sur la série, en minutes : somme des saisons. */
+  watchedMinutes: number;
+  /** Temps restant estimé sur la série, en minutes : somme des saisons. */
+  remainingMinutes: number;
   seasons: SeasonProgress[];
 }

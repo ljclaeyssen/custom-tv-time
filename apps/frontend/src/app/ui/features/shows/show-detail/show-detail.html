@@ -22,6 +22,16 @@
           </div>
         </div>
       </div>
+      @if (remainingLabel() || watchedLabel()) {
+        <div class="time-chips">
+          @if (remainingLabel(); as remaining) {
+            <span class="chip accent"><i class="pi pi-clock"></i>{{ remaining }}</span>
+          }
+          @if (watchedLabel(); as watched) {
+            <span class="chip"><i class="pi pi-history"></i>{{ watched }}</span>
+          }
+        </div>
+      }
     </div>
   </header>
 
@@ -58,7 +68,15 @@
         <li class="card">
           <a class="season-link" [routerLink]="['/shows', tmdbId(), 'season', season.seasonNumber]">
             <div class="season-info">
-              <span class="season-name">{{ season.name }}</span>
+              <div class="season-line">
+                <span class="season-name">{{ season.name }}</span>
+                @if (season.remainingMinutes > 0) {
+                  <span class="chip"><i class="pi pi-clock"></i>{{ time(season.remainingMinutes) }}</span>
+                }
+                @if (season.watchedMinutes > 0) {
+                  <span class="chip"><i class="pi pi-history"></i>{{ time(season.watchedMinutes) }}</span>
+                }
+              </div>
               <span class="muted">{{ season.watchedCount }} / {{ season.episodeCount }}</span>
               <app-progress-bar [value]="season.watchedCount" [total]="season.episodeCount" />
             </div>
