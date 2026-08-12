@@ -1,6 +1,7 @@
 // Généré par tools/generate-frise.mjs — ne pas éditer à la main.
 import { TimelineSeed } from '../../domain/models/timeline.model';
 import alien from './frises/alien.json';
+import dcUniverse from './frises/dc-universe.json';
 import dragonBall from './frises/dragon-ball.json';
 import fastAndFurious from './frises/fast-and-furious.json';
 import harryPotter from './frises/harry-potter.json';
@@ -16,6 +17,7 @@ import theWitcher from './frises/the-witcher.json';
 
 export const TIMELINE_SEEDS: TimelineSeed[] = [
   alien as TimelineSeed,
+  dcUniverse as TimelineSeed,
   dragonBall as TimelineSeed,
   fastAndFurious as TimelineSeed,
   harryPotter as TimelineSeed,

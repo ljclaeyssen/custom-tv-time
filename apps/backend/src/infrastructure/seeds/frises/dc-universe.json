@@ -1,0 +1,259 @@
+{
+  "slug": "dc-universe",
+  "name": "DC à l'écran — chronologie",
+  "description": "Le DCEU dans l'ordre de l'histoire, le nouveau DCU de James Gunn, et l'univers The Batman.",
+  "posterPath": "/3HGq0BI0ukKr53oPiTAgOXQprzc.jpg",
+  "position": 140,
+  "items": [
+    {
+      "position": 10,
+      "section": "DCEU",
+      "itemType": "movie",
+      "tmdbId": 297762,
+      "seasonNumber": null,
+      "title": "Wonder Woman",
+      "posterPath": "/oomdTdke7dqffdDoDV1fFBV4fJY.jpg",
+      "releaseDate": "2017-05-30"
+    },
+    {
+      "position": 20,
+      "section": "DCEU",
+      "itemType": "movie",
+      "tmdbId": 464052,
+      "seasonNumber": null,
+      "title": "Wonder Woman 1984",
+      "posterPath": "/kdEorjrPno4Cn7HYVN2DA0f3ocr.jpg",
+      "releaseDate": "2020-12-16"
+    },
+    {
+      "position": 30,
+      "section": "DCEU",
+      "itemType": "movie",
+      "tmdbId": 49521,
+      "seasonNumber": null,
+      "title": "Man of Steel",
+      "posterPath": "/3HGq0BI0ukKr53oPiTAgOXQprzc.jpg",
+      "releaseDate": "2013-06-12"
+    },
+    {
+      "position": 40,
+      "section": "DCEU",
+      "itemType": "movie",
+      "tmdbId": 209112,
+      "seasonNumber": null,
+      "title": "Batman v Superman : L'Aube de la Justice",
+      "posterPath": "/krEWtXK2K7dg5RyMlx9f5WnI1xd.jpg",
+      "releaseDate": "2016-03-23"
+    },
+    {
+      "position": 50,
+      "section": "DCEU",
+      "itemType": "movie",
+      "tmdbId": 297761,
+      "seasonNumber": null,
+      "title": "Suicide Squad",
+      "posterPath": "/5EmbqsAD7lBt5obT1dVwwbR5sra.jpg",
+      "releaseDate": "2016-08-03"
+    },
+    {
+      "position": 60,
+      "section": "DCEU",
+      "itemType": "movie",
+      "tmdbId": 791373,
+      "seasonNumber": null,
+      "title": "Zack Snyder's Justice League",
+      "posterPath": "/4EOp3YUSQgzOwVOKrejfKK27bK6.jpg",
+      "releaseDate": "2021-03-18"
+    },
+    {
+      "position": 70,
+      "section": "DCEU",
+      "itemType": "movie",
+      "tmdbId": 297802,
+      "seasonNumber": null,
+      "title": "Aquaman",
+      "posterPath": "/ghbBIweVDjTyx983GQmnCPGlE3U.jpg",
+      "releaseDate": "2018-12-07"
+    },
+    {
+      "position": 80,
+      "section": "DCEU",
+      "itemType": "movie",
+      "tmdbId": 287947,
+      "seasonNumber": null,
+      "title": "Shazam!",
+      "posterPath": "/lhQbFsO6rFoUo3kv5X61G6koiR1.jpg",
+      "releaseDate": "2019-03-29"
+    },
+    {
+      "position": 90,
+      "section": "DCEU",
+      "itemType": "movie",
+      "tmdbId": 495764,
+      "seasonNumber": null,
+      "title": "Birds of Prey et la fantabuleuse histoire de Harley Quinn",
+      "posterPath": "/14DRJrjIzUE1ZtExRwTP0wOhPwG.jpg",
+      "releaseDate": "2020-02-05"
+    },
+    {
+      "position": 100,
+      "section": "DCEU",
+      "itemType": "movie",
+      "tmdbId": 436969,
+      "seasonNumber": null,
+      "title": "The Suicide Squad",
+      "posterPath": "/3c8y65VwyFp3pcNtOsrdOoWm8Um.jpg",
+      "releaseDate": "2021-07-28"
+    },
+    {
+      "position": 110,
+      "section": "DCEU",
+      "itemType": "season",
+      "tmdbId": 110492,
+      "seasonNumber": 1,
+      "title": "Peacemaker — Saison 1",
+      "posterPath": "/hE3LRZAY84fG19a18pzpkZERjTE.jpg",
+      "releaseDate": "2022-01-13"
+    },
+    {
+      "position": 120,
+      "section": "DCEU",
+      "itemType": "movie",
+      "tmdbId": 436270,
+      "seasonNumber": null,
+      "title": "Black Adam",
+      "posterPath": "/hYALH5NPM7xk2XQd2J8wrfmliIW.jpg",
+      "releaseDate": "2022-10-19"
+    },
+    {
+      "position": 130,
+      "section": "DCEU",
+      "itemType": "movie",
+      "tmdbId": 594767,
+      "seasonNumber": null,
+      "title": "Shazam! La Rage des Dieux",
+      "posterPath": "/iz2V6Wc5eVVBbUqlTIkY4SrS5nW.jpg",
+      "releaseDate": "2023-03-15"
+    },
+    {
+      "position": 140,
+      "section": "DCEU",
+      "itemType": "movie",
+      "tmdbId": 298618,
+      "seasonNumber": null,
+      "title": "The Flash",
+      "posterPath": "/azio74W2qw7bNg7ePqzkWywwK1n.jpg",
+      "releaseDate": "2023-06-13"
+    },
+    {
+      "position": 150,
+      "section": "DCEU",
+      "itemType": "movie",
+      "tmdbId": 565770,
+      "seasonNumber": null,
+      "title": "Blue Beetle",
+      "posterPath": "/xSVtl6ZF7fNuZIoXkZbzI2EzoAD.jpg",
+      "releaseDate": "2023-08-16"
+    },
+    {
+      "position": 160,
+      "section": "DCEU",
+      "itemType": "movie",
+      "tmdbId": 572802,
+      "seasonNumber": null,
+      "title": "Aquaman et le Royaume perdu",
+      "posterPath": "/w8r7NAEIGLPH5r3NhiMobEO80PS.jpg",
+      "releaseDate": "2023-12-20"
+    },
+    {
+      "position": 170,
+      "section": "DCU — Gods and Monsters",
+      "itemType": "season",
+      "tmdbId": 219543,
+      "seasonNumber": 1,
+      "title": "Creature Commandos — Saison 1",
+      "posterPath": "/bB3G6Ug1jfsOUptb0RJsqrgMVta.jpg",
+      "releaseDate": "2024-12-05"
+    },
+    {
+      "position": 180,
+      "section": "DCU — Gods and Monsters",
+      "itemType": "movie",
+      "tmdbId": 1061474,
+      "seasonNumber": null,
+      "title": "Superman",
+      "posterPath": "/bL1U8TDb2ZiThIBFAdKHOfpv8lk.jpg",
+      "releaseDate": "2025-07-09"
+    },
+    {
+      "position": 190,
+      "section": "DCU — Gods and Monsters",
+      "itemType": "season",
+      "tmdbId": 110492,
+      "seasonNumber": 2,
+      "title": "Peacemaker — Saison 2",
+      "posterPath": "/2Wv0Zinc9nQ6ktL10Z9ckk2wjyZ.jpg",
+      "releaseDate": "2025-08-21"
+    },
+    {
+      "position": 200,
+      "section": "DCU — Gods and Monsters",
+      "itemType": "movie",
+      "tmdbId": 1081003,
+      "seasonNumber": null,
+      "title": "Supergirl",
+      "posterPath": "/ptyTrUvaQYkRTj42t6IMeGc0rZy.jpg",
+      "releaseDate": "2026-06-24"
+    },
+    {
+      "position": 210,
+      "section": "DCU — Gods and Monsters",
+      "itemType": "season",
+      "tmdbId": 95350,
+      "seasonNumber": 1,
+      "title": "Lanterns — Saison 1",
+      "posterPath": "/j9PTWG0Xn0NeIRhGGFJbciNYWvS.jpg",
+      "releaseDate": "2026-08-16"
+    },
+    {
+      "position": 220,
+      "section": "DCU — Gods and Monsters",
+      "itemType": "movie",
+      "tmdbId": 1400940,
+      "seasonNumber": null,
+      "title": "Clayface",
+      "posterPath": "/5RzUMLAYw2xHsd98UKcMC9s0ZQ.jpg",
+      "releaseDate": "2026-10-21"
+    },
+    {
+      "position": 230,
+      "section": "The Batman",
+      "itemType": "movie",
+      "tmdbId": 414906,
+      "seasonNumber": null,
+      "title": "The Batman",
+      "posterPath": "/t9JGg10CW1DzXEdWL54ewkUko6N.jpg",
+      "releaseDate": "2022-03-01"
+    },
+    {
+      "position": 240,
+      "section": "The Batman",
+      "itemType": "season",
+      "tmdbId": 194764,
+      "seasonNumber": 1,
+      "title": "The Penguin — Saison 1",
+      "posterPath": "/vOWcqC4oDQws1doDWLO7d3dh5qc.jpg",
+      "releaseDate": "2024-09-19"
+    },
+    {
+      "position": 250,
+      "section": "The Batman",
+      "itemType": "movie",
+      "tmdbId": 806704,
+      "seasonNumber": null,
+      "title": "The Batman : PART II",
+      "posterPath": "/caeBJHLNld1h14uvcLvzyHf3Rlk.jpg",
+      "releaseDate": "2028-02-17"
+    }
+  ]
+}
