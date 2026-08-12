@@ -1,0 +1,38 @@
+name: Refresh frises
+
+# Rafraîchit les données TMDB des frises (dates repoussées, posters, noms de
+# saisons…) et ouvre une PR si quelque chose a bougé. L'éditorial (ajouter la
+# prochaine phase du MCU…) reste un edit de seed — voir creer-frise.md.
+on:
+  schedule:
+    - cron: '0 6 1 * *' # le 1er de chaque mois à 6h UTC
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Régénérer toutes les frises depuis TMDB
+        env:
+          TMDB_API_READ_ACCESS_TOKEN: ${{ secrets.TMDB_API_READ_ACCESS_TOKEN }}
+        run: node tools/generate-frise.mjs --all
+      - name: Ouvrir une PR si les données ont changé
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: chore/refresh-frises
+          commit-message: 'chore(frises): rafraîchissement des données TMDB'
+          title: 'chore(frises): rafraîchissement des données TMDB'
+          body: |
+            Régénération automatique des frises (`node tools/generate-frise.mjs --all`).
+            Le diff reflète ce qui a bougé côté TMDB : dates de sortie repoussées ou
+            précisées, posters, noms de saisons.
+
+            Relire le diff puis merger — le déploiement synchronisera la base au boot.
+          delete-branch: true

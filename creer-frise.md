@@ -62,6 +62,25 @@ node tools/generate-frise.mjs tools/frises/mcu.json
 
 Le log de démarrage confirme : `Frises synchronisées : X créée(s), Y mise(s) à jour…`.
 
+## Mettre à jour une frise
+
+Deux cas distincts :
+
+- **Éditorial** (la Phase 7 du MCU arrive, un nouveau film Star Wars est annoncé…) :
+  éditer le seed de curation `tools/frises/<slug>.json` (ajouter les items au bon
+  endroit du tableau), regénérer, relire, committer. C'est volontairement un acte
+  humain — personne d'autre ne décide de l'ordre de visionnage.
+- **Données TMDB périmées** (date de sortie repoussée, poster changé, nom de saison) :
+
+  ```bash
+  node tools/generate-frise.mjs --all
+  ```
+
+  puis relire `git diff` et committer. La GitHub Action **Refresh frises** fait ce
+  travail automatiquement le 1ᵉʳ de chaque mois (ou à la demande via *Run workflow*)
+  et ouvre une PR quand quelque chose a bougé — il n'y a qu'à la relire et la merger.
+  Elle utilise le secret GitHub `TMDB_API_READ_ACCESS_TOKEN`.
+
 ## Supprimer une frise
 
 Supprimer `tools/frises/<slug>.json` **et** `apps/backend/src/infrastructure/seeds/frises/<slug>.json`,

@@ -54,6 +54,11 @@ Pas d'UI de création — insertion en base via runbook `creer-frise.md`. Plan d
 - [x] 9. Temps restant estimé sur le détail d'une frise (idée LJ) : `remainingMinutes`
       calculé côté backend via les runtimes cachés `show_meta`/`movie_meta` (helper
       `ensure*Meta` extrait des stats), chip « ≈ X h restantes » / « Frise terminée »
+- [x] 10. Temps restant + badge « Complétée » + repli par phase, précision h/min,
+      scroll toujours en haut à la navigation
+- [x] 11. 10 nouvelles frises (13 au total) : Star Wars ×2 (canon/étendue), Star Trek
+      (63 items entrelacés), Dragon Ball, Harry Potter, Terre du Milieu, Monsterverse,
+      Alien, The Witcher, Fast & Furious — publication auto vérifiée (« 10 créée(s) »)
 
 ### Review frises (2026-08-11)
 

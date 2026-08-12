@@ -4,31 +4,47 @@
 // versionné dans apps/backend/src/infrastructure/seeds/frises/<slug>.json,
 // puis régénère l'index frises.seeds.ts. Le backend synchronise la base sur
 // ces fichiers à chaque démarrage — voir creer-frise.md.
-// Usage : node tools/generate-frise.mjs tools/frises/mcu.json
-// Le résumé des résolutions TMDB sort sur stderr : À RELIRE avant de committer.
-import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
+//
+// Usage : node tools/generate-frise.mjs tools/frises/mcu.json [autres.json…]
+//         node tools/generate-frise.mjs --all   (régénère toutes les frises)
+//
+// Le token TMDB vient de la variable d'environnement TMDB_API_READ_ACCESS_TOKEN
+// (CI) ou à défaut du .env racine. Le résumé des résolutions sort sur stderr :
+// À RELIRE avant de committer.
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 
-const seedPath = process.argv[2];
-if (!seedPath) {
-  console.error('Usage : node tools/generate-frise.mjs <tools/frises/slug.json>');
-  process.exit(1);
-}
-
-const seed = JSON.parse(readFileSync(seedPath, 'utf8'));
-const env = readFileSync(new URL('../.env', import.meta.url), 'utf8');
-const token = /^TMDB_API_READ_ACCESS_TOKEN=(.+)$/m.exec(env)?.[1]?.trim();
-if (!token) {
-  console.error('TMDB_API_READ_ACCESS_TOKEN introuvable dans le .env racine.');
-  process.exit(1);
-}
-
+const SEEDS_DIR = fileURLToPath(new URL('./frises/', import.meta.url));
 const OUT_DIR = fileURLToPath(
   new URL('../apps/backend/src/infrastructure/seeds/frises/', import.meta.url),
 );
 const INDEX_FILE = fileURLToPath(
   new URL('../apps/backend/src/infrastructure/seeds/frises.seeds.ts', import.meta.url),
 );
+
+const args = process.argv.slice(2);
+const seedPaths = args.includes('--all')
+  ? readdirSync(SEEDS_DIR)
+      .filter((f) => f.endsWith('.json'))
+      .sort()
+      .map((f) => `${SEEDS_DIR}${f}`)
+  : args;
+if (seedPaths.length === 0) {
+  console.error('Usage : node tools/generate-frise.mjs <tools/frises/slug.json…> | --all');
+  process.exit(1);
+}
+
+let token = process.env.TMDB_API_READ_ACCESS_TOKEN?.trim();
+if (!token) {
+  const envFile = fileURLToPath(new URL('../.env', import.meta.url));
+  if (existsSync(envFile)) {
+    token = /^TMDB_API_READ_ACCESS_TOKEN=(.+)$/m.exec(readFileSync(envFile, 'utf8'))?.[1]?.trim();
+  }
+}
+if (!token) {
+  console.error('TMDB_API_READ_ACCESS_TOKEN introuvable (variable d’environnement ou .env racine).');
+  process.exit(1);
+}
 
 async function tmdb(path, params = {}) {
   const url = new URL(`https://api.themoviedb.org/3${path}`);
@@ -60,74 +76,83 @@ async function resolveShow(query, year) {
   return showCache.get(key);
 }
 
-const items = [];
-for (const [index, item] of seed.items.entries()) {
-  const position = (index + 1) * 10;
-  if (item.type === 'movie') {
-    const search = await tmdb('/search/movie', {
-      query: item.query,
-      ...(item.year ? { primary_release_year: item.year } : {}),
-    });
-    const movie = search.results[0];
-    if (!movie) {
-      throw new Error(`Film introuvable : ${item.query}`);
+async function generate(seedPath) {
+  const seed = JSON.parse(readFileSync(seedPath, 'utf8'));
+  const items = [];
+  for (const [index, item] of seed.items.entries()) {
+    const position = (index + 1) * 10;
+    if (item.type === 'movie') {
+      const search = await tmdb('/search/movie', {
+        query: item.query,
+        ...(item.year ? { primary_release_year: item.year } : {}),
+      });
+      const movie = search.results[0];
+      if (!movie) {
+        throw new Error(`Film introuvable : ${item.query}`);
+      }
+      items.push({
+        query: item.query,
+        resolved: {
+          position,
+          section: item.section,
+          itemType: 'movie',
+          tmdbId: movie.id,
+          seasonNumber: null,
+          title: movie.title,
+          posterPath: movie.poster_path ?? null,
+          releaseDate: movie.release_date || null,
+        },
+      });
+      console.error(`${position}\t${item.section}\tfilm\t${movie.title} (${movie.release_date ?? '?'}) #${movie.id}`);
+    } else {
+      const show = await resolveShow(item.query, item.year);
+      const season = show.seasons?.find((s) => s.season_number === item.season);
+      if (!season) {
+        throw new Error(`Saison ${item.season} introuvable : ${item.query} (#${show.id})`);
+      }
+      // Nom de saison TMDB s'il est parlant (« La Ligue Indigo »), sinon « Saison N ».
+      // Le seed peut forcer le libellé avec "label" quand TMDB nomme mal la saison.
+      const seasonLabel =
+        item.label ??
+        (season.name && !/^(saison|season)\s*\d+$/i.test(season.name.trim())
+          ? season.name
+          : `Saison ${item.season}`);
+      items.push({
+        query: item.query,
+        resolved: {
+          position,
+          section: item.section,
+          itemType: 'season',
+          tmdbId: show.id,
+          seasonNumber: item.season,
+          title: `${show.name} — ${seasonLabel}`,
+          posterPath: season.poster_path ?? show.poster_path ?? null,
+          releaseDate: season.air_date || null,
+        },
+      });
+      console.error(`${position}\t${item.section}\tsaison\t${show.name} — ${seasonLabel} (${season.air_date ?? '?'}) #${show.id}`);
     }
-    items.push({
-      query: item.query,
-      resolved: {
-        position,
-        section: item.section,
-        itemType: 'movie',
-        tmdbId: movie.id,
-        seasonNumber: null,
-        title: movie.title,
-        posterPath: movie.poster_path ?? null,
-        releaseDate: movie.release_date || null,
-      },
-    });
-    console.error(`${position}\t${item.section}\tfilm\t${movie.title} (${movie.release_date ?? '?'}) #${movie.id}`);
-  } else {
-    const show = await resolveShow(item.query, item.year);
-    const season = show.seasons?.find((s) => s.season_number === item.season);
-    if (!season) {
-      throw new Error(`Saison ${item.season} introuvable : ${item.query} (#${show.id})`);
-    }
-    // Nom de saison TMDB s'il est parlant (« La Ligue Indigo »), sinon « Saison N ».
-    // Le seed peut forcer le libellé avec "label" quand TMDB nomme mal la saison.
-    const seasonLabel =
-      item.label ??
-      (season.name && !/^(saison|season)\s*\d+$/i.test(season.name.trim())
-        ? season.name
-        : `Saison ${item.season}`);
-    items.push({
-      query: item.query,
-      resolved: {
-        position,
-        section: item.section,
-        itemType: 'season',
-        tmdbId: show.id,
-        seasonNumber: item.season,
-        title: `${show.name} — ${seasonLabel}`,
-        posterPath: season.poster_path ?? show.poster_path ?? null,
-        releaseDate: season.air_date || null,
-      },
-    });
-    console.error(`${position}\t${item.section}\tsaison\t${show.name} — ${seasonLabel} (${season.air_date ?? '?'}) #${show.id}`);
   }
+
+  const posterRow = seed.posterFrom ? items.find((i) => i.query === seed.posterFrom) : items[0];
+  const resolved = {
+    slug: seed.slug,
+    name: seed.name,
+    description: seed.description ?? null,
+    posterPath: posterRow?.resolved.posterPath ?? null,
+    position: seed.position ?? 0,
+    items: items.map((i) => i.resolved),
+  };
+
+  mkdirSync(OUT_DIR, { recursive: true });
+  writeFileSync(`${OUT_DIR}${seed.slug}.json`, `${JSON.stringify(resolved, null, 2)}\n`);
+  console.error(`→ ${resolved.items.length} items écrits pour « ${seed.slug} »\n`);
 }
 
-const posterRow = seed.posterFrom ? items.find((i) => i.query === seed.posterFrom) : items[0];
-const resolved = {
-  slug: seed.slug,
-  name: seed.name,
-  description: seed.description ?? null,
-  posterPath: posterRow?.resolved.posterPath ?? null,
-  position: seed.position ?? 0,
-  items: items.map((i) => i.resolved),
-};
-
-mkdirSync(OUT_DIR, { recursive: true });
-writeFileSync(`${OUT_DIR}${seed.slug}.json`, `${JSON.stringify(resolved, null, 2)}\n`);
+for (const seedPath of seedPaths) {
+  console.error(`=== ${seedPath}`);
+  await generate(seedPath);
+}
 
 // Régénère l'index à partir du contenu du dossier (tri alphabétique stable).
 const slugs = readdirSync(OUT_DIR)
@@ -145,6 +170,5 @@ ${slugs.map((s) => `  ${identifier(s)} as TimelineSeed,`).join('\n')}
 `;
 writeFileSync(INDEX_FILE, indexContent);
 
-console.error(`\n→ ${resolved.items.length} items écrits dans apps/backend/src/infrastructure/seeds/frises/${seed.slug}.json`);
 console.error(`→ frises.seeds.ts régénéré (${slugs.length} frise(s) : ${slugs.join(', ')})`);
 console.error('Le backend synchronisera la base au prochain démarrage (dev et prod).');
