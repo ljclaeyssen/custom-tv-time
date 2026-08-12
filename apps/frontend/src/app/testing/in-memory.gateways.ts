@@ -107,6 +107,7 @@ export const FAKE_TIMELINE_DETAIL: TimelineDetail = {
       posterPath: null,
       releaseDate: '2020-01-01',
       progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
+      remainingMinutes: 0,
     },
     {
       id: 'item-2',
@@ -119,6 +120,7 @@ export const FAKE_TIMELINE_DETAIL: TimelineDetail = {
       posterPath: null,
       releaseDate: '2021-01-01',
       progress: { watchedEpisodes: 0, airedEpisodes: 6, completed: false, upcoming: false },
+      remainingMinutes: 240,
     },
   ],
 };

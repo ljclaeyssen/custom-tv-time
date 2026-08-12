@@ -11,7 +11,7 @@ import { ensureMovieMeta, ensureShowMeta } from './helpers/meta';
 import {
   buildUserWatchMaps,
   computeItemProgress,
-  computeRemainingMinutes,
+  itemRemainingMinutes,
   loadAiredCounts,
 } from './helpers/timeline-progress';
 
@@ -41,7 +41,24 @@ export class RetrieveTimelineDetailUseCase {
     const maps = buildUserWatchMaps(movies, episodes);
     const airedCounts = await loadAiredCounts(this.catalog, records, today);
 
-    const items: TimelineItem[] = records.map((record) => ({
+    const progressed = records.map((record) => ({
+      record,
+      progress: computeItemProgress(record, maps, airedCounts, today),
+    }));
+
+    // Runtimes uniquement pour ce qui reste à voir (cache show_meta/movie_meta,
+    // même canal que les stats — les manquants sont résolus via TMDB puis persistés).
+    const remaining = progressed.filter((p) => !p.progress.completed && !p.progress.upcoming);
+    const [[showMeta], [movieMeta]] = await Promise.all([
+      ensureShowMeta(this.meta, this.catalog, [
+        ...new Set(remaining.filter((p) => p.record.itemType === 'season').map((p) => p.record.tmdbId)),
+      ]),
+      ensureMovieMeta(this.meta, this.catalog, [
+        ...new Set(remaining.filter((p) => p.record.itemType === 'movie').map((p) => p.record.tmdbId)),
+      ]),
+    ]);
+
+    const items: TimelineItem[] = progressed.map(({ record, progress }) => ({
       id: record.id,
       position: record.position,
       section: record.section,
@@ -51,27 +68,20 @@ export class RetrieveTimelineDetailUseCase {
       title: record.title,
       posterPath: record.posterPath,
       releaseDate: record.releaseDate,
-      progress: computeItemProgress(record, maps, airedCounts, today),
+      progress,
+      remainingMinutes: itemRemainingMinutes(
+        { itemType: record.itemType, tmdbId: record.tmdbId, progress },
+        showMeta,
+        movieMeta,
+      ),
     }));
-
-    // Runtimes uniquement pour ce qui reste à voir (cache show_meta/movie_meta,
-    // même canal que les stats — les manquants sont résolus via TMDB puis persistés).
-    const remaining = items.filter((i) => !i.progress.completed && !i.progress.upcoming);
-    const [[showMeta], [movieMeta]] = await Promise.all([
-      ensureShowMeta(this.meta, this.catalog, [
-        ...new Set(remaining.filter((i) => i.itemType === 'season').map((i) => i.tmdbId)),
-      ]),
-      ensureMovieMeta(this.meta, this.catalog, [
-        ...new Set(remaining.filter((i) => i.itemType === 'movie').map((i) => i.tmdbId)),
-      ]),
-    ]);
 
     return {
       id: timeline.id,
       slug: timeline.slug,
       name: timeline.name,
       description: timeline.description,
-      remainingMinutes: computeRemainingMinutes(items, showMeta, movieMeta),
+      remainingMinutes: items.reduce((sum, item) => sum + item.remainingMinutes, 0),
       items,
     };
   }

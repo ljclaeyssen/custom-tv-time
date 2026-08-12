@@ -1,8 +1,8 @@
 import { Location } from '@angular/common';
-import { Component, computed, inject, input, OnInit } from '@angular/core';
+import { Component, computed, inject, input, OnInit, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TimelineItem } from '../../../../domain/models/timeline.model';
-import { TimelinesStore } from '../../../../store/timelines.store';
+import { TimelineSection, TimelinesStore } from '../../../../store/timelines.store';
 import { RetrieveTimelineDetail } from '../../../../use-cases/retrieve-timeline-detail';
 import { WatchTimelineItem } from '../../../../use-cases/watch-timeline-item';
 import { tmdbImage } from '../../../../utils/tmdb-image';
@@ -33,14 +33,40 @@ export class TimelineDetail implements OnInit {
   /** « ≈ 41 h restantes » — null si la frise est finie (ou rien à voir). */
   protected readonly remainingLabel = computed(() => {
     const minutes = this.timeline()?.remainingMinutes ?? 0;
-    if (minutes <= 0) {
-      return null;
-    }
-    if (minutes < 60) {
-      return `≈ ${minutes} min restantes`;
-    }
-    return `≈ ${Math.round(minutes / 60).toLocaleString('fr-FR')} h restantes`;
+    return minutes > 0 ? `${this.remaining(minutes)} restantes` : null;
   });
+
+  /**
+   * Sections terminées dépliées à la main (indexes). État volontairement local
+   * et volatil : tout est replié à nouveau au rechargement de l'écran.
+   */
+  readonly #expandedSections = signal<ReadonlySet<number>>(new Set());
+
+  protected remaining(minutes: number): string {
+    if (minutes < 60) {
+      return `≈ ${minutes} min`;
+    }
+    return `≈ ${Math.round(minutes / 60).toLocaleString('fr-FR')} h`;
+  }
+
+  protected isCollapsed(section: TimelineSection, index: number): boolean {
+    return section.completed && !this.#expandedSections().has(index);
+  }
+
+  protected toggleSection(section: TimelineSection, index: number): void {
+    if (!section.completed) {
+      return;
+    }
+    this.#expandedSections.update((expanded) => {
+      const next = new Set(expanded);
+      if (next.has(index)) {
+        next.delete(index);
+      } else {
+        next.add(index);
+      }
+      return next;
+    });
+  }
 
   ngOnInit(): void {
     this.#retrieveTimelineDetail.execute(this.slug());

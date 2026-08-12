@@ -15,8 +15,30 @@
     }
     @for (section of store.sections(); track $index) {
       <section class="timeline-section">
-        <h2 class="section-title">{{ section.title }}</h2>
-        <ol class="items">
+        @if (section.completed) {
+          <button
+            class="section-header collapsible"
+            (click)="toggleSection(section, $index)"
+            [attr.aria-expanded]="!isCollapsed(section, $index)"
+          >
+            <h2 class="section-title">{{ section.title }}</h2>
+            <span class="chip done"><i class="pi pi-check"></i>Complétée</span>
+            <i
+              class="pi toggle-icon"
+              [class.pi-chevron-down]="isCollapsed(section, $index)"
+              [class.pi-chevron-up]="!isCollapsed(section, $index)"
+            ></i>
+          </button>
+        } @else {
+          <div class="section-header">
+            <h2 class="section-title">{{ section.title }}</h2>
+            @if (section.remainingMinutes > 0) {
+              <span class="chip">{{ remaining(section.remainingMinutes) }}</span>
+            }
+          </div>
+        }
+        @if (!isCollapsed(section, $index)) {
+          <ol class="items">
           @for (item of section.items; track item.id) {
             <li
               class="item"
@@ -76,7 +98,8 @@
               }
             </li>
           }
-        </ol>
+          </ol>
+        }
       </section>
     }
   } @else if (store.loading()) {

@@ -104,28 +104,23 @@ export function computeItemProgress(
 }
 
 /**
- * Temps restant pour finir la frise : films sortis non vus + épisodes diffusés
- * non vus × durée moyenne. Les items « à venir » ne comptent pas (rien à
- * regarder aujourd'hui).
+ * Temps restant estimé sur un item : film sorti non vu, ou épisodes diffusés
+ * non vus × durée moyenne. Un item complété ou « à venir » ne compte pas
+ * (rien à regarder aujourd'hui).
  */
-export function computeRemainingMinutes(
-  items: TimelineItem[],
+export function itemRemainingMinutes(
+  item: Pick<TimelineItem, 'itemType' | 'tmdbId' | 'progress'>,
   showMeta: Map<number, ShowMeta>,
   movieMeta: Map<number, MovieMeta>,
 ): number {
-  let minutes = 0;
-  for (const item of items) {
-    if (item.progress.completed || item.progress.upcoming) {
-      continue;
-    }
-    if (item.itemType === 'movie') {
-      minutes += movieMeta.get(item.tmdbId)?.runtime ?? DEFAULT_MOVIE_RUNTIME;
-    } else {
-      const perEpisode = showMeta.get(item.tmdbId)?.episodeRuntime ?? DEFAULT_EPISODE_RUNTIME;
-      minutes += (item.progress.airedEpisodes - item.progress.watchedEpisodes) * perEpisode;
-    }
+  if (item.progress.completed || item.progress.upcoming) {
+    return 0;
   }
-  return minutes;
+  if (item.itemType === 'movie') {
+    return movieMeta.get(item.tmdbId)?.runtime ?? DEFAULT_MOVIE_RUNTIME;
+  }
+  const perEpisode = showMeta.get(item.tmdbId)?.episodeRuntime ?? DEFAULT_EPISODE_RUNTIME;
+  return (item.progress.airedEpisodes - item.progress.watchedEpisodes) * perEpisode;
 }
 
 function toProgress(watchedEpisodes: number, airedEpisodes: number): TimelineItemProgress {

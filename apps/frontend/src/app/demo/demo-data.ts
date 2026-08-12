@@ -5028,6 +5028,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           posterPath: '/l1SP3gyHA5ZEuf72WKx5ihtZZFO.jpg',
           releaseDate: '2011-07-22',
           progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
+          remainingMinutes: 0,
         },
         {
           id: 'demo-mcu-20',
@@ -5040,6 +5041,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           posterPath: '/aRJAoQ6mqPHAKXjP3CqNyLC8FAh.jpg',
           releaseDate: '2019-03-06',
           progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
+          remainingMinutes: 0,
         },
         {
           id: 'demo-mcu-30',
@@ -5052,6 +5054,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           posterPath: '/kNKUCNLu1lZDGAHOBEHxR6psYHx.jpg',
           releaseDate: '2008-04-30',
           progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
+          remainingMinutes: 0,
         },
         {
           id: 'demo-mcu-40',
@@ -5064,6 +5067,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           posterPath: '/g9DSeSozGi4zpUyeOYZYMNmIv9O.jpg',
           releaseDate: '2010-04-28',
           progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
+          remainingMinutes: 0,
         },
         {
           id: 'demo-mcu-50',
@@ -5076,6 +5080,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           posterPath: '/cImKVGUiEnwLsNUyoMA0a0na2y5.jpg',
           releaseDate: '2008-06-12',
           progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
+          remainingMinutes: 0,
         },
         {
           id: 'demo-mcu-60',
@@ -5088,6 +5093,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           posterPath: '/q8pF6s9b9veTQvxTqMDIQf9nJKi.jpg',
           releaseDate: '2011-04-21',
           progress: { watchedEpisodes: 0, airedEpisodes: 1, completed: false, upcoming: false },
+          remainingMinutes: 120,
         },
         {
           id: 'demo-mcu-70',
@@ -5100,6 +5106,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           posterPath: '/ylsAO88v2tF0iXRFojPa0UaAJf1.jpg',
           releaseDate: '2012-04-25',
           progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
+          remainingMinutes: 0,
         },
         {
           id: 'demo-mcu-80',
@@ -5112,6 +5119,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           posterPath: '/iOaE26zigx4GFBftUdRbD83Mcwe.jpg',
           releaseDate: '2021-01-15',
           progress: { watchedEpisodes: 5, airedEpisodes: 9, completed: false, upcoming: false },
+          remainingMinutes: 160,
         },
         {
           id: 'demo-mcu-90',
@@ -5124,6 +5132,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           posterPath: '/x3tgUYJNx58xL5WhuV5sDnujKIh.jpg',
           releaseDate: '2021-06-09',
           progress: { watchedEpisodes: 0, airedEpisodes: 6, completed: false, upcoming: false },
+          remainingMinutes: 240,
         },
         {
           id: 'demo-mcu-100',
@@ -5136,6 +5145,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           posterPath: '/kIHqwBzoV8IZZqm1BOazqX0aoOZ.jpg',
           releaseDate: '2021-03-19',
           progress: { watchedEpisodes: 0, airedEpisodes: 6, completed: false, upcoming: false },
+          remainingMinutes: 240,
         },
         {
           id: 'demo-mcu-110',
@@ -5148,6 +5158,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           posterPath: '/jwfDFqzxBkXC5bERBZrCEfK9iii.jpg',
           releaseDate: '2021-12-15',
           progress: { watchedEpisodes: 0, airedEpisodes: 1, completed: false, upcoming: false },
+          remainingMinutes: 120,
         },
         {
           id: 'demo-mcu-120',
@@ -5160,6 +5171,7 @@ export const DEMO_TIMELINES: DemoTimelineSeed[] = [
           posterPath: '/bph5UiAOKLLjla10YuCyKWfKYGG.jpg',
           releaseDate: '2026-12-16',
           progress: { watchedEpisodes: 0, airedEpisodes: 0, completed: false, upcoming: true },
+          remainingMinutes: 0,
         },
       ],
     },

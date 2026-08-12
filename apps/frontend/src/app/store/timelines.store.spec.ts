@@ -11,6 +11,7 @@ function item(overrides: Partial<TimelineItem> & { id: string; section: string }
     posterPath: null,
     releaseDate: null,
     progress: { watchedEpisodes: 0, airedEpisodes: 1, completed: false, upcoming: false },
+    remainingMinutes: 0,
     ...overrides,
   };
 }
@@ -41,6 +42,31 @@ describe('TimelinesStore', () => {
       { title: 'Phase 2', ids: ['b1'] },
       { title: 'Phase 1', ids: ['a3'] },
     ]);
+  });
+
+  it('agrège par section : complétée seulement si tous les items le sont, temps restant sommé', () => {
+    store.setCurrent(
+      detail([
+        item({
+          id: 'a1',
+          section: 'Phase 1',
+          progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
+        }),
+        item({
+          id: 'a2',
+          section: 'Phase 1',
+          progress: { watchedEpisodes: 1, airedEpisodes: 1, completed: true, upcoming: false },
+        }),
+        item({ id: 'b1', section: 'Phase 2', remainingMinutes: 120 }),
+        item({ id: 'b2', section: 'Phase 2', remainingMinutes: 45 }),
+      ]),
+    );
+
+    const [phase1, phase2] = store.sections();
+    expect(phase1.completed).toBe(true);
+    expect(phase1.remainingMinutes).toBe(0);
+    expect(phase2.completed).toBe(false);
+    expect(phase2.remainingMinutes).toBe(165);
   });
 
   it('pointe le prochain item en sautant les complétés et les « à venir »', () => {

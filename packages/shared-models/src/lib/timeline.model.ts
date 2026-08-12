@@ -25,6 +25,8 @@ export interface TimelineItem {
   posterPath: string | null;
   releaseDate: string | null;
   progress: TimelineItemProgress;
+  /** Temps restant estimé sur cet item, en minutes (0 si complété ou « à venir »). */
+  remainingMinutes: number;
 }
 
 export interface TimelineSummary {
@@ -43,9 +45,9 @@ export interface TimelineDetail {
   name: string;
   description: string | null;
   /**
-   * Temps restant estimé pour finir la frise, en minutes : films sortis non
-   * vus + épisodes diffusés non vus × durée moyenne (runtimes TMDB, avec
-   * défauts quand la durée est inconnue).
+   * Temps restant estimé pour finir la frise, en minutes : somme des
+   * `remainingMinutes` des items (films sortis non vus + épisodes diffusés non
+   * vus × durée moyenne — runtimes TMDB, défauts quand la durée est inconnue).
    */
   remainingMinutes: number;
   items: TimelineItem[];

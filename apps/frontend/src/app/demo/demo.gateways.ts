@@ -366,21 +366,6 @@ export class DemoTokenStorageGateway extends TokenStorageGateway {
   }
 }
 
-// Durées moyennes de la démo (pas de runtimes TMDB en statique).
-const DEMO_MOVIE_MINUTES = 120;
-const DEMO_EPISODE_MINUTES = 40;
-
-const demoRemainingMinutes = (items: TimelineDetail['items']): number =>
-  items.reduce((minutes, item) => {
-    if (item.progress.completed || item.progress.upcoming) {
-      return minutes;
-    }
-    return item.itemType === 'movie'
-      ? minutes + DEMO_MOVIE_MINUTES
-      : minutes +
-          (item.progress.airedEpisodes - item.progress.watchedEpisodes) * DEMO_EPISODE_MINUTES;
-  }, 0);
-
 @Injectable()
 export class DemoTimelinesGateway extends TimelinesGateway {
   // Copie profonde du seed : « marquer vu » mute cet état sans toucher aux données.
@@ -414,7 +399,7 @@ export class DemoTimelinesGateway extends TimelinesGateway {
       }
       return {
         ...found.detail,
-        remainingMinutes: demoRemainingMinutes(found.detail.items),
+        remainingMinutes: found.detail.items.reduce((sum, item) => sum + item.remainingMinutes, 0),
         items: found.detail.items.map((item) => ({ ...item, progress: { ...item.progress } })),
       };
     });
@@ -431,6 +416,7 @@ export class DemoTimelinesGateway extends TimelinesGateway {
           watchedEpisodes: item.progress.airedEpisodes,
           completed: true,
         };
+        item.remainingMinutes = 0;
       }
       return undefined;
     });

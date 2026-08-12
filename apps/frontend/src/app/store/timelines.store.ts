@@ -4,6 +4,10 @@ import { TimelineDetail, TimelineItem, TimelineSummary } from '../domain/models/
 export interface TimelineSection {
   title: string;
   items: TimelineItem[];
+  /** Tous les items de la section sont complétés (un « à venir » bloque). */
+  completed: boolean;
+  /** Somme des temps restants estimés des items de la section, en minutes. */
+  remainingMinutes: number;
 }
 
 interface TimelinesState {
@@ -38,8 +42,15 @@ export class TimelinesStore {
       const last = sections[sections.length - 1];
       if (last && last.title === item.section) {
         last.items.push(item);
+        last.completed = last.completed && item.progress.completed;
+        last.remainingMinutes += item.remainingMinutes;
       } else {
-        sections.push({ title: item.section, items: [item] });
+        sections.push({
+          title: item.section,
+          items: [item],
+          completed: item.progress.completed,
+          remainingMinutes: item.remainingMinutes,
+        });
       }
     }
     return sections;
