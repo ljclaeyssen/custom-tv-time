@@ -6,7 +6,7 @@ import {
   provideAppInitializer,
   provideBrowserGlobalErrorListeners,
 } from '@angular/core';
-import { provideRouter, withComponentInputBinding } from '@angular/router';
+import { provideRouter, withComponentInputBinding, withInMemoryScrolling } from '@angular/router';
 import { provideServiceWorker } from '@angular/service-worker';
 import { providePrimeNG } from 'primeng/config';
 import { routes } from './app.routes';
@@ -21,7 +21,13 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideAppInitializer(() => inject(RestoreSession).execute()),
-    provideRouter(routes, withComponentInputBinding()),
+    // Chaque navigation repart du haut de page : on n'arrive jamais sur un
+    // écran pré-scrollé (ex. « Vu récemment » au lieu de « À voir »).
+    provideRouter(
+      routes,
+      withComponentInputBinding(),
+      withInMemoryScrolling({ scrollPositionRestoration: 'top' }),
+    ),
     provideHttpClient(withInterceptors([authInterceptor])),
     providePrimeNG({
       theme: {
