@@ -1,4 +1,5 @@
 import { Component, computed, inject, OnInit, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { TrackedMovie } from '../../../../domain/models/movie.model';
 import { MoviesStore } from '../../../../store/movies.store';
 import { RetrieveMyMovies } from '../../../../use-cases/retrieve-my-movies';
@@ -10,7 +11,7 @@ import { PosterImg } from '../../../shared/poster-img/poster-img';
 
 @Component({
   selector: 'app-movies',
-  imports: [EmptyState, PosterImg],
+  imports: [EmptyState, PosterImg, RouterLink],
   templateUrl: './movies.html',
   styleUrl: './movies.scss',
 })

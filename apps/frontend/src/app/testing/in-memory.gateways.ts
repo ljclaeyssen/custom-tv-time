@@ -9,7 +9,7 @@ import { StatsGateway } from '../domain/gateways/stats.gateway';
 import { TimelinesGateway } from '../domain/gateways/timelines.gateway';
 import { TokenStorageGateway } from '../domain/gateways/token-storage.gateway';
 import { CatalogSearchResult } from '../domain/models/catalog.model';
-import { TrackedMovie } from '../domain/models/movie.model';
+import { MovieProgress, TrackedMovie } from '../domain/models/movie.model';
 import { ProfileStatsFull } from '../domain/models/stats.model';
 import { TimelineDetail, TimelineSummary } from '../domain/models/timeline.model';
 import {
@@ -77,6 +77,21 @@ export const FAKE_TRACKED_MOVIE: TrackedMovie = {
   releaseDate: null,
   watchedAt: null,
   addedAt: '2026-01-01T00:00:00.000Z',
+};
+
+export const FAKE_MOVIE_PROGRESS: MovieProgress = {
+  detail: {
+    tmdbId: 1,
+    imdbId: null,
+    title: 'Film de test',
+    overview: 'Un film pour les tests.',
+    posterPath: null,
+    backdropPath: null,
+    releaseDate: '2020-01-01',
+    runtime: 120,
+    genres: ['Action'],
+  },
+  tracked: null,
 };
 
 export const FAKE_TIMELINE_SUMMARY: TimelineSummary = {
@@ -232,13 +247,22 @@ export class InMemoryShowsGateway extends FailableGateway implements ShowsGatewa
 @Injectable()
 export class InMemoryMoviesGateway extends FailableGateway implements MoviesGateway {
   #movies: TrackedMovie[] = [];
+  #progress: MovieProgress = FAKE_MOVIE_PROGRESS;
 
   feedWith(movies: TrackedMovie[]): void {
     this.#movies = movies;
   }
 
+  feedProgressWith(progress: MovieProgress): void {
+    this.#progress = progress;
+  }
+
   getMyMovies(): Observable<TrackedMovie[]> {
     return this.result(() => this.#movies);
+  }
+
+  getMovieProgress(): Observable<MovieProgress> {
+    return this.result(() => this.#progress);
   }
 
   track(): Observable<TrackedMovie> {

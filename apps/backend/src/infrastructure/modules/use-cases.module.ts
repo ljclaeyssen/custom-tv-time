@@ -6,6 +6,7 @@ import { ImportTvtimeExportUseCase } from '../../use-cases/import-tvtime-export.
 import { MarkEpisodeWatchedUseCase } from '../../use-cases/mark-episode-watched.use-case';
 import { MarkSeasonWatchedUseCase } from '../../use-cases/mark-season-watched.use-case';
 import { RetrieveCurrentUserUseCase } from '../../use-cases/retrieve-current-user.use-case';
+import { RetrieveMovieProgressUseCase } from '../../use-cases/retrieve-movie-progress.use-case';
 import { RetrieveMyMoviesUseCase } from '../../use-cases/retrieve-my-movies.use-case';
 import { RetrieveMyShowsUseCase } from '../../use-cases/retrieve-my-shows.use-case';
 import { RetrieveRecentlyWatchedUseCase } from '../../use-cases/retrieve-recently-watched.use-case';
@@ -43,6 +44,7 @@ const useCases = [
   UnmarkEpisodeWatchedUseCase,
   MarkSeasonWatchedUseCase,
   RetrieveMyMoviesUseCase,
+  RetrieveMovieProgressUseCase,
   TrackMovieUseCase,
   SetMovieWatchedUseCase,
   UntrackMovieUseCase,

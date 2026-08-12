@@ -3,6 +3,7 @@ import { CompleteDiscordLogin } from './complete-discord-login';
 import { Logout } from './logout';
 import { MarkSeasonWatched } from './mark-season-watched';
 import { MarkWatchNextEpisodeWatched } from './mark-watch-next-episode-watched';
+import { RetrieveMovieProgress } from './retrieve-movie-progress';
 import { RetrieveMyMovies } from './retrieve-my-movies';
 import { RetrieveMyShows } from './retrieve-my-shows';
 import { RetrieveProfile } from './retrieve-profile';
@@ -41,6 +42,7 @@ export function provideApplicationUseCases(): Provider[] {
     ToggleShowFollow,
     UpdateShowStatus,
     RetrieveMyMovies,
+    RetrieveMovieProgress,
     TrackMovie,
     SetMovieWatched,
     UntrackMovie,

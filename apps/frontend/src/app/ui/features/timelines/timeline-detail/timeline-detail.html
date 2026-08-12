@@ -47,10 +47,7 @@
               [class.upcoming]="item.progress.upcoming"
             >
               @if (item.itemType === 'season') {
-                <a
-                  class="body"
-                  [routerLink]="['/shows', item.tmdbId, 'season', item.seasonNumber]"
-                >
+                <a class="body" [routerLink]="['/shows', item.tmdbId]">
                   <figure><app-poster-img [src]="poster(item)" [alt]="item.title" /></figure>
                   <div class="info">
                     @if (item.id === store.nextItemId()) {
@@ -72,7 +69,7 @@
                   </div>
                 </a>
               } @else {
-                <div class="body">
+                <a class="body" [routerLink]="['/movies', item.tmdbId]">
                   <figure><app-poster-img [src]="poster(item)" [alt]="item.title" /></figure>
                   <div class="info">
                     @if (item.id === store.nextItemId()) {
@@ -81,7 +78,7 @@
                     <span class="title">{{ item.title }}</span>
                     <span class="muted sub">{{ sublabel(item) }}</span>
                   </div>
-                </div>
+                </a>
               }
               @if (item.progress.upcoming) {
                 @if (item.releaseDate; as date) {

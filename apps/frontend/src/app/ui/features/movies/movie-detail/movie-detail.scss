@@ -1,0 +1,79 @@
+.header-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+
+  h1 {
+    flex: 1;
+    font-size: 1.4rem;
+  }
+}
+
+.back {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  flex: none;
+}
+
+.hero {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+
+  figure {
+    margin: 0;
+    flex: none;
+    width: 120px;
+    aspect-ratio: 2 / 3;
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--surface);
+    border: 1px solid var(--border);
+  }
+}
+
+.meta {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+
+  .sub {
+    font-size: 0.85rem;
+  }
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+
+  .btn {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+}
+
+.overview {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.hero-skeleton {
+  height: 180px;
+  margin-bottom: 10px;
+}
+
+.text-skeleton {
+  height: 90px;
+}

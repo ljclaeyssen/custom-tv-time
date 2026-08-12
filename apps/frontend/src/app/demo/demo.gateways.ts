@@ -8,7 +8,7 @@ import { StatsGateway } from '../domain/gateways/stats.gateway';
 import { TimelinesGateway } from '../domain/gateways/timelines.gateway';
 import { TokenStorageGateway } from '../domain/gateways/token-storage.gateway';
 import { CatalogSearchResult } from '../domain/models/catalog.model';
-import { TrackedMovie } from '../domain/models/movie.model';
+import { MovieProgress, TrackedMovie } from '../domain/models/movie.model';
 import { TimelineDetail, TimelineSummary } from '../domain/models/timeline.model';
 import {
   CatalogEpisode,
@@ -52,6 +52,19 @@ const respond = <T>(value: () => T): Observable<T> =>
   });
 
 const daysAgoIso = (days: number): string => new Date(Date.now() - days * 86400000).toISOString();
+
+// Synopsis embarqués pour les fiches film de la démo (frise MCU d'extrait).
+const DEMO_MOVIE_OVERVIEWS: Record<number, string> = {
+  1771: "1942. Steve Rogers, jugé inapte au service militaire, accepte de participer à un programme expérimental qui le transforme en super-soldat : Captain America.",
+  299537: "Carol Danvers, pilote de l'US Air Force devenue guerrière kree, revient sur Terre et découvre son passé au cœur d'une guerre galactique.",
+  1726: "Prisonnier en Afghanistan, l'industriel Tony Stark se construit une armure high-tech pour s'évader — et devient Iron Man.",
+  10138: "Tony Stark refuse de livrer son armure au gouvernement pendant que Whiplash, un scientifique russe, prépare sa vengeance.",
+  1724: "Traqué par l'armée, Bruce Banner cherche un remède à la créature qui sommeille en lui.",
+  10195: "Banni d'Asgard par Odin, le dieu du tonnerre atterrit sur Terre, privé de ses pouvoirs et de son marteau.",
+  24428: "Nick Fury réunit Iron Man, Captain America, Thor, Hulk, Black Widow et Hawkeye pour contrer l'invasion de Loki.",
+  634649: "Démasqué, Peter Parker demande au Docteur Strange d'effacer son identité — et fait s'effondrer le multivers.",
+  1003596: "Les Avengers se reforment face au Docteur Fatalis. Suite et fin de la saga du multivers.",
+};
 
 interface DemoShowState extends DemoShowSeed {
   followed: boolean;
@@ -286,6 +299,36 @@ export class DemoMoviesGateway extends MoviesGateway {
 
   override getMyMovies(): Observable<TrackedMovie[]> {
     return respond(() => [...this.#movies]);
+  }
+
+  override getMovieProgress(tmdbMovieId: number): Observable<MovieProgress> {
+    return respond(() => {
+      // La fiche se reconstruit depuis ce que la démo connaît : film tracké,
+      // item de frise ou résultat de recherche.
+      const tracked = this.#movies.find((m) => m.tmdbMovieId === tmdbMovieId) ?? null;
+      const fromTimeline = DEMO_TIMELINES.flatMap((t) => t.detail.items).find(
+        (i) => i.itemType === 'movie' && i.tmdbId === tmdbMovieId,
+      );
+      const fromSearch = DEMO_SEARCH.find((r) => r.type === 'movie' && r.tmdbId === tmdbMovieId);
+      const title = tracked?.title ?? fromTimeline?.title ?? fromSearch?.name ?? 'Film';
+      return {
+        detail: {
+          tmdbId: tmdbMovieId,
+          imdbId: tracked?.imdbId ?? null,
+          title,
+          overview: DEMO_MOVIE_OVERVIEWS[tmdbMovieId] ?? '',
+          posterPath: tracked?.posterPath ?? fromTimeline?.posterPath ?? fromSearch?.posterPath ?? null,
+          backdropPath: null,
+          releaseDate:
+            tracked?.releaseDate ??
+            fromTimeline?.releaseDate ??
+            (fromSearch?.year ? `${fromSearch.year}-01-01` : null),
+          runtime: null,
+          genres: [],
+        },
+        tracked,
+      };
+    });
   }
 
   override track(tmdbMovieId: number, watched: boolean): Observable<TrackedMovie> {

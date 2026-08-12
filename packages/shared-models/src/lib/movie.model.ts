@@ -21,3 +21,9 @@ export interface CatalogMovieDetail {
   runtime: number | null;
   genres: string[];
 }
+
+/** Détail d'un film + son état de tracking pour l'utilisateur (pendant de ShowProgress). */
+export interface MovieProgress {
+  detail: CatalogMovieDetail;
+  tracked: TrackedMovie | null;
+}

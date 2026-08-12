@@ -1,0 +1,44 @@
+<div class="page">
+  <div class="header-row">
+    <button class="back" (click)="back()" aria-label="Retour"><i class="pi pi-arrow-left"></i></button>
+    <h1>{{ movie()?.detail?.title ?? 'Film' }}</h1>
+  </div>
+
+  @if (movie(); as m) {
+    <div class="hero">
+      <figure><app-poster-img [src]="poster(m.detail.posterPath)" [alt]="m.detail.title" /></figure>
+      <div class="meta">
+        @if (sublabel(); as sub) {
+          <span class="muted sub">{{ sub }}</span>
+        }
+        @if (m.tracked?.watchedAt; as watchedAt) {
+          <span class="chip accent"><i class="pi pi-check"></i>Vu le {{ watchedAt | date: 'd MMM y' }}</span>
+        } @else if (m.tracked) {
+          <span class="chip"><i class="pi pi-bookmark"></i>Dans la watchlist</span>
+        }
+        <div class="actions">
+          @if (m.tracked?.watchedAt) {
+            <button class="btn ghost" (click)="markUnwatched()">Marquer non vu</button>
+            <button class="btn ghost danger" (click)="remove()">Retirer</button>
+          } @else if (m.tracked) {
+            <button class="btn primary" (click)="markWatched()">Marquer vu</button>
+            <button class="btn ghost danger" (click)="remove()">Retirer</button>
+          } @else {
+            <button class="btn primary" (click)="markWatched()">Marquer vu</button>
+            <button class="btn ghost" (click)="addToWatchlist()">Watchlist</button>
+          }
+        </div>
+      </div>
+    </div>
+    @if (m.detail.overview) {
+      <p class="overview muted">{{ m.detail.overview }}</p>
+    }
+  } @else if (store.loading()) {
+    <div class="skeletons">
+      <div class="skeleton hero-skeleton"></div>
+      <div class="skeleton text-skeleton"></div>
+    </div>
+  } @else {
+    <app-empty-state icon="pi-ticket" message="Film introuvable" />
+  }
+</div>

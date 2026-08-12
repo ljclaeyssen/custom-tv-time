@@ -1,1 +1,1 @@
-export type { TrackedMovie } from '@ctt/shared-models';
+export type { CatalogMovieDetail, MovieProgress, TrackedMovie } from '@ctt/shared-models';

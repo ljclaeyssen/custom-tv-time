@@ -10,7 +10,8 @@ import {
   Post,
   UseGuards,
 } from '@nestjs/common';
-import { TrackedMovie } from '../../domain/models/tracked-movie.model';
+import { MovieProgress, TrackedMovie } from '../../domain/models/tracked-movie.model';
+import { RetrieveMovieProgressUseCase } from '../../use-cases/retrieve-movie-progress.use-case';
 import { RetrieveMyMoviesUseCase } from '../../use-cases/retrieve-my-movies.use-case';
 import { SetMovieWatchedUseCase } from '../../use-cases/set-movie-watched.use-case';
 import { TrackMovieUseCase } from '../../use-cases/track-movie.use-case';
@@ -24,6 +25,7 @@ import { AuthenticatedUser, JwtAuthGuard } from '../guards/jwt-auth.guard';
 export class MoviesController {
   constructor(
     private readonly retrieveMyMovies: RetrieveMyMoviesUseCase,
+    private readonly retrieveMovieProgress: RetrieveMovieProgressUseCase,
     private readonly trackMovie: TrackMovieUseCase,
     private readonly setMovieWatched: SetMovieWatchedUseCase,
     private readonly untrackMovie: UntrackMovieUseCase,
@@ -32,6 +34,14 @@ export class MoviesController {
   @Get()
   mine(@CurrentUser() user: AuthenticatedUser): Promise<TrackedMovie[]> {
     return this.retrieveMyMovies.execute(user.userId);
+  }
+
+  @Get(':tmdbId')
+  detail(
+    @CurrentUser() user: AuthenticatedUser,
+    @Param('tmdbId', ParseIntPipe) tmdbId: number,
+  ): Promise<MovieProgress> {
+    return this.retrieveMovieProgress.execute(user.userId, tmdbId);
   }
 
   @Post(':tmdbId')

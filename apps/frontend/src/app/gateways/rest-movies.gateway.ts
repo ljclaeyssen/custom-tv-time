@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { MoviesGateway } from '../domain/gateways/movies.gateway';
-import { TrackedMovie } from '../domain/models/movie.model';
+import { MovieProgress, TrackedMovie } from '../domain/models/movie.model';
 
 @Injectable()
 export class RestMoviesGateway extends MoviesGateway {
@@ -11,6 +11,10 @@ export class RestMoviesGateway extends MoviesGateway {
 
   getMyMovies(): Observable<TrackedMovie[]> {
     return this.#http.get<TrackedMovie[]>(this.#baseUrl);
+  }
+
+  getMovieProgress(tmdbMovieId: number): Observable<MovieProgress> {
+    return this.#http.get<MovieProgress>(`${this.#baseUrl}/${tmdbMovieId}`);
   }
 
   track(tmdbMovieId: number, watched: boolean): Observable<TrackedMovie> {

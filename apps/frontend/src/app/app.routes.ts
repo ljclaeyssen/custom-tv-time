@@ -35,6 +35,12 @@ export const routes: Routes = [
     loadComponent: () => import('./ui/features/movies/movies/movies').then((m) => m.Movies),
   },
   {
+    path: 'movies/:tmdbId',
+    canActivate: [authGuard],
+    loadComponent: () =>
+      import('./ui/features/movies/movie-detail/movie-detail').then((m) => m.MovieDetail),
+  },
+  {
     path: 'timelines',
     canActivate: [authGuard],
     loadComponent: () =>

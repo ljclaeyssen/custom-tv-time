@@ -27,7 +27,9 @@
       @for (movie of visible(); track movie.tmdbMovieId) {
         <div class="movie">
           <figure>
-            <app-poster-img [src]="poster(movie)" [alt]="movie.title" />
+            <a [routerLink]="['/movies', movie.tmdbMovieId]" [attr.aria-label]="movie.title">
+              <app-poster-img [src]="poster(movie)" [alt]="movie.title" />
+            </a>
             <div class="overlay">
               @if (movie.watchedAt === null) {
                 <button class="check-btn" (click)="setWatched(movie, true)" aria-label="Marquer vu">
@@ -43,7 +45,7 @@
               </button>
             </div>
           </figure>
-          <span class="name">{{ movie.title }}</span>
+          <a class="name" [routerLink]="['/movies', movie.tmdbMovieId]">{{ movie.title }}</a>
           @if (year(movie); as y) {
             <span class="sub muted">{{ y }}</span>
           }
