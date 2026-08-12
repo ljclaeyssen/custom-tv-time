@@ -8,6 +8,7 @@ import harryPotter from './frises/harry-potter.json';
 import mcu from './frises/mcu.json';
 import monsterverse from './frises/monsterverse.json';
 import naruto from './frises/naruto.json';
+import onePiece from './frises/one-piece.json';
 import pokemon from './frises/pokemon.json';
 import starTrek from './frises/star-trek.json';
 import starWars from './frises/star-wars.json';
@@ -24,6 +25,7 @@ export const TIMELINE_SEEDS: TimelineSeed[] = [
   mcu as TimelineSeed,
   monsterverse as TimelineSeed,
   naruto as TimelineSeed,
+  onePiece as TimelineSeed,
   pokemon as TimelineSeed,
   starTrek as TimelineSeed,
   starWars as TimelineSeed,
