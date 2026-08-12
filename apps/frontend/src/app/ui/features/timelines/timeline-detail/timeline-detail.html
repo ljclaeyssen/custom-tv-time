@@ -84,7 +84,11 @@
                 </div>
               }
               @if (item.progress.upcoming) {
-                <span class="chip">À venir</span>
+                @if (item.releaseDate; as date) {
+                  <span class="chip">{{ date | date: 'd MMM y' }}</span>
+                } @else {
+                  <span class="chip">À venir</span>
+                }
               } @else {
                 <button
                   class="check-btn"

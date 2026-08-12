@@ -1,4 +1,4 @@
-import { Location } from '@angular/common';
+import { DatePipe, Location } from '@angular/common';
 import { Component, computed, inject, input, OnInit, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TimelineItem } from '../../../../domain/models/timeline.model';
@@ -12,7 +12,7 @@ import { ProgressBar } from '../../../shared/progress-bar/progress-bar';
 
 @Component({
   selector: 'app-timeline-detail',
-  imports: [RouterLink, EmptyState, PosterImg, ProgressBar],
+  imports: [DatePipe, RouterLink, EmptyState, PosterImg, ProgressBar],
   templateUrl: './timeline-detail.html',
   styleUrl: './timeline-detail.scss',
 })
