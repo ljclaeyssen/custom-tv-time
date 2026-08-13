@@ -4,13 +4,17 @@
   left: 0;
   right: 0;
   z-index: 50;
+  // Force un layer composité stable : sans ça, WebKit « décroche » la barre
+  // pendant le scroll en PWA standalone (iOS) et la peint au milieu de l'écran.
+  transform: translateZ(0);
 }
 
 nav {
   display: flex;
   justify-content: space-around;
-  background: rgba(10, 11, 14, 0.92);
-  backdrop-filter: blur(14px);
+  // Fond quasi opaque plutôt qu'un blur : le backdrop-filter repeint à chaque
+  // frame et déclenche le décrochage de la barre au scroll sur mobile.
+  background: rgba(10, 11, 14, 0.97);
   border-top: 1px solid var(--border);
   padding: 8px 0 calc(8px + env(safe-area-inset-bottom));
   max-width: 720px;

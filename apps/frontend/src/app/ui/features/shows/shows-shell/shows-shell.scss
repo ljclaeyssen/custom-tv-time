@@ -2,7 +2,9 @@
   // Collés en haut : en scrollant vers le haut on révèle "Vu récemment",
   // sans perdre l'accès aux onglets.
   position: sticky;
-  top: 0;
+  // Arrêtés sous la barre de statut en PWA standalone, sinon ils passeraient
+  // dessous une fois collés. Vaut 0 ailleurs.
+  top: env(safe-area-inset-top);
   z-index: 20;
   background: var(--bg);
 }

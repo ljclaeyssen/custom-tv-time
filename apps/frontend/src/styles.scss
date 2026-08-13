@@ -58,6 +58,9 @@ button {
 // ---- Structure de page commune ----
 .page {
   padding: 20px 16px 24px;
+  // En PWA standalone (viewport-fit=cover), le contenu passerait sinon sous la
+  // barre de statut du téléphone. Vaut 0 ailleurs : aucun effet en navigateur.
+  padding-top: calc(20px + env(safe-area-inset-top));
   max-width: 720px;
   margin-inline: auto;
 }

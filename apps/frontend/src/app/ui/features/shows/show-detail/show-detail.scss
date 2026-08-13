@@ -7,6 +7,9 @@ header {
 .scrim {
   background: linear-gradient(180deg, rgba(10, 11, 14, 0.55) 0%, rgba(10, 11, 14, 0.85) 60%, var(--bg) 100%);
   padding: 16px 16px 20px;
+  // Le backdrop reste immersif sous la barre de statut (PWA standalone) : seul
+  // le contenu — dont le bouton Retour — descend sous elle.
+  padding-top: calc(16px + env(safe-area-inset-top));
 }
 
 .back {
