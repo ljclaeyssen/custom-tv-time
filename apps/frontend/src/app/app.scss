@@ -1,3 +1,17 @@
+// Protection de la barre de statut (PWA edge-to-edge) : masque le contenu qui
+// défile sous l'heure. Dégradé pour ne pas trancher net le backdrop des fiches.
+// Hauteur nulle hors PWA : invisible partout ailleurs.
+.status-bar-scrim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: env(safe-area-inset-top);
+  z-index: 40; // au-dessus des onglets collants (20), sous la bottom nav (50)
+  pointer-events: none;
+  background: linear-gradient(180deg, var(--bg) 70%, transparent);
+}
+
 .app-main {
   min-height: 100dvh;
 
